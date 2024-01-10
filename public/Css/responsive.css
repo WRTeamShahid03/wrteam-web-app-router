@@ -1,0 +1,5887 @@
+/* For Breadcrum  */
+@media only screen and (max-width: 575px) {
+
+    #header {
+        height: 70px;
+    }
+
+    #hamburg svg {
+        width: 32px;
+    }
+
+    .navLogo img {
+        width: 170px !important;
+        height: 35px;
+    }
+
+    .breadcrum .lines {
+        display: none;
+    }
+
+    .breadcrum .breadcrumContent {
+        top: 180px;
+    }
+
+    .breadcrum h1 {
+        margin-bottom: -18px;
+        font: normal normal 800 20px/80px Montserrat;
+    }
+
+    .breadcrum .pageName {
+        font: normal normal 200 15px/24px Montserrat !important;
+        color: #2D3745;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1850px) {
+    /* Home Page responsive  */
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #couter,
+    #solution,
+    #services,
+    #tech,
+    #workChain,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+    #homeHeroSect .heroContainer,
+    #aboutUs .aboutWrapper,
+    #winner .winnerWrapper,
+    #counter {
+        /* margin: 0 40px; */
+        margin-top: 50px;
+    }
+
+    /* Homehero ends  */
+
+
+
+    /* #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 90px;
+        margin-left: 100px;
+    } */
+
+    /* aboutUs ends  */
+
+    #solutions h3 {
+        width: 43%;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 80px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        display: flex;
+        flex-direction: row;
+        margin: 0 -20px;
+    }
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 0px 40px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 300px;
+        height: 315px;
+        padding: 30px 15px;
+    }
+
+    /* services ends  */
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 292px;
+    }
+
+
+    /* Home Page ends  */
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 100%;
+    }
+
+
+    #knowMore .knowMoreLeftDiv .business {
+        position: absolute;
+        top: 259px;
+        left: 383px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background: #212121 0% 0% no-repeat padding-box;
+        border: 10px solid #FFFFFF;
+        border-radius: 20px;
+        color: white;
+        padding: 25px 18px;
+        width: 403px;
+        height: 274px;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 182px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+        right: -50px;
+
+    }
+
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 86%;
+    }
+
+    #team .teamDeatails {
+        margin-top: 260px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 236px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 52%;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 114px;
+    }
+
+    #category .card-title {
+        font: normal normal 700 20px/34px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 30px;
+    }
+
+    /* category ends  */
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 17px/26px Montserrat;
+    }
+
+    /* blogDetails ends  */
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines {
+        padding: 0px 150px;
+    }
+
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #success .lowerDiv::before {
+        width: 96.5%;
+    }
+
+    #success .hireUpperDiv {
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .emipreHeadlines .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 260px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: 88px;
+    }
+
+    /* career ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 60px 90px;
+        padding-bottom: 90px;
+    }
+
+    .backend .rightDivContent {
+        padding: 68px;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        margin-top: -192px;
+        left: 50px;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 62px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        height: 108px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 130px;
+    }
+
+    #applyNow {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    /* Home Page responsive  */
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #couter,
+    #solution,
+    #services,
+    #workChain,
+    #tech,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+    #knowMore,
+    #mission,
+    #values,
+    #wrTeamWork,
+    #jobOpening,
+    #applyNow {
+        margin-top: 66px;
+    }
+
+    .common_span {
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 90px;
+        /* margin-left: 100px; */
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg {
+        width: 260px;
+        height: 260px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
+        align-items: center;
+        justify-content: center;
+        padding: 22px 10px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience .experNum {
+        font-size: 60px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience span:nth-child(3) {
+        font: normal normal 600 18px/29px Montserrat;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    .homeCommon_btn {
+        padding: 12px;
+        width: fit-content;
+    }
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 100%;
+    }
+
+    /* aboutUs ends  */
+
+    #winner .winnerWrapper .winnRightDiv {
+        position: relative;
+        left: 34px;
+        top: 50px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
+        width: 82%;
+    }
+
+    #winner .winnerWrapper #winnText {
+        font: normal normal 800 80px/117px Poppins;
+        right: -134px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
+        width: 75%;
+    }
+
+    /* winner ends  */
+
+    #solutions h3 {
+        width: 50%;
+    }
+
+    #solutions p {
+        width: 76vw;
+    }
+
+    #solutions .productsCardsWrapper {
+        padding: 64px 0px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .solu_product_img {
+        width: 24vw;
+    }
+
+    /* #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 50px;
+    } */
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 0px 30px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 255px;
+        height: 345px;
+        padding: 30px 15px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 100%;
+    }
+
+    /* services ends  */
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 222px;
+    }
+
+    #workChain .workBottDiv .workCard .workTitle {
+        font: normal normal 600 23px/29px Montserrat;
+    }
+
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 290px;
+    }
+
+    #testimonials .testSlider {
+        margin-top: -70px;
+    }
+
+    .getInTouch .homeCommon_btn {
+        padding: 12px 18px;
+    }
+
+    /* Home page ends  */
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 150px 0;
+    }
+
+    #knowMore .row .col-lg-6,
+    #mission .row .col-lg-6,
+    #vision .row .col-lg-6,
+    #values .row .col-lg-6 {
+        width: 75%;
+
+    }
+
+    #knowMore .knowMoreLeftDiv .business {
+        left: unset;
+        right: -235px;
+        width: 496px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        right: -50px;
+    }
+
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 135%;
+        padding-left: 0;
+    }
+
+    /* knowMore ends  */
+
+    #values {
+        padding: 60px 0;
+    }
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 292px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 244px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 412px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -80px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #mission .missionLeftDiv {
+        padding-bottom: 60px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 12px;
+    }
+
+
+    #team .teamWrapper {
+        padding: 40px 0;
+    }
+
+    #team .teamDeatails {
+        margin-top: 266px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 240px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 61%;
+    }
+
+    #team .teamSlider .pagination,
+    #category .pagination {
+        padding-bottom: 50px;
+    }
+
+    #team .card-title {
+        font: normal normal 800 21px/52px Montserrat;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 114px;
+    }
+
+    #category .card-title {
+        font: normal normal 700 17px/34px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 50px;
+    }
+
+    #category .cateBox .boxDetails span {
+        font: 14px/24px Montserrat;
+    }
+
+    #category .boxHeadline {
+        font: normal normal 600 26px/37px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails {
+        align-items: center;
+    }
+
+    #category .recentBlogs .boxDetails .rbImg {
+        height: 90px;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        top: 122px;
+    }
+
+    /* category ends  */
+    #blogDetails .boxWrapper {
+        padding-bottom: 54px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails {
+        padding: 12px 10px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 14px/26px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput .leaveCheckBox {
+        margin-bottom: 40px;
+    }
+
+    /* blogDetails ends  */
+
+    #contactForm .formDiv {
+        padding: 26px 55px;
+    }
+
+    #contactUs .contactCards {
+        gap: 20px 0px;
+    }
+
+    #contactUs .contactCards .col-lg-3 {
+        width: 33%;
+    }
+
+    #success .hireUpperDiv {
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines {
+        padding: 0px 150px;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 30px 100px;
+    }
+
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #success .lowerDiv::before {
+        width: 96%;
+    }
+
+    /* hireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px 200px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 200px;
+    }
+
+    #wrTeamWork .wrTeamLeftDiv {
+        padding-right: 60px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: 88px;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        padding-bottom: 56px;
+    }
+
+    .webPro .cardsWrapper .card .cardFooter .priceDiv span:last-child {
+        font: normal normal bold 24px/29px Montserrat;
+    }
+
+    .webPro .cardsWrapper .col-lg-3 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 60px 90px;
+        padding-bottom: 90px;
+    }
+
+    .backend .rightDivContent {
+        padding: 34px;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        margin-top: -152px;
+        left: 48px;
+        width: 55%;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 32px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 92px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 154px;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 22px/34px Montserrat;
+        height: 56px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 130px;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-top: 118px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 20px/29px Montserrat;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent,
+    .development .deveRightDiv .commonBorderDiv {
+        left: 36px;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 16px/22px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+    }
+
+    #applyNow {
+        margin-bottom: 60px;
+    }
+
+    .devSlider .sidebar>div {
+        padding: 0px 30px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Home Page  */
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #couter,
+    #solution,
+    #services,
+    #tech,
+    #workChain,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+    .development {
+        margin-top: 50px;
+    }
+
+    #knowMore,
+    #mission,
+    #values,
+    #wrTeamWork,
+    #jobOpening,
+    #applyNow {
+        margin-top: 66px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv,
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        padding: 70px 0px 50px 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard1 {
+        top: 224px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2 {
+        top: 50px;
+        left: 50%;
+    }
+
+    @keyframes float2 {
+        0% {
+            left: 50%
+        }
+
+        50% {
+            left: 48%
+        }
+
+        100% {
+            left: 52%
+        }
+    }
+
+    /* homeHeroSect ends  */
+
+    #aboutUs .aboutWrapper .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    #winner .winnerWrapper {
+        top: 8px;
+    }
+
+    #winner .winnerWrapper .row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        left: -150px;
+        top: 66%;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv {
+        position: relative;
+        left: 112px;
+    }
+
+    #aboutUs .aboutWrapper .col-lg-6,
+    #winner .winnerWrapper .col-lg-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 0px;
+        left: 0px;
+        top: 8px;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    /* aboutUs ends  */
+
+    #winner .winnerWrapper .winnRightDiv {
+        left: 262px;
+    }
+
+    #winner .winnerWrapper #winnText {
+        top: 70%;
+        right: -132px;
+    }
+
+    /* winner ends  */
+
+    #counter .countWrapper {
+        padding: 44px 0px;
+    }
+
+    /* counter ends  */
+
+
+    #solutions h3 {
+        width: 62%;
+    }
+
+    #solutions p {
+        width: 85vw;
+    }
+
+    #solutions .productsCardsWrapper {
+        padding: 64px 0px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .solu_product_img {
+        width: 24vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 50px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        gap: 5px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProText {
+        font: normal normal bold 30px/56px Montserrat;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 0px 16px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 220px;
+        height: 370px;
+        padding: 30px 15px;
+    }
+
+    #services .serviesWrapper .servrightDiv {
+        padding-left: 18px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 106%;
+    }
+
+    /* services ends  */
+    #workChain .worklowerRow .row .col-lg-3 {
+        width: 50%;
+    }
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 0px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper {
+        background: transparent !important;
+        margin-top: 0px;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc {
+        width: 100%;
+    }
+
+    .getInTouch .homeCommon_btn {
+        padding: 12px 4px;
+    }
+
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 342px;
+    }
+
+    #testimonials .testiUpperDiv .testiHeadline {
+        margin-top: 20px;
+        margin-bottom: 56px;
+    }
+
+    #testimonials .testSlider .swiperCard {
+        margin-top: 60px;
+    }
+
+    /* Home page ends  */
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 150px 0;
+    }
+
+    #knowMore .row .col-lg-6,
+    #mission .row .col-lg-6,
+    #vision .row .col-lg-6,
+    #values .row .col-lg-6 {
+        width: 75%;
+
+    }
+
+    #knowMore .knowMoreLeftDiv .business {
+        left: unset;
+        right: -235px;
+    }
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 135%;
+        padding-left: 0;
+    }
+
+    /* knowMore ends  */
+
+    #values {
+        padding: 40px 0;
+    }
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 144px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 86px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 412px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -80px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #mission .missionLeftDiv {
+        padding-bottom: 60px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 6px;
+    }
+
+    #team .teamDeatails {
+        margin-top: 264px;
+    }
+
+    #team .teamWrapper {
+        padding: 30px 0;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 240px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 100%;
+    }
+
+    #team .card .card-img-overlay {
+        padding: 0px 16px;
+    }
+
+    #team .card-title {
+        font: normal normal 800 18px/52px Montserrat;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 114px;
+    }
+
+    #category {
+        margin-top: 50px;
+    }
+
+    #category .row .col-lg-8,
+    #category .row .col-lg-4,
+    #blogDetails .row .col-lg-8,
+    #blogDetails .row .col-lg-4 {
+        width: 100%;
+    }
+
+    #category .card-title {
+        font: normal normal 700 22px/34px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 5px;
+    }
+
+    #category .cateBox,
+    #category .recentBlogs,
+    #category .tags {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #category .cateBox .boxDetails span {
+        font: 18px/24px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent {
+        justify-content: space-around;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        width: 88%;
+    }
+
+    /* category ends  */
+
+
+    .breadcrum {
+        height: 264px;
+        margin-top: -132px;
+    }
+
+    .webDevelopmentPage .breadcrum,
+    .careerPage .breadcrum {
+        margin-top: -90px;
+    }
+
+    /* blogDetails ends  */
+    #contactUs {
+        margin-top: 60px;
+    }
+
+    #contactForm .formDiv {
+        padding: 26px 55px;
+    }
+
+    #contactUs .contactCards {
+        gap: 20px 0px;
+    }
+
+    #contactUs .contactCards .col-lg-3 {
+        width: 33%;
+    }
+
+    #contactUs .contactCards .card .card-text {
+        font: normal normal 100 14px/28px Montserrat;
+    }
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines {
+        padding: 0px 140px;
+    }
+
+    #success .lowerDiv::before {
+        width: 95%;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 30px;
+    }
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Title {
+        font: normal normal bold 20px/29px Montserrat;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 50px 0px;
+    }
+
+    /* HireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 50px;
+    }
+
+    #applyNow {
+        margin-bottom: 60px;
+    }
+
+    #wrTeamWork .wrTeamLeftDiv {
+        padding-right: 60px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv {
+        top: 90px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: 88px;
+    }
+
+    #jobOpening .jobCards .card-title {
+        font: normal normal bold 20px/34px Montserrat;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        padding-bottom: 56px;
+    }
+
+    .webPro .cardsWrapper .card .cardFooter .priceDiv span:last-child {
+        font: normal normal bold 24px/29px Montserrat;
+    }
+
+    .webPro .cardsWrapper .col-lg-3 {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage .col-lg-6 {
+        width: 100%;
+    }
+
+    .development,
+    .process {
+        margin-top: 50px;
+    }
+
+    .development .deveRightDiv img,
+    .process .upperDivLeftContent img {
+        width: 65%;
+    }
+
+    .commonBorderDiv {
+        left: 160px !important;
+        top: 36px;
+    }
+
+    .commonBorderDiv::before {
+        width: 65.5%;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 60px 90px;
+        padding-bottom: 90px;
+    }
+
+    .backend .rightDivContent {
+        padding: 34px;
+    }
+
+    .process .upperDivWrapper {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        gap: 28px 0px;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        top: -124px;
+        left: 48px;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -334px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 32px;
+    }
+
+    .recentBlogs {
+        margin-top: -54px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 92px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 210px;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 19px/34px Montserrat;
+        height: 56px;
+    }
+
+    .benefits .benefitsPara {
+        margin-top: 10px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 130px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        display: none;
+    }
+
+    .process .upperDivWrapper .upperDivRightContent {
+        padding: 0;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding: 0;
+        margin-top: -12%;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-bottom: 70px;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        position: relative;
+        left: 12px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 22px/29px Montserrat;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 16px/22px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 12px;
+        width: 100%;
+        border: none;
+    }
+
+    .build .buildWrapper .leftDiv .firstP {
+        margin-top: 10px;
+    }
+
+    .build .buildWrapper .rightDiv {
+        padding: 20px 130px;
+        padding-left: 98px;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn {
+        top: 86%;
+    }
+
+    .devSlider .sidebar>div {
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Home Page  */
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #couter,
+    #solution,
+    #services,
+    #tech,
+    #workChain,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+    #knowMore,
+    #mission,
+    #values,
+    #wrTeamWork,
+    #jobOpening,
+    #applyNow {
+        margin-top: 50px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv,
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        padding: 70px 0 0 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2 {
+        top: 36px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard3 {
+        bottom: 18%;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        right: 60px;
+    }
+
+    /* homeHeroSect ends  */
+
+    #aboutUs .aboutWrapper .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    #winner .winnerWrapper {
+        top: 8px;
+    }
+
+    #winner .winnerWrapper .row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        left: -150px;
+        top: 66%;
+    }
+
+
+    #aboutUs .aboutWrapper #wrTeam {
+        font: normal normal 800 84px/117px Poppins;
+    }
+
+    #aboutUs .aboutWrapper .row,
+    #winner .winnerWrapper .row {
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv {
+        position: relative;
+        left: 80px;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 0px;
+        left: 0;
+        top: 8px
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg {
+        width: 260px;
+        height: 260px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
+        align-items: center;
+        justify-content: center;
+        padding: 22px 10px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience .experNum {
+        font-size: 60px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience span:nth-child(3) {
+        font: normal normal 600 18px/29px Montserrat;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    /* aboutUs ends  */
+
+
+    #winner .winnerWrapper .winnRightDiv {
+        left: 80px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
+        width: 78%;
+    }
+
+    #winner .winnerWrapper #winnText {
+        top: 70%;
+        right: -140px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg {
+        left: -90px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
+        width: 78%;
+    }
+
+    /* winner ends  */
+
+    #counter .countWrapper {
+        justify-content: flex-end;
+        padding: 50px 42px;
+    }
+
+    #counter .countWrapper .countCard {
+        justify-content: flex-start;
+    }
+
+    /* counter ends  */
+
+    #solutions h3 {
+        width: 78%;
+    }
+
+    #solutions p {
+        width: 95vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 0px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .webProImg {
+        width: 72%;
+    }
+
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 30px 40px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 305px;
+        height: 318px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 100%;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCardDown {
+        margin-top: 0px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        color: black !important;
+    }
+
+    #services .servCard:hover span,
+    #services .servCard:hover h4 {
+        color: #212121 !important;
+    }
+
+    #services .servCard:hover .servText {
+        color: #545A68 !important;
+    }
+
+    /* services ends  */
+
+    #tech .techWrapper .techContent .techHeadlines {
+        width: 100%;
+    }
+
+    #tech .techWrapper {
+        padding: 40px 0;
+    }
+
+    /* tech ends  */
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 0px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper {
+        background: transparent !important;
+        margin-top: 0;
+    }
+
+    /* workChain ends  */
+
+    .getInTouch .getTouchText {
+        padding: 30px 0px;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc {
+        width: 100%;
+    }
+
+    .getInTouch .getTouchBtn {
+        text-align: center;
+        padding-bottom: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 320px;
+    }
+
+    #testimonials {
+        margin-top: 40px;
+    }
+
+    /* Home Page ends  */
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 90%;
+    }
+
+
+    #knowMore .knowMoreLeftDiv .business {
+        top: 248px;
+        left: 314px;
+        padding: 25px 18px;
+        width: 390px;
+        height: 274px;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 182px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+    }
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 150px 0;
+    }
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        padding-left: 0;
+    }
+
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 107%;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 112px;
+    }
+
+    #mission .missionLeftDiv {
+        padding-bottom: 60px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 0px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+        right: 20px;
+    }
+
+    #mission .missionLeftDiv,
+    #values .valuesLeftDiv {
+        padding-bottom: 60px;
+    }
+
+
+    /* knowMore ends  */
+
+    #values {
+        padding: 40px 0;
+    }
+
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 70px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 22px;
+        top: 144px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 412px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -80px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #team .teamDeatails {
+        margin-top: 266px;
+    }
+
+    #testimonials .testSlider {
+        margin-top: -80px;
+    }
+
+    #team .teamWrapper {
+        padding: 30px 0;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 236px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 100%;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 130px;
+    }
+
+    #category {
+        margin-top: 50px;
+    }
+
+    #category .cateBadge {
+        padding: 6px;
+    }
+
+    #category .card-title {
+        font: normal normal 700 16px/26px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 40px;
+    }
+
+    #category .cateBox,
+    #category .recentBlogs,
+    #category .tags {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #category .cateBox .boxDetails span {
+        font: 18px/24px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent {
+        justify-content: space-around;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        width: 88%;
+    }
+
+    #category .card-text {
+        font-size: 15px;
+    }
+
+    /* category ends  */
+
+    .breadcrum {
+        height: 275px;
+        margin-top: -132px;
+    }
+
+    .webDevelopmentPage .breadcrum,
+    .careerPage .breadcrum {
+        margin-top: -90px;
+    }
+
+    #blogDetails .middleDiv .row {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    /* blogDetails ends  */
+
+    #contactForm .formDiv {
+        padding: 26px 20px;
+    }
+
+    #contactUs,
+    #map {
+        margin-top: 60px;
+    }
+
+    #contactUs .contactCards {
+        gap: 30px 0px;
+    }
+
+    #contactForm .blueBg,
+    #contactForm .socialDiv {
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    #contactForm .blueBg {
+        height: 400px;
+    }
+
+    /* contactForm ends  */
+
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines {
+        padding: 0px;
+    }
+
+    #success .lowerDiv::before,
+    #success .cardsdot,
+    #success .cardsdot2 {
+        display: none;
+    }
+
+    #success .successCards {
+        margin-top: 40px;
+        gap: 20px 0px;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 30px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard {
+        width: 266px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: start;
+    }
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 50px 0px;
+    }
+
+
+    /* HireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 0px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv {
+        margin-top: 40px;
+        width: 80%;
+        left: 140px;
+    }
+
+    #jobOpening .jobCards .card {
+        padding: 30px 35px;
+    }
+
+    #applyNow {
+        margin-bottom: 60px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: 88px;
+    }
+
+    #jobOpening .jobCards .card-title {
+        font: normal normal bold 20px/34px Montserrat;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        margin-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    .webPro .cardsWrapper .card .cardFooter .priceDiv span:last-child {
+        font: normal normal bold 24px/29px Montserrat;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage .col-lg-6 {
+        width: 100%;
+    }
+
+    .development,
+    .process,
+    .benefits {
+        margin-top: 50px;
+    }
+
+    .development {
+        margin-top: 30px;
+    }
+
+    .development .deveRightDiv img,
+    .process .upperDivLeftContent img {
+        width: 65%;
+    }
+
+    .commonBorderDiv {
+        position: relative;
+        left: 130px !important;
+        top: 36px;
+    }
+
+    .commonBorderDiv::before {
+        width: 65.5%;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .process .upperDivWrapper {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        gap: 28px 0px;
+    }
+
+    .backend {
+        padding: 32px 0px;
+        padding-bottom: 20px;
+    }
+
+    .backend .rightDivContent {
+        padding: 34px;
+    }
+
+    .backend .sliderContainer .leftDivshapes img,
+    .backend .sliderContainer .rightDivshapes img {
+        display: none;
+    }
+
+    .devSlider .sidebar>div {
+        padding: 0px 22px;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn {
+        top: 86%;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        top: -124px;
+        left: 48px;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -334px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 32px;
+    }
+
+    .recentBlogs {
+        margin-top: -54px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 92px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 166px;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 19px/34px Montserrat;
+        height: 24px;
+    }
+
+    .benefits .benefitsPara {
+        margin-top: 10px;
+    }
+
+    .benefits .benefitsCards {
+        margin-top: 10px;
+        gap: 20px 0px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 84px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        display: none;
+    }
+
+    .process .upperDivWrapper .upperDivRightContent {
+        padding: 0;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding: 0;
+        margin-top: -12%;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-bottom: 80px;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 12px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 22px/29px Montserrat;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 16px/22px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 12px;
+        width: 100%;
+        border: none;
+    }
+
+    .build .buildWrapper .leftDiv .firstP {
+        margin-top: 10px;
+    }
+
+    .build .buildWrapper .rightDiv {
+        padding: 20px 40px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .recentBlogs .col-lg-12 .row {
+        padding-bottom: 50px;
+    }
+
+    .recentBlogs .recentBlogsCards {
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .devSlider .sidebar h1 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .devSlider .sidebar p {
+        font: 16px/28px Montserrat;
+    }
+
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    #homeHeroSect {
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+    #aboutUs,
+    #winner,
+    #couter,
+    #solution,
+    #services,
+    #tech,
+    #workChain,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    #team,
+    #blogDetails,
+    #wrTeamWork,
+    #jobOpening,
+    #applyNow {
+        overflow: hidden;
+        margin-top: 60px;
+    }
+
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv,
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        padding: 70px 0 0 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2 {
+        top: 36px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard3 {
+        bottom: 18%;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        right: 60px;
+    }
+
+    /* homeHeroSect ends  */
+
+    #aboutUs .aboutWrapper .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    #winner .winnerWrapper {
+        top: 8px;
+    }
+
+    #winner .winnerWrapper .row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        font: normal normal 800 74px/117px Poppins;
+        transform: rotate(0);
+        left: 0px;
+        top: 52%;
+    }
+
+    #aboutUs .aboutWrapper .row,
+    #winner .winnerWrapper .row {
+        gap: 124px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv {
+        position: relative;
+        left: 0px;
+        top: 36px;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 0px;
+        left: 0;
+        top: 12px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg img {
+        width: 92%;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg {
+        width: 230px;
+        height: 210px;
+        left: 294px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
+        align-items: center;
+        justify-content: center;
+        padding: 22px 10px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience .experNum {
+        font-size: 50px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience span:nth-child(3) {
+        font: normal normal 600 12px/29px Montserrat;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    /* aboutUs ends  */
+    #winner .winnerWrapper .winnRightDiv {
+        left: 36px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
+        width: 96%;
+    }
+
+    #winner .winnerWrapper #winnText {
+        top: 52%;
+        right: 0px;
+        transform: rotate(0);
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg {
+        left: -54px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
+        width: 72%;
+    }
+
+    #winner .winnerWrapper .winnLeftDiv {
+        padding-right: 0px;
+    }
+
+    /* winner ends  */
+
+    #counter .countWrapper {
+        padding: 50px 42px;
+    }
+
+    #counter .countWrapper .row .col-sm-12 {
+        width: 50%;
+    }
+
+    /* counter ends  */
+
+    #solutions .productsCardsWrapper {
+        padding: 64px 7px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .solu_product_img {
+        width: 50vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 50px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        gap: 5px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProText {
+        font: normal normal bold 30px/56px Montserrat;
+    }
+
+    #solutions h3 {
+        width: 87%;
+    }
+
+    #solutions p {
+        width: 95vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 7px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .webProImg {
+        width: 78%;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .webProImg {
+        height: 390px;
+        width: 80%;
+    }
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 20px 40px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 232px;
+        height: 348px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 100%;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .hoverArrSpan {
+        margin-top: 14px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCardDown {
+        margin-top: 0px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        color: black !important;
+    }
+
+    #services .servCard:hover span,
+    #services .servCard:hover h4 {
+        color: #212121 !important;
+    }
+
+    #services .servCard:hover .servText {
+        color: #545A68 !important;
+    }
+
+    /* services ends  */
+
+    #tech .techWrapper .techContent .techHeadlines {
+        width: 100%;
+    }
+
+    #tech .techWrapper {
+        padding: 40px 0;
+    }
+
+    /* tech ends  */
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 0px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper {
+        margin-top: 0px;
+        background: transparent !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse {
+        flex-direction: column;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard:hover img {
+        filter: brightness(36%) invert(8%) saturate() contrast(96%) sepia(8%) grayscale(3%) !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workTitle {
+        margin-top: 0;
+    }
+
+    /* workChain ends  */
+    .getInTouch,
+    #counter {
+        width: 96% !important;
+    }
+
+    .getInTouch .getTouchText {
+        padding: 30px 0px;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc {
+        width: 100%;
+    }
+
+    .getInTouch .getTouchBtn {
+        text-align: center;
+        padding-bottom: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 320px;
+    }
+
+    #testimonials .testSlider .swiperCard {
+        margin-top: 70px;
+    }
+
+    /* Home Page ends  */
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 89%;
+    }
+
+
+    #knowMore .knowMoreLeftDiv .business {
+        top: 248px;
+        left: 314px;
+        padding: 25px 18px;
+        width: 403px;
+        height: 274px;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 182px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+    }
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 150px 0;
+    }
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        padding-left: 0;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 48px;
+        width: 146px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 36px;
+        right: 20px;
+        width: 26px;
+    }
+
+    #knowMore .knowMoreLeftDiv .business {
+        top: 186px;
+        left: 207px;
+        padding: 24px 18px;
+        height: 230px;
+        width: 320px;
+        gap: 5px;
+    }
+
+    #knowMore .knowMoreLeftDiv .business .businessNum {
+        font: normal normal 800 36px/61px Montserrat;
+    }
+
+    #knowMore .knowMoreLeftDiv .business .businessText {
+        font: 600 30px/61px Montserrat;
+    }
+
+
+    /* knowMore ends  */
+
+    #values {
+        padding: 40px 0px;
+    }
+
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 52px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 16px;
+        top: 112px;
+        width: 26px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 126px;
+        width: 146px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -80px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 0px;
+    }
+
+    #vision,
+    #counter {
+        margin-top: 30px;
+    }
+
+    #testimonials .testiUpperDiv .testiHeadline {
+        font: normal normal 800 32px/46px Montserrat;
+        margin-bottom: 42px;
+    }
+
+    #mission .missionLeftDiv {
+        margin-top: -132px;
+        padding-bottom: 60px;
+    }
+
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #team .card {
+        width: 350px;
+        margin: auto;
+    }
+
+    #team .teamDeatails {
+        margin-top: 260px;
+    }
+
+    #team .teamWrapper {
+        padding: 30px 0;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 240px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 100%;
+    }
+
+    .breadcrum {
+        height: 256px;
+        margin-top: -136px;
+    }
+
+    .webDevelopmentPage .breadcrum,
+    .careerPage .breadcrum {
+        margin-top: -106px;
+    }
+
+    .breadcrum h1 {
+        font: normal normal 800 30px/28px Montserrat;
+    }
+
+    .breadcrum .pageName {
+        font: normal normal 200 18px/44px Montserrat;
+        color: #2D3745;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 100%;
+    }
+
+    #category {
+        margin-top: 50px;
+    }
+
+    #category .cateBadge {
+        padding: 10px;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 0px;
+        display: block;
+    }
+
+    #category .cateBox,
+    #category .recentBlogs,
+    #category .tags {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent {
+        justify-content: space-around;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        width: 80%;
+    }
+
+    #blogDetails .upperDiv .blogDate {
+        margin-top: 0px;
+    }
+
+    #blogDetails .middleDiv .row {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .tagDiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
+
+    #blogDetails .bottomDiv .common_span {
+        padding: 8px;
+        font: normal normal 600 14px/19px Montserrat;
+    }
+
+    #blogDetails .boxWrapper {
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .prevNextHeadDiv span:last-child {
+        position: absolute;
+        margin-top: 422px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput .homeCommon_btn {
+        padding: 12px;
+    }
+
+    /* blogDetails ends  */
+
+    #contactUs,
+    #map {
+        margin-top: 60px;
+    }
+
+
+    #contactForm .formDiv {
+        padding: 26px 20px;
+    }
+
+    #contactUs .contactCards {
+        gap: 30px 0px;
+    }
+
+    #contactForm .blueBg,
+    #contactForm .socialDiv {
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    #contactForm .blueBg {
+        height: 400px;
+    }
+
+    #contactForm .formDiv .formHeading {
+        font: normal normal bold 26px/38px Montserrat;
+    }
+
+    /* contactForm ends  */
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 40px 0px;
+    }
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines,
+    #hireUs .hireHeadlines {
+        padding: 0px 20px;
+        font: normal normal 800 26px/42px Montserrat;
+    }
+
+    #success .lowerDiv::before,
+    #success .cardsdot,
+    #success .cardsdot2 {
+        display: none;
+    }
+
+    #success .successCards {
+        margin-top: 40px;
+        gap: 20px 0px;
+    }
+
+    #whyHireUs .whyHireCards .card {
+        padding: 20px 30px;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Img {
+        width: auto;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Text,
+    #success .successCards .card .card-text {
+        padding: 0 120px;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 30px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard {
+        width: 100%;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 50px 0px;
+    }
+
+    #success,
+    #wrTeamWork {
+        padding: 40px 0px;
+    }
+
+    /* HireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px;
+        font-size: 30px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 0px;
+    }
+
+    #wrTeamWork {
+        padding-bottom: 80px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv {
+        margin-top: 40px;
+        width: 80%;
+        left: 106px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: max-content;
+    }
+
+    #jobOpening .jobCards .card-title {
+        font: normal normal bold 20px/34px Montserrat;
+    }
+
+    #applyNow .wrapper {
+        padding: 0 40px;
+    }
+
+    #applyNow {
+        margin-bottom: 60px;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        margin-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    .webPro .webProHeadingDiv {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .webPro .sortBy {
+        margin-top: 12px;
+    }
+
+    .webPro .sortBy span {
+        left: 2px;
+    }
+
+    .webPro .sortBy select {
+        margin-left: 66px;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage .col-lg-6 {
+        width: 100%;
+    }
+
+    .development,
+    .process,
+    .benefits {
+        margin-top: 50px;
+    }
+
+    .development {
+        margin-top: 30px;
+    }
+
+    .development .deveRightDiv img,
+    .process .upperDivLeftContent img {
+        width: 65%;
+    }
+
+    .process .upperDivWrapper {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        gap: 28px 0px;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 0px !important;
+    }
+
+    .commonBorderDiv {
+        position: relative;
+        left: 100px !important;
+        top: 36px;
+    }
+
+    .backend .comman_Headlines {
+        font: normal normal 800 30px/52px Montserrat;
+    }
+
+    .commonBorderDiv::before {
+        width: 65.5%;
+        top: 6px;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 32px 0px;
+        padding-bottom: 20px;
+    }
+
+    .backend .rightDivContent {
+        padding: 34px;
+    }
+
+    .backend .sliderContainer .leftDivshapes img,
+    .backend .sliderContainer .rightDivshapes img {
+        display: none;
+    }
+
+    .devSlider .sliderWrapper {
+        height: 500px;
+    }
+
+    .devSlider .sidebar {
+        height: 100%;
+        width: 100%;
+    }
+
+    .devSlider .sidebar h1 {
+        font-size: 34px;
+        margin-top: -80px;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn {
+        top: 84%;
+    }
+
+    .devSlider .sliderWrapper .controls .up-button {
+        transform: translateY(0%);
+    }
+
+    .devSlider .main-slide {
+        display: none;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        top: -124px;
+        left: 48px;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -334px;
+    }
+
+    .build .buildWrapper .rightDiv .buildCardsWrapper {
+        margin-left: 60px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 32px;
+    }
+
+    .recentBlogs {
+        margin-top: -54px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 100%;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 90px;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 19px/34px Montserrat;
+        height: 50px;
+    }
+
+    .benefits .benefitsPara {
+        margin-top: 10px;
+    }
+
+    .benefits .benefitsCards {
+        margin-top: 10px;
+        gap: 20px 0px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 70px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        display: none;
+    }
+
+    .process .upperDivWrapper .upperDivRightContent {
+        padding: 0;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding: 0;
+        margin-top: -12%;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-bottom: 64px;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 12px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 22px/29px Montserrat;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 16px/22px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 12px;
+        width: 100%;
+        border: none;
+    }
+
+    .build .buildWrapper .leftDiv .firstP {
+        margin-top: 10px;
+    }
+
+    .build .buildWrapper .rightDiv {
+        padding: 20px 14px;
+        padding-right: 0;
+        margin-left: -44px;
+    }
+
+    .recentBlogs .col-lg-12 .row {
+        padding-bottom: 50px;
+    }
+
+    .recentBlogs .recentBlogsCards {
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 574px) {
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #counter,
+    #solutions,
+    #services,
+    #tech,
+    #workChain,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    #blogDetails,
+    #empire,
+    #team #wrTeamWork,
+    #jobOpening,
+    #applyNow,
+    #team {
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+
+    #homeHeroSect .heroContainer .heroContContent {
+        padding: 0px;
+        padding-left: 14px;
+    }
+
+    #homeHeroSect .heroContainer .heroContContent .row {
+        gap: 55px;
+    }
+
+    #homeHeroSect .heroContainer {
+        margin-top: 0;
+    }
+
+    #homeHeroSect .heroContainer {
+        border-radius: 20px 20px 17% 20px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv,
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        padding: 30px 0 0 0;
+    }
+
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard1,
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2,
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard3 {
+        display: none;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        width: 100%;
+        right: unset;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv img {
+        width: 100%;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv .followDiv {
+        margin-top: 30px;
+    }
+
+    /* homeHeroSect ends  */
+
+    #aboutUs .aboutWrapper #wrTeam {
+        font: normal normal 800 60px/117px Poppins;
+        transform: rotate(0);
+        left: 0px;
+        top: -23px;
+    }
+
+    #aboutUs .aboutWrapper .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    #winner .winnerWrapper {
+        top: 8px;
+    }
+
+    #winner .winnerWrapper .row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        /* left: -150px; */
+        top: 54%;
+    }
+
+    #aboutUs .aboutWrapper .row,
+    #winner .winnerWrapper .row {
+        gap: 124px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv {
+        position: relative;
+        left: 0px;
+        /* top: 70px; */
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 0px;
+        left: 0;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg img {
+        width: 92%;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg {
+        width: 174px;
+        height: 174px;
+        left: 0px;
+        top: 130px;
+        margin-left: 56%;
+    }
+
+    @keyframes experience {
+        0% {
+            top: 130px;
+        }
+
+        50% {
+            top: 126px;
+        }
+
+        100% {
+            top: 134px;
+        }
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
+        align-items: center;
+        justify-content: center;
+        padding: 22px 2px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience .experNum {
+        font-size: 36px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience span:nth-child(3) {
+        font: normal normal 600 8px/29px Montserrat;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    .common_span,
+    #homeHeroSect .heroContainer .heroCont-leftDiv .mcWinner {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv #herocont_headline,
+    #aboutUs .aboutWrapper .aboutRightDiv h2,
+    #winner .winnerWrapper .winnLeftDiv h2,
+    #solutions h3,
+    #services .serviesWrapper .servrightDiv h3,
+    #workChain .workUpperDiv .workHealines,
+    #tech .techWrapper .techContent h4,
+    #testimonials .testiUpperDiv .testiHeadline,
+    .getInTouch .getTouchText .getTouchDesc,
+    .comman_Headlines {
+        font: normal normal 800 26px/40px Montserrat;
+    }
+
+    #testimonials .testiUpperDiv .testiHeadline {
+        font: normal normal 800 23px/40px Montserrat;
+    }
+
+    #team .teamWrapper {
+        padding: 30px 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv p,
+    #aboutUs .aboutWrapper .aboutRightDiv p,
+    #winner .winnerWrapper .winnLeftDiv p,
+    #solutions p,
+    #services .serviesWrapper .servrightDiv p,
+    #tech .techWrapper .techContent p,
+    .comman_para {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    .homeCommon_btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* aboutUs ends  */
+
+    #winner .winnerWrapper .winnLeftDiv {
+        padding-right: 0px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv {
+        left: 36px;
+        top: -26px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
+        width: 90%;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg {
+        left: -40px;
+        top: 110px;
+    }
+
+    @keyframes trophyMove {
+        0% {
+            top: 110px
+        }
+
+        50% {
+            top: 106px
+        }
+
+        100% {
+            top: 114px
+        }
+
+    }
+
+    #winner .winnerWrapper #winnText {
+        top: 589px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
+        width: 56%;
+    }
+
+    /* winner ends  */
+
+    #counter {
+        width: 92%;
+    }
+
+    #counter .countWrapper {
+        padding: 44px 20px;
+    }
+
+    #counter .countWrapper .countCard {
+        justify-content: flex-start;
+    }
+
+    /* counter ends  */
+
+    #solutions .productsCardsWrapper {
+        padding: 64px 12px;
+    }
+
+    #solutions .soluHeadlines {
+        padding-top: 18px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .solu_product_img {
+        width: 50vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 50px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        gap: 5px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProText {
+        font: normal normal bold 22px/30px Montserrat;
+    }
+
+    .hoverArrSpan {
+        font-size: 14px;
+    }
+
+    #solutions h3 {
+        width: 87%;
+    }
+
+    #solutions p {
+        width: 95vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 12px;
+    }
+
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 10px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 183px;
+        height: 286px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 100%;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .hoverArrSpan {
+        margin-top: 14px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .servHeadline {
+        margin-top: 30px;
+        font: normal normal bold 18px/26px Montserrat;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .servText {
+        margin-top: 6px;
+        font: normal normal 600 12px/26px Montserrat;
+    }
+
+    #services .serviesWrapper .servleftDiv .servImg {
+        padding: 18px 12px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servImg img {
+        width: 32px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCardDown {
+        margin-top: 0px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        color: black !important;
+    }
+
+    #services .servCard:hover span,
+    #services .servCard:hover h4 {
+        color: #212121 !important;
+    }
+
+    #services .servCard:hover .servText {
+        color: #545A68 !important;
+    }
+
+    /* services ends  */
+
+    #tech .techWrapper .techContent .techHeadlines {
+        width: 100%;
+    }
+
+    #tech .techWrapper {
+        padding: 40px 12px;
+    }
+
+    /* tech ends  */
+
+    #workChain .workUpperDiv .workHeadlines,
+    #whyHireUs .hireHeadlines,
+    #hireUs .hireHeadlines,
+    .commonHeadlines {
+        font: normal normal 800 26px/42px Montserrat;
+    }
+
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 0px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper {
+        background: transparent !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse {
+        flex-direction: column;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard:hover img {
+        filter: brightness(36%) invert(8%) saturate() contrast(96%) sepia(8%) grayscale(3%) !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workTitle {
+        margin-top: 0;
+    }
+
+    #workChain .workBottDiv {
+        margin-top: -105px;
+    }
+
+    /* workChain ends  */
+
+    .getInTouch {
+        width: 95% !important;
+    }
+
+    .getInTouch .getTouchText {
+        padding: 30px 0px;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc {
+        width: 100%;
+    }
+
+    .getInTouch .getTouchBtn {
+        text-align: center;
+        padding-bottom: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc .webDevContact .getInTouch .getTouchDesc {
+        font: normal normal 600 24px/30px Montserrat;
+        width: 100%;
+    }
+
+    .getInTouch .getTouchText .getTouchTitle {
+        font: normal normal bold 36px/29px Montserrat;
+    }
+
+    #testimonials .testSlider .testiSwiper {
+        margin-top: -90px;
+    }
+
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 238px;
+    }
+
+    /* Home Page ends  */
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 89%;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 182px;
+    }
+
+    #mission .missionLeftDiv {
+        margin-top: -82px;
+        padding-bottom: 60px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+    }
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 90px 0;
+    }
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionRightDiv #values .valuesRightDiv {
+        padding-left: 0;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 54px;
+        width: 120px;
+        bottom: -40px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 0px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 56px;
+        right: 6px;
+        width: 24px;
+    }
+
+    #knowMore .knowMoreLeftDiv .business {
+        display: none;
+    }
+
+
+    /* knowMore ends  */
+
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 38px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 4px;
+        top: 66px;
+        width: 24px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 126px;
+        width: 120px;
+        bottom: -34px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -50px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 100%;
+    }
+
+    .valuesList span {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    #values {
+        padding: 50px 0;
+    }
+
+    .swiper-slide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #team .card {
+        width: 350px;
+        margin: auto;
+    }
+
+    #team .teamDeatails {
+        margin-top: 260px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 240px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 100%;
+    }
+
+    .breadcrum {
+        height: 286px;
+        margin-top: -188px;
+    }
+
+    .breadcrum .pageName {
+        font: normal normal 200 15px/64px Montserrat;
+        color: #2D3745;
+    }
+
+    /* team ends  */
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 100%;
+    }
+
+    #category {
+        margin-top: 50px;
+    }
+
+    #category .cateBadge {
+        padding: 6px;
+    }
+
+    #category .card-title {
+        font: normal normal 700 16px/26px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 40px;
+        display: block;
+    }
+
+    #category .cateBox,
+    #category .recentBlogs,
+    #category .tags {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 12px/26px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent {
+        justify-content: space-around;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        width: 70%;
+    }
+
+    #category .card-text {
+        font-size: 15px;
+    }
+
+    /* category ends  */
+
+    #blogDetails .upperDiv .blogDate {
+        margin-top: 0px;
+    }
+
+    #blogDetails .middleDiv .row {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 14px/26px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .tagDiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
+
+    #blogDetails .bottomDiv .common_span {
+        padding: 4px;
+        font: normal normal 600 12px/19px Montserrat;
+    }
+
+    #blogDetails .boxWrapper {
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .prevNextHeadDiv span:last-child {
+        position: absolute;
+        margin-top: 422px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput .homeCommon_btn {
+        padding: 12px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard img:first-child {
+        width: 70px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard .blogDate img {
+        width: auto;
+    }
+
+    #blogDetails .bottomDiv .commentBox .boxHeadline,
+    #blogDetails .bottomDiv .leaveReplyBox .boxHeadline {
+        font: normal normal bold 24px/37px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .commentBox .subCommentCard {
+        margin-left: 30px;
+    }
+
+    #blogDetails .blogImg .cateBadge {
+        margin-top: 28px;
+        padding: 4px;
+    }
+
+    /* blogDetails ends  */
+
+    #contactUs,
+    #map {
+        margin-top: 50px;
+    }
+
+    #contactForm .formDiv {
+        padding: 26px 20px;
+    }
+
+    #contactUs .contactCards {
+        gap: 30px;
+    }
+
+    #contactForm .blueBg,
+    #contactForm .socialDiv {
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    #contactForm .blueBg {
+        height: 400px;
+    }
+
+    #contactForm .formDiv .formHeading {
+        font: normal normal bold 26px/38px Montserrat;
+    }
+
+    #contactForm .row {
+        margin: 0;
+    }
+
+    #map {
+        width: 94%;
+    }
+
+    /* contactForm ends  */
+
+    #whyHireUs,
+    #hireUs,
+    #success {
+        overflow: hidden;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 30px 0px;
+    }
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines,
+    #hireUs .hireHeadlines {
+        margin-top: 12px;
+        padding: 0px 3px;
+        font: normal normal 800 20px/42px Montserrat;
+    }
+
+    #success .lowerDiv::before,
+    #success .cardsdot,
+    #success .cardsdot2 {
+        display: none;
+    }
+
+    #success .successCards {
+        margin-top: 20px;
+        gap: 20px 0px;
+    }
+
+    #success .successCards .card img {
+        width: 110px;
+    }
+
+    #whyHireUs .whyHireCards .card {
+        padding: 12px 30px;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Title {
+        font: normal normal bold 20px/29px Montserrat;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 12px;
+        padding: 20px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard {
+        width: 100%;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard img {
+        width: 46px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: start;
+    }
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 50px 0px;
+    }
+
+    #success {
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+
+    /* HireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+        font-size: 26px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px;
+        font-size: 30px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 0px;
+        font-size: 14px;
+    }
+
+    #applyNow {
+        margin-bottom: 50px;
+    }
+
+    #wrTeamWork {
+        padding: 30px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv {
+        margin-top: 40px;
+        width: 100%;
+        left: 30px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv .dotsPattern {
+        width: 20px;
+        left: -40px;
+    }
+
+    #wrTeamWork .trianglePattern2 {
+        left: 50px;
+        width: 130px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: max-content;
+    }
+
+    #jobOpening .jobCards .card-title {
+        font: normal normal bold 20px/34px Montserrat;
+    }
+
+    #applyNow .wrapper {
+        padding: 0 16px;
+    }
+
+    #applyNow .commonPara {
+        margin-top: 0px;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        margin-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    .webPro .webProHeadingDiv {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .webPro .sortBy {
+        margin-top: 12px;
+    }
+
+    .webPro .sortBy span {
+        left: 2px;
+    }
+
+    .webPro .sortBy select {
+        margin-left: 66px;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage .col-lg-6 {
+        width: 100%;
+    }
+
+    .development,
+    .process,
+    .benefits {
+        margin-top: 40px;
+    }
+
+    .development {
+        margin-top: 16px;
+    }
+
+    .development .deveRightDiv img,
+    .process .upperDivLeftContent img {
+        width: 65%;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 0px !important;
+    }
+
+    .commonBorderDiv {
+        position: relative;
+        left: 68px !important;
+        top: 36px;
+    }
+
+    .commonBorderDiv::before {
+        width: 66.5%;
+        top: 4px;
+    }
+
+    .development .comman_para {
+        margin-top: 12px;
+        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 32px 0px;
+        padding-bottom: 20px;
+    }
+
+    .backend .rightDivContent {
+        padding: 14px;
+    }
+
+    .backend .wrapper {
+        padding: 0px 10px;
+    }
+
+    .backend .sliderContainer .leftDivshapes img,
+    .backend .sliderContainer .rightDivshapes img {
+        display: none;
+    }
+
+    .backend .sliderContainer {
+        margin-top: -26px;
+    }
+
+    .devSlider .sliderWrapper {
+        height: 500px;
+    }
+
+    .devSlider .sidebar {
+        height: 100%;
+        width: 100%;
+    }
+
+    .devSlider .sidebar h1 {
+        font-size: 28px;
+        margin-top: -80px;
+    }
+
+    .devSlider .sidebar p {
+        font: 16px/28px Montserrat;
+        ;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn {
+        top: 82%;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn svg {
+        width: 20px;
+        height: 22px;
+    }
+
+    .devSlider .sliderWrapper .controls .up-button {
+        transform: translateY(0%);
+    }
+
+    .devSlider .main-slide {
+        display: none;
+    }
+
+    .devSlider .sidebar>div {
+        padding: 0px 10px;
+    }
+
+    .process .upperDivWrapper {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        gap: 28px 0px;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        top: -124px;
+        left: 48px;
+    }
+
+    .build .buildWrapper {
+        padding: 20px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -334px;
+    }
+
+    .build .buildWrapper .rightDiv .buildCardsWrapper {
+        margin-left: 0px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 26px;
+    }
+
+    .recentBlogs {
+        margin-top: -54px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 100%;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 100%;
+    }
+
+    .benefits .benefitsCards .card {
+        align-items: center;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 19px/34px Montserrat;
+        height: 20px;
+    }
+
+    .benefits .benefitsPara {
+        margin-top: 10px;
+    }
+
+    .benefits .benefitsCards {
+        margin-top: 10px;
+        gap: 20px 0px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 130px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        display: none;
+    }
+
+    .process .upperDivWrapper .upperDivRightContent {
+        padding: 0;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding: 0;
+        margin-top: -26%;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-bottom: 50px;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 12px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 18px/29px Montserrat;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 16px/22px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 12px;
+        width: 100%;
+        border: none;
+    }
+
+    .build .buildWrapper .leftDiv .firstP {
+        margin-top: 10px;
+    }
+
+    .build .buildWrapper .rightDiv {
+        padding: 20px 40px;
+        padding-right: 0;
+        margin-left: -16px;
+    }
+
+    .recentBlogs .col-lg-12 .row {
+        padding-bottom: 50px;
+    }
+
+    .recentBlogs .recentBlogsCards {
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 399px) {
+
+    .navLogo img {
+        width: 170px;
+        height: 50px;
+    }
+
+    #homeHeroSect,
+    #aboutUs,
+    #winner,
+    #counter,
+    #solution,
+    #services,
+    #tech,
+    #workChain,
+    #testimonials,
+    .getInTouch,
+    #knowMore,
+    #mission,
+    #vision,
+    #values,
+    #team,
+    #blogs,
+    #blogDetails,
+    #contactUs,
+    #contactForm,
+    #map,
+    #empire,
+    #wrTeamWork,
+    #jobOpening,
+    #applyNow {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .webDevelopmentPage,
+    .careerPage {
+        overflow: hidden;
+    }
+
+
+    #homeHeroSect .heroContainer .heroContContent {
+        padding: 0px;
+        padding-left: 14px;
+    }
+
+    #homeHeroSect .heroContainer {
+        border-radius: 20px 20px 17% 20px;
+    }
+
+    #homeHeroSect .heroContainer .heroContContent .row {
+        gap: 55px;
+    }
+
+    #homeHeroSect .heroContainer {
+        margin-top: 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv,
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        padding: 30px 0 0 0;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard1,
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2,
+    #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard3 {
+        display: none;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv {
+        width: 100%;
+        right: unset;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-rightDiv img {
+        width: 100%;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv .followDiv {
+        margin-top: 30px;
+    }
+
+    /* homeHeroSect ends  */
+
+    #aboutUs .aboutWrapper #wrTeam {
+        font: normal normal 800 50px/117px Poppins;
+        transform: rotate(0);
+        left: 0px;
+        top: -23px;
+    }
+
+    #aboutUs .aboutWrapper .row {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    #winner .winnerWrapper {
+        top: 8px;
+    }
+
+    #winner .winnerWrapper .row {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        /* left: -150px; */
+        top: 62%;
+    }
+
+    #aboutUs .aboutWrapper .row {
+        gap: 124px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv {
+        position: relative;
+        left: 0px;
+        /* top: 70px; */
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv {
+        padding-right: 0px;
+        left: 0;
+        padding-left: 0px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg img {
+        width: 92%;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg {
+        width: 142px;
+        height: 160px;
+        left: 0px;
+        top: 60px;
+        margin-left: 54%;
+    }
+
+    @keyframes experience {
+        0% {
+            top: 60px;
+        }
+
+        50% {
+            top: 56px;
+        }
+
+        100% {
+            top: 64px;
+        }
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
+        align-items: center;
+        justify-content: center;
+        padding: 8px 2px;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience .experNum {
+        font-size: 30px;
+        margin: 12px 0;
+    }
+
+    #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience span:nth-child(3) {
+        font: normal normal 600 4px/29px Montserrat;
+    }
+
+    #aboutUs .aboutWrapper .aboutRightDiv .discover {
+        margin-top: 30px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv .mcWinner,
+    .common_span {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv #herocont_headline,
+    #aboutUs .aboutWrapper .aboutRightDiv h2,
+    #winner .winnerWrapper .winnLeftDiv h2,
+    #solutions h3,
+    #services .serviesWrapper .servrightDiv h3,
+    #workChain .workUpperDiv .workHealines,
+    #tech .techWrapper .techContent h4,
+    #testimonials .testiUpperDiv .testiHeadline,
+    .comman_Headlines,
+    .envantoSect .comman_Headlines {
+        font: normal normal 800 26px/40px Montserrat;
+    }
+
+    #homeHeroSect .heroContainer .heroCont-leftDiv p,
+    #aboutUs .aboutWrapper .aboutRightDiv p,
+    #winner .winnerWrapper .winnLeftDiv p,
+    #solutions p,
+    #services .serviesWrapper .servrightDiv p,
+    #tech .techWrapper .techContent p,
+    .comman_para {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    .homeCommon_btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #team .teamWrapper {
+        padding: 30px 0;
+    }
+
+    /* aboutUs ends  */
+
+    #winner .winnerWrapper .winnLeftDiv {
+        padding-right: 0px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv {
+        left: 26px;
+        top: 64px;
+        padding-bottom: 110px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
+        width: 90%;
+    }
+
+    #winner .winnerWrapper #winnText {
+        top: 65%;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg {
+        left: -40px;
+        top: 80px;
+    }
+
+    @keyframes trophyMove {
+        0% {
+            top: 80px
+        }
+
+        50% {
+            top: 76px
+        }
+
+        100% {
+            top: 84px
+        }
+
+    }
+
+    #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
+        width: 50%;
+    }
+
+    #winner .winnerWrapper .winnLeftDiv .homeCommon_btn {
+        margin-top: 20px;
+    }
+
+    /* winner ends  */
+
+    #counter {
+        width: 92%;
+    }
+
+    #counter .countWrapper {
+        padding: 44px 20px;
+    }
+
+    #counter .countWrapper .countCard {
+        justify-content: flex-start;
+    }
+
+    #counter .countWrapper .countCard .fcardImg img {
+        width: 100%;
+    }
+
+    #counter .countWrapper .countCard .fcardImg {
+        width: 26%;
+    }
+
+    #counter .countWrapper .countCard .countContent {
+        gap: 0px;
+    }
+
+    #counter .countWrapper .countCard .countContent .countNum {
+        font: normal normal 600 24px/44px Montserrat;
+    }
+
+    #counter .countWrapper .countCard .countContent .countText {
+        font: normal normal 600 14px/22px Montserrat;
+    }
+
+    /* counter ends  */
+
+    #solutions .soluHeadlines {
+        padding-top: 140px;
+    }
+
+    #solutions .productsCardsWrapper {
+        padding: 64px 12px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .solu_product_img {
+        width: 50vw;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 50px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent {
+        gap: 5px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProText {
+        font: normal normal bold 15px/22px Montserrat;
+    }
+
+    .hoverArrSpan {
+        font-size: 11px;
+        margin-left: -4px;
+    }
+
+    #solutions h3 {
+        width: 100%;
+        padding-left: 12px;
+        text-align: start;
+    }
+
+    #solutions p {
+        width: 98%;
+        text-align: start;
+        padding-left: 12px;
+    }
+
+    #solutions .productsCardsWrapper .mobCards2 {
+        padding-left: 12px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProIcon {
+        padding: 10px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro .mobProContent .mobProIcon img {
+        width: 30px;
+    }
+
+    #solutions .productsCardsWrapper .mobilePro {
+        gap: 18px;
+    }
+
+    /* solutions ends  */
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 5px 2px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard {
+        width: 147px;
+        height: 262px;
+    }
+
+    #services .serviesWrapper .servrightDiv h3 {
+        width: 100%;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .hoverArrSpan {
+        margin-top: 12px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .servHeadline {
+        margin-top: 30px;
+        font: normal normal bold 15px/20px Montserrat;
+    }
+
+    #services .serviesWrapper .servleftDiv .servContent .servText {
+        margin-top: 6px;
+        font: normal normal 600 10px/18px Montserrat;
+    }
+
+    #services .serviesWrapper .servleftDiv .servImg {
+        padding: 18px 12px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servImg img {
+        width: 32px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCardDown {
+        margin-top: 0px;
+    }
+
+    #services .serviesWrapper .servleftDiv .servCard:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        color: black !important;
+    }
+
+    #services .servCard:hover span,
+    #services .servCard:hover h4 {
+        color: #212121 !important;
+    }
+
+    #services .servCard:hover .servText {
+        color: #545A68 !important;
+    }
+
+    #services .serviesWrapper .servrightDiv {
+        margin-left: 0px;
+    }
+
+    /* services ends  */
+
+    #tech .techWrapper .techContent .techHeadlines {
+        width: 100%;
+    }
+
+    /* tech ends  */
+
+    #workChain .workUpperDiv .workHeadlines {
+        padding: 0px 0px;
+    }
+
+    #tech .techWrapper {
+        padding: 40px 12px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper {
+        background: transparent !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse {
+        flex-direction: column;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard .workNumb {
+        top: 26px !important;
+    }
+
+    #workChain .workBottDiv .workCard:hover img {
+        filter: brightness(36%) invert(8%) saturate() contrast(96%) sepia(8%) grayscale(3%) !important;
+    }
+
+    #workChain .workBottDiv .workCardReverse .workTitle {
+        margin-top: 0;
+    }
+
+    #workChain .workBottDiv {
+        margin-top: -105px;
+    }
+
+    /* workChain ends  */
+
+    .getInTouch {
+        width: 95% !important;
+    }
+
+    .getInTouch .getTouchText {
+        padding: 30px 0px;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc {
+        width: 100%;
+    }
+
+    .getInTouch .getTouchBtn {
+        text-align: center;
+        padding-bottom: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .getInTouch .getTouchText .getTouchDesc,
+    .webDevContact .getInTouch .getTouchDesc {
+        font: normal normal 600 20px/30px Montserrat;
+        width: 100%;
+    }
+
+    .getInTouch .getTouchText .getTouchTitle {
+        font: normal normal bold 32px/18px Montserrat;
+    }
+
+    .getInTouch .homeCommon_btn {
+        font: normal normal 600 14px/19px Montserrat;
+        padding: 10px;
+    }
+
+    #testimonials .testSlider .testiSwiper {
+        margin-top: -90px;
+    }
+
+    #tech .techBottDiv .row .col-sm-6 {
+        width: 50%;
+    }
+
+    /* #tech .techBottDiv .techMainCard {
+        width: 12px;
+    } */
+    #tech .techBottDiv .techMainCard .techCard {
+        width: 90px;
+    }
+
+    #tech .techBottDiv .techMainCard .techCard img {
+        width: 50px;
+    }
+
+    #tech .techBottDiv .techMainCard .techCard::after {
+        top: 107px;
+    }
+
+    /* Home Page ends  */
+
+    #knowMore .knowMoreLeftDiv .knowMoreImg img,
+    #mission .missionLeftDiv .missionImg img,
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        width: 89%;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 182px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 52px;
+    }
+
+    #knowMore .row,
+    #mission .row,
+    #vision .row,
+    #values .row {
+        gap: 70px 0;
+    }
+
+    #knowMore .knowMoreRightDiv,
+    #mission .missionRightDiv,
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        padding-left: 0;
+    }
+
+    #mission .missionLeftDiv {
+        margin-top: -50px;
+        padding-bottom: 50px;
+    }
+
+
+    #workChain .workUpperDiv .workHeadlines,
+    #whyHireUs .hireHeadlines,
+    #hireUs .hireHeadlines,
+    .commonHeadlines {
+        font: normal normal 800 26px/42px Montserrat;
+    }
+
+    #knowMore .knowMoreLeftDiv .trianglePattern,
+    #mission .missionLeftDiv .trianglePattern {
+        left: 60px;
+        width: 100px;
+        bottom: -28px;
+    }
+
+    #mission .missionLeftDiv .trianglePattern {
+        bottom: 0px;
+    }
+
+    #knowMore .knowMoreLeftDiv .dotsPattern,
+    #mission .missionLeftDiv .dotsPattern {
+        top: 42px;
+        right: 6px;
+        width: 20px;
+    }
+
+    #knowMore .knowMoreLeftDiv .business {
+        display: none;
+    }
+
+    /* knowMore ends  */
+
+
+    #vision .visionRightDiv .visionLeftImg img,
+    #values .valuesRightDiv .valuesLeftImg img {
+        margin-left: 32px;
+    }
+
+    #vision .visionRightDiv .dotsPattern2,
+    #values .valuesRightDiv .dotsPattern2 {
+        left: 4px;
+        top: 50px;
+        width: 20px;
+    }
+
+    #vision .visionRightDiv .trianglePattern2,
+    #values .valuesRightDiv .trianglePattern2 {
+        left: 126px;
+        width: 100px;
+        bottom: -26px;
+    }
+
+    #vision .row,
+    #values .row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #vision .visionRightDiv,
+    #values .valuesRightDiv {
+        top: -45px;
+    }
+
+    #mission .row {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #vision .visionLeftDiv,
+    #values .valuesLeftDiv {
+        width: 100%;
+    }
+
+    .valuesList span {
+        font: normal normal 600 13px/26px Montserrat;
+    }
+
+    #values {
+        padding: 30px 0;
+    }
+
+    .swiper-slide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #team .card {
+        width: 92%;
+        margin: auto;
+    }
+
+    #team .teamDeatails {
+        margin-top: 266px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 236px !important;
+    }
+
+    #team .comman_Headlines {
+        width: 100%;
+    }
+
+    #team .card .card-img-overlay {
+        padding: 0px 18px;
+    }
+
+    #team .card-title {
+        font: normal normal 800 22px/52px Montserrat;
+    }
+
+    .breadcrum {
+        height: 300px;
+        margin-top: -188px;
+    }
+
+    .breadcrum .pageName span {
+        font-size: 14px;
+    }
+
+    .breadcrum .pageName span svg {
+        width: 14px;
+    }
+
+    .breadcrum .pageName {
+        font: normal normal 200 15px/64px Montserrat;
+        color: #2D3745;
+    }
+
+    /* team ends  */
+
+    #category .card-text,
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 100%;
+    }
+
+    #category {
+        margin-top: 30px;
+    }
+
+    #category .cateBadge {
+        padding: 6px;
+    }
+
+    #category .card-title {
+        font: normal normal 700 14px/26px Montserrat;
+    }
+
+    #category .blogComman_btn {
+        margin-top: 30px;
+        display: block;
+    }
+
+    #category .cateBox,
+    #category .recentBlogs,
+    #category .tags {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 12px/16px Montserrat;
+    }
+
+    #category .recentBlogs .boxDetails .recentBoxContent {
+        justify-content: space-around;
+    }
+
+    #category .recentBlogs .boxDetails :first-child::before {
+        width: 64%;
+    }
+
+    #category .card-text {
+        font-size: 15px;
+        height: 100%;
+    }
+
+    #category .boxHeadline {
+        font: normal normal 600 26px/37px Montserrat;
+    }
+
+    /* category ends  */
+
+    #blogDetails .upperDiv .blogDate {
+        margin-top: 0px;
+    }
+
+    #blogDetails .middleDiv .row {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 12px/26px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .recentBoxContent span:first-child {
+        font: 12px/24px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails .rbImg {
+        height: 80px;
+    }
+
+    #blogDetails .bottomDiv .tagDiv {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 22px;
+    }
+
+    #blogDetails .bottomDiv .tagDiv .common_span {
+        margin: 12px;
+    }
+
+    #blogDetails .bottomDiv .common_span {
+        padding: 8px;
+        font: normal normal 600 12px/19px Montserrat;
+        display: block;
+    }
+
+    #blogDetails .boxWrapper {
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .prevNextHeadDiv span:last-child {
+        position: absolute;
+        margin-top: 390px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput {
+        gap: 20px;
+    }
+
+    #blogDetails .bottomDiv .leaveReplyBox .leaveInput .homeCommon_btn {
+        padding: 12px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentWrapper {
+        padding-bottom: 20px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard {
+        gap: 12px;
+        align-items: baseline;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard img:first-child {
+        width: 50px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard .userContent {
+        gap: 5px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard .blogDate img {
+        width: auto;
+    }
+
+    #blogDetails .bottomDiv .commentBox .boxHeadline,
+    #blogDetails .bottomDiv .leaveReplyBox .boxHeadline {
+        font: normal normal bold 22px/37px Montserrat;
+    }
+
+    #blogDetails .bottomDiv .commentBox .subCommentCard {
+        margin-left: 6px;
+    }
+
+    #blogDetails .blogImg .cateBadge {
+        margin-top: 28px;
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+
+    #blogDetails .bottomDiv .previousBlogs .boxDetails {
+        padding: 4px;
+    }
+
+    #blogDetails .bottomDiv .commentBox .commentCard .userContent .userComment {
+        font: 14px/24px Montserrat;
+    }
+
+    /* blogDetails ends  */
+
+    #contactUs,
+    #map {
+        margin-top: 50px;
+    }
+
+    #contactForm .formDiv {
+        padding: 26px 20px;
+    }
+
+    #contactUs .contactCards {
+        gap: 30px;
+    }
+
+    #contactForm .blueBg,
+    #contactForm .socialDiv {
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    #contactForm .blueBg {
+        height: 400px;
+    }
+
+    #contactForm .formDiv .formHeading {
+        font: normal normal bold 26px/38px Montserrat;
+    }
+
+    #contactForm .row {
+        margin: 0px -2px;
+    }
+
+    #map {
+        width: 94%;
+    }
+
+    /* contactForm ends  */
+
+    #whyHireUs,
+    #hireUs,
+    #success {
+        overflow: hidden;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 30px 0px;
+    }
+
+    #success .commonHeadlines,
+    #whyHireUs .hireHeadlines,
+    #hireUs .hireHeadlines {
+        margin-top: 12px;
+        padding: 0px 3px;
+        font: normal normal 800 18px/32px Montserrat;
+    }
+
+    #success .lowerDiv::before,
+    #success .cardsdot,
+    #success .cardsdot2 {
+        display: none;
+    }
+
+    #success .successCards {
+        margin-top: 20px;
+        gap: 20px 0px;
+    }
+
+    #success .successCards .card img {
+        width: 110px;
+    }
+
+    #whyHireUs .whyHireCards {
+        margin-top: 12px;
+    }
+
+    #whyHireUs .whyHireCards .card {
+        padding: 12px 30px;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Title {
+        font: normal normal bold 20px/29px Montserrat;
+    }
+
+    #whyHireUs .whyHireCards .card .card1Img {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+
+    #hireUs .hireLowerDiv {
+        margin: 12px;
+        padding: 20px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard {
+        width: 100%;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCard img {
+        width: 46px;
+    }
+
+    #hireUs .hireLowerDiv .hireUsCardWrapper {
+        align-items: center;
+        justify-content: start;
+    }
+
+    #hireUs .hireLowerDiv .hireLowerDivHeadline span {
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    #whyHireUs .container,
+    #hireUs .container {
+        padding: 30px 0px;
+    }
+
+    #success {
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+
+    /* HireUs ends  */
+
+    #empire .commonHeadlines {
+        padding: 0px;
+        font-size: 26px;
+        margin-top: 6px;
+    }
+
+    #jobOpening .jobCards .card {
+        padding: 16px 50px;
+        margin-top: -18px;
+    }
+
+    #jobOpening .jobHeadlines .commonHeadlines {
+        padding: 0px;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    #empire .commonPara,
+    #jobOpening .commonPara,
+    #applyNow .commonPara {
+        padding: 24px 0px;
+        font-size: 14px;
+    }
+
+    #applyNow {
+        margin-bottom: 50px;
+    }
+
+    #wrTeamWork {
+        padding: 20px 0px;
+        padding-bottom: 80px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv {
+        margin-top: 40px;
+        width: 90%;
+        left: 34px;
+    }
+
+    #wrTeamWork .wrTeamRightDiv .dotsPattern {
+        width: 20px;
+        left: -30px;
+    }
+
+    #wrTeamWork .trianglePattern2 {
+        left: 50px;
+        width: 130px;
+    }
+
+    #jobOpening .jobCards .card .cardBody {
+        height: max-content;
+    }
+
+    #jobOpening .jobCards .card-title {
+        font: normal normal bold 20px/34px Montserrat;
+    }
+
+    #applyNow .wrapper {
+        padding: 0 10px;
+    }
+
+    #applyNow .commonPara {
+        margin-top: 0px;
+    }
+
+    #applyNow .applyHeadlines {
+        margin-top: -18px;
+    }
+
+    /* career ends  */
+
+    .webPro {
+        margin-top: 30px;
+        padding-bottom: 56px;
+    }
+
+    .webPro .webProHeadingDiv {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .webPro .sortBy {
+        margin-top: 12px;
+    }
+
+    .webPro .sortBy span {
+        left: 2px;
+    }
+
+    .webPro .sortBy select {
+        margin-left: 66px;
+    }
+
+    .webPro .cardsWrapper .card .cardFooter .priceDiv span:last-child {
+        font: normal normal bold 24px/29px Montserrat;
+    }
+
+    /* webPro ends  */
+
+    .webDevelopmentPage {
+        overflow: hidden;
+    }
+
+    .webDevelopmentPage .col-lg-6 {
+        width: 100%;
+    }
+
+    .development,
+    .process,
+    .benefits {
+        margin-top: 20px;
+    }
+
+    .development {
+        margin-top: 16px;
+    }
+
+    .benefits {
+        margin-top: 50px;
+    }
+
+    .development .deveRightDiv img,
+    .process .upperDivLeftContent img {
+        width: 94%;
+    }
+
+    .process .lowerDivWrapper .upperDivLeftContent {
+        left: 0px !important;
+    }
+
+    .commonBorderDiv {
+        position: relative;
+        left: 10px !important;
+        top: 36px;
+    }
+
+    .commonBorderDiv::before {
+        width: 94.5%;
+        top: 4px;
+        height: 96%;
+        left: 0px;
+    }
+
+    .development .comman_para {
+        margin-top: 12px;
+        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .development .deveLeftDiv {
+        padding-top: 20px;
+    }
+
+    .backend {
+        padding: 32px 0px;
+        padding-bottom: 20px;
+    }
+
+    .backend .backendHeadings {
+        align-items: self-start;
+    }
+
+    .backend .rightDivContent {
+        padding: 14px;
+    }
+
+    .backend .wrapper {
+        padding: 0px 10px;
+    }
+
+    .backend .sliderContainer .leftDivshapes img,
+    .backend .sliderContainer .rightDivshapes img {
+        display: none;
+    }
+
+    .backend .sliderContainer {
+        margin-top: -24px;
+    }
+
+    .devSlider .sliderWrapper {
+        height: 500px;
+    }
+
+    .devSlider .sidebar {
+        height: 100%;
+        width: 100%;
+    }
+
+    .devSlider .sidebar h1 {
+        font-size: 18px;
+        margin-top: -42px;
+    }
+
+    .devSlider .sidebar p {
+        font: 16px/28px Montserrat;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn {
+        top: 90%;
+    }
+
+    .devSlider .sliderWrapper .controls .buttn svg {
+        width: 20px;
+        height: 22px;
+    }
+
+    .devSlider .sliderWrapper .controls .up-button {
+        transform: translateY(0%);
+    }
+
+    .devSlider .main-slide {
+        display: none;
+    }
+
+    .devSlider .sidebar>div {
+        padding: 0px 10px;
+    }
+
+    .process .upperDivWrapper {
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        gap: 28px 0px;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding-top: 24px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        top: -124px;
+        left: 48px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -365px;
+        padding: 4px;
+        margin: 0;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 136px;
+    }
+
+    .build .buildWrapper {
+        margin-top: -334px;
+    }
+
+    .build .buildWrapper .rightDiv .buildCardsWrapper {
+        margin-left: 0px;
+    }
+
+    .development .comman_Headlines,
+    .benefits .comman_Headlines,
+    .process .comman_Headlines,
+    .build .comman_Headlines {
+        padding-right: 0px;
+        font-size: 26px;
+    }
+
+    .recentBlogs {
+        margin-top: -54px;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-title {
+        font: normal normal 700 20px/28px Montserrat;
+        height: 100%;
+    }
+
+    .recentBlogs .recentBlogsCards .card .card-text {
+        height: 100%;
+    }
+
+    .benefits .benefitsCards .card {
+        align-items: center;
+    }
+
+    .benefits .benefitsCards .card .card-title {
+        font: normal normal bold 19px/34px Montserrat;
+        height: 100%;
+        text-align: center;
+        margin-bottom: -6px;
+    }
+
+    .benefits .benefitsPara {
+        margin-top: 10px;
+    }
+
+    .benefits .benefitsCards {
+        margin-top: 10px;
+        gap: 20px 0px;
+    }
+
+    .process .lowerDivWrapper {
+        margin-top: 130px;
+    }
+
+    .process .lowerDivWrapper .arrowImg img {
+        display: none;
+    }
+
+    .process .upperDivWrapper .upperDivRightContent {
+        padding: 0;
+    }
+
+    .process .lowerDivWrapper .upperDivRightContent {
+        padding: 0;
+        margin-top: -36%;
+    }
+
+    .process .upperDivWrapper .upperDivLeftContent {
+        padding-bottom: 60px;
+    }
+
+    .process .upperDivRightContent .processCard .cardContent .title {
+        font: normal normal bold 18px/29px Montserrat;
+    }
+
+    .process .comman_para {
+        font: normal normal 600 14px/20px Montserrat;
+    }
+
+    .process .upperDivRightContent .processCardWrapper {
+        gap: 20px 0px;
+        margin-top: 0;
+    }
+
+    .build .buildWrapper .leftDiv {
+        padding-top: 12px;
+        width: 100%;
+        border: none;
+    }
+
+    .build .buildWrapper .leftDiv .firstP {
+        margin-top: 10px;
+    }
+
+    .build .buildWrapper .rightDiv {
+        padding: 20px 18px;
+        padding-right: 0;
+        margin-left: -16px;
+    }
+
+    .recentBlogs .col-lg-12 .row {
+        padding-bottom: 50px;
+    }
+
+    .recentBlogs .recentBlogsCards {
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+
+}
+
+/* All Mix */
+@media only screen and (min-width: 280px) and (max-width: 330px) {
+
+    .hoverArrSpan {
+        font-size: 10px;
+        margin-left: -4px;
+    }
+
+    .navLogo img {
+        width: 190px;
+        height: 35px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    #homeHeroSect .heroContainer .arrow {
+        display: none;
+    }
+}
+
+/* Winner Text  */
+@media only screen and (min-width: 400px) and (max-width: 444px) {
+    #winner .winnerWrapper #winnText {
+        top: 589px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+}
+
+@media only screen and (min-width: 448px) and (max-width: 532px) {
+    #winner .winnerWrapper #winnText {
+        top: 550px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+}
+
+@media only screen and (min-width: 533px) and (max-width: 560px) {
+    #winner .winnerWrapper #winnText {
+        top: 526px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 575px) {
+    #winner .winnerWrapper #winnText {
+        top: 498px;
+        right: 30px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 343px) {
+    #winner .winnerWrapper #winnText {
+        top: 728px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 62%;
+    }
+
+    #team .teamDeatails {
+        margin-top: 265px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 236px !important;
+    }
+}
+
+@media only screen and (min-width: 344px) and (max-width: 374px) {
+    #winner .winnerWrapper #winnText {
+        top: 672px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 59%;
+    }
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 5px 40px;
+    }
+
+    #team .teamDeatails {
+        margin-top: 265px;
+    }
+
+    #team .card:hover .teamDeatails {
+        margin-top: 236px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 399px) {
+    #winner .winnerWrapper #winnText {
+        top: 640px;
+        right: 15px;
+        transform: rotate(0);
+        font: normal normal 800 60px/117px Poppins;
+    }
+
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 55%;
+    }
+
+    #services .serviesWrapper .servleftDiv {
+        gap: 5px 40px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 438px) {
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 52%;
+    }
+}
+
+@media only screen and (min-width: 439px) and (max-width: 478px) {
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 49%;
+    }
+}
+
+@media only screen and (min-width: 479px) and (max-width: 510px) {
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 46%;
+    }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 550px) {
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 44%;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 574px) {
+    #aboutUs .aboutWrapper #wrTeam {
+        top: 42%;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1650px) {
+    #winner .winnerWrapper .winnLeftDiv {
+        padding-right: 180px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv {
+        left: -14px;
+    }
+
+    #winner .winnerWrapper #winnText {
+        right: -146px;
+    }
+}
+
+/* swiper buttons  */
+@media only screen and (min-width: 1400px) and (max-width: 1850px) {
+    .swiper-button-prev {
+        padding: 0;
+        left: -43px;
+        bottom: 40%;
+    }
+
+    .swiper-button-next {
+        padding: 0;
+        right: -43px;
+        bottom: 40%;
+    }
+
+    .swiper-button-prev svg,
+    .swiper-button-next svg {
+        width: 34px;
+    }
+
+
+}
+
+/* testimonials  */
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 238px;
+    }
+
+    #testimonials .testSlider .swiperCard .testiDesc span,
+    #testimonials .testSlider .swiperCard .testiFoot span:nth-child(2) {
+        font: normal normal 600 13px/28px Montserrat;
+    }
+
+    #testimonials .testSlider .swiperCard .testiFoot span:nth-child(1) {
+        font: normal normal 600 18px/29px Montserrat;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    #testimonials .testSlider .swiperCard .card-body {
+        padding-bottom: 20px;
+        height: 274px;
+    }
+
+    #testimonials .testSlider .swiperCard .testiDesc span,
+    #testimonials .testSlider .swiperCard .testiFoot span:nth-child(2) {
+        font: normal normal 600 13px/28px Montserrat;
+    }
+
+    #testimonials .testSlider .swiperCard .testiFoot span:nth-child(1) {
+        font: normal normal 600 18px/29px Montserrat;
+    }
+}
