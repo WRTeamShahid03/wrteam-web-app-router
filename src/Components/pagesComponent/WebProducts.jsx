@@ -15,7 +15,6 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 
 
-
 const WebProducts = () => {
 
     const [productsData, setProductsData] = useState([]);
@@ -78,6 +77,26 @@ const WebProducts = () => {
         });
     }
 
+    const renderStars = (rating) => {
+        const totalStars = 5;
+        const fullStars = Math.floor(rating);
+        const hasHalfStar = rating % 1 !== 0;
+
+        const stars = [];
+
+        for (let i = 0; i < totalStars; i++) {
+            if (i < fullStars) {
+                stars.push(<LiaStarSolid key={i} size={20} color='#FFA800' />);
+            } else if (hasHalfStar && i === fullStars) {
+                stars.push(<BsStarHalf key='half' size={18} color='#FFA800' />);
+            } else {
+                stars.push(<LiaStarSolid key={i} size={20} color='gray' />);
+            }
+        }
+
+        return stars;
+    };
+
     return (
         <>
 
@@ -126,7 +145,7 @@ const WebProducts = () => {
                                             return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}
                                             // ref={index === productsData.length - 1 ? lastProductRef : null}
                                             >
-                                                <Link href={`/product-details/${e.slug}`}>
+                                                <Link href={`/product-details/[slug]`} as={`/product-details/${e.slug}`}>
                                                     {/* {console.log(e.slug,"slug")} */}
                                                     <Card>
                                                         <Image height={0} width={0} loading="lazy" alt='product_img' className='webProImg card-img-top' src={e.banner_image} />
@@ -134,11 +153,7 @@ const WebProducts = () => {
                                                             <div className="ratingDiv">
                                                                 <span className='sales'>{e.sales} Sales</span>
                                                                 <span className='rating'> <span>
-                                                                    <LiaStarSolid size={20} color='#FFA800' />
-                                                                    <LiaStarSolid size={20} color='#FFA800' />
-                                                                    <LiaStarSolid size={20} color='#FFA800' />
-                                                                    <LiaStarSolid size={20} color='#FFA800' />
-                                                                    <BsStarHalf size={18} color='#FFA800' />
+                                                                    {renderStars(e.rating)}
                                                                 </span>({e.rating})</span>
                                                             </div>
                                                             {

@@ -75,14 +75,29 @@ const AppProducts = () => {
     useEffect(() => {
         loadPageData(currentPage);
     }, [currentPage]);
+
+    const renderStars = (rating) => {
+        const totalStars = 5;
+        const fullStars = Math.floor(rating);
+        const hasHalfStar = rating % 1 !== 0;
+
+        const stars = [];
+
+        for (let i = 0; i < totalStars; i++) {
+            if (i < fullStars) {
+                stars.push(<LiaStarSolid key={i} size={20} color='#FFA800' />);
+            } else if (hasHalfStar && i === fullStars) {
+                stars.push(<BsStarHalf key='half' size={18} color='#FFA800' />);
+            } else {
+                stars.push(<LiaStarSolid key={i} size={20} color='#bfc3c7' />);
+            }
+        }
+
+        return stars;
+    };
+
     return (
         <>
-
-            <Head>
-                <title> Create Websites and mobile App with WRTeam's Digital Products</title>
-                <meta name="description" content="Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps and web." />
-            </Head>
-
             <Breadcrum title='App' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'App Products'} />
             <section className='container webPro'>
 
@@ -133,11 +148,7 @@ const AppProducts = () => {
                                                                 <span className='sales'>{e.sales} Sales</span>
                                                                 {e.rating == '0' ? '' :
                                                                     <span className='rating'> <span>
-                                                                        <LiaStarSolid size={20} color='#FFA800' />
-                                                                        <LiaStarSolid size={20} color='#FFA800' />
-                                                                        <LiaStarSolid size={20} color='#FFA800' />
-                                                                        <LiaStarSolid size={20} color='#FFA800' />
-                                                                        <BsStarHalf size={18} color='#FFA800' />
+                                                                        {renderStars(e.rating)}
                                                                     </span>({e.rating})</span>
                                                                 }
                                                             </div>

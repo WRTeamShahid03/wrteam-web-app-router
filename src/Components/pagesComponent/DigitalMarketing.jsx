@@ -58,23 +58,6 @@ import { GetSettingsApi } from '@/redux/actions/campaign'
 
 const DigitalMarketing = () => {
 
-    const [loading, setLoading] = useState(true)
-    const [seoData, setSeoData] = useState([])
-
-    // useEffect(() => {
-    //     setLoading(true)
-    //     GetSettingsApi({
-    //         onSuccess: (response) => {
-    //             // console.log(response.data, "settingsResabout")
-    //             setSeoData(response.data)
-    //             setLoading(false)
-    //         },
-    //         onError: (error) => {
-    //             console.log(error)
-    //         }
-    //     })
-    // }, [])
-
     const benefitsCardData = [
         {
             id: 0,
@@ -251,10 +234,7 @@ const DigitalMarketing = () => {
 
     return (
         <div className='webDevelopmentPage digitalMarketingPage'>
-            <Head>
-                <title>WRTeam - Digital Marketing Service Provider Agency | IT Company</title>
-                <meta name="description" content="Wrteam internet marketing service provider across global. We help to grow your business to the next level. Learn more about us." />
-            </Head>
+            
             <Breadcrum title='Digital Marketing' blueText={'Services'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Digital Marketing Services'} />
 
             <section className='development container'>

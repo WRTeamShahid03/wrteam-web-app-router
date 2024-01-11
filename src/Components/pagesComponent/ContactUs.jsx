@@ -140,10 +140,7 @@ const ContactUs = () => {
 
     return (
         <>
-            <Head>
-                <title>Contact Us - WRTeam | IT Company In Bhuj</title>
-                <meta name="description" content="How to make websites and apps? without knowledge of coding and create web & app for your business and. Contact Us for any type of IT solutions." />
-            </Head>
+            
             <Breadcrum title="Contact" blueText="Us" contentOne="Home" contentTwo="Contact Us" />
 
             <section id='contactUs' className='container'>

@@ -29,23 +29,6 @@ import { GetSettingsApi, hireUsApi } from '@/redux/actions/campaign';
 
 const HireUs = () => {
 
-    const [loading, setLoading] = useState(true)
-    const [seoData, setSeoData] = useState([])
-
-    // useEffect(() => {
-    //     setLoading(true)
-    //     GetSettingsApi({
-    //         onSuccess: (response) => {
-    //             // console.log(response.data, "settingsResabout")
-    //             setSeoData(response.data)
-    //             setLoading(false)
-    //         },
-    //         onError: (error) => {
-    //             console.log(error)
-    //         }
-    //     })
-    // }, [])
-
     const CardData = [
         {
             id: 0,
@@ -170,10 +153,7 @@ const HireUs = () => {
 
     return (
         <>
-            <Head>
-                <title>Hire Us Today - Web & Apps Development & IT Services Company</title>
-                <meta name="description" content="Experience the smart IT solutions for your company. Hire wrteam for specialised services, such as web & app development, IT consulting & graphic design." />
-            </Head>
+           
             <Breadcrum title="Hire" blueText="Us" contentOne="Home" contentTwo="Hire Us" />
 
             <section id='whyHireUs'>

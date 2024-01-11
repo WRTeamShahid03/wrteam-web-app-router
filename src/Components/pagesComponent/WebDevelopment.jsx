@@ -57,23 +57,6 @@ import { GetSettingsApi } from '@/redux/actions/campaign'
 
 const WebDevelopment = () => {
 
-  const [loading, setLoading] = useState(true)
-  const [seoData, setSeoData] = useState([])
-
-  // useEffect(() => {
-  //   setLoading(true)
-  //   GetSettingsApi({
-  //     onSuccess: (response) => {
-  //       // console.log(response.data, "settingsResabout")
-  //       setSeoData(response.data)
-  //       setLoading(false)
-  //     },
-  //     onError: (error) => {
-  //       console.log(error)
-  //     }
-  //   })
-  // }, [])
-
   const benefitsCardData = [
     {
       id: 0,
@@ -247,10 +230,7 @@ const WebDevelopment = () => {
 
   return (
     <div className='webDevelopmentPage'>
-      <Head>
-        <title>WRTeam - Web App Development Service Provider IT Company</title>
-        <meta name="description" content="Need a high speed website for business growth? Our expert web development team creates customised, responsive sites that engage users and boost roi." />
-      </Head>
+      
       <Breadcrum title='Web' blueText={'Development'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Web Development'} />
 
       <section className='development container'>

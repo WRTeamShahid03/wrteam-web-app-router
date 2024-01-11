@@ -18,35 +18,16 @@ import ourValues from '../../Asset/Images/our_values.png'
 import Team from '@/Components/Team'
 import Head from 'next/head'
 import Image from 'next/image'
-import { GetSettingsApi } from '@/redux/actions/campaign.js'
+
+
+
 
 const AboutUs = () => {
-
-  const [loading, setLoading] = useState(true)
-  const [seoData, setSeoData] = useState([])
-
-
-  // useEffect(() => {
-  //   setLoading(true)
-  //   GetSettingsApi({
-  //     onSuccess: (response) => {
-  //       // console.log(response.data, "settingsResabout")
-  //       setSeoData(response.data)
-  //       setLoading(false)
-  //     },
-  //     onError: (error) => {
-  //       console.log(error)
-  //     }
-  //   })
-  // }, [])
 
   return (
 
     <>
-      <Head>
-        <title> Web & App Development Company In Bhuj | IT Consulting Service</title>
-        <meta name="description" content="WRTeam Gujarat based IT company which has created code  of website & application. Also provide UI/UX, IT consulting and digital marketing services." />
-      </Head>
+            
       <Breadcrum title="About" blueText="Us" contentOne="Home" contentTwo="About Us" />
 
       <section id='knowMore' className='container'>

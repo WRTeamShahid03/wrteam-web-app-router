@@ -5130,6 +5130,16 @@ footer .footerContainer .flinks {
     gap: 20px;
     border-radius: 16px;
     margin-bottom: 30px;
+    position: fixed;
+    top: 137px;
+}
+
+@media screen and (max-width: 1199px) {
+    .productDetailsPage .productDetailsCardWrapper .card {
+        position: unset;
+        top: unset;
+    }
+
 }
 
 
@@ -5226,6 +5236,12 @@ footer .footerContainer .flinks {
 
 .productDetailsPage .productDetailsCardWrapper .card .middleDiv .filesInclude .fileTitle {
     color: gray;
+}
+
+.productDetailsPage .productDetailsCardWrapper .card .middleDiv .filesInclude .fileTitle .stars {
+    position: relative;
+    top: -2px;
+    left: 10px;
 }
 
 .productDetailsPage .productDetailsCardWrapper .card .middleDiv .filesInclude .fileDesc {

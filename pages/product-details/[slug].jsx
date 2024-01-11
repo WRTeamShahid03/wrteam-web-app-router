@@ -1,73 +1,72 @@
-import Loader from '@/Components/Loader';
-import { GetProductsApi } from '@/redux/actions/campaign';
-import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
-import toast from 'react-hot-toast';
+import React from 'react'
+import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
+import Head from 'next/head';
+import Meta from '@/Components/Seo/Meta';
+import { GET_SEO_SETTINGS } from '@/utils/api';
+import axios from 'axios';
+import Head from "next/head";
 
-import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
+// This is seo api
+// const fetchDataFromSeo = async (page) => {
+//     try {
+//         const response = await axios.get(
+//             `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=app_development`
+//         );
 
-const index = () => {
+//         const SEOData = response.data;
+
+//         return SEOData;
+//     } catch (error) {
+//         console.error("Error fetching data:", error);
+//         return null;
+//     }
+// };
 
 
-    const [productsDetails, setProductDetails] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [checkoutLink, setCheckoutLink] = useState('')
-
-    const router = useRouter();
-
-    const productSlug = router.query.slug
-    // console.log("ProductRouter", productSlug)
-
-    useEffect(() => {
-        GetProductsApi({
-            slug: productSlug,
-            onSuccess: (response) => {
-                // console.log(response.data, 'productDetailsState');
-                setProductDetails(response.data);
-                setCheckoutLink(response?.data?.checkout_url)
-                setLoading(false)
-            },
-            onError: (error) => {
-                console.log(error);
-                toast.error('Something Went Wrong!');
-                setLoading(true)
-
-            }
-        });
-    }, [])
-
-    useEffect(() => {
-        // console.log(checkoutLink, "links")
-
-    }, [checkoutLink])
-
+const Index = (
+    // { seoData, currentURL }
+) => {
 
     return (
-        <div className='productDetailsPage container'>
-            {
-                loading ?
-                    <Loader /> :
-                    <div className="row">
-
-                        <div className="col-sm-12 col-md-12 col-lg-9">
-
-                            <div className="Wrapper">
-
-                                {/* ProductDetails Here */}
-
-                                <div dangerouslySetInnerHTML={{ __html: productsDetails?.description || "" }} />
-                            </div>
-
-                        </div>
-
-                        <div className="col-sm-12 col-md-12 col-lg-3">
-                            <ProductDetailsSideCard price={productsDetails?.price} sales={productsDetails?.sales} files={productsDetails?.subcategory?.name} rating={productsDetails?.rating} category={productsDetails?.category?.name} checkoutLink={checkoutLink} loading={loading} />
-                        </div>
-
-                    </div>
-            }
-        </div>
+        <>
+            {/* <Meta
+                title={seoData && seoData?.data?.title}
+                description={seoData && seoData?.data?.description}
+                keywords={seoData && seoData?.data?.keywords}
+                ogImage={seoData && seoData?.data?.image}
+                pathName={currentURL}
+            /> */}
+            <Head>
+                <title>
+                    Top IT company in India | Web Developer | App Developer - wrteam
+                </title>
+                <meta
+                    name="description"
+                    content="Grow your business with our top web developers, app developers, graphic designers and digital marketing and IT consulting services provider specialists."
+                />
+                <meta name="viewport" content="initial-scale=1, width=device-width" />
+            </Head>
+            <ProductDetailsPage />
+        </>
     )
 }
 
-export default index
+// let serverSidePropsFunction = null;
+// if (process.env.NEXT_PUBLIC_SEO === "true") {
+//     serverSidePropsFunction = async (context) => {
+//         const { req } = context; // Extract query and request object from context
+//         const currentURL = `${req.headers.host}${req.url}`;
+//         const seoData = await fetchDataFromSeo();
+//         // Pass the fetched data as props to the page component
+//         return {
+//             props: {
+//                 seoData,
+//                 currentURL,
+//             },
+//         };
+//     };
+// }
+
+// export const getServerSideProps = serverSidePropsFunction;
+
+export default Index

@@ -41,6 +41,7 @@
     "react-pagination": "^1.0.0",
     "react-pdf": "^7.6.0",
     "react-phone-input-2": "^2.15.1",
+    "react-rating": "^2.0.5",
     "react-redux": "^9.0.4",
     "react-scroll-trigger": "^0.6.14",
     "redux-persist": "^6.0.0",

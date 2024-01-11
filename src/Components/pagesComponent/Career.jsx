@@ -12,32 +12,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import { GetSettingsApi, careerMailApi } from '@/redux/actions/campaign'
+import { GetSettingsApi, GetVacanciesApi, careerMailApi } from '@/redux/actions/campaign'
 import { IoIosCloseCircle } from "react-icons/io";
 // import { Viewer } from '@react-pdf-viewer/core'
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { pdfjs } from 'react-pdf';
+import VacanciesCardSkeleton from '../Skeletons/VacanciesCardSkeleton'
 
 
 
 const Career = () => {
-
-    const [loading, setLoading] = useState(true)
-    const [seoData, setSeoData] = useState([])
-
-    // useEffect(() => {
-    //     setLoading(true)
-    //     GetSettingsApi({
-    //         onSuccess: (response) => {
-    //             // console.log(response.data, "settingsResabout")
-    //             setSeoData(response.data)
-    //             setLoading(false)
-    //         },
-    //         onError: (error) => {
-    //             console.log(error)
-    //         }
-    //     })
-    // }, [])
 
     const [selectedFile, setSelectedFile] = useState(null);
     const [name, setName] = useState('')
@@ -50,7 +34,25 @@ const Career = () => {
     const form = useRef();
     const [pdfFileUrl, setPdfFileUrl] = useState(null)
     const [inputKey, setInputKey] = useState(Date.now());
+    const [vacancies, setVacancies] = useState([])
+    const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        GetVacanciesApi({
+            onSuccess: (response) => {
+                console.log(response.data, 'vacanciesState');
+                setVacancies(response.data);
+                setLoading(false)
+            },
+            onError: (error) => {
+                console.log(error);
+                toast.error('Something Went Wrong!');
+                setLoading(true)
+
+            }
+        })
+
+    }, [])
 
 
 
@@ -193,10 +195,7 @@ const Career = () => {
 
     return (
         <div className='careerPage'>
-            <Head>
-                <title> Join WRTeam's Highly Skilled & Experienced Team & Build Career</title>
-                <meta name="description" content="Apply Now! Ready to take your career to the next level? We are looking for talented candidates to join our team of flutter, react, laravel, dart, vue js champ." />
-            </Head>
+
             <Breadcrum title='Career' contentOne='Home' contentTwo='Career' />
 
             <section id='empire' className='container'>
@@ -277,20 +276,31 @@ const Career = () => {
                     <div className="col-sm-12 col-md-12 col-lg-12">
                         <div className="row jobCards">
                             {
-                                jobCardData.map((e) => {
-                                    return <div className="col-sm-12 col-md-6 col-lg-4" key={e.id}>
-                                        <div className="card" data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
-                                            <div className="cardBody">
-                                                <span className='card-title'>{e.title}</span>
-                                                <span className='card-text'>{e.text}</span>
-                                            </div>
-                                            <Link href={e.link}> <span className='applyBtn'>Apply Now < BsArrowRightCircle /> </span></Link>
-                                        </div>
+                                loading ? Array.from({ length: 3 }).map((_, index) => (
+                                    <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
+                                        <VacanciesCardSkeleton />
                                     </div>
-                                })
-                            }
+                                ))
+                                    :
+                                    <>
+                                        {
+                                            vacancies?.map((e) => {
+                                                return <div className="col-sm-12 col-md-6 col-lg-4" key={e.id}>
+                                                    <div className="card" data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
+                                                        <div className="cardBody">
+                                                            <span className='card-title'>{e.title}</span>
+                                                            <span className='card-text'>Experience: {e.experience}</span>
+                                                        </div>
+                                                        <Link href={'#applyNow'}> <span className='applyBtn'>Apply Now < BsArrowRightCircle /> </span></Link>
+                                                    </div>
+                                                </div>
+                                            })
+                                        }
+                                    </>
 
+                            }
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -344,9 +354,14 @@ const Career = () => {
                                             <label htmlFor="name">Apply For</label>
                                             <select className="form-select form-select-md mb-3" name='apply_for' aria-label=".form-select-lg example" onChange={(e) => setApplyFor(e.target.value)} value={applyFor} >
                                                 <option defaultValue>Select Apply For</option>
-                                                <option value="Flutter Developer">Flutter Developer</option>
+                                                {
+                                                    vacancies?.map((option) => {
+                                                        return <option value={option.title}>{option.title}</option>
+                                                    })
+                                                }
+                                                {/* <option value="Flutter Developer">Flutter Developer</option>
                                                 <option value="Laravel Developer">Laravel Developer</option>
-                                                <option value="SEO Expert">SEO Expert</option>
+                                                <option value="SEO Expert">SEO Expert</option> */}
                                             </select>
                                         </div>
                                         <div className="col-sm-12 col-md-6 col-lg-6 mt-4">
@@ -356,6 +371,7 @@ const Career = () => {
                                                 <option value="Fresher">Fresher</option>
                                                 <option value="1+ Years">1+ Years</option>
                                                 <option value="3+ Years">3+ Years</option>
+                                                <option value="5+ Years">5+ Years</option>
                                             </select>
                                         </div>
                                         <div className="item-wrapper one col-sm-12 col-md-12 col-lg-12">

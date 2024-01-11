@@ -52,23 +52,6 @@ import { GetSettingsApi } from '@/redux/actions/campaign'
 
 const UIUXDevelopment = () => {
 
-  const [loading, setLoading] = useState(true)
-  const [seoData, setSeoData] = useState([])
-
-  // useEffect(() => {
-  //   setLoading(true)
-  //   GetSettingsApi({
-  //     onSuccess: (response) => {
-  //       // console.log(response.data, "settingsResabout")
-  //       setSeoData(response.data)
-  //       setLoading(false)
-  //     },
-  //     onError: (error) => {
-  //       console.log(error)
-  //     }
-  //   })
-  // }, [])
-
   const benefitsCardData = [
     {
       id: 0,
@@ -231,10 +214,7 @@ const UIUXDevelopment = () => {
 
   return (
     <div className='webDevelopmentPage uiUxDesignPage'>
-      <Head>
-        <title>WRTeam - Creative UI/UX Service Provider IT Company | Graphic Design</title>
-        <meta name="description" content="Want to improve user experience? User engagement and brand positioning are given top priority by our UI/UX team while creating designs. Click Now!" />
-      </Head>
+
       <Breadcrum title='UI-UX' blueText={'Services'} contentOne={'Home'} contentTwo={'Services'} contentThree={'UI-UX Development'} />
 
       <section className='development container'>

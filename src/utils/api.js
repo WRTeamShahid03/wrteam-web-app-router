@@ -8,6 +8,7 @@ const GET_PRODUCTS = "products"
 const GET_TESTIMONIALS = "testimonials"
 const GET_TEAM_MEMBERS = "team-members"
 const CAREER_MAIL = "send-career-email"
+const GET_VACANCIES = "get-vacancies"
 
 // GET SETTINGS
 export const getSettings = (type) => {
@@ -29,6 +30,17 @@ export const getSeoSettings = (type) => {
         method: "GET",
         params: {
             type: type,
+        },
+        authorizationHeader: false,
+
+    }
+}
+// GET VACANCIES
+export const getVacancies = () => {
+    return {
+        url: `${GET_VACANCIES}`,
+        method: "GET",
+        params: {
         },
         authorizationHeader: false,
 

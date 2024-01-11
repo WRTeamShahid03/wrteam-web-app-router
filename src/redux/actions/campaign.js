@@ -1,6 +1,6 @@
 "use client";
 
-import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail } from "@/utils/api";
+import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies } from "@/utils/api";
 import { store } from "../store";
 import { apiCallBegan } from "./apiActions";
 
@@ -30,6 +30,22 @@ export const GetSeoSettingsApi = ({
     store.dispatch(
         apiCallBegan({
             ...getSeoSettings(type),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
+
+// // GET VACANCIES
+export const GetVacanciesApi = ({
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { } }) => {
+    store.dispatch(
+        apiCallBegan({
+            ...getVacancies(),
             displayToast: false,
             onStart,
             onSuccess,
