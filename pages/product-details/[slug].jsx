@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Meta from '@/Components/Seo/Meta';
 import { GET_PRODUCTS } from '@/utils/api';
 import axios from 'axios';
-import Head from "next/head";
 
 // This is seo api
 // const fetchDataFromSeo = async (slug) => {
