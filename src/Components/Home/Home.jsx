@@ -8,7 +8,8 @@ import 'aos/dist/aos.css';
 
 
 //Images
-import rightDivImg from '../../Asset/Images/Hero Img.png'
+// import rightDivImg from '../../Asset/Images/Hero Img.png'
+import rightDivImg from '../../Asset/Images/heroImg.webp'
 import likeIcon from "../../Asset/Icons/Like.png"
 import checkIcon from "../../Asset/Icons/ic_check.png"
 import team1 from '../../Asset/Icons/team1.png'

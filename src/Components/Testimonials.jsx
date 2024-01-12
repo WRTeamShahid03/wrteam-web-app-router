@@ -32,7 +32,7 @@ const Testimonials = () => {
             onError: (error) => {
                 console.log(error);
             }
-    });
+        });
 
     }, [])
 
@@ -142,64 +142,6 @@ const Testimonials = () => {
                 <h5 className='common_span'>Our <span>Testimonials</span></h5>
                 <h6 className='testiHeadline'>Real  <span> Words</span> From Real <span>Clients</span></h6>
             </div>
-            {/* <div className="testSlider">
-                <Swiper
-                    ref={sliderRef}
-                    slidesPerView={3}
-                    loop={true}
-                    spaceBetween={30}
-                    freeMode={true}
-                    modules={[FreeMode, Pagination]}
-                    pagination={{
-                        clickable: true,
-                        renderBullet: renderBullet
-                    }}
-                    navigation
-                    className='testiSwiper'
-                    breakpoints={breakpoints}
-                >
-                    {
-                        swiperData.map((ele, index) => {
-                            return (
-                                <SwiperSlide key={ele.id} >
-                                    <div className="card swiperCard">
-                                        <div className="card-header">
-                                            <span className="testiImg">
-                                                <Image height={0} width={0} loading="lazy" src={dobleQuotes} alt="" />
-                                            </span>
-                                        </div>
-                                        <div className="card-body">
-                                            <div className='testiDesc'>
-                                                <span className='swiperDesc'>{ele.text}</span>
-                                            </div>
-                                        </div>
-                                        <div className="card-footer">
-                                            <div className="testiFoot">
-                                                <div className="footText">
-                                                    <span className='swiperName'>{ele.name}</span>
-                                                    <span className='swiperWork'>{ele.work}</span>
-                                                </div>
-                                                <div className="footRating">
-                                                    <span className='swiperRating'>{ele.rating}</span>
-                                                    <span><LiaStarSolid size={28} color='#FFA800' /></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            )
-                        })
-                    }
-                </Swiper>
-                <div className="swiper-button-prev" onClick={handlePrev} >
-                    <span><BiLeftArrowAlt color='white' size={42} /></span>
-                </div>
-                <div className="swiper-button-next" onClick={handleNext}>
-                    <span><BiRightArrowAlt color='white' size={42} /></span>
-                </div>
-            </div> */}
-
-            {/* api data  */}
             <div className="testSlider">
                 <Swiper
                     ref={sliderRef}

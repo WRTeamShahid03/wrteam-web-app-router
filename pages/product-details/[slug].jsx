@@ -2,18 +2,19 @@ import React from 'react'
 import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
 import Head from 'next/head';
 import Meta from '@/Components/Seo/Meta';
-import { GET_SEO_SETTINGS } from '@/utils/api';
+import { GET_PRODUCTS } from '@/utils/api';
 import axios from 'axios';
 import Head from "next/head";
 
 // This is seo api
-// const fetchDataFromSeo = async (page) => {
+// const fetchDataFromSeo = async (slug) => {
 //     try {
 //         const response = await axios.get(
-//             `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=app_development`
+//             `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_PRODUCTS}?slug=${slug}`
 //         );
 
 //         const SEOData = response.data;
+//         console.log(typeof (SEOData))
 
 //         return SEOData;
 //     } catch (error) {
@@ -55,9 +56,16 @@ const Index = (
 // if (process.env.NEXT_PUBLIC_SEO === "true") {
 //     serverSidePropsFunction = async (context) => {
 //         const { req } = context; // Extract query and request object from context
+//         const { params } = req[Symbol.for('NextInternalRequestMeta')]._nextMatch;
+//         // Accessing the slug property
+//         const slugValue = params.slug;
+
+//         // console.log(slugValue, "slugValue");
 //         const currentURL = `${req.headers.host}${req.url}`;
-//         const seoData = await fetchDataFromSeo();
-//         // Pass the fetched data as props to the page component
+
+//         const seoData = await fetchDataFromSeo(slugValue);
+//         console.log("req=======", req);
+//         // console.log("seoData=======", seoData);
 //         return {
 //             props: {
 //                 seoData,
@@ -66,7 +74,6 @@ const Index = (
 //         };
 //     };
 // }
-
 // export const getServerSideProps = serverSidePropsFunction;
 
 export default Index
