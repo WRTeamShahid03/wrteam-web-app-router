@@ -5412,3 +5412,41 @@ footer .footerContainer .flinks {
         height: auto;
     }
 }
+
+#workChain .workBottDiv .workCard .custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#workChain .workBottDiv .workCard .custom .workNumb {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -27px;
+    justify-content: center;
+}
+
+#workChain .workBottDiv .workCard .custom:hover .workNumb {
+    /* top: 0%; */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease-in;
+}
