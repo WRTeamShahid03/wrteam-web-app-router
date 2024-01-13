@@ -8,55 +8,55 @@ import Image from 'next/image'
 
 const WorkChain = () => {
 
-    const num1 = () => {
-        const workNumb = document.querySelector('.num1');
-        workNumb.style.top = '124px';
-        workNumb.style.transition = "top 0.3s ease"
+    // const num1 = () => {
+    //     const workNumb = document.querySelector('.num1');
+    //     workNumb.style.top = '124px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num1Back = () => {
-        const workNumb = document.querySelector('.num1');
-        workNumb.style.top = '26px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num1Back = () => {
+    //     const workNumb = document.querySelector('.num1');
+    //     workNumb.style.top = '26px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num3 = () => {
-        const workNumb = document.querySelector('.num3');
-        workNumb.style.top = '124px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num3 = () => {
+    //     const workNumb = document.querySelector('.num3');
+    //     workNumb.style.top = '124px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num3Back = () => {
-        const workNumb = document.querySelector('.num3');
-        workNumb.style.top = '26px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num3Back = () => {
+    //     const workNumb = document.querySelector('.num3');
+    //     workNumb.style.top = '26px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
+    // }
 
-    const num2 = () => {
-        const workNumb = document.querySelector('.num2');
-        workNumb.style.top = '-126px';
-        workNumb.style.transition = "top 0.3s ease"
+    // const num2 = () => {
+    //     const workNumb = document.querySelector('.num2');
+    //     workNumb.style.top = '-126px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num2Back = () => {
-        const workNumb = document.querySelector('.num2');
-        workNumb.style.top = '-222px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num2Back = () => {
+    //     const workNumb = document.querySelector('.num2');
+    //     workNumb.style.top = '-222px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num4 = () => {
-        const workNumb = document.querySelector('.num4');
-        workNumb.style.top = '-126px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num4 = () => {
+    //     const workNumb = document.querySelector('.num4');
+    //     workNumb.style.top = '-126px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
-    const num4Back = () => {
-        const workNumb = document.querySelector('.num4');
-        workNumb.style.top = '-222px';
-        workNumb.style.transition = "top 0.3s ease"
+    // }
+    // const num4Back = () => {
+    //     const workNumb = document.querySelector('.num4');
+    //     workNumb.style.top = '-222px';
+    //     workNumb.style.transition = "top 0.3s ease"
 
-    }
+    // }
   return (
     <section id="workChain" className='container'>
 

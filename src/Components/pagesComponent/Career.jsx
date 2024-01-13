@@ -24,13 +24,13 @@ import VacanciesCardSkeleton from '../Skeletons/VacanciesCardSkeleton'
 const Career = () => {
 
     const [selectedFile, setSelectedFile] = useState(null);
+    const [fileDataUrl, setFileDataUrl] = useState(null);
     const [name, setName] = useState('')
     const [number, setNumber] = useState('')
     const [email, setEmail] = useState('')
     const [experience, setExperience] = useState('')
     const [qualification, setQualification] = useState('')
     const [applyFor, setApplyFor] = useState('')
-    const [fileDataUrl, setFileDataUrl] = useState(null);
     const form = useRef();
     const [pdfFileUrl, setPdfFileUrl] = useState(null)
     const [inputKey, setInputKey] = useState(Date.now());
