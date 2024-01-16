@@ -2,7 +2,8 @@ import React, { use, useEffect, useRef, useState } from 'react'
 import Breadcrum from '@/Components/Breadcrum'
 import trianglePattern from '../../Asset/Icons/Triangle Pattern.png'
 import dotsPattern from '../../Asset/Icons/Dots Pattern.png'
-import ourValues from '../../Asset/Images/our_values.png'
+// import ourValues from '../../Asset/Images/our_values.png'
+import ourValues from '../../Asset/Images/our_values.webp'
 import Link from 'next/link'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { FiUploadCloud } from 'react-icons/fi'
@@ -18,7 +19,6 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { pdfjs } from 'react-pdf';
 import VacanciesCardSkeleton from '../Skeletons/VacanciesCardSkeleton'
-
 
 
 const Career = () => {

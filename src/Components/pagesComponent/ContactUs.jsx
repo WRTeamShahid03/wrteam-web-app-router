@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from 'react'
 // import location from '../../src/Asset/Icons/ic_location.svg'
 // import mail from '../../src/Asset/Icons/mail.svg'
 // import call from '../../src/Asset/Icons/phone.svg'
-import contactBg from '../../Asset/Images/contactFormBg.png'
-import socialBg from '../../Asset/Images/Social_BG.png'
+import contactBg from '../../Asset/Images/contactFormBg.webp'
+import socialBg from '../../Asset/Images/Social_BG.webp'
 import companyLogo from '../../Asset/navLogo.svg'
 import { BsFacebook, BsLinkedin } from 'react-icons/bs'
 import { AiFillInstagram } from 'react-icons/ai'
@@ -140,7 +140,7 @@ const ContactUs = () => {
 
     return (
         <>
-            
+
             <Breadcrum title="Contact" blueText="Us" contentOne="Home" contentTwo="Contact Us" />
 
             <section id='contactUs' className='container'>

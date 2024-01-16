@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { FaArrowRightArrowLeft } from 'react-icons/fa6'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
-import envantoImg from '../Asset/Images/EnvantoImg.png'
+import envantoImg from '../Asset/Images/EnvantoImg.webp'
 import Image from 'next/image'
 
 const EnvantoSection = () => {

@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import { BsFacebook, BsLinkedin, BsPinterest, BsReplyAll } from 'react-icons/bs'
 
 import dateIcon from '../../src/Asset/Icons/ic_date.png'
-import blog5 from "../../src/Asset/Images/Blog_5@2x.png"
-import blog from '../../src/Asset/Images/blog_img.png'
-import blog1 from '../../src/Asset/Images/blog_img1.png'
+import blog5 from "../../src/Asset/Images/Blog-5.webp"
+import blog from '../../src/Asset/Images/blog_img.webp'
+import blog1 from '../../src/Asset/Images/blog_img1.webp'
 import { AiFillTwitterCircle } from 'react-icons/ai'
 import previousBlog from '../../src/Asset/Images/recent_blog_4.png'
 import nextBlog from '../../src/Asset/Images/recent_blog_5.png'
@@ -101,14 +101,14 @@ const index = () => {
                         <div className="upperDiv">
                             <div className="blogDetailCard">
                                 <span className="blogDate">
-                                    <span> <Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /></span>
+                                    <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
                                     <span> August 25, 2023</span>
                                 </span>
 
                                 <h1 className='blogHeadline'>Flying Cars: Navigating the Path to Urban Air Mobility</h1>
                                 <div className="blogImg">
                                     <span className='cateBadge'>Future of Mobility</span>
-                                    <Image height={0} width={0} loading="lazy"  src={blog5} alt="" />
+                                    <Image height={0} width={0} loading="lazy" src={blog5} alt="" />
                                 </div>
                                 <div className="blogDetailContent">
                                     <span className='blogContentWrapper'>
@@ -142,11 +142,11 @@ const index = () => {
 
                             <div className="row">
                                 <div className="col-sm-12 col-md-12 col-lg-6">
-                                    <Image height={0} width={0} loading="lazy"  src={blog} alt="" className='middleDivImg' />
+                                    <Image height={0} width={0} loading="lazy" src={blog} alt="" className='middleDivImg' />
                                 </div>
 
                                 <div className="col-sm-12 col-md-12 col-lg-6">
-                                    <Image height={0} width={0} loading="lazy"  src={blog1} alt="" className='middleDivImg' />
+                                    <Image height={0} width={0} loading="lazy" src={blog1} alt="" className='middleDivImg' />
                                 </div>
 
                             </div>
@@ -215,19 +215,19 @@ const index = () => {
                                 <div className="boxWrapper">
                                     <div className="boxDetails">
 
-                                        <span><Image height={0} width={0} loading="lazy"  src={previousBlog} alt="" className='rbImg' /></span>
+                                        <span><Image height={0} width={0} loading="lazy" src={previousBlog} alt="" className='rbImg' /></span>
                                         <span className='recentBoxContent'>
-                                            <span className='rbDate'><Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /> May 25, 2024</span>
+                                            <span className='rbDate'><Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /> May 25, 2024</span>
                                             <span>Blockchain Beyond Cryptocurrency: Real-World Applications and Implications</span>
                                         </span>
                                     </div>
                                     <div className="boxDetails" >
 
                                         <span className='recentBoxContent'>
-                                            <span className='rbDate'><Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /> June 8, 2024</span>
+                                            <span className='rbDate'><Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /> June 8, 2024</span>
                                             <span>Ethics in AI: Navigating the Complex Landscape of Artificial Intelligence</span>
                                         </span>
-                                        <span><Image height={0} width={0} loading="lazy"  src={nextBlog} alt="" className='rbImg' /></span>
+                                        <span><Image height={0} width={0} loading="lazy" src={nextBlog} alt="" className='rbImg' /></span>
                                     </div>
                                 </div>
 

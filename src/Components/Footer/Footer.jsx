@@ -32,7 +32,7 @@ const Footer = () => {
                      <div className="cont logoCont">
                         <div className="footLogo">
 
-                           <Image height={0} width={0} loading="lazy"  src={navLogo} alt='navLogo' />
+                           <Image height={0} width={0} loading="lazy" src={navLogo} alt='navLogo' />
 
                         </div>
                         <span>WRTeam has creative and dedicated group of developers who are mastered in apps Developments and Web development with a nice in delivering quality solutions to customers across the globe.</span>
@@ -173,7 +173,7 @@ const Footer = () => {
                   </div>
                </div>
                <div className="copyRight ">
-                  <span>Copyright © 2023 WRTeam | Powered by WRTeam</span>
+                  <span>Copyright © 2024 WRTeam | Powered by WRTeam</span>
                   <span>Terms of Use | Privacy Policy | Copyright & Disclaimer</span>
                </div>
             </div>

@@ -8,13 +8,13 @@ import { BiRightArrowCircle } from 'react-icons/bi'
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 //Images
-import digitalMarketingServImg from '../../../src/Asset/Images/digital-marketing/Digital_Marketing Service.png'
+import digitalMarketingServImg from '../../../src/Asset/Images/digital-marketing/Digital_Marketing Service.webp'
 import circle from '../../../src/Asset/Images/Shape_1.svg'
 import dottsShape from '../../../src/Asset/Images/Shape_2.png'
 import crossShape from '../../../src/Asset/Images/Shape_3.png'
 import triangle from '../../../src/Asset/Images/Shape_4.svg'
 import arrowImg from '../../../src/Asset/Images/Arrow Left Down.svg'
-import getTouch from '../../../src/Asset/Images/getTouch.png'
+import getTouch from '../../../src/Asset/Images/getTouch.webp'
 import blog1 from '../../../src/Asset/Images/Blog_1.png'
 import blog2 from '../../../src/Asset/Images/Blog_2.png'
 import blog3 from '../../../src/Asset/Images/Blog_3.png'
@@ -37,8 +37,8 @@ import seoYT from '../../../src/Asset/Images/digital-marketing/icon/YT_seo.png'
 import seoYTHover from '../../../src/Asset/Images/digital-marketing/icon/YT_seoHover.png'
 
 
-import processImg from '../../../src/Asset/Images/digital-marketing/13-10-05-Our Work Process Digital Marketing  service.png'
-import processImg2 from '../../../src/Asset/Images/digital-marketing/13-10-05-Our Work Process_Digital Marketing_service copy.png'
+import processImg from '../../../src/Asset/Images/digital-marketing/13-10-05-Our Work Process Digital Marketing  service.webp'
+import processImg2 from '../../../src/Asset/Images/digital-marketing/13-10-05-Our Work Process_Digital Marketing_service copy.webp'
 import NewSlider from '../../../src/Components/NewSlider'
 
 import processIcon1 from '../../../src/Asset/Icons/All_Icons/Process/Development.png'
@@ -48,10 +48,10 @@ import processIcon4 from '../../../src/Asset/Icons/All_Icons/Process/Analysis of
 import processIcon5 from '../../../src/Asset/Icons/All_Icons/Process/Testing & Quality Assurance.png'
 import processIcon6 from '../../../src/Asset/Icons/All_Icons/Process/Deployment.png'
 // swiper Imgs 
-import emailMarketing from '../../../src/Asset/Images/digital-marketing/Email Marketing.jpg'
-import seo from '../../../src/Asset/Images/digital-marketing/SEO.jpg'
-import smm from '../../../src/Asset/Images/digital-marketing/SMM.jpg'
-import localMarketing from '../../../src/Asset/Images/digital-marketing/Local Marketing.jpg'
+import emailMarketing from '../../../src/Asset/Images/digital-marketing/Email Marketing.webp'
+import seo from '../../../src/Asset/Images/digital-marketing/SEO.webp'
+import smm from '../../../src/Asset/Images/digital-marketing/SMM.webp'
+import localMarketing from '../../../src/Asset/Images/digital-marketing/Local Marketing.webp'
 import Head from 'next/head'
 import Image from 'next/image'
 import { GetSettingsApi } from '@/redux/actions/campaign'
@@ -234,7 +234,7 @@ const DigitalMarketing = () => {
 
     return (
         <div className='webDevelopmentPage digitalMarketingPage'>
-            
+
             <Breadcrum title='Digital Marketing' blueText={'Services'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Digital Marketing Services'} />
 
             <section className='development container'>

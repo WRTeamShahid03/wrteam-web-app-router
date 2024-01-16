@@ -8,18 +8,16 @@ import Link from 'next/link'
 
 
 // images
-import knowMoreImg from '../../Asset/Images/knowMore.png'
+import knowMoreImg from '../../Asset/Images/knowMore.webp'
 import likeIcon from '../../Asset/Icons/ic_thumb.svg'
 import trianglePattern from '../../Asset/Icons/Triangle Pattern.png'
 import dotsPattern from '../../Asset/Icons/Dots Pattern.png'
-import ourVision from '../../Asset/Images/our_vision.png'
-import ourMission from '../../Asset/Images/our_mission.png'
-import ourValues from '../../Asset/Images/our_values.png'
+import ourVision from '../../Asset/Images/our_vision.webp'
+import ourMission from '../../Asset/Images/our_mission.webp'
+import ourValues from '../../Asset/Images/our_values.webp'
 import Team from '@/Components/Team'
 import Head from 'next/head'
 import Image from 'next/image'
-
-
 
 
 const AboutUs = () => {
@@ -27,7 +25,7 @@ const AboutUs = () => {
   return (
 
     <>
-            
+
       <Breadcrum title="About" blueText="Us" contentOne="Home" contentTwo="About Us" />
 
       <section id='knowMore' className='container'>

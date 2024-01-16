@@ -16,12 +16,12 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 
 // Images
-import blog1 from '../../src/Asset/Images/Blog_1.png'
-import blog2 from '../../src/Asset/Images/Blog_2.png'
-import blog3 from '../../src/Asset/Images/Blog_3.png'
-import blog4 from '../../src/Asset/Images/Blog_4.png'
-import blog5 from '../../src/Asset/Images/Blog_5.png'
-import blog6 from '../../src/Asset/Images/Blog_6.png'
+import blog1 from '../../src/Asset/Images/Blog_1.webp'
+import blog2 from '../../src/Asset/Images/Blog_2.webp'
+import blog3 from '../../src/Asset/Images/Blog_3.webp'
+import blog4 from '../../src/Asset/Images/Blog_4.webp'
+import blog5 from '../../src/Asset/Images/Blog_5.webp'
+import blog6 from '../../src/Asset/Images/Blog_6.webp'
 import dateIcon from '../../src/Asset/Icons/ic_date.png'
 import BlogsSideBoxes from '@/Components/BlogsSideBoxes';
 import Link from 'next/link';
@@ -82,108 +82,6 @@ const index = () => {
     },
   ]
 
-  // const swiperData2 = [
-  //   {
-  //     id: 0,
-  //     badge: "Space Exploration",
-  //     date: "October 5, 2023",
-  //     title: "Mars Colonization: Navigating the Challenges of Red Planet Habitability",
-  //     text: "Embark on a celestial journey to explore the intricate challenges and breakthroughs in the quest for colonizing Mars. Delve into the complexities of creating a habitable environment, sustainable resource management...",
-  //     img: blog3
-  //   },
-  //   {
-  //     id: 1,
-  //     badge: "Sustainable Technology",
-  //     date: "November 15, 2023",
-  //     title: "Solar Paint: Painting a Greener and More Energy-Efficient Future",
-  //     text: "Discover the revolutionary concept of solar paint and its potential to transform ordinary surfaces into clean energy generators. This blog post unveils the science behind solar paint, its applications in architecture, transportation...",
-  //     img: blog4
-  //   },
-  //   {
-  //     id: 2,
-  //     badge: "Artificial Intelligence",
-  //     date: "August 25, 2023",
-  //     title: "Exploring the Evolution of AI in Healthcare",
-  //     text: "Dive into the fascinating journey of Artificial Intelligence in the realm of healthcare. This blog post takes you through the significant advancements AI has made in diagnosing illnesses, personalized treatment plans, and...",
-  //     img: blog1
-  //   },
-  //   {
-  //     id: 3,
-  //     badge: "Cybersecurity",
-  //     date: "September 10, 2023",
-  //     title: "The Rising Threat of Ransomware: Protecting Your Digital Fortress",
-  //     text: "In this informative piece, we dissect the alarming surge of ransomware attacks and their far-reaching consequences. Gain insights into the tactics cybercriminals employ and learn effective strategies to safeguard your digital...",
-  //     img: blog2
-  //   },
-
-  //   {
-  //     id: 4,
-  //     badge: "Future of Mobility",
-  //     date: "December 8, 2023",
-  //     title: "Flying Cars: Navigating the Path to Urban Air Mobility",
-  //     text: "Take a leap into the future with a deep dive into the concept of flying cars and their role in urban transportation. Explore the technological marvels behind vertical takeoff and landing vehicles (VTOLs), the regulatory challenges they face...",
-  //     img: blog5
-  //   },
-  //   {
-  //     id: 5,
-  //     badge: "Internet of Things (IoT)",
-  //     date: "January 20, 2024",
-  //     title: "Unleashing the Power of IoT in Smart Agriculture: Cultivating the Future",
-  //     text: "Step into the world of smart agriculture, where Internet of Things (IoT) technologies are revolutionizing traditional farming practices. From precision farming and crop monitoring to automated irrigation and livestock...",
-  //     img: blog6
-  //   },
-  // ]
-
-  // const swiperData3 = [
-  //   {
-  //     id: 0,
-  //     badge: "Future of Mobility",
-  //     date: "December 8, 2023",
-  //     title: "Flying Cars: Navigating the Path to Urban Air Mobility",
-  //     text: "Take a leap into the future with a deep dive into the concept of flying cars and their role in urban transportation. Explore the technological marvels behind vertical takeoff and landing vehicles (VTOLs), the regulatory challenges they face...",
-  //     img: blog5
-  //   },
-  //   {
-  //     id: 1,
-  //     badge: "Internet of Things (IoT)",
-  //     date: "January 20, 2024",
-  //     title: "Unleashing the Power of IoT in Smart Agriculture: Cultivating the Future",
-  //     text: "Step into the world of smart agriculture, where Internet of Things (IoT) technologies are revolutionizing traditional farming practices. From precision farming and crop monitoring to automated irrigation and livestock...",
-  //     img: blog6
-  //   },
-  //   {
-  //     id: 2,
-  //     badge: "Artificial Intelligence",
-  //     date: "August 25, 2023",
-  //     title: "Exploring the Evolution of AI in Healthcare",
-  //     text: "Dive into the fascinating journey of Artificial Intelligence in the realm of healthcare. This blog post takes you through the significant advancements AI has made in diagnosing illnesses, personalized treatment plans, and...",
-  //     img: blog1
-  //   },
-  //   {
-  //     id: 3,
-  //     badge: "Cybersecurity",
-  //     date: "September 10, 2023",
-  //     title: "The Rising Threat of Ransomware: Protecting Your Digital Fortress",
-  //     text: "In this informative piece, we dissect the alarming surge of ransomware attacks and their far-reaching consequences. Gain insights into the tactics cybercriminals employ and learn effective strategies to safeguard your digital...",
-  //     img: blog2
-  //   },
-  //   {
-  //     id: 4,
-  //     badge: "Space Exploration",
-  //     date: "October 5, 2023",
-  //     title: "Mars Colonization: Navigating the Challenges of Red Planet Habitability",
-  //     text: "Embark on a celestial journey to explore the intricate challenges and breakthroughs in the quest for colonizing Mars. Delve into the complexities of creating a habitable environment, sustainable resource management...",
-  //     img: blog3
-  //   },
-  //   {
-  //     id: 5,
-  //     badge: "Sustainable Technology",
-  //     date: "November 15, 2023",
-  //     title: "Solar Paint: Painting a Greener and More Energy-Efficient Future",
-  //     text: "Discover the revolutionary concept of solar paint and its potential to transform ordinary surfaces into clean energy generators. This blog post unveils the science behind solar paint, its applications in architecture, transportation...",
-  //     img: blog4
-  //   },
-  // ]
 
   const breakpoints = {
     320: {
@@ -249,66 +147,66 @@ const index = () => {
                 // data-aos="fade-up"  data-aos-once="true" data-aos-duration="800"
                 id='teamSwiper'
               >
-                  {
+                {
                   swiperData.map((ele) => {
                     return <SwiperSlide key={ele.id}>
-                       
-                        <div className="card text-white">
-                          <span className='cateBadge'>{ele.badge}</span>
-                          <Image height={0} width={0} loading="lazy"  src={ele.img} className="card-img-top" alt="teamImg" />
-                          <div className="card-img-top">
-                            <div className="cateDetails">
-                              <span className="cateDate">
-                                <span> <Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /></span>
-                                <span> {ele.date}</span>
-                              </span>
-                              <p className="card-title"> 
-                              {ele.title.length>50? ele.title.slice(0,55) + "" + "...": ele.title}</p>
-                              <p className='card-text'>{ele.text}</p>
 
-                              <Link href="/blogs-details">  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
-                            </div>
-                            
+                      <div className="card text-white">
+                        <span className='cateBadge'>{ele.badge}</span>
+                        <Image height={0} width={0} loading="lazy" src={ele.img} className="card-img-top" alt="teamImg" />
+                        <div className="card-img-top">
+                          <div className="cateDetails">
+                            <span className="cateDate">
+                              <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
+                              <span> {ele.date}</span>
+                            </span>
+                            <p className="card-title">
+                              {ele.title.length > 50 ? ele.title.slice(0, 55) + "" + "..." : ele.title}</p>
+                            <p className='card-text'>{ele.text}</p>
+
+                            <Link href="/blogs-details">  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                      <div className="card text-white">
+                        <span className='cateBadge'>{ele.badge}</span>
+                        <Image height={0} width={0} loading="lazy" src={ele.img} className="card-img-top" alt="teamImg" />
+                        <div className="card-img-top">
+                          <div className="cateDetails">
+                            <span className="cateDate">
+                              <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
+                              <span> {ele.date}</span>
+                            </span>
+                            <p className="card-title">
+                              {ele.title.length > 50 ? ele.title.slice(0, 55) + "" + "..." : ele.title}</p>
+                            <p className='card-text'>{ele.text}</p>
+
+                            <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
                           </div>
                         </div>
-                        
+                      </div>
 
-                        <div className="card text-white">
-                          <span className='cateBadge'>{ele.badge}</span>
-                          <Image height={0} width={0} loading="lazy"  src={ele.img} className="card-img-top" alt="teamImg" />
-                          <div className="card-img-top">
-                            <div className="cateDetails">
-                              <span className="cateDate">
-                                <span> <Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /></span>
-                                <span> {ele.date}</span>
-                              </span>
-                              <p className="card-title">
-                                {ele.title.length>50? ele.title.slice(0,55) + "" + "...": ele.title}</p>
-                              <p className='card-text'>{ele.text}</p>
+                      <div className="card text-white">
+                        <span className='cateBadge'>{ele.badge}</span>
+                        <Image height={0} width={0} loading="lazy" src={ele.img} className="card-img-top" alt="teamImg" />
+                        <div className="card-img-top">
+                          <div className="cateDetails">
+                            <span className="cateDate">
+                              <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
+                              <span> {ele.date}</span>
+                            </span>
+                            <p className="card-title">
+                              {ele.title.length > 50 ? ele.title.slice(0, 55) + "" + "..." : ele.title}</p>
+                            <p className='card-text'>{ele.text}</p>
 
-                              <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
-                            </div>
+                            <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
                           </div>
                         </div>
-
-                        <div className="card text-white">
-                          <span className='cateBadge'>{ele.badge}</span>
-                          <Image height={0} width={0} loading="lazy"  src={ele.img} className="card-img-top" alt="teamImg" />
-                          <div className="card-img-top">
-                            <div className="cateDetails">
-                              <span className="cateDate">
-                                <span> <Image height={0} width={0} loading="lazy"  src={dateIcon} alt="" /></span>
-                                <span> {ele.date}</span>
-                              </span>
-                              <p className="card-title"> 
-                              {ele.title.length>50? ele.title.slice(0,55) + "" + "...": ele.title}</p>
-                              <p className='card-text'>{ele.text}</p>
-
-                              <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
-                            </div>
-                          </div>
-                        </div>
-                      </SwiperSlide>
+                      </div>
+                    </SwiperSlide>
                   })
                 }
               </Swiper>

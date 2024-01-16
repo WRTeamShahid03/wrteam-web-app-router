@@ -8,13 +8,13 @@ import { BiRightArrowCircle } from 'react-icons/bi'
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 //Images
-import webDeveImg from '../../../src/Asset/Images/web-development/Web Devlopment.png'
+import webDeveImg from '../../../src/Asset/Images/web-development/Web Devlopment.webp'
 import circle from '../../../src/Asset/Images/Shape_1.svg'
 import dottsShape from '../../../src/Asset/Images/Shape_2.png'
 import crossShape from '../../../src/Asset/Images/Shape_3.png'
 import triangle from '../../../src/Asset/Images/Shape_4.svg'
 import arrowImg from '../../../src/Asset/Images/Arrow Left Down.svg'
-import getTouch from '../../../src/Asset/Images/getTouch.png'
+import getTouch from '../../../src/Asset/Images/getTouch.webp'
 import blog1 from '../../../src/Asset/Images/Blog_1.png'
 import blog2 from '../../../src/Asset/Images/Blog_2.png'
 import blog3 from '../../../src/Asset/Images/Blog_3.png'
@@ -35,8 +35,8 @@ import nextJs from '../../../src/Asset/Images/web-development/icon/nextjs.png'
 import nextJsHover from '../../../src/Asset/Images/web-development/icon/nextjs_Hover.png'
 import reactJs from '../../../src/Asset/Images/web-development/icon/React.png'
 import reactJsHover from '../../../src/Asset/Images/web-development/icon/React_Hover.png'
-import processImg from '../../../src/Asset/Images/web-development/Our Work Process Devlopment.png'
-import processImg2 from '../../../src/Asset/Images/web-development/Our Work Process_Devlopment.png'
+import processImg from '../../../src/Asset/Images/web-development/Our Work Process Devlopment.webp'
+import processImg2 from '../../../src/Asset/Images/web-development/Our Work Process_Devlopment.webp'
 import NewSlider from '../../../src/Components/NewSlider'
 
 import processIcon1 from '../../../src/Asset/Icons/All_Icons/Process/Development.png'
@@ -46,10 +46,10 @@ import processIcon4 from '../../../src/Asset/Icons/All_Icons/Process/Analysis of
 import processIcon5 from '../../../src/Asset/Icons/All_Icons/Process/Testing & Quality Assurance.png'
 import processIcon6 from '../../../src/Asset/Icons/All_Icons/Process/Deployment.png'
 // swiper Imgs 
-import frontendImg from '../../../src/Asset/Images/web-development/10-19- Front_end_Devlopment Service.jpg'
-import backendImg from '../../../src/Asset/Images/web-development/10-19- Back_end_Devlopment Service.jpg'
-import fullStactImg from '../../../src/Asset/Images/web-development/10-19- full_stak_Devlopment Service.jpg'
-import completeSolution from '../../../src/Asset/Images/web-development/10-19-Complete Solution Service.jpg'
+import frontendImg from '../../../src/Asset/Images/web-development/10-19- Front_end_Devlopment Service.webp'
+import backendImg from '../../../src/Asset/Images/web-development/10-19- Back_end_Devlopment Service.webp'
+import fullStactImg from '../../../src/Asset/Images/web-development/10-19- full_stak_Devlopment Service.webp'
+import completeSolution from '../../../src/Asset/Images/web-development/10-19-Complete Solution Service.webp'
 import Head from 'next/head'
 import Image from 'next/image'
 import { GetSettingsApi } from '@/redux/actions/campaign'
@@ -230,7 +230,7 @@ const WebDevelopment = () => {
 
   return (
     <div className='webDevelopmentPage'>
-      
+
       <Breadcrum title='Web' blueText={'Development'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Web Development'} />
 
       <section className='development container'>

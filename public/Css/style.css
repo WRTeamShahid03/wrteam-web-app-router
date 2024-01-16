@@ -1513,7 +1513,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../../src/Asset/Images/getTouch.png');
+    background: url('../../src/Asset/Images/getTouch.webp');
     box-shadow: 0px 16px 46px #2E71FE29;
     border-radius: 30px;
     position: relative;
@@ -4416,7 +4416,7 @@ footer .footerContainer .flinks {
     height: 400px;
     background-size: cover;
     background-blend-mode: darken;
-    background: rgb(2 0 16 / 61%) url('../../src/Asset/Images/contactFormBg.png');
+    background: rgb(2 0 16 / 61%) url('../../src/Asset/Images/contactFormBg.webp');
     position: relative;
     z-index: -1;
 }

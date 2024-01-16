@@ -1,5 +1,5 @@
 import React from 'react'
-import getTouch from '../Asset/Images/getTouch.png'
+import getTouch from '../Asset/Images/getTouch.webp'
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 // import toast from 'react-hot-toast';
