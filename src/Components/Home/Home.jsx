@@ -459,7 +459,7 @@ const Home = () => {
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[0].title}</h4>
                                                 <span className='servText'>{servCardData[0].desc}</span>
-                                                <span className='hoverArrSpan'>Explore Servie < BsArrowRightCircle className='discRightArr' /></span>
+                                                <span className='hoverArrSpan'>Explore Service < BsArrowRightCircle className='discRightArr' /></span>
                                             </div>
                                         </div>
                                     </Link>
@@ -473,7 +473,7 @@ const Home = () => {
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[1].title}</h4>
                                                 <span className='servText'>{servCardData[1].desc}</span>
-                                                <span className='hoverArrSpan'>Explore Servie < BsArrowRightCircle className='discRightArr' /></span>
+                                                <span className='hoverArrSpan'>Explore Service < BsArrowRightCircle className='discRightArr' /></span>
                                             </div>
                                         </div>
                                     </Link>
@@ -487,7 +487,7 @@ const Home = () => {
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[2].title}</h4>
                                                 <span className='servText'>{servCardData[2].desc}</span>
-                                                <span className='hoverArrSpan'>Explore Servie < BsArrowRightCircle className='discRightArr' /></span>
+                                                <span className='hoverArrSpan'>Explore Service < BsArrowRightCircle className='discRightArr' /></span>
                                             </div>
                                         </div>
                                     </Link>
@@ -501,7 +501,7 @@ const Home = () => {
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[3].title}</h4>
                                                 <span className='servText'>{servCardData[3].desc}</span>
-                                                <span className='hoverArrSpan'>Explore Servie < BsArrowRightCircle className='discRightArr' /></span>
+                                                <span className='hoverArrSpan'>Explore Service < BsArrowRightCircle className='discRightArr' /></span>
                                             </div>
                                         </div>
                                     </Link>

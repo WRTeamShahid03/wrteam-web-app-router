@@ -65,6 +65,7 @@ const AppProducts = () => {
         setCurrentPage(nextPage);
         loadPageData(nextPage);
         setSortOption('')
+        window.scrollTo(0, 0);
     };
 
     useEffect(() => {

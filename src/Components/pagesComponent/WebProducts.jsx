@@ -13,6 +13,7 @@ import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
+import { useRouter } from 'next/router';
 
 
 const WebProducts = () => {
@@ -22,6 +23,8 @@ const WebProducts = () => {
     const [loading, setLoading] = useState(true);
     const [totalPage, setTotalPage] = useState('');
     const [sortOption, setSortOption] = useState('');
+
+    const router = useRouter()
 
 
     const loadPageData = (page) => {
@@ -47,6 +50,7 @@ const WebProducts = () => {
         setCurrentPage(nextPage);
         loadPageData(nextPage);
         setSortOption('')
+        window.scrollTo(0, 0);
     };
 
     useEffect(() => {
@@ -102,7 +106,7 @@ const WebProducts = () => {
 
             <Breadcrum title='Web' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'Web Products'} />
 
-            <section className='container webPro'>
+            <section className='container webPro' id='webProducts'>
 
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12">

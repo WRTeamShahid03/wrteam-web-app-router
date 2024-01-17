@@ -3,6 +3,7 @@ import { GetProductsApi } from '@/redux/actions/campaign';
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
+import NoDataFound from '../../../pages/404'
 
 import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
 
@@ -51,24 +52,30 @@ const ProductDetailsPage = () => {
                     <Loader /> :
                     <div className="row">
 
-                        <div className="col-sm-12 col-md-12 col-lg-9">
+                        {
+                            productsDetails.length < 0 || productsDetails.description == '' || productsDetails.description == null ?
+                                <div className="col-sm-12 col-md-12 col-lg-12">
+                                    <div className="wrapper d-flex justify-content-center align-items-center">
+                                        <NoDataFound page={'product-detail'} />
+                                    </div>
+                                </div> : <>
+                                    <div className="col-sm-12 col-md-12 col-lg-9">
 
-                            <div className="Wrapper">
+                                        <div className="Wrapper">
+                                            <div dangerouslySetInnerHTML={{ __html: productsDetails && productsDetails?.description || "" }} />
+                                        </div>
 
-                                {/* ProductDetails Here */}
+                                    </div>
 
-                                <div dangerouslySetInnerHTML={{ __html: productsDetails && productsDetails?.description || "" }} />
-                            </div>
-
-                        </div>
-
-                        <div className="col-sm-12 col-md-12 col-lg-3">
-                            <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} />
-                        </div>
+                                    <div className="col-sm-12 col-md-12 col-lg-3">
+                                        <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} />
+                                    </div>
+                                </>
+                        }
 
                     </div>
             }
-        </div>
+        </div >
     )
 }
 

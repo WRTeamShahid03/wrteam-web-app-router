@@ -4803,14 +4803,11 @@ footer .footerContainer .flinks {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
-    width: auto;
+    /* width: auto; */
+    height: 60vh;
+    margin-top: -30px;
 }
 
-@media only screen and (max-width: 479px) {
-    .err404 img {
-        height: auto;
-    }
-}
 
 .err404 .btn {
     background-color: var(--primary-color);
@@ -4820,6 +4817,7 @@ footer .footerContainer .flinks {
     font-weight: 600;
 }
 
+
 .err404 .btn:hover {
     background-color: #283042;
     color: white;
@@ -4827,6 +4825,17 @@ footer .footerContainer .flinks {
 
 .err404 .btn svg {
     margin-top: -2px;
+}
+
+@media only screen and (max-width: 479px) {
+    .err404 img {
+        height: auto;
+    }
+
+    .err404 .btn {
+        font-size: 14px;
+        padding: 4px;
+    }
 }
 
 
