@@ -12,6 +12,8 @@
     RewriteRule ^services/ui-ux-design-development$ /services/ui-ux-design-development.html [L]
     RewriteRule ^services/digital-marketing-development$ /services/digital-marketing-development.html [L]
     RewriteRule ^product-details/([^/]+)/$ product-details/[slug]/index.html [L]
+    RewriteRule ^products/app-products/page/([^/]+)/$ products/app-products/page/[slug]/index.html [L]
+    RewriteRule ^products/web-products/page/([^/]+)/$ products/web-products/page/[slug]/index.html [L]
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /404.html [L]
