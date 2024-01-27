@@ -55,43 +55,43 @@ import EnvantoSection from '../EnvantoSection';
 
 const Home = () => {
 
-    const [scrollValue, setScrollValue] = useState(0);
+    // const [scrollValue, setScrollValue] = useState(0);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            // console.log('Scroll position:', scrollY);
-            setScrollValue(scrollY);
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const scrollY = window.scrollY;
+    //         // console.log('Scroll position:', scrollY);
+    //         setScrollValue(scrollY);
+    //     };
 
-        // Add event listener for scroll
-        window.addEventListener('scroll', handleScroll);
+    //     // Add event listener for scroll
+    //     window.addEventListener('scroll', handleScroll);
 
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     // Cleanup the event listener on component unmount
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
-    useEffect(() => {
-        // Change body background color based on scroll value
-        document.body.style.transition = 'background-color 0.5s ease';
-        document.body.style.backgroundColor =
-            scrollValue >= 1150 && scrollValue < 2580 ? '#81B441' : '';
-        document.body.style.position = 'relative';
-        document.body.style.zIndex = '200';
+    // useEffect(() => {
+    //     // Change body background color based on scroll value
+    //     document.body.style.transition = 'background-color 0.5s ease';
+    //     document.body.style.backgroundColor =
+    //         scrollValue >= 1150 && scrollValue < 2580 ? '#81B441' : '';
+    //     document.body.style.position = 'relative';
+    //     document.body.style.zIndex = '200';
 
-        // Disable user interactions if scroll value is within the specified range
+    //     // Disable user interactions if scroll value is within the specified range
 
-        if (scrollValue >= 1150 && scrollValue < 2580) {
-            document.body.style.pointerEvents = 'none';
-        } else {
-            document.body.style.pointerEvents = '';
-        }
+    //     if (scrollValue >= 1150 && scrollValue < 2580) {
+    //         document.body.style.pointerEvents = 'none';
+    //     } else {
+    //         document.body.style.pointerEvents = '';
+    //     }
 
 
 
-    }, [scrollValue]);
+    // }, [scrollValue]);
 
 
     useEffect(() => {
@@ -208,7 +208,9 @@ const Home = () => {
                                     </div>
 
                                     <div className="col-sm-12 col-md-12 col-lg-6">
-                                        <div className="heroCont-rightDiv" data-aos="fade-right" data-aos-once="true" data-aos-duration="800" data-aos-delay="50">
+                                        <div className="heroCont-rightDiv"
+                                        // data-aos="fade-right" data-aos-once="true" data-aos-duration="800" data-aos-delay="50"
+                                        >
                                             <div className="rightDivImg">
                                                 <Image height={0} width={0} loading="lazy" src={rightDivImg} alt="" />
                                             </div>
@@ -276,7 +278,9 @@ const Home = () => {
                             <div className="col-sm-12 col-md-12 col-lg-6">
 
                                 <div className="aboutLeftDiv">
-                                    <div className="aboutImg" data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800">
+                                    <div className="aboutImg"
+                                    // data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800"
+                                    >
 
                                         <Image height={0} width={0} loading="lazy" src={aboutImg1} alt="" />
                                         <div className="aboutSmImg" style={{
@@ -332,9 +336,9 @@ const Home = () => {
                 {/* aboutUs ends here  */}
 
                 <div className={`envantoProfile`}
-                    style={{
-                        zIndex: scrollValue >= 1150 && scrollValue < 2580 ? '100000' : '1'
-                    }}
+                // style={{
+                //     zIndex: scrollValue >= 1150 && scrollValue < 2580 ? '100000' : '1'
+                // }}
                 >
                     <EnvantoSection />
                 </div>
@@ -361,7 +365,9 @@ const Home = () => {
                             </div>
 
                             <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="winnRightDiv" data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800">
+                                <div className="winnRightDiv"
+                                // data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800"
+                                >
 
                                     <div className="winnerLeftImg">
 
@@ -400,7 +406,9 @@ const Home = () => {
                         <div className="row">
 
                             <div className="col-sm-12 col-md-12 col-lg-6">
-                                <div className="mobilePro" data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
+                                <div className="mobilePro"
+                                // data-aos="fade-up" data-aos-once="true" data-aos-duration="800"
+                                >
 
                                     <div className="mobProImg" style={{
                                         background: `url(${appProduct.src})`,
@@ -418,7 +426,9 @@ const Home = () => {
                             </div>
 
                             <div className="col-sm-12 col-md-12 col-lg-6 mobCards2">
-                                <div className="mobilePro" data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
+                                <div className="mobilePro"
+                                // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
+                                >
 
                                     <div className="mobProImg webProImg" style={{
                                         background: `url(${webProduct.src})`,
@@ -451,7 +461,9 @@ const Home = () => {
                                 <div className="servleftDiv">
 
                                     <Link href='/services/web-development'>
-                                        <div className="servCard" id='lightGrnCard' data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
+                                        <div className="servCard" id='lightGrnCard'
+                                        // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
+                                        >
                                             <span className="servImg lightgrnServ">
                                                 <Image height={0} width={0} loading="lazy" src={servWebIcon} alt="" className='servNorImg' />
                                                 <Image height={0} width={0} loading="lazy" src={servwebHover} alt="" className='servHoverImg' />
@@ -465,7 +477,9 @@ const Home = () => {
                                     </Link>
 
                                     <Link href='/services/app-development'>
-                                        <div className="servCard servCardDown" id='orangeCard' data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
+                                        <div className="servCard servCardDown" id='orangeCard'
+                                        // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
+                                        >
                                             <span className="servImg orangeServ">
                                                 <Image height={0} width={0} loading="lazy" src={servAppIcon} alt="" className='servNorImg' />
                                                 <Image height={0} width={0} loading="lazy" src={appHover} alt="" className='servHoverImg' />
@@ -479,7 +493,9 @@ const Home = () => {
                                     </Link>
 
                                     <Link href='/services/ui-ux-design'>
-                                        <div className="servCard" id='crimsonCard' data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
+                                        <div className="servCard" id='crimsonCard'
+                                        // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
+                                        >
                                             <span className="servImg crimsonServ">
                                                 <Image height={0} width={0} loading="lazy" src={uiIcon} alt="" className='servNorImg' />
                                                 <Image height={0} width={0} loading="lazy" src={uiHover} alt="" className='servHoverImg' />
@@ -493,7 +509,9 @@ const Home = () => {
                                     </Link>
 
                                     <Link href='/services/digital-marketing'>
-                                        <div className="servCard servCardDown" id='greenCard' data-aos="fade-down" data-aos-once="true" data-aos-duration="800">
+                                        <div className="servCard servCardDown" id='greenCard'
+                                        // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
+                                        >
                                             <span className="servImg greenServ">
                                                 <Image height={0} width={0} loading="lazy" src={digitalIcon} alt="" className='servNorImg' />
                                                 <Image height={0} width={0} loading="lazy" src={digitalHover} alt="" className='servHoverImg' />
@@ -563,7 +581,9 @@ const Home = () => {
                                                 techCardData.map((ele, index) => {
                                                     return (
                                                         <div className="col-sm-6 col-md-6 col-lg-1" key={index}>
-                                                            <div className="techMainCard" data-aos="slide-left" data-aos-once="true" data-aos-duration="800" key={ele.icon}>
+                                                            <div className="techMainCard"
+                                                                // data-aos="slide-left" data-aos-once="true" data-aos-duration="800"
+                                                                key={ele.icon}>
                                                                 <div className="techCard">
                                                                     <Image height={0} width={0} loading="lazy" src={ele.icon} alt="" className='techIcons' />
                                                                 </div>
@@ -590,7 +610,7 @@ const Home = () => {
 
                 <Testimonials />
                 {/* testimonials ends  */}
-                <div className="backDrop" style={{ opacity: scrollValue >= 1150 && scrollValue < 2580 ? '1' : '0' }}></div>
+                {/* <div className="backDrop" style={{ opacity: scrollValue >= 1150 && scrollValue < 2580 ? '1' : '0' }}></div> */}
             </div>
 
         </>

@@ -9,28 +9,29 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetProductsApi, GetSettingsApi } from '@/redux/actions/campaign';
-import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
+import ProductsSkeleton from '../../../../../src/Components/Skeletons/ProductsSkeleton.jsx';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import { useRouter } from 'next/router';
 
-const WebProducts = () => {
+const AppProducts = () => {
 
     const router = useRouter()
+    const routerPage = router.query.page
+    console.log('router.query.page', router.query.page)
 
     const [productsData, setProductsData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [totalPage, setTotalPage] = useState('');
     const [sortOption, setSortOption] = useState('');
-    const [page, setPage] = useState('1')
 
     const handleFilterChange = (e) => {
         setSortOption(e.target.value);
         setLoading(true)
         GetProductsApi({
-            category_id:  8,
+            category_id: 8,
             product_filter: e.target.value,
             onSuccess: (response) => {
                 // console.log(response?.data?.data, "PriceFiterData");
@@ -50,7 +51,7 @@ const WebProducts = () => {
         setLoading(true);
         GetProductsApi({
             page,
-            category_id:  8,
+            category_id: 8,
             onSuccess: (response) => {
                 // console.log(response?.data?.data, "ProductsResponse");
                 setProductsData(response.data.data);
@@ -70,17 +71,19 @@ const WebProducts = () => {
         loadPageData(nextPage);
         setSortOption('')
         window.scrollTo(0, 0);
-        setPage(nextPage)
+        // setPage(nextPage)
         router.push(`/products/web-products/page/${nextPage}`)
     };
+
+
 
     useEffect(() => {
         // console.log(sortOption, 'sortOption')
     }, [sortOption]);
 
     useEffect(() => {
-        loadPageData(currentPage);
-    }, [currentPage]);
+        loadPageData(routerPage);
+    }, [routerPage]);
 
     const renderStars = (rating) => {
         const totalStars = 5;
@@ -104,6 +107,11 @@ const WebProducts = () => {
 
     return (
         <>
+
+            <Head>
+                <title> Create Websites with WRTeam's Digital Products</title>
+                <meta name="description" content="Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps and web." />
+            </Head>
             <Breadcrum title='Web' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'Web Products'} />
             <section className='container webPro'>
 
@@ -202,7 +210,7 @@ const WebProducts = () => {
                                 pageCount={totalPage}
                                 pageRangeDisplayed={3}
                                 marginPagesDisplayed={1}
-                                forcePage={currentPage - 1} // react-paginate starts counting from 0
+                                forcePage={routerPage - 1} // react-paginate starts counting from 0
                                 onPageChange={handlePageChange}
                                 containerClassName="pagination"
                                 activeClassName="active"
@@ -224,4 +232,4 @@ const WebProducts = () => {
     )
 }
 
-export default WebProducts
+export default AppProducts

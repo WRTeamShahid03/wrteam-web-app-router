@@ -232,7 +232,9 @@ const AppDevelopment = () => {
                     </div>
 
                     <div className="col-sm-12 col-md-12 col-lg-6">
-                        <div className="deveRightDiv" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
+                        <div className="deveRightDiv"
+                        // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
+                        >
                             <div className="commonBorderDiv">
                                 <Image height={0} width={0} loading="lazy" src={appDeveImg} alt="" />
                             </div>
@@ -316,7 +318,9 @@ const AppDevelopment = () => {
             <section className='process container'>
                 <div className="row upperDivWrapper">
                     <div className="col-sm-12 col-md-12 col-lg-6">
-                        <div className="upperDivLeftContent" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
+                        <div className="upperDivLeftContent"
+                        // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
+                        >
                             <div className="commonBorderDiv">
                                 <Image height={0} width={0} loading="lazy" src={processImg} alt="" />
                             </div>
@@ -380,7 +384,9 @@ const AppDevelopment = () => {
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6">
-                        <div className="upperDivLeftContent" data-aos="zoom-in" data-aos-once="true" data-aos-duration="800">
+                        <div className="upperDivLeftContent"
+                        // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
+                        >
                             <div className="commonBorderDiv">
                                 <Image height={0} width={0} loading="lazy" src={processImg2} alt="" />
                             </div>
@@ -417,7 +423,9 @@ const AppDevelopment = () => {
                             <div className="row buildCardsWrapper">
                                 {
                                     buildCardData.map((e) => {
-                                        return <div className="col-6 col-sm-6 col-md-3 col-lg-4" key={e.id} data-aos="fade-left" data-aos-once="true" data-aos-duration="800">
+                                        return <div className="col-6 col-sm-6 col-md-3 col-lg-4" key={e.id}
+                                        // data-aos="fade-left" data-aos-once="true" data-aos-duration="800"
+                                        >
                                             <div className="card">
                                                 <span className='buildCardIcon'>
                                                     <Image height={0} width={0} loading="lazy" src={e.icon} alt="" className='buildIcon1' />

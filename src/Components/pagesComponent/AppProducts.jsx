@@ -13,14 +13,18 @@ import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
+import { useRouter } from 'next/router';
 
 const AppProducts = () => {
+
+    const router = useRouter()
 
     const [productsData, setProductsData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [totalPage, setTotalPage] = useState('');
     const [sortOption, setSortOption] = useState('');
+    const [page, setPage] = useState('1')
 
     const handleFilterChange = (e) => {
         setSortOption(e.target.value);
@@ -66,11 +70,12 @@ const AppProducts = () => {
         loadPageData(nextPage);
         setSortOption('')
         window.scrollTo(0, 0);
+        setPage(nextPage)
+        router.push(`/products/app-products/page/${nextPage}`)
     };
 
     useEffect(() => {
         // console.log(sortOption, 'sortOption')
-
     }, [sortOption]);
 
     useEffect(() => {

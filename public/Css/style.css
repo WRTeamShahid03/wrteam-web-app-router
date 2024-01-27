@@ -647,10 +647,7 @@ img {
     transition: top 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-
-
-
-@keyframes trophyMove {
+/* @keyframes trophyMove {
     0% {
         top: 205px;
     }
@@ -664,7 +661,7 @@ img {
     }
 
 
-}
+} */
 
 #winner .winnerWrapper .winnRightDiv .winnerSmImg img {
     padding: 18px 16px;
@@ -4848,7 +4845,7 @@ footer .footerContainer .flinks {
     margin: 0px 60px;
     background-color: white;
     border-radius: 16px;
-    /* border: 1px solid; */
+    border: 1px solid #80808078;
     position: relative;
     z-index: 1;
 }
@@ -5050,7 +5047,7 @@ footer .footerContainer .flinks {
     }
 }
 
-.backDrop {
+/* .backDrop {
     content: "";
     position: fixed;
     left: 0;
@@ -5080,7 +5077,7 @@ footer .footerContainer .flinks {
     body {
         background-color: white !important;
     }
-}
+} */
 
 .loaderWrapper {
     display: flex;

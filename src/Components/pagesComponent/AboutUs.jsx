@@ -34,7 +34,9 @@ const AboutUs = () => {
           <div className="col-sm-12 col-md-12 col-lg-6">
 
             <div className="knowMoreLeftDiv">
-              <div className="knowMoreImg" data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800">
+              <div className="knowMoreImg" 
+              // data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800"
+              >
 
                 <Image height={0} width={0} loading="lazy" src={knowMoreImg} alt="" />
                 <div className="business">
@@ -96,7 +98,9 @@ const AboutUs = () => {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="visionRightDiv">
 
-                <div className="visionLeftImg" data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800">
+                <div className="visionLeftImg" 
+                // data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800"
+                >
 
                   <Image height={0} width={0} loading="lazy" src={ourVision} alt="" className='winnerTeamImg' />
 
@@ -122,7 +126,9 @@ const AboutUs = () => {
           <div className="col-sm-12 col-md-12 col-lg-6">
 
             <div className="missionLeftDiv">
-              <div className="missionImg" data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800">
+              <div className="missionImg" 
+              // data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800"
+              >
 
                 <Image height={0} width={0} loading="lazy" src={ourMission} alt="" />
               </div>
@@ -184,7 +190,9 @@ const AboutUs = () => {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="valuesRightDiv" >
 
-                <div className="valuesLeftImg" data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800">
+                <div className="valuesLeftImg" 
+                // data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800"
+                >
 
                   <Image height={0} width={0} loading="lazy" src={ourValues} alt="" className='winnerTeamImg' />
 

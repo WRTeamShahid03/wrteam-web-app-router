@@ -247,7 +247,9 @@ const Career = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6">
                             <div className="wrTeamRightDiv" >
 
-                                <div className="rightDivImg" data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800">
+                                <div className="rightDivImg"
+                                // data-aos="fade-down-left" data-aos-once="true" data-aos-duration="800"
+                                >
 
                                     <Image height={0} width={0} loading="lazy" src={ourValues} alt="" />
 
