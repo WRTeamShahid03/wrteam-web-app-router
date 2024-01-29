@@ -68,10 +68,10 @@ const AppProducts = () => {
         const nextPage = selected + 1;
         setCurrentPage(nextPage);
         loadPageData(nextPage);
+        router.push(`/products/app-products/page/${nextPage}`)
         setSortOption('')
         window.scrollTo(0, 0);
         setPage(nextPage)
-        router.push(`/products/app-products/page/${nextPage}`)
     };
 
     useEffect(() => {
