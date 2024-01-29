@@ -70,7 +70,7 @@ const AppProducts = () => {
         loadPageData(nextPage);
         router.push(`/products/app-products/page/${nextPage}`)
         setSortOption('')
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
         setPage(nextPage)
     };
 
