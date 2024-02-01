@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { AiOutlineDoubleRight } from 'react-icons/ai'
 
-const Breadcrum = ({ title, blueText, contentOne, contentTwo, contentThree }) => {
+const Breadcrum = ({ title, blueText, contentOne, contentTwo, contentThree,contentFour }) => {
     return (
         <div className='breadcrum'>
             <div className="lines">
@@ -26,7 +26,10 @@ const Breadcrum = ({ title, blueText, contentOne, contentTwo, contentThree }) =>
                         contentThree ?
                             <>
                                 <span> <AiOutlineDoubleRight size={20} /> </span>
-                                <span>{contentThree}</span></> : ""
+                                <span>{contentThree}</span>
+                                <span> <AiOutlineDoubleRight size={20} /> </span>
+                                <span>{contentFour}</span>
+                                </> : ""
 
                     }
 

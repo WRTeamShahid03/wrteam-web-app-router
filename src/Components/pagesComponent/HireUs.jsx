@@ -12,7 +12,8 @@ import ClientSatisfaction from '../../Asset/Images/Client Satisfaction.png'
 import flutter from '../../Asset/Icons/FlutterColor.png'
 import react from '../../Asset/Icons/ReactColor.png'
 import vue from '../../Asset/Icons/VueColor.png'
-import node from '../../Asset/Icons/NodeColor.png'
+import nextjs from '../../Asset/Icons/nextjs-icon.svg'
+// import node from '../../Asset/Icons/NodeColor.png'
 import laravel from '../../Asset/Icons/Laravel.svg'
 import android from '../../Asset/Icons/Android.svg'
 import ios from '../../Asset/Icons/iOS.svg'
@@ -154,43 +155,7 @@ const HireUs = () => {
     return (
         <>
            
-            <Breadcrum title="Hire" blueText="Us" contentOne="Home" contentTwo="Hire Us" />
-
-            <section id='whyHireUs'>
-                <div className="container">
-
-                    <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-12">
-                            <div className="hireUpperDiv">
-                                <h4 className='common_span'> Why Hire<span> Us</span></h4>
-                                <span className='hireHeadlines'>We Are <span>Experts</span> Dedicated to Making Your Concept  <span>Come True!</span></span>
-                            </div>
-                        </div>
-
-                        <div className="col-sm-12 col-md-12 col-lg-12">
-
-                            <div className="row whyHireCards">
-
-                                <span></span>
-                                {
-                                    CardData.map((e) => {
-                                        return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}>
-                                            <div className="card">
-                                                <span className='contactCardSpan'> <Image height={0} width={0} loading="lazy" className="card-img-top card1Img" src={e.img} alt="Card image cap" /> </span>
-                                                <div className="card-body ">
-                                                    <h5 className="card-title card1Title">{e.title}</h5>
-                                                    <p className="card-text card1Text">{e.desc}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            {/* <Breadcrum title="Hire" blueText="Us" contentOne="Home" contentTwo="Hire Us" /> */}
 
             <section id='hireUs'>
                 <div className="container">
@@ -227,8 +192,8 @@ const HireUs = () => {
                                                 <span className='title'>Vue Js</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='node'> <Image height={0} width={0} loading="lazy" src={node} alt="" /> </span>
-                                                <span className='title'>Node Js</span>
+                                                <span className='nextjs'> <Image height={0} width={0} loading="lazy" src={nextjs} alt="" /> </span>
+                                                <span className='title'>Next Js</span>
                                             </div>
                                             <div className="hireUsCard">
                                                 <span className='laravel'> <Image height={0} width={0} loading="lazy" src={laravel} alt="" /> </span>
@@ -298,6 +263,44 @@ const HireUs = () => {
                     </div>
                 </div>
             </section>
+
+            <section id='whyHireUs'>
+                <div className="container">
+
+                    <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <div className="hireUpperDiv">
+                                <h4 className='common_span'> Why Hire<span> Us</span></h4>
+                                <span className='hireHeadlines'>We Are <span>Experts</span> Dedicated to Making Your Concept  <span>Come True!</span></span>
+                            </div>
+                        </div>
+
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+
+                            <div className="row whyHireCards">
+
+                                <span></span>
+                                {
+                                    CardData.map((e) => {
+                                        return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}>
+                                            <div className="card">
+                                                <span className='contactCardSpan'> <Image height={0} width={0} loading="lazy" className="card-img-top card1Img" src={e.img} alt="Card image cap" /> </span>
+                                                <div className="card-body ">
+                                                    <h5 className="card-title card1Title">{e.title}</h5>
+                                                    <p className="card-text card1Text">{e.desc}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            
 
             <section id='success'>
                 <div className="container">

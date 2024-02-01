@@ -310,7 +310,7 @@
     #wrTeamWork,
     #jobOpening,
     #applyNow {
-        margin-top: 66px;
+        margin-top: 50px;
     }
 
     .common_span {
@@ -829,7 +829,7 @@
     #wrTeamWork,
     #jobOpening,
     #applyNow {
-        margin-top: 66px;
+        margin-top: 30px;
     }
 
     #homeHeroSect .heroContainer .heroCont-leftDiv,
@@ -1472,7 +1472,7 @@
     #wrTeamWork,
     #jobOpening,
     #applyNow {
-        margin-top: 50px;
+        margin-top: 34px;
     }
 
     #homeHeroSect .heroContainer .heroCont-leftDiv,
@@ -1680,7 +1680,7 @@
 
     #workChain .workBottDiv .workCardsWrapper {
         background: transparent !important;
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     /* workChain ends  */
@@ -2248,7 +2248,7 @@
     #jobOpening,
     #applyNow {
         overflow: hidden;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
 
@@ -2489,20 +2489,16 @@
     }
 
     #workChain .workBottDiv .workCardsWrapper {
-        margin-top: 0px;
+        margin-top: 30px;
         background: transparent !important;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper .row{
+        gap: 50px;
     }
 
     #workChain .workBottDiv .workCardReverse {
         flex-direction: column;
-    }
-
-    #workChain .workBottDiv .workCardReverse .workNumb {
-        top: 26px !important;
-    }
-
-    #workChain .workBottDiv .workCard .workNumb {
-        top: 26px !important;
     }
 
     #workChain .workBottDiv .workCard:hover img {
@@ -3207,7 +3203,7 @@
     #applyNow,
     #team {
         overflow: hidden;
-        margin-top: 40px;
+        margin-top: 26px;
     }
 
     .webDevelopmentPage,
@@ -3577,18 +3573,15 @@
 
     #workChain .workBottDiv .workCardsWrapper {
         background: transparent !important;
+        margin-top: 130px;
     }
 
     #workChain .workBottDiv .workCardReverse {
         flex-direction: column;
     }
 
-    #workChain .workBottDiv .workCardReverse .workNumb {
-        top: 26px !important;
-    }
-
-    #workChain .workBottDiv .workCard .workNumb {
-        top: 26px !important;
+    #workChain .workBottDiv .workCardsWrapper .row{
+        gap: 50px;
     }
 
     #workChain .workBottDiv .workCard:hover img {
@@ -4379,7 +4372,7 @@
     #jobOpening,
     #applyNow {
         overflow: hidden;
-        margin-top: 30px;
+        margin-top: 26px;
     }
 
     .webDevelopmentPage,
@@ -4780,18 +4773,15 @@
 
     #workChain .workBottDiv .workCardsWrapper {
         background: transparent !important;
+        margin-top: 130px;
+    }
+
+    #workChain .workBottDiv .workCardsWrapper .row{
+        gap: 50px;
     }
 
     #workChain .workBottDiv .workCardReverse {
         flex-direction: column;
-    }
-
-    #workChain .workBottDiv .workCardReverse .workNumb {
-        top: 26px !important;
-    }
-
-    #workChain .workBottDiv .workCard .workNumb {
-        top: 26px !important;
     }
 
     #workChain .workBottDiv .workCard:hover img {

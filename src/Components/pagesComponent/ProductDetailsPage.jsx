@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import NoDataFound from '../../../pages/404'
 
 import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
+import Breadcrum from '../Breadcrum';
 
 const ProductDetailsPage = () => {
 
@@ -46,36 +47,43 @@ const ProductDetailsPage = () => {
 
 
     return (
-        <div className='productDetailsPage container'>
-            {
-                loading ?
-                    <Loader /> :
-                    <div className="row">
 
-                        {
-                            productsDetails.length < 0 || productsDetails.description == '' || productsDetails.description == null ?
-                                <div className="col-sm-12 col-md-12 col-lg-12">
-                                    <div className="wrapper d-flex justify-content-center align-items-center">
-                                        <NoDataFound page={'product-detail'} />
-                                    </div>
-                                </div> : <>
-                                    <div className="col-sm-12 col-md-12 col-lg-9">
+        <>
 
-                                        <div className="Wrapper">
-                                            <div dangerouslySetInnerHTML={{ __html: productsDetails && productsDetails?.description || "" }} />
+            {/* <Breadcrum title={productsDetails.productTitle} blueText="Details" contentOne="Home" contentTwo="Products" contentThree={productsDetails?.category?.name == 'Web Development' ? "Web-Products" : "App-Products"} contentFour={productsDetails?.name} /> */}
+
+            <div className='productDetailsPage container'>
+                {
+                    loading ?
+                        <Loader /> :
+                        <div className="row">
+
+                            {
+                                productsDetails.length < 0 || productsDetails.description == '' || productsDetails.description == null ?
+                                    <div className="col-sm-12 col-md-12 col-lg-12">
+                                        <div className="wrapper d-flex justify-content-center align-items-center">
+                                            <NoDataFound page={'product-detail'} />
+                                        </div>
+                                    </div> : <>
+                                        <div className="col-sm-12 col-md-12 col-lg-9">
+
+                                            <div className="Wrapper">
+                                                <div dangerouslySetInnerHTML={{ __html: productsDetails && productsDetails?.description || "" }} />
+                                            </div>
+
                                         </div>
 
-                                    </div>
+                                        <div className="col-sm-12 col-md-12 col-lg-3">
+                                            <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} />
+                                        </div>
+                                    </>
+                            }
 
-                                    <div className="col-sm-12 col-md-12 col-lg-3">
-                                        <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} />
-                                    </div>
-                                </>
-                        }
+                        </div>
+                }
+            </div >
+        </>
 
-                    </div>
-            }
-        </div >
     )
 }
 

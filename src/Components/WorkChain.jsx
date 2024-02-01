@@ -8,55 +8,6 @@ import Image from 'next/image'
 
 const WorkChain = () => {
 
-    // const num1 = () => {
-    //     const workNumb = document.querySelector('.num1');
-    //     workNumb.style.top = '124px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num1Back = () => {
-    //     const workNumb = document.querySelector('.num1');
-    //     workNumb.style.top = '26px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num3 = () => {
-    //     const workNumb = document.querySelector('.num3');
-    //     workNumb.style.top = '124px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num3Back = () => {
-    //     const workNumb = document.querySelector('.num3');
-    //     workNumb.style.top = '26px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-
-    // const num2 = () => {
-    //     const workNumb = document.querySelector('.num2');
-    //     workNumb.style.top = '-126px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num2Back = () => {
-    //     const workNumb = document.querySelector('.num2');
-    //     workNumb.style.top = '-222px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num4 = () => {
-    //     const workNumb = document.querySelector('.num4');
-    //     workNumb.style.top = '-126px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
-    // const num4Back = () => {
-    //     const workNumb = document.querySelector('.num4');
-    //     workNumb.style.top = '-222px';
-    //     workNumb.style.transition = "top 0.3s ease"
-
-    // }
     return (
         <section id="workChain" className='container'>
 
@@ -82,7 +33,7 @@ const WorkChain = () => {
                                     <div className="row">
 
                                         <div className="col-sm-12 col-md-6 col-lg-3">
-                                            <div className="workCard" id='wCard1' 
+                                            <div className="workCard" id='wCard1'
                                             // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                             >
                                                 <div className="custom">
@@ -95,7 +46,7 @@ const WorkChain = () => {
                                         </div>
 
                                         <div className="col-sm-12 col-md-6 col-lg-3">
-                                            <div className="workCard workCardReverse" id='wCard2' 
+                                            <div className="workCard workCardReverse" id='wCard2'
                                             // data-aos="fade-up" data-aos-once="true" data-aos-duration="800"
                                             >
                                                 <div className="custom">
@@ -106,17 +57,17 @@ const WorkChain = () => {
                                                     </div>
                                                 </div>
 
+                                                <div className="wrapper">
+                                                    <span className='workDesc'>Connect with our professional experts and have a detailed discussion about your requirement.</span>
 
-
-                                                <span className='workDesc'>Connect with our professional experts and have a detailed discussion about your requirement.</span>
-
-                                                <h5 className='workTitle'>Request a meeting</h5>
+                                                    <h5 className='workTitle'>Request a meeting</h5>
+                                                </div>
 
                                             </div>
                                         </div>
 
                                         <div className="col-sm-12 col-md-6 col-lg-3">
-                                            <div className="workCard" id='wCard3' 
+                                            <div className="workCard" id='wCard3'
                                             // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                             >
                                                 <div className="custom">
@@ -132,7 +83,7 @@ const WorkChain = () => {
                                         </div>
 
                                         <div className="col-sm-12 col-md-6 col-lg-3">
-                                            <div className="workCard workCardReverse" id='wCard4' 
+                                            <div className="workCard workCardReverse" id='wCard4'
                                             // data-aos="fade-up" data-aos-once="true" data-aos-duration="800"
                                             >
                                                 <div className="custom">
@@ -140,10 +91,11 @@ const WorkChain = () => {
                                                     <Image height={0} width={0} loading="lazy" src={workImg4} alt="" className='workImg' />
                                                 </div>
 
+                                                <div className="wrapper">
+                                                    <span className='workDesc'>Time to build real solutions that work for you.</span>
 
-                                                <span className='workDesc'>Time to build real solutions that work for you.</span>
-
-                                                <h5 className='workTitle'>Let's make it happen</h5>
+                                                    <h5 className='workTitle'>Let's make it happen</h5>
+                                                </div>
 
                                             </div>
                                         </div>

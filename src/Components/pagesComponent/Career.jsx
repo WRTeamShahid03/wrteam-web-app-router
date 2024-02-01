@@ -196,7 +196,7 @@ const Career = () => {
     return (
         <div className='careerPage'>
 
-            <Breadcrum title='Career' contentOne='Home' contentTwo='Career' />
+            {/* <Breadcrum title='Career' contentOne='Home' contentTwo='Career' /> */}
 
             <section id='empire' className='container'>
                 <div className="row">

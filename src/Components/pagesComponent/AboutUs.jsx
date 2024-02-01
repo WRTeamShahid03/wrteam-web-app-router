@@ -26,7 +26,7 @@ const AboutUs = () => {
 
     <>
 
-      <Breadcrum title="About" blueText="Us" contentOne="Home" contentTwo="About Us" />
+      {/* <Breadcrum title="About" blueText="Us" contentOne="Home" contentTwo="About Us" /> */}
 
       <section id='knowMore' className='container'>
         <div className="row">

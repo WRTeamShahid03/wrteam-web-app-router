@@ -1296,6 +1296,29 @@ img {
     filter: brightness(36%) invert(8%) saturate() contrast(96%) sepia(8%) grayscale(3%);
 }
 
+#workChain .workBottDiv .workCard .wrapper {
+    text-align: center;
+}
+
+#workChain .workBottDiv .workCard .wrapper .workTitle {
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+
+@media screen and (max-width: 767px) {
+    #workChain .workBottDiv .workCard .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 25px;
+        margin-bottom: -30px;
+    }
+    #workChain .workBottDiv .workCard .wrapper .workTitle{
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+}
+
+
 #workChain .workBottDiv .workCard .workTitle {
     font: normal normal 600 24px/29px Montserrat;
     color: #212121;
@@ -2243,7 +2266,7 @@ footer .footerContainer .flinks {
 #knowMore,
 #mission,
 #values {
-    margin-top: 150px;
+    margin-top: 60px;
 }
 
 #knowMore .knowMoreLeftDiv,
@@ -3243,7 +3266,13 @@ footer .footerContainer .flinks {
 
 
 #contactUs {
-    margin-top: 100px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+    #contactUs {
+        margin-top: 36px !important;
+    }
 }
 
 #contactUs .contactCards .card {
@@ -3419,7 +3448,7 @@ footer .footerContainer .flinks {
 
 #whyHireUs .container,
 #hireUs .container {
-    padding: 100px 0px;
+    padding: 50px 0px;
     padding-bottom: 20px;
 }
 
@@ -3525,9 +3554,10 @@ footer .footerContainer .flinks {
     border-radius: 8px;
 }
 
-#hireUs .hireLowerDiv .hireUsCard .node {
+#hireUs .hireLowerDiv .hireUsCard .nextjs {
     padding: 12px;
-    background: #84B92B29;
+    /* background: #84B92B29; */
+    background: #28304229;
     border-radius: 8px;
 }
 
@@ -3547,6 +3577,15 @@ footer .footerContainer .flinks {
     padding: 12px;
     background: #28304229;
     border-radius: 8px;
+}
+
+#hireUs input,
+#hireUs textarea,
+#hireUs select,
+#hireUs .form-control,
+#applyNow select,
+#applyNow input {
+    border: 1px solid #80808070 !important
 }
 
 
@@ -3645,7 +3684,13 @@ footer .footerContainer .flinks {
 /* success ends  */
 
 #empire {
-    margin-top: 60px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+    #empire {
+        margin-top: 20px;
+    }
 }
 
 
