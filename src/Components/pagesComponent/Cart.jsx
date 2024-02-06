@@ -34,7 +34,7 @@ const Cart = () => {
         setLoading(true);
         if (contentId) {
             GetProductsApi({
-                content_id: contentId,
+                content_id: `${contentId}/`,
                 onSuccess: (response) => {
                     // console.log(response?.data?.data, "ProductsResponse");
                     setProductsData(response.data.data);
