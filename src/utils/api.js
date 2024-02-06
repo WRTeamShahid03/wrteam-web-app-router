@@ -48,7 +48,7 @@ export const getVacancies = () => {
 }
 
 // GET PRODUCTS
-export const getProducts = (page, category_id, slug, product_filter) => {
+export const getProducts = (page, category_id, slug, product_filter,content_id) => {
     return {
         url: `${GET_PRODUCTS}`,
         method: "GET",
@@ -57,6 +57,7 @@ export const getProducts = (page, category_id, slug, product_filter) => {
             category_id: category_id,
             slug: slug,
             product_filter: product_filter,
+            content_id: content_id
 
         },
         authorizationHeader: false,

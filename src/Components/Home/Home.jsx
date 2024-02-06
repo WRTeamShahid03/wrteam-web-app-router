@@ -37,7 +37,7 @@ import techBg from '../../Asset/Images/TechnologyImage.png'
 import flutterTech from '../../Asset/Icons/FlutterColor.png'
 import react from '../../Asset/Icons/ReactColor.png'
 import vue from '../../Asset/Icons/VueColor.png'
-import node from '../../Asset/Icons/NodeColor.png'
+import nextjs from '../../Asset/Icons/nextjs-icon.svg'
 import laravel from '../../Asset/Icons/Laravel.svg'
 import android from '../../Asset/Icons/Android.svg'
 import ios from '../../Asset/Icons/iOS.svg'
@@ -143,8 +143,8 @@ const Home = () => {
         },
         {
             id: 4,
-            title: "Node JS",
-            icon: node,
+            title: "Next JS",
+            icon: nextjs,
         },
         {
             id: 5,

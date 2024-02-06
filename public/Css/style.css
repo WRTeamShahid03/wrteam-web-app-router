@@ -1213,6 +1213,14 @@ img {
     background-color: var(--primary-color);
 }
 
+#tech .techBottDiv .techMainCard .techCard .techIcons {
+    width: 100%;
+}
+@media screen and (max-width: 399px) {
+    #tech .techBottDiv .techMainCard .techCard .techIcons {
+        width: 160%;
+    }
+}
 #tech .techBottDiv .techMainCard .techCard:hover .techIcons {
     filter: brightness(5%) invert(100%);
 }

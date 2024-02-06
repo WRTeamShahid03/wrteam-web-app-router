@@ -18,7 +18,7 @@ const ProductDetailsPage = () => {
     const router = useRouter();
 
     const productSlug = router.query.slug
-    console.log("ProductRouter", productSlug)
+    // console.log("ProductRouter", productSlug)
 
     useEffect(() => {
         if (productSlug) {

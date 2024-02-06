@@ -9,60 +9,45 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetProductsApi, GetSettingsApi } from '@/redux/actions/campaign';
-import ProductsSkeleton from '../../../../../src/Components/Skeletons/ProductsSkeleton.jsx';
+import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import { useRouter } from 'next/router';
 
-const AppProducts = () => {
+const Cart = () => {
 
     const router = useRouter()
-    const routerPage = router.query.page
-    // console.log('router.query.page', router.query.page)
+
+    console.log(router.query.slug)
+
+    const contentId = router.query.slug;
 
     const [productsData, setProductsData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [totalPage, setTotalPage] = useState('');
     const [sortOption, setSortOption] = useState('');
-
-    const handleFilterChange = (e) => {
-        setSortOption(e.target.value);
-        setLoading(true)
-        GetProductsApi({
-            category_id: 8,
-            product_filter: e.target.value,
-            onSuccess: (response) => {
-                // console.log(response?.data?.data, "PriceFiterData");
-                setProductsData(response.data.data);
-                setTotalPage(response.data.last_page)
-                // console.log(totalPage)
-                setLoading(false)
-            },
-            onError: (error) => {
-                console.log(error);
-            }
-        });
-    }
-
+    const [page, setPage] = useState('1')
 
     const loadPageData = (page) => {
         setLoading(true);
-        GetProductsApi({
-            page,
-            category_id: 8,
-            onSuccess: (response) => {
-                // console.log(response?.data?.data, "ProductsResponse");
-                setProductsData(response.data.data);
-                setTotalPage(response.data.last_page)
-                // console.log(totalPage)
-                setLoading(false)
-            },
-            onError: (error) => {
-                console.log(error);
-            }
-        });
+        if (contentId) {
+            GetProductsApi({
+                content_id: contentId,
+                onSuccess: (response) => {
+                    // console.log(response?.data?.data, "ProductsResponse");
+                    setProductsData(response.data.data);
+                    setTotalPage(response.data.last_page)
+                    // console.log(totalPage)
+                    setLoading(false)
+                },
+                onError: (error) => {
+                    console.log(error);
+                }
+            });
+        }
+
     };
 
     const handlePageChange = ({ selected }) => {
@@ -71,19 +56,18 @@ const AppProducts = () => {
         loadPageData(nextPage);
         setSortOption('')
         // window.scrollTo(0, 0);
-        // setPage(nextPage)
+        setPage(nextPage)
         router.push(`/products/web-products/page/${nextPage}`)
     };
-
-
 
     useEffect(() => {
         // console.log(sortOption, 'sortOption')
     }, [sortOption]);
 
     useEffect(() => {
-        loadPageData(routerPage);
-    }, [routerPage]);
+        loadPageData(currentPage);
+    }, [currentPage, contentId]);
+
 
     const renderStars = (rating) => {
         const totalStars = 5;
@@ -107,12 +91,7 @@ const AppProducts = () => {
 
     return (
         <>
-
-            <Head>
-                <title> Create Websites with WRTeam's Digital Products</title>
-                <meta name="description" content="Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps and web." />
-            </Head>
-            <Breadcrum title='Web' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'Web Products'} />
+            {/* <Breadcrum title='Web' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'Web Products'} /> */}
             <section className='container webPro'>
 
                 <div className="row">
@@ -121,23 +100,10 @@ const AppProducts = () => {
                             {
                                 loading ?
                                     <span> <Skeleton width={300} height={25} /></span> :
-                                    <span className='commonHeadlines' >We found <span>{productsData?.length}</span> Products</span>
+                                    <span className='commonHeadlines' >We found <span>{productsData?.length} </span>
+                                        {productsData?.length > 1 ? 'Products' : 'Product'} In Your Cart</span>
 
                             }
-                            <div className="sortBy">
-                                <span>Sort By :</span>
-                                <select
-                                    className="form-select form-select-md"
-                                    aria-label=".form-select-lg example"
-                                    onChange={handleFilterChange}
-                                    value={sortOption}
-                                >
-                                    <option value={""}>Select</option>
-                                    <option value={1}>Price: Low to High</option>
-                                    <option value={2}>Price: High to Low</option>
-                                    <option value={3}>Most Popular</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
 
@@ -210,7 +176,7 @@ const AppProducts = () => {
                                 pageCount={totalPage}
                                 pageRangeDisplayed={3}
                                 marginPagesDisplayed={1}
-                                forcePage={routerPage - 1} // react-paginate starts counting from 0
+                                forcePage={currentPage - 1} // react-paginate starts counting from 0
                                 onPageChange={handlePageChange}
                                 containerClassName="pagination"
                                 activeClassName="active"
@@ -232,4 +198,4 @@ const AppProducts = () => {
     )
 }
 
-export default AppProducts
+export default Cart

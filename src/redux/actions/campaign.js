@@ -60,12 +60,13 @@ export const GetProductsApi = ({
     category_id = '',
     slug = '',
     product_filter = '',
+    content_id = '',
     onSuccess = () => { },
     onError = () => { },
     onStart = () => { } }) => {
     store.dispatch(
         apiCallBegan({
-            ...getProducts(page, category_id, slug, product_filter),
+            ...getProducts(page, category_id, slug, product_filter,content_id),
             displayToast: false,
             onStart,
             onSuccess,

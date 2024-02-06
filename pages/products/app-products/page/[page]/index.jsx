@@ -19,7 +19,7 @@ const AppProducts = () => {
 
     const router = useRouter()
     const routerPage = router.query.page
-    console.log('router.query.page', router.query.page)
+    // console.log('router.query.page', router.query.page)
 
     const [productsData, setProductsData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);

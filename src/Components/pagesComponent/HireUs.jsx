@@ -111,20 +111,21 @@ const HireUs = () => {
                 phone: number,
                 message: message,
                 onSuccess: (res) => {
-                    // console.log(res)
+                    toast.success('Submited Successfully !')
+                    setName('')
+                    setNumber('')
+                    setEmail('')
+                    setBudget('')
+                    setMessage('')
                 },
                 onError: (error) => {
                     console.log(error)
+                    toast.error(error.message)
                 }
             }
 
             )
-            toast.success('Submited Successfully !')
-            setName('')
-            setNumber('')
-            setEmail('')
-            setBudget('')
-            setMessage('')
+
         }
 
     };
@@ -154,7 +155,7 @@ const HireUs = () => {
 
     return (
         <>
-           
+
             {/* <Breadcrum title="Hire" blueText="Us" contentOne="Home" contentTwo="Hire Us" /> */}
 
             <section id='hireUs'>
@@ -300,7 +301,7 @@ const HireUs = () => {
                 </div>
             </section>
 
-            
+
 
             <section id='success'>
                 <div className="container">

@@ -90,20 +90,20 @@ const ContactUs = () => {
                 phone: number,
                 message: message,
                 onSuccess: (res) => {
-                    // console.log(res)
+                    toast.success('Submited Successfully !')
+                    setName('')
+                    setNumber('')
+                    setEmail('')
+                    setSubject('')
+                    setMessage('')
                 },
                 onError: (error) => {
                     console.log(error)
+                    toast.error(error.message)
                 }
             }
 
             )
-            toast.success('Submited Successfully !')
-            setName('')
-            setNumber('')
-            setEmail('')
-            setSubject('')
-            setMessage('')
         }
 
     };
