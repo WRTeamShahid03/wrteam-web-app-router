@@ -21,6 +21,7 @@ import { FiMail } from "react-icons/fi";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import whatsappQR from '../../Asset/Images/whatsappQR.png'
 import { GetSettingsApi, contactUsApi } from '@/redux/actions/campaign';
+import FormLoader from '../FormLoader'
 
 
 const ContactUs = () => {
@@ -47,6 +48,7 @@ const ContactUs = () => {
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [formLoader, setFormLoader] = useState(false)
     const form = useRef();
 
     const handleNumber = (e) => {
@@ -83,6 +85,7 @@ const ContactUs = () => {
             toast.error('Fill out the form first')
         }
         else {
+            setFormLoader(true)
             contactUsApi({
                 name: name,
                 email: email,
@@ -91,6 +94,7 @@ const ContactUs = () => {
                 message: message,
                 onSuccess: (res) => {
                     toast.success('Submited Successfully !')
+                    setFormLoader(false)
                     setName('')
                     setNumber('')
                     setEmail('')
@@ -100,6 +104,7 @@ const ContactUs = () => {
                 onError: (error) => {
                     console.log(error)
                     toast.error(error.message)
+                    setFormLoader(false)
                 }
             }
 
@@ -264,7 +269,11 @@ const ContactUs = () => {
                                             <textarea className="form-control" id="exampleFormControlTextarea1" rows="10" name='message' placeholder='Your Message' onChange={(e) => setMessage(e.target.value)} value={message} />
                                         </div>
 
-                                        <button type='submit' className='homeCommon_btn'>Submit</button>
+                                        <button type='submit' className='homeCommon_btn'>
+                                            {
+                                                formLoader ? <FormLoader /> : "Sumbit"
+                                            }
+                                        </button>
 
                                     </div>
                                 </form>

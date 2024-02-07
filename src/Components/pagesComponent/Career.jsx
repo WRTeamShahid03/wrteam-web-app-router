@@ -19,6 +19,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { pdfjs } from 'react-pdf';
 import VacanciesCardSkeleton from '../Skeletons/VacanciesCardSkeleton'
+import FormLoader from '../FormLoader'
 
 
 const Career = () => {
@@ -36,6 +37,7 @@ const Career = () => {
     const [inputKey, setInputKey] = useState(Date.now());
     const [vacancies, setVacancies] = useState([])
     const [loading, setLoading] = useState(true);
+    const [formLoader, setFormLoader] = useState(false)
 
     useEffect(() => {
         GetVacanciesApi({
@@ -155,6 +157,7 @@ const Career = () => {
             toast.error('Fill out the form first')
         }
         else {
+            setFormLoader(true)
             // console.log(selectedFile, 'selectedFile')
             careerMailApi({
                 full_name: name,
@@ -167,6 +170,7 @@ const Career = () => {
                 onSuccess: (res) => {
                     // console.log(res)
                     toast.success(res.message)
+                    setFormLoader(false)
                     setName('')
                     setEmail('')
                     setNumber('')
@@ -178,6 +182,7 @@ const Career = () => {
                 onError: (error) => {
                     console.log(error)
                     toast.error(error.message)
+                    setFormLoader(true)
                 }
             })
 
@@ -433,7 +438,11 @@ const Career = () => {
                                                 </div>
 
                                             </div>
-                                            <button type='submit' className='homeCommon_btn'>Submit</button>
+                                            <button type='submit' className='homeCommon_btn'>
+                                                {
+                                                    formLoader ? <FormLoader /> : "Sumbit"
+                                                }
+                                            </button>
                                         </div>
 
 
