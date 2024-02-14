@@ -146,7 +146,7 @@ const AppProducts = () => {
                                             return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}
                                             // ref={index === productsData.length - 1 ? lastProductRef : null}
                                             >
-                                                <Link href={`/product-details/${e.slug}`}>
+                                                <Link href={`/product-details/${e.slug}`} target='_blank'>
                                                     <Card>
                                                         <Image height={0} width={0} loading="lazy" alt='product_img' className='webProImg card-img-top' src={e.banner_image} />
                                                         <Card.Body>
