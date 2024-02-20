@@ -598,7 +598,7 @@ img {
 }
 
 #winner {
-    margin-top: -200px;
+    margin-top: 100px;
 }
 
 #winner .winnerWrapper {
@@ -1216,11 +1216,13 @@ img {
 #tech .techBottDiv .techMainCard .techCard .techIcons {
     width: 100%;
 }
+
 @media screen and (max-width: 399px) {
     #tech .techBottDiv .techMainCard .techCard .techIcons {
         width: 160%;
     }
 }
+
 #tech .techBottDiv .techMainCard .techCard:hover .techIcons {
     filter: brightness(5%) invert(100%);
 }
@@ -1320,7 +1322,8 @@ img {
         margin-top: 25px;
         margin-bottom: -30px;
     }
-    #workChain .workBottDiv .workCard .wrapper .workTitle{
+
+    #workChain .workBottDiv .workCard .wrapper .workTitle {
         margin-top: 0px;
         margin-bottom: 0;
     }
@@ -4096,6 +4099,12 @@ footer .footerContainer .flinks {
     height: 50px;
 }
 
+@media only screen and (min-width: 1400px) and (max-width: 1650px) {
+    .appPro .cardsWrapper .card .card-title {
+        font: normal normal bold 16px/19px Montserrat;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .webPro .cardsWrapper .card .card-title {
         height: 100%;
@@ -5517,22 +5526,155 @@ footer .footerContainer .flinks {
     align-items: center;
     height: 20px;
     padding: 05px 10px;
-  }
-  
-  .formLoader{
+}
+
+.formLoader {
     border: 4px solid #f3f3f3;
     border-top: 4px solid var(--primary-color);
     border-radius: 50%;
     width: 20px;
     height: 20px;
     animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+.envantoProfileSect {
+    margin-top: 100px;
+    background-color: #283042;
+
+}
+
+.envantoProfileSect .upperDiv,
+.envantoProfileSect .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.envantoProfileSect .textWrapper {
+    width: 56%;
+    text-align: center;
+    gap: 20px;
+}
+
+.envantoProfileSect .common_span {
+    background: #FFFFFF1F 0% 0% no-repeat padding-box;
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 16px 30px;
+}
+
+.envantoProfileSect .common_headlines {
+    text-align: center;
+    font: normal normal 600 34px/64px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.envantoProfileSect .common_headlines span {
+    color: #e9b947;
+}
+
+
+.envantoProfileSect .para {
+    font: normal normal normal 16px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #d1d1d1;
+}
+
+.envantoProfileSect .bottomDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.envantoProfileSect .bottomDiv img {
+    width: 80%;
+}
+
+.envantoProfileSect .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.envantoProfileSect button {
+    background: #FFFFFF1F 0% 0% no-repeat padding-box;
+    border-radius: 60px;
+    border: none;
+    width: 250px;
+    height: 64px;
+    font: normal normal 600 20px/32px Montserrat;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.envantoProfileSect button:hover {
+    background: #82B541 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 28px #82B54152;
+}
+
+.envantoProfileSect .row {
+    padding: 99px 0px;
+    gap: 80px 0px;
+    background-color: #283042;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 996px) {
+    .envantoProfileSect .row {
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .envantoProfileSect .textWrapper {
+        width: 100%;
+    }
+
+    .envantoProfileSect .bottomDiv {
+        margin-left: 0px;
+    }
+
+    .envantoProfileSect .bottomDiv img {
+        width: 65%;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .envantoProfileSect .common_headlines {
+        font: normal normal 600 20px/44px Montserrat;
+    }
+
+    .envantoProfileSect .common_span {
+        font: normal normal 600 14px/19px Montserrat;
+        padding: 12px 20px;
+    }
+
+    .envantoProfileSect .para {
+        font: normal normal normal 14px/29px Montserrat;
+    }
+
+    .envantoProfileSect button {
+        width: 200px;
+        height: 44px;
+        font: normal normal 600 18px/32px Montserrat;
+        margin-top: -12px;
+    }
+}

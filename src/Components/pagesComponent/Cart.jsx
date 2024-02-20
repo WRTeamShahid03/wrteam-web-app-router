@@ -19,8 +19,6 @@ const Cart = () => {
 
     const router = useRouter()
 
-    console.log(router.query.slug)
-
     const contentId = router.query.slug;
 
     const [productsData, setProductsData] = useState([]);
@@ -30,11 +28,17 @@ const Cart = () => {
     const [sortOption, setSortOption] = useState('');
     const [page, setPage] = useState('1')
 
+    // replace number after colon(:) to 1
+    const contentIdnew = contentId?.split(',').map(item => {
+        const parts = item.split(':');
+        return `${parts[0]}:1`;
+    }).join(',');
+
     const loadPageData = (page) => {
-        setLoading(true);
+        setLoading(true)
         if (contentId) {
             GetProductsApi({
-                content_id: contentId,
+                content_id: contentIdnew,
                 onSuccess: (response) => {
                     // console.log(response?.data?.data, "ProductsResponse");
                     setProductsData(response.data.data);

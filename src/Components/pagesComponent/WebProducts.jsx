@@ -52,10 +52,8 @@ const WebProducts = () => {
             page,
             category_id:  8,
             onSuccess: (response) => {
-                // console.log(response?.data?.data, "ProductsResponse");
                 setProductsData(response.data.data);
                 setTotalPage(response.data.last_page)
-                // console.log(totalPage)
                 setLoading(false)
             },
             onError: (error) => {
@@ -75,7 +73,6 @@ const WebProducts = () => {
     };
 
     useEffect(() => {
-        // console.log(sortOption, 'sortOption')
     }, [sortOption]);
 
     useEffect(() => {

@@ -89,22 +89,22 @@ const DigitalMarketing = () => {
         {
             id: 0,
             icon: processIcon1,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Market Research',
+            desc: 'We will study your business, target audience, and new trends to gain insights into shaping our marketing approach.'
 
         },
         {
             id: 1,
             icon: processIcon2,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Competitor Analysis',
+            desc: 'Analyzing your competitors helps us understand their marketing strategies, strengths, and weaknesses, guiding our approach to standing out.'
 
         },
         {
             id: 2,
             icon: processIcon3,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Strategy Building',
+            desc: 'We create a personolized marketing strategy based on our research, aligning with your business goals and setting you apart in the industry.'
 
         },
     ]
@@ -113,22 +113,22 @@ const DigitalMarketing = () => {
         {
             id: 0,
             icon: processIcon4,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Strategy Implementation',
+            desc: 'We execute the strategy across channels to reach and engage your target audience effectively.'
 
         },
         {
             id: 1,
             icon: processIcon5,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Performance Monitoring',
+            desc: 'We regularly check how well your marketing campaigns are doing, making changes if needed to stay on track with your goals.'
 
         },
         {
             id: 2,
             icon: processIcon6,
-            title: '01. Idea',
-            desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+            title: 'Reporting',
+            desc: 'We provide transparent reports to keep you informed about your campaign impact and areas for improvement'
 
         },
     ]

@@ -105,7 +105,7 @@ const AppProducts = () => {
     return (
         <>
             <Breadcrum title='App' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'App Products'} />
-            <section className='container webPro'>
+            <section className='container webPro appPro'>
 
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12">

@@ -42,7 +42,6 @@ const Career = () => {
     useEffect(() => {
         GetVacanciesApi({
             onSuccess: (response) => {
-                console.log(response.data, 'vacanciesState');
                 setVacancies(response.data);
                 setLoading(false)
             },

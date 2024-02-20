@@ -12,7 +12,7 @@ const EnvantoSection = () => {
     <>
 
       <section className="envantoSect container">
-        <div className="row" 
+        <div className="row"
         // data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100"
         >
           <div className="col-sm-12 col-md-12 col-lg-6">

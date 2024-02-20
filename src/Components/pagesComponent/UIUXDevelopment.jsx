@@ -83,22 +83,22 @@ const UIUXDevelopment = () => {
     {
       id: 0,
       icon: processIcon1,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Discovery & Research',
+      desc: 'We gather insights about your project, audience, and market to create designs that connect with your audience effectively.'
 
     },
     {
       id: 1,
       icon: processIcon2,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Wireframing',
+      desc: 'We sketch the basic layout and functionality of your design, ensuring it meets your goals and the needs of users'
 
     },
     {
       id: 2,
       icon: processIcon3,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Prototyping',
+      desc: 'After wireframing, we create interactive mockups to simulate user interactions and refine the design.'
 
     },
   ]
@@ -107,22 +107,22 @@ const UIUXDevelopment = () => {
     {
       id: 0,
       icon: processIcon4,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Visual Design',
+      desc: 'We design the visual elements of your product or service, ensuring they reflect your brand and maintain consistency across all platforms.'
 
     },
     {
       id: 1,
       icon: processIcon5,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Iteration and Refinement',
+      desc: 'We refine based on feedback, ensuring our work evolves to meet changing needs and trends.'
 
     },
     {
       id: 2,
       icon: processIcon6,
-      title: '01. Idea',
-      desc: 'Our web development service is ready to meet your unique business needs and deliver high-quality.'
+      title: 'Final Delivery',
+      desc: 'Once everything is refined and approved, we deliver the finalized product or service, ready for implementation.'
 
     },
   ]

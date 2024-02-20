@@ -51,6 +51,7 @@ import Testimonials from '../Testimonials';
 import Link from 'next/link';
 import Image from 'next/image';
 import EnvantoSection from '../EnvantoSection';
+import EnvantoProfileSection from '../EnvantoProfileSection';
 
 
 const Home = () => {
@@ -335,13 +336,13 @@ const Home = () => {
                 </section>
                 {/* aboutUs ends here  */}
 
-                <div className={`envantoProfile`}
+                {/* <div className={`envantoProfile`}
                 // style={{
                 //     zIndex: scrollValue >= 1150 && scrollValue < 2580 ? '100000' : '1'
                 // }}
                 >
                     <EnvantoSection />
-                </div>
+                </div> */}
 
 
                 <section id="winner" className='container'>
@@ -607,6 +608,8 @@ const Home = () => {
 
                 <WorkChain />
                 {/* workChain ends  */}
+
+                <EnvantoProfileSection />
 
                 <Testimonials />
                 {/* testimonials ends  */}

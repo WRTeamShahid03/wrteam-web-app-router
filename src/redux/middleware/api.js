@@ -53,7 +53,6 @@ const api = ({ dispatch, getState }) => next => async action => {
 
         if (response.data.error !== false) {
             // Dispatch Default onError Event
-            console.log(response.data.error)
 
             dispatch(actions.apiCallFailed((response.data.message)));
 
