@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #2E71FE;
+    --secondary-color: #283042;
 }
 
 body {
@@ -131,7 +132,7 @@ img {
 
 .homeCommon_btn:after {
     content: "";
-    background-color: #283042;
+    background-color: var(--secondary-color);
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -228,7 +229,7 @@ img {
 #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard1 .fcardImg,
 #homeHeroSect .heroContainer .heroCont-rightDiv .floatingCard2 .fcardImg {
     padding: 8px;
-    background: #283042 0% 0% no-repeat padding-box;
+    background: var(--secondary-color) 0% 0% no-repeat padding-box;
     border-radius: 4px;
 }
 
@@ -426,7 +427,7 @@ img {
     color: transparent;
     transform: rotate(-89deg);
     /* margin-left: 110px; */
-    -webkit-text-stroke: 0.3px #283042;
+    -webkit-text-stroke: 0.3px var(--secondary-color);
     left: -148px;
     top: 266px;
 }
@@ -500,7 +501,7 @@ img {
 #aboutUs .aboutWrapper .aboutLeftDiv .aboutImg .aboutSmImg .experience {
     display: flex;
     flex-direction: column;
-    background: #283042;
+    background: var(--secondary-color);
     padding: 40px 25px;
     color: white;
 }
@@ -545,7 +546,7 @@ img {
 }
 
 .common_span span {
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 #aboutUs .aboutWrapper .aboutRightDiv h2 {
@@ -634,7 +635,7 @@ img {
     color: transparent;
     transform: rotate(90deg);
     right: -146px;
-    -webkit-text-stroke: 0.3px #283042;
+    -webkit-text-stroke: 0.3px var(--secondary-color);
     top: 242px;
 }
 
@@ -1097,7 +1098,7 @@ img {
 #tech .techWrapper .techContent h4 {
     font: normal normal 800 36px/52px Montserrat;
     letter-spacing: 0px;
-    color: #283042;
+    color: var(--secondary-color);
     margin-top: 30px;
     /* width: 104%; */
 }
@@ -1119,7 +1120,7 @@ img {
 }
 
 #tech .techBottDiv {
-    background-color: #283042;
+    background-color: var(--secondary-color);
     box-shadow: 0px 16px 36px #2435525c;
     border-radius: 30px;
     opacity: 0.9;
@@ -1440,7 +1441,7 @@ img {
 
 #testimonials .testSlider .swiperCard .testiFoot span:nth-child(1) {
     font: normal normal 600 24px/29px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 #testimonials .testSlider .swiperCard .testiImg {
@@ -1578,7 +1579,7 @@ img {
 
 .getInTouch .homeCommon_btn {
     padding: 12px 30px;
-    background-color: #283042;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
     border-radius: 8px;
@@ -1662,7 +1663,7 @@ img {
     width: max-content !important;
     margin: 0 14px;
     font: normal normal 600 16px/19px Montserrat;
-    color: #283042 !important;
+    color: var(--secondary-color) !important;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1697,13 +1698,13 @@ img {
 }
 
 #contactIcon {
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 
 .navDropdown {
     font: normal normal 600 16px/19px Montserrat !important;
-    color: #283042 !important;
+    color: var(--secondary-color) !important;
     cursor: pointer !important;
 }
 
@@ -1712,7 +1713,7 @@ img {
 }
 
 .navDropdown .ant-space-item {
-    color: #283042 !important;
+    color: var(--secondary-color) !important;
 }
 
 .ant-dropdown-menu .ant-dropdown-menu-item:hover {
@@ -1721,7 +1722,7 @@ img {
 
 .dropdownItem {
     font: normal normal 600 16px/19px Montserrat !important;
-    color: #283042 !important;
+    color: var(--secondary-color) !important;
 }
 
 .dropdownItem::after {
@@ -1761,7 +1762,7 @@ img {
 
 .offcanvas-header {
     background: white !important;
-    color: #283042 !important;
+    color: var(--secondary-color) !important;
 }
 
 .offcanvas .nav {
@@ -1849,7 +1850,7 @@ img {
 #header #rightSide .homeCommon_btn,
 .offcanvas #rightSide .homeCommon_btn {
     width: 120px;
-    background-color: #283042;
+    background-color: var(--secondary-color);
     font: normal normal 600 16px/19px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -2005,7 +2006,7 @@ img {
 footer {
     margin-top: 160px;
     width: 100%;
-    background: #283042 0% 0% no-repeat padding-box;
+    background: var(--secondary-color) 0% 0% no-repeat padding-box;
 }
 
 footer .footerContainer {
@@ -2449,7 +2450,7 @@ footer .footerContainer .flinks {
 .valuesList span {
     font: normal normal 600 16px/32px Montserrat;
     letter-spacing: 0px;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 #values .homeCommon_btn {
@@ -2585,7 +2586,7 @@ footer .footerContainer .flinks {
 .webPro .page-item:last-child .page-link {
     border: none !important;
     border-radius: 50px;
-    background-color: #283042;
+    background-color: var(--secondary-color);
     color: white !important;
     padding: 5px 6px;
 }
@@ -2593,14 +2594,14 @@ footer .footerContainer .flinks {
 #team .teamSlider .page-link,
 #category .page-link,
 .webPro .page-link {
-    background-color: #283042;
+    background-color: var(--secondary-color);
     color: white !important;
 }
 
 #team .teamSlider .page-link:hover,
 #category .page-link:hover,
 .webPro .page-link:hover {
-    background-color: #283042;
+    background-color: var(--secondary-color);
     color: white !important;
 }
 
@@ -2880,7 +2881,7 @@ footer .footerContainer .flinks {
 #category .cateBox,
 #category .recentBlogs,
 #category .tags {
-    border: 0.5px solid #28304280;
+    border: 0.5px solid var(--secondary-color)80;
     border-radius: 16px;
     padding: 20px;
     position: relative;
@@ -3053,8 +3054,8 @@ footer .footerContainer .flinks {
 }
 
 #blogDetails .bottomDiv .tagDiv {
-    border-top: 1.5px solid #2830423b;
-    border-bottom: 1.5px solid #2830423b;
+    border-top: 1.5px solid var(--secondary-color)3b;
+    border-bottom: 1.5px solid var(--secondary-color)3b;
     padding: 40px 0px;
     display: flex;
     justify-content: space-between;
@@ -3062,7 +3063,7 @@ footer .footerContainer .flinks {
 
 #blogDetails .bottomDiv .tagDiv span:first-child {
     font: normal normal bold 18px/32px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 #blogDetails .bottomDiv .tagDiv .common_span {
@@ -3122,7 +3123,7 @@ footer .footerContainer .flinks {
     margin-top: 20px;
     position: relative;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 8px 26px #28304214;
+    box-shadow: 0px 8px 26px var(--secondary-color)14;
     border-radius: 8px;
     padding: 12px 22px;
 }
@@ -3155,7 +3156,7 @@ footer .footerContainer .flinks {
 
 #blogDetails .previousBlogs .boxHeadline {
     font: normal normal bold 18px/32px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
     display: flex;
 }
 
@@ -3196,7 +3197,7 @@ footer .footerContainer .flinks {
 
 #blogDetails .bottomDiv .commentBox .commentCard .userContent .userName {
     font: normal normal bold 18px/32px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 #blogDetails .bottomDiv .commentBox .commentCard .userContent .userComment {
@@ -3216,14 +3217,14 @@ footer .footerContainer .flinks {
 
 #blogDetails .bottomDiv .commentBox .commentCard .userContent .replyBtn {
     font: normal normal 100 16px/32px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
 #blogDetails .bottomDiv .homeCommon_btn,
 #contactForm .homeCommon_btn,
 #hireUs .homeCommon_btn {
-    background-color: #283042;
+    background-color: var(--secondary-color);
     margin-top: 20px;
 }
 
@@ -3256,7 +3257,7 @@ footer .footerContainer .flinks {
 
 #blogDetails .bottomDiv .leaveInputColor {
     font: normal normal 100 14px/32px Montserrat;
-    color: #283042C2;
+    color: var(--secondary-color)C2;
     background: #FAFAFA !important;
     border: 0.5px solid #545a6869;
     border-radius: 8px;
@@ -3479,7 +3480,7 @@ footer .footerContainer .flinks {
 
 #whyHireUs .whyHireCards .card .card1Title {
     font: normal normal bold 24px/29px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -3531,7 +3532,7 @@ footer .footerContainer .flinks {
     justify-content: start;
     align-items: center;
     padding: 10px;
-    box-shadow: 0px 8px 26px #28304214;
+    box-shadow: 0px 8px 26px var(--secondary-color)14;
     border-radius: 8px;
     width: 226px;
     gap: 12px;
@@ -3567,7 +3568,7 @@ footer .footerContainer .flinks {
 
 #hireUs .hireLowerDiv .hireUsCard .nextjs {
     padding: 12px;
-    /* background: #84B92B29; */
+    background: #84B92B29;
     background: #28304229;
     border-radius: 8px;
 }
@@ -4075,7 +4076,7 @@ footer .footerContainer .flinks {
 }
 
 .webPro .cardsWrapper .card .ratingDiv .sales {
-    background: #283042 0% 0% no-repeat padding-box;
+    background: var(--secondary-color) 0% 0% no-repeat padding-box;
     border-radius: 4px;
     font: normal normal 600 14px/18px Montserrat;
     color: #FFFFFF;
@@ -4089,7 +4090,7 @@ footer .footerContainer .flinks {
 
 .webPro .cardsWrapper .card .ratingDiv .rating {
     font: normal normal 600 14px/18px Montserrat;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 .webPro .cardsWrapper .card .card-title {
@@ -4160,7 +4161,7 @@ footer .footerContainer .flinks {
 .webPro .cardsWrapper .card .cardFooter .buyBtn {
     font: normal normal 600 16px/19px Montserrat;
     color: #545A68;
-    border: 0.5px solid #283042a1;
+    border: 0.5px solid var(--secondary-color)a1;
     border-radius: 4px;
     padding: 5px;
     transition: all 0.3s ease-out;
@@ -4186,7 +4187,7 @@ footer .footerContainer .flinks {
 }
 
 .webPro .cardsWrapper .card:hover {
-    box-shadow: 0px 16px 36px #28304214;
+    box-shadow: 0px 16px 36px var(--secondary-color)14;
 }
 
 .webPro a {
@@ -4358,7 +4359,7 @@ footer .footerContainer .flinks {
 .benefits .benefitsCards .card:hover {
     border: 2px solid #ffffff4d;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: -16px 16px 46px #2830421F;
+    box-shadow: -16px 16px 46px var(--secondary-color)1F;
     transition: all 0.3s ease-out;
 }
 
@@ -4419,7 +4420,7 @@ footer .footerContainer .flinks {
 }
 
 .process .upperDivRightContent .processCard:hover .cardIcon {
-    background: #283042 0% 0% no-repeat padding-box;
+    background: var(--secondary-color) 0% 0% no-repeat padding-box;
 }
 
 .process .upperDivRightContent .processCard .cardIcon img {
@@ -4489,7 +4490,7 @@ footer .footerContainer .flinks {
 
 .build .buildWrapper {
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 46px #2830421F;
+    box-shadow: 0px 0px 46px var(--secondary-color)1F;
     border-radius: 16px;
     padding: 50px;
     margin-top: -270px;
@@ -4878,7 +4879,7 @@ footer .footerContainer .flinks {
 
 
 .err404 .btn:hover {
-    background-color: #283042;
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -4952,7 +4953,7 @@ footer .footerContainer .flinks {
 .envantoList span {
     font: normal normal 600 16px/32px Montserrat;
     letter-spacing: 0px;
-    color: #283042;
+    color: var(--secondary-color);
 }
 
 .envantoList .mileStone {
@@ -5281,7 +5282,7 @@ footer .footerContainer .flinks {
 }
 
 .productDetailsPage .productDetailsCardWrapper .card .middleDiv .salesCount {
-    color: #283042;
+    color: var(--secondary-color);
     font-size: 18px;
 }
 
@@ -5313,7 +5314,7 @@ footer .footerContainer .flinks {
 }
 
 .productDetailsPage .productDetailsCardWrapper .card .middleDiv .filesInclude .fileDesc {
-    color: #283042;
+    color: var(--secondary-color);
     margin-left: 12px;
     font-size: 14px;
 }
@@ -5328,7 +5329,7 @@ footer .footerContainer .flinks {
 
 .productDetailsPage .productDetailsCardWrapper .card .bottomDiv span {
     font-size: 20px;
-    color: #283042;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -5549,7 +5550,7 @@ footer .footerContainer .flinks {
 
 .envantoProfileSect {
     margin-top: 100px;
-    background-color: #283042;
+    background-color: var(--secondary-color);
 
 }
 
@@ -5583,7 +5584,11 @@ footer .footerContainer .flinks {
 }
 
 .envantoProfileSect .common_headlines span {
-    color: #e9b947;
+    /* color: #e9b947; */
+    color: #775a19;
+    background: -webkit-linear-gradient(#e9b947, #9d7b2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -5631,7 +5636,7 @@ footer .footerContainer .flinks {
 .envantoProfileSect .row {
     padding: 99px 0px;
     gap: 80px 0px;
-    background-color: #283042;
+    background-color: var(--secondary-color);
     border-radius: 20px;
 }
 
@@ -5676,5 +5681,103 @@ footer .footerContainer .flinks {
         height: 44px;
         font: normal normal 600 18px/32px Montserrat;
         margin-top: -12px;
+    }
+}
+
+/* envantoProfileSect ends here */
+
+.portfolio {
+    margin-top: 40px;
+}
+
+.portfolio .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.portfolio .textWrapper .commonHeadlines {
+    padding: 0px;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.portfolio .comman_para {
+    margin-top: 30px;
+}
+
+.portfolio .storesWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.portfolio .storesWrapper div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    background: var(--secondary-color);
+    border-radius: 36px;
+    padding-left: 0px;
+    color: white;
+    width: 190px;
+    height: 70px;
+    padding: 0px 6px;
+}
+
+.portfolio .storesWrapper div img {
+    width: 100%;
+}
+
+.portfolio .storesWrapper div .playStore {
+    width: 80%;
+}
+
+.portfolio .storesWrapper div span:first-child {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 12px;
+    text-align: center;
+}
+
+.portfolio .storesWrapper div span:last-child {
+    font: normal normal 600 20px/32px Montserrat;
+    color: #FFFFFF;
+}
+
+.portfolio .sectionImg {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    .portfolio .row {
+        flex-direction: row !important;
+    }
+
+    .portfolio .row .col-lg-6 {
+        width: 100%;
+    }
+
+    .portfolio .sectionImg {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .portfolio .commonHeadlines {
+        font: normal normal 800 20px/32px Montserrat;
+    }
+
+    .portfolio .storesWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 }

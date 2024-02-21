@@ -25,7 +25,7 @@ import Head from "next/head";
 
 const index = (
   // { seoData, currentURL }
-  ) => {
+) => {
   return (
     <>
       {/* <Meta
@@ -67,4 +67,5 @@ const index = (
 // }
 
 // export const getServerSideProps = serverSidePropsFunction;
+
 export default index

@@ -45,15 +45,6 @@ const Header = () => {
     setScroll(window.scrollY);
   };
 
-  // const handlers1 = {
-  //   onMouseEnter: () => setMenuOpen1(true),
-  //   onMouseLeave: () => setMenuOpen1(false),
-  // };
-  // const handlers2 = {
-  //   onMouseEnter: () => setMenuOpen2(true),
-  //   onMouseLeave: () => setMenuOpen2(false),
-  // };
-
 
   return (
     <>
@@ -61,6 +52,7 @@ const Header = () => {
       <Navbar expand="lg" id="header" className={`nav ${scroll > headerTop ? "sticky " : ""}`}>
 
         <div className='container'>
+
           <div className="row">
             <div className="col-sm-5 col-md-5 col-lg-5">
               <div id="leftSide">
@@ -80,21 +72,11 @@ const Header = () => {
 
                   <ServiceDropdown setShow={setShow} />
 
-                  {/* <Link className={`nav-link ${router.pathname === '/blogs' ? 'navActive' : ''}`} href="/blogs">Blogs</Link> */}
-
                   <Link className={`nav-link ${router.pathname === '/career' ? 'navActive' : ''}`} href="/career">Career</Link>
 
                   <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link>
 
-                  {/* <Link className="nav-link" href="/contact-us/" style={{ textDecoration: "none" }}  >
-                    <div className="contactNum">
-                      <span id='callIcon'><IoIosCall size={28} /></span>
-                      <div className="number">
-                        <span>Hot Line Number</span>
-                        <span>+91 12345 67890</span>
-                      </div>
-                    </div>
-                  </Link> */}
+                  {/* <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Portfolio</Link> */}
 
                   <div id="rightSide">
 

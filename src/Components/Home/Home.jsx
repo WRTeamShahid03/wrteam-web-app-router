@@ -609,7 +609,7 @@ const Home = () => {
                 <WorkChain />
                 {/* workChain ends  */}
 
-                <EnvantoProfileSection />
+                {/* <EnvantoProfileSection /> */}
 
                 <Testimonials />
                 {/* testimonials ends  */}

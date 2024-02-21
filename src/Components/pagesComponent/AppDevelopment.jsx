@@ -445,7 +445,7 @@ const AppDevelopment = () => {
             </section>
             {/* build ends  */}
 
-            <section className='webDevContact'>
+            {/* <section className='webDevContact'>
                 <div className="getInTouch container" style={{
                     background: `rgb(23 79 196 / 83%) url(${getTouch.src})`,
                     backgroundSize: 'cover',
@@ -454,7 +454,6 @@ const AppDevelopment = () => {
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-10">
                             <div className="getTouchText">
-                                {/* <span className='word'>{words[wordIndex].substr(0, offset)}</span> */}
                                 <span className='word'>
                                     <Lottie
                                         loop
@@ -472,10 +471,10 @@ const AppDevelopment = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* webDevContact ends  */}
 
-            <section className='recentBlogs container'>
+            {/* <section className='recentBlogs container'>
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12">
                         <div className="recentBlogHeading">
@@ -517,7 +516,7 @@ const AppDevelopment = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* recentBlogs ends  */}
         </div>
     )

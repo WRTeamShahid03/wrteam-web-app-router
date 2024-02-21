@@ -3,6 +3,7 @@ import Meta from '@/Components/Seo/Meta';
 import { GET_SEO_SETTINGS } from '@/utils/api';
 import axios from 'axios';
 import Head from "next/head";
+import { useEffect } from 'react';
 
 // This is seo api
 // const fetchDataFromSeo = async (page) => {
@@ -12,6 +13,8 @@ import Head from "next/head";
 //     );
 
 //     const SEOData = response.data;
+//     // console.log('SEOData: ', SEOData)
+//     // console.log('SEOData.Data: ', SEOData?.data?.description)
 
 //     return SEOData;
 //   } catch (error) {
@@ -19,6 +22,7 @@ import Head from "next/head";
 //     return null;
 //   }
 // };
+
 
 const Index = (
   // { seoData, currentURL }
