@@ -158,6 +158,10 @@
         margin-top: 236px !important;
     }
 
+    #team .card-title {
+        font: normal normal 800 20px/52px Montserrat;
+    }
+
     #team .comman_Headlines {
         width: 52%;
     }
@@ -562,7 +566,7 @@
     }
 
     #team .card-title {
-        font: normal normal 800 21px/52px Montserrat;
+        font: normal normal 800 17px/52px Montserrat;
     }
 
     /* team ends  */
@@ -1119,7 +1123,7 @@
     }
 
     #team .card-title {
-        font: normal normal 800 18px/52px Montserrat;
+        font: normal normal 800 15px/52px Montserrat;
     }
 
     /* team ends  */
@@ -5002,7 +5006,7 @@
     }
 
     #team .card-title {
-        font: normal normal 800 22px/52px Montserrat;
+        font: normal normal 800 18px/52px Montserrat;
     }
 
     .breadcrum {
