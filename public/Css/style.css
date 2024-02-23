@@ -2511,6 +2511,7 @@ footer .footerContainer .flinks {
 #team .teamDeatails {
     margin-top: 264px;
     transition: all 0.3s;
+    text-align: center;
 }
 
 #team .card-title {

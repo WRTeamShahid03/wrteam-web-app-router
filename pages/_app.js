@@ -14,34 +14,39 @@ import TopHeader from "@/Components/TopHeader";
 import { GetSeoSettingsApi } from "@/redux/actions/campaign";
 import Loader from "@/Components/Loader";
 import 'react-loading-skeleton/dist/skeleton.css'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function MyApp({ Component, pageProps, data }) {
 
+  const queryClient = new QueryClient()
+
   return (
     <>
-      <Providers store={store}>
-        <Toaster position="top-center" reverseOrder={false} />
+      <QueryClientProvider client={queryClient}>
+        <Providers store={store}>
+          <Toaster position="top-center" reverseOrder={false} />
 
-        <Head>
-          {/* whatsapp widget  */}
-          <script
-            type="text/javascript"
-            src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-            id="aisensy-wa-widget"
-            widget-id="ETrrDX"
-          ></script>
-        </Head>
+          <Head>
+            {/* whatsapp widget  */}
+            <script
+              type="text/javascript"
+              src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+              id="aisensy-wa-widget"
+              widget-id="ETrrDX"
+            ></script>
+          </Head>
 
 
-        <>
-          {/* <TopHeader /> */}
-          <Header />
+          <>
+            {/* <TopHeader /> */}
+            <Header />
 
-          <Component {...pageProps} data={data} />
+            <Component {...pageProps} data={data} />
 
-          <Footer />
-        </>
-      </Providers>
+            <Footer />
+          </>
+        </Providers>
+      </QueryClientProvider>
     </>
   );
 }

@@ -1,3 +1,4 @@
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Card from 'react-bootstrap/Card';
@@ -14,8 +15,13 @@ import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import { useRouter } from 'next/router';
+import { ProductsApi } from '@/hooks/productsApi';
+import { useQuery } from '@tanstack/react-query'
+
+
 
 const WebProducts = () => {
+
 
     const router = useRouter()
 
@@ -30,7 +36,7 @@ const WebProducts = () => {
         setSortOption(e.target.value);
         setLoading(true)
         GetProductsApi({
-            category_id:  8,
+            category_id: 8,
             product_filter: e.target.value,
             onSuccess: (response) => {
                 // console.log(response?.data?.data, "PriceFiterData");
@@ -50,7 +56,7 @@ const WebProducts = () => {
         setLoading(true);
         GetProductsApi({
             page,
-            category_id:  8,
+            category_id: 8,
             onSuccess: (response) => {
                 setProductsData(response.data.data);
                 setTotalPage(response.data.last_page)
@@ -98,6 +104,30 @@ const WebProducts = () => {
 
         return stars;
     };
+
+
+
+
+    // api call
+    const getProducts = async () => {
+        try {
+            const { data } = await ProductsApi.getProducts({
+                page: 1,
+                category_id: 8
+            })
+            console.log('queryData', data.data)
+            return data.data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    // react query
+    const { isLoading, data: Data } = useQuery({
+        queryKey: ['getProducts', currentPage],
+        queryFn: getProducts,
+    })
+
 
     return (
         <>

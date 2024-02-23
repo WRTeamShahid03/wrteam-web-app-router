@@ -227,7 +227,7 @@ const Home = () => {
                                                         <LiaStarSolid size={20} color='#ffa800' />
                                                         <LiaStarSolid size={20} color='#ffa800' />
                                                     </span>
-                                                    <span>(15k+) <span className='customerRev'>Customer Reviews </span></span>
+                                                    <span>(2k+) <span className='customerRev'>Customer Reviews </span></span>
                                                 </div>
                                             </div>
 
@@ -237,7 +237,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="floatCardContent">
                                                     <span className='heroStars'>Sales Count</span>
-                                                    <span className=''>(15k+) <span className='customerRev'>Products </span></span>
+                                                    <span className=''>(16k+) <span className='customerRev'>Products </span></span>
                                                 </div>
                                             </div>
 
@@ -609,7 +609,7 @@ const Home = () => {
                 <WorkChain />
                 {/* workChain ends  */}
 
-                {/* <EnvantoProfileSection /> */}
+                <EnvantoProfileSection />
 
                 <Testimonials />
                 {/* testimonials ends  */}
