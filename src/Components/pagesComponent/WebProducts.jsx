@@ -108,25 +108,25 @@ const WebProducts = () => {
 
 
 
-    // api call
+    // api call for react query
     const getProducts = async () => {
         try {
             const { data } = await ProductsApi.getProducts({
                 page: 1,
                 category_id: 8
             })
-            console.log('queryData', data.data)
+            // console.log('queryData', data.data)
             return data.data
         } catch (error) {
             console.log(error)
         }
     }
 
-    // react query
-    const { isLoading, data: Data } = useQuery({
-        queryKey: ['getProducts', currentPage],
-        queryFn: getProducts,
-    })
+    // // react query
+    // const { isLoading, data: Data } = useQuery({
+    //     queryKey: ['getProducts', currentPage],
+    //     queryFn: getProducts,
+    // })
 
 
     return (
