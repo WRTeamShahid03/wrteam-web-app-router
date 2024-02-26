@@ -284,8 +284,6 @@ img {
     100% {
         left: 62%;
     }
-
-
 }
 
 
@@ -1729,7 +1727,7 @@ img {
     content: '' !important;
     width: 0% !important;
     height: 3px !important;
-    background: #2E71FE !important;
+    background: var(--primary-color) !important;
     position: absolute !important;
     top: 28px !important;
     left: 14px !important;
@@ -5785,7 +5783,7 @@ footer .footerContainer .flinks {
 
 /* portfolio ends here  */
 
-:root{
+:root {
     --productPage-primary-color: #087C7C;
 }
 
@@ -5819,3 +5817,35 @@ footer .footerContainer .flinks {
     font-weight: 500;
 
 }
+
+.productDetailsNavbar .rightDiv .productCommonBtn {
+    background-color: var(--productPage-primary-color);
+    color: white;
+    height: 36px;
+    width: 128px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+}
+
+.productDetailsNavbar .nav-link{
+    margin: 0px;
+}
+
+.productDetailsNavbar .nav-link:hover{
+    color: var(--productPage-primary-color) !important;
+}
+
+.productDropdownItem {
+    font: normal normal 600 16px/19px Montserrat !important;
+    color: var(--secondary-color) !important;
+}
+
+.productDropdownItem::after {
+    background: var(--productPage-primary-color) !important;
+}
+
+.productDetailsNavbar .navActive {
+    color: var(--productPage-primary-color) !important;
+}
+
