@@ -15,8 +15,19 @@ import { GetSeoSettingsApi } from "@/redux/actions/campaign";
 import Loader from "@/Components/Loader";
 import 'react-loading-skeleton/dist/skeleton.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { useRouter } from "next/router";
+import ProductDetailHeader from "@/Components/ProductDetailHeader/ProductDetailHeader";
+import ProductDetailFooter from "@/Components/ProductDetailFooter/ProductDetailFooter";
 
 function MyApp({ Component, pageProps, data }) {
+
+  const router = useRouter()
+
+
+  router.pathname.startsWith('/product-detail-page') ? console.log("startwith") : console.log('notstartwith')
+
+
+  // console.log('router.pathname :',router.pathname)
 
   const queryClient = new QueryClient()
 
@@ -38,12 +49,20 @@ function MyApp({ Component, pageProps, data }) {
 
 
           <>
+
             {/* <TopHeader /> */}
-            <Header />
+            {
+              router.pathname.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
+            }
+            {/* <Header /> */}
 
             <Component {...pageProps} data={data} />
 
-            <Footer />
+            {
+              router.pathname.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
+            }
+
+            {/* <Footer /> */}
           </>
         </Providers>
       </QueryClientProvider>

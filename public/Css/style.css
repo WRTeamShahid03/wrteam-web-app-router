@@ -5782,3 +5782,40 @@ footer .footerContainer .flinks {
         justify-content: flex-start;
     }
 }
+
+/* portfolio ends here  */
+
+:root{
+    --productPage-primary-color: #087C7C;
+}
+
+.productDetailsNavbar {
+    background: #087C7C1F;
+    padding-top: 30px;
+}
+
+.productDetailsNavbar .navbarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 20px;
+}
+
+.productDetailsNavbar .productLogo img {
+    width: 150px;
+}
+
+.productDetailsNavbar .centerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.productDetailsNavbar .centerDiv a {
+    color: #212121;
+    font-weight: 500;
+
+}
