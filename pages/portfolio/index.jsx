@@ -36,11 +36,11 @@ const index = (
             /> */}
             <Head>
                 <title>
-                    Top IT company in India | Web Developer | App Developer - wrteam
+                    Mobile App & Web Software Development - ecommerce Solutions
                 </title>
                 <meta
                     name="description"
-                    content="Grow your business with our top web developers, app developers, graphic designers and digital marketing and IT consulting services provider specialists."
+                    content="WRTeam is a mobile app and web development company that helps bring your digital product visions to life. Contact us to create your best website or app."
                 />
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
             </Head>

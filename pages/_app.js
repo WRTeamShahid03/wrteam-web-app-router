@@ -16,8 +16,8 @@ import Loader from "@/Components/Loader";
 import 'react-loading-skeleton/dist/skeleton.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useRouter } from "next/router";
-import ProductDetailHeader from "@/Components/ProductDetailHeader/ProductDetailHeader";
-import ProductDetailFooter from "@/Components/ProductDetailFooter/ProductDetailFooter";
+import ProductDetailHeader from "@/Components/ProductDetailPageSects/ProductDetailHeader/ProductDetailHeader";
+import ProductDetailFooter from "@/Components/ProductDetailPageSects/ProductDetailFooter/ProductDetailFooter";
 
 function MyApp({ Component, pageProps, data }) {
 

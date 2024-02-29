@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Breadcrum from '@/Components/Breadcrum'
 import Card from 'react-bootstrap/Card'
 import Link from 'next/link'
-import Lottie from 'react-lottie-player'
+// import Lottie from 'react-lottie-player'
 import helloText from '../../../src/Components/animatedText.json'
 import { BiRightArrowCircle } from 'react-icons/bi'
 import { BsArrowRightCircle } from 'react-icons/bs'
@@ -52,7 +52,6 @@ import { GetSettingsApi } from '@/redux/actions/campaign'
 
 
 const AppDevelopment = () => {
-
 
     const benefitsCardData = [
         {
@@ -459,7 +458,8 @@ const AppDevelopment = () => {
                                         loop
                                         animationData={helloText}
                                         play
-                                    /></span>
+                                    />
+                                    </span>
                                 <span className='getTouchDesc'>Got A Quastion? We Would Be Happy To Help!</span>
                             </div>
                         </div>

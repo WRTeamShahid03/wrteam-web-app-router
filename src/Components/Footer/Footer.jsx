@@ -31,8 +31,9 @@ const Footer = () => {
                   <div className="col-sm-12 col-md-6 col-lg-2">
                      <div className="cont logoCont">
                         <div className="footLogo">
-
+                           <Link href={'/'}>
                            <Image height={0} width={0} loading="lazy" src={navLogo} alt='navLogo' />
+                           </Link>
 
                         </div>
                         <span>WRTeam has creative and dedicated group of developers who are mastered in apps Developments and Web development with a nice in delivering quality solutions to customers across the globe.</span>
@@ -140,7 +141,7 @@ const Footer = () => {
                               </div>
                               <div className="contactContent">
                                  <span className='footerLinks'> Call </span>
-                                 <span className='footerLinks'>+91 97979 45459 </span>
+                                 <span className='footerLinks'> <Link href={'tel:+91 97979 45459'}>+91 97979 45459</Link> </span>
                               </div>
                            </div>
 
@@ -150,7 +151,7 @@ const Footer = () => {
                               </div>
                               <div className="contactContent">
                                  <span className='footerLinks'> Mail </span>
-                                 <span className='footerLinks'>Support@wrteam.in  </span>
+                                 <span className='footerLinks' ><Link href={'mailto:support@wrteam.in'}>Support@wrteam.in</Link>  </span>
                               </div>
                            </div>
 
