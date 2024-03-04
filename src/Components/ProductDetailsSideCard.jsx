@@ -8,6 +8,8 @@ import { BsStarHalf } from 'react-icons/bs';
 const ProductDetailsSideCard = ({ loading, data, checkoutLink }) => {
     // console.log(checkoutLink, "slugData in detailPage")
     // console.log(data, "dataaaa")
+
+    console.log(data.sale_price,'saleee')
     const renderStars = (rating) => {
         const totalStars = 5;
         const fullStars = Math.floor(rating);
@@ -39,10 +41,17 @@ const ProductDetailsSideCard = ({ loading, data, checkoutLink }) => {
                                 <div className="priceWrapper">
 
                                     <span className='price'>Price :</span>
-                                    <span>
-                                        {/* $ {price} */}
-                                        $ {data?.price}
-                                    </span>
+                                    {
+                                        data?.sale_price == '' || data?.sale_price === null ?
+                                            <span>
+                                                ${data?.price}
+                                            </span> :
+                                            <span>
+                                                <span style={{textDecoration: 'line-through',color: '#22A869',fontSize: '24px',marginRight: '4px'}}>${data?.price}</span>
+                                                <span className='salePrice'>${data?.sale_price}</span>
+                                            </span>
+                                    }
+
                                 </div>
 
                                 <div className="checkoutLink">
