@@ -5,11 +5,11 @@ import ProdctDetailsSkeleton from './Skeletons/ProdctDetailsSkeleton';
 import { LiaStarSolid } from 'react-icons/lia';
 import { BsStarHalf } from 'react-icons/bs';
 
-const ProductDetailsSideCard = ({ loading, data, checkoutLink }) => {
+const ProductDetailsSideCard = ({ loading, data, checkoutLink, salePrice }) => {
     // console.log(checkoutLink, "slugData in detailPage")
     // console.log(data, "dataaaa")
 
-    console.log(data.sale_price,'saleee')
+    // console.log(salePrice, 'saleee')
     const renderStars = (rating) => {
         const totalStars = 5;
         const fullStars = Math.floor(rating);
@@ -42,13 +42,13 @@ const ProductDetailsSideCard = ({ loading, data, checkoutLink }) => {
 
                                     <span className='price'>Price :</span>
                                     {
-                                        data?.sale_price == '' || data?.sale_price === null ?
+                                        data?.sale_price === '' || data?.sale_price === null ?
                                             <span>
                                                 ${data?.price}
                                             </span> :
                                             <span>
-                                                <span style={{textDecoration: 'line-through',color: '#22A869',fontSize: '24px',marginRight: '4px'}}>${data?.price}</span>
-                                                <span className='salePrice'>${data?.sale_price}</span>
+                                                <span style={{ textDecoration: 'line-through', color: '#22A869', fontSize: '24px', marginRight: '4px' }}>${data?.price}</span>
+                                                <span className='salePrice'> ${salePrice ? salePrice : data?.sale_price}</span>
                                             </span>
                                     }
 

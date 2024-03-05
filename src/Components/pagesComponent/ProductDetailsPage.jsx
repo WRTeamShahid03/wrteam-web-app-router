@@ -14,6 +14,7 @@ const ProductDetailsPage = () => {
     const [productsDetails, setProductDetails] = useState([]);
     const [loading, setLoading] = useState(true);
     const [checkoutLink, setCheckoutLink] = useState('')
+    const [salePrice, setSalePrice] = useState('')
 
     const router = useRouter();
 
@@ -28,6 +29,7 @@ const ProductDetailsPage = () => {
                     // console.log(response.data, 'productDetailsState');
                     setProductDetails(response.data);
                     setCheckoutLink(response?.data?.checkout_url)
+                    setSalePrice(response?.data?.sale_price)
                     setLoading(false)
                 },
                 onError: (error) => {
@@ -41,9 +43,9 @@ const ProductDetailsPage = () => {
     }, [productSlug])
 
     useEffect(() => {
-        // console.log(checkoutLink, "links")
+        // console.log(salePrice, "links")
 
-    }, [checkoutLink, productSlug])
+    }, [checkoutLink, productSlug,salePrice])
 
 
     return (
@@ -74,7 +76,7 @@ const ProductDetailsPage = () => {
                                         </div>
 
                                         <div className="col-sm-12 col-md-12 col-lg-3">
-                                            <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} />
+                                            <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} salePrice={salePrice} />
                                         </div>
                                     </>
                             }

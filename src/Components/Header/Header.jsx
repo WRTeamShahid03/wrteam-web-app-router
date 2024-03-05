@@ -5,8 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import navLogo from '../../Asset/wrteam logo.svg';
-import { IoIosCall } from "react-icons/io";
-
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import ProductDropdown from './ProductDropdown';

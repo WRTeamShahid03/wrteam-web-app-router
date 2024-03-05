@@ -1633,11 +1633,24 @@ img {
 .sticky {
     position: sticky !important;
     top: 0;
+    top: 60px;
     background-color: #FEFEFE !important;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     -webkit-animation: headerSlideDown 0.95s ease forwards;
     animation: headerSlideDown 0.95s ease forwards;
     z-index: 99;
+}
+
+/* this is for only when the topHeader is active */
+@media screen and (max-width: 991px) {
+    .sticky {
+        top: 80px;
+    }
+}
+@media screen and (max-width: 416px) {
+    .sticky {
+        top: 100px;
+    }
 }
 
 @keyframes headerSlideDown {
@@ -1953,11 +1966,10 @@ img {
 
 @media only screen and (max-width: 1199px) {
 
-    #header {
+    /* #header {
         position: sticky;
-        top: 0;
         z-index: 99;
-    }
+    } */
 
     .navLogo img {
         max-width: 220px;
@@ -4829,6 +4841,9 @@ footer .footerContainer .flinks {
     font-size: 18px;
     height: 60px;
     gap: 12px;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 @media screen and (max-width:991px) {
