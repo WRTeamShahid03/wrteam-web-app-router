@@ -23,14 +23,16 @@ function MyApp({ Component, pageProps, data }) {
 
   const router = useRouter()
 
-
-  router.pathname.startsWith('/product-detail-page') ? console.log("startwith") : console.log('notstartwith')
-
-
   // console.log('router.pathname :',router.pathname)
 
   const queryClient = new QueryClient()
-
+  useEffect(() => {
+    if (router.pathname.startsWith('/product-detail-page')) {
+      document.body.style.backgroundColor = "#F2F5F7";
+    } else {
+      document.body.style.backgroundColor = "initial";
+    }
+  }, [router.pathname]);
   return (
     <>
       <QueryClientProvider client={queryClient}>

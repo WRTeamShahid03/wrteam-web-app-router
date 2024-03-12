@@ -5,8 +5,8 @@ import Link from 'next/link';
 const TopHeader = () => {
   return (
     <div className='topHeader'>
-      <span> Get eCommerce Business Solution with <span className='boldText'> 50% Discount </span></span>
-      <Link href='https://wrteam.in/product-details/eshop-multipurpose-ecommercestore-website/' target='_blank'><button >Buy Now <FaArrowRight /></button></Link>
+      <span> Get Business Solution with <span className='boldText'> 50% Discount </span></span>
+      <Link href='https://1.envato.market/anVdgW' target='_blank'><button >Buy Now <FaArrowRight /></button></Link>
     </div>
   )
 }

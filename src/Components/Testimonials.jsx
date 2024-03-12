@@ -98,7 +98,7 @@ const Testimonials = () => {
                 data.length > 0 ? (<>
                     <div className="testiUpperDiv">
                         <h5 className='common_span'>Our <span>Testimonials</span></h5>
-                        <h6 className='testiHeadline'>Real  <span> Words</span> From Real <span>Clients</span></h6>
+                        <h6 className='testiHeadline'>Hear What Our<span> Clients </span> Have to <span>Say!</span></h6>
                     </div>
                     <div className="testSlider">
                         <Swiper
