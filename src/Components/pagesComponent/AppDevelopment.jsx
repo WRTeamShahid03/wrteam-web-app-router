@@ -99,7 +99,7 @@ const AppDevelopment = () => {
             id: 2,
             icon: processIcon3,
             title: 'Development',
-            desc: 'Our experienced developers code and develop the website according to your requirements. We also provide regular updates to our clients.'
+            desc: 'Our experienced developers to code and develop the website according to your requirements. We also provide regular updates to our clients.'
 
         },
     ]
@@ -183,19 +183,19 @@ const AppDevelopment = () => {
         {
             id: 0,
             title: 'Android app development',
-            desc: `Our app development team possesses extensive knowledge and expertise in Android app development. We are deeply dedicated to delivering outstanding solutions that are perfectly tailored to our clients' unique needs and go above and beyond their expectations. Our primary focus is on providing exceptional services that not only meet but exceed our client's requirements, make sure their maximal satisfaction.`,
+            desc: `Our app development team possesses extensive knowledge and expertise in Android app development. We are deeply dedicated to delivering outstanding solutions that are perfectly tailored to our client's unique needs and go above and beyond their expectations. Our primary focus is on providing exceptional services that not only meet but exceed our client's requirements, make sure their maximal satisfaction.`,
             img: android,
         },
         {
             id: 1,
             title: 'iOS app development',
-            desc: 'There are over 1 billion globally active users of iPhones , making it a huge market for iOS apps. Our team is specialised in iOS app development and has the skills to create a great app for you.',
+            desc: 'There are over 1 billion globally active users of iPhones , making it a huge market for iOS apps. Our team specialised in iOS app development and has the skills to create a great app for you.',
             img: ios,
         },
         {
             id: 2,
             title: 'Flutter app development',
-            desc: 'Flutter app development is the process of creating mobile apps with the Flutter framework. Flutter is an open-source, cross-platform framework created by Google. It means developers can use Flutter for build apps which can run on both Android and iOS devices, by single code.',
+            desc: 'Flutter app development is the process of creating mobile apps with the Flutter framework. Flutter is an open-source, cross-platform framework created by Google. It means developers can use Flutter to build apps that can run on both Android and iOS devices, by single code.',
             img: flutter,
         },
         {
@@ -332,7 +332,7 @@ const AppDevelopment = () => {
                                     Our <span>Work Process</span>
                                 </span>
                                 <h3 className='comman_Headlines'>
-                                    How Our <span>App Development </span> Redefines Business Potential?</h3>
+                                How Does Our <span>App Development</span> Redefines  Business Potential?</h3>
                             </div>
 
                             <div className="processCardWrapper">
@@ -413,7 +413,7 @@ const AppDevelopment = () => {
                                     App <span>Development</span> Services Tailored for <span>Latest Platforms</span>
                                 </h3>
                                 <p className="comman_para firstP">
-                                    Our app development mastery across iOS, Android and compatible with cross platforms. Tailored solutions, universal impact.
+                                Our app development mastery is across iOS, and Android and is compatible with cross platforms. Tailored solutions, universal impact.
 
                                 </p>
                             </div>

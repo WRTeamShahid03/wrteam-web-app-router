@@ -101,7 +101,7 @@ const WebDevelopment = () => {
       id: 2,
       icon: processIcon3,
       title: 'Development',
-      desc: 'Our experienced developers code and develop the website according to your requirements. We also provide regular updates to our clients.'
+      desc: 'Our experienced developers to code and develop the website according to your requirements. We also provide regular updates to our clients'
     },
   ]
 
@@ -205,13 +205,13 @@ const WebDevelopment = () => {
     {
       id: 0,
       title: 'Front-end web development',
-      desc: 'Our backend web development experts focus to developing powerful, scalable server-side applications which support website functionality. We use various programming languages such as JavaScript, PHP, Ruby and frameworks such as Django, Laravel and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: frontendImg,
     },
     {
       id: 1,
       title: 'Back-end web development',
-      desc: 'Our backend web development experts focus to developing powerful, scalable server-side applications which support website functionality. We use various programming languages ​​such as JavaScript, PHP, Ruby and frameworks such as Django, Laravel and Ruby on Rails to build secure and efficient backend solutions for your business requirements',
+      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: backendImg,
     },
     {
@@ -353,7 +353,7 @@ const WebDevelopment = () => {
                   Our <span>Work Process</span>
                 </span>
                 <h3 className='comman_Headlines' >
-                  How Our <span>Web Development </span> Transforms Businesses?
+                How Does Our <span>Web Development</span> Transforms Businesses?
                 </h3>
               </div>
 

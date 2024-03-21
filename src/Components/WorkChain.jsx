@@ -58,7 +58,7 @@ const WorkChain = () => {
                                                 </div>
 
                                                 <div className="wrapper">
-                                                    <span className='workDesc'>Connect with our professional experts and have a detailed discussion about your requirement.</span>
+                                                    <span className='workDesc'>Connect with our professional experts and have a detailed discussion about your requirements.</span>
 
                                                     <h5 className='workTitle'>Request a meeting</h5>
                                                 </div>

@@ -24,7 +24,7 @@ const Portfolio = () => {
             id: 0,
             title: 'Yakili',
             headline: 'Online Learning with Innovative School Management App',
-            para: `Say goodbye to manual paperwork and administrative hassles, and embrace the future of education management with Yakili. An innovative school management app revolutionizing online learning! Developed using Flutter technology, which is compatible both platform Android and iOS, managing student enrollment, attendance, scheduling, and resources is effortless. With Yakili, we've fulfilled client need, ensuring seamless performance and user satisfaction.`,
+            para: `Say goodbye to manual paperwork and administrative hassles, and embrace the future of education management with Yakili. An innovative school management app revolutionizing online learning! Developed using Flutter technology, which is compatible with both platform Android and iOS, managing student enrollment, attendance, scheduling, and resources is effortless. With Yakili, we've fulfilled client needs, ensuring seamless performance and user satisfaction.`,
             playStore: true,
             iosStore: true,
             web: false,
@@ -56,7 +56,7 @@ const Portfolio = () => {
         {
             id: 2,
             title: 'Talanta',
-            headline: 'Spotlight on Talanta: Empowering Talent Showcase in Digital Era!',
+            headline: 'Spotlight on Talanta: Empowering Talent Showcase in the Digital Era!',
             para: 'This dynamic platform empowers users worldwide to showcase their talents and compete for top rankings in various categories. Developed for our valued client, Talanta offers a cutting-edge platform for individuals to showcase their talents and connect with opportunities. We take pride in developing this entertainment platform, offering a user-friendly interface and transparent ranking system to ensure a fair and rewarding experience for every participant.',
             playStore: false,
             iosStore: false,
@@ -121,12 +121,12 @@ const Portfolio = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12 UpperDiv">
                         <div className="webProHeadingDiv">
-                            {
+                            {/* {
                                 loading ?
                                     <span> <Skeleton width={300} height={25} /></span> :
                                     <span className='commonHeadlines' >We found <span>{portfolioData.length}</span> Products</span>
 
-                            }
+                            } */}
                             {/* <div className="sortBy">
                                 <span>Sort By :</span>
                                 <select

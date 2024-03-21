@@ -7,6 +7,7 @@ import NoDataFound from '../../../pages/404'
 
 import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
 import Breadcrum from '../Breadcrum';
+import Image from 'next/image';
 
 const ProductDetailsPage = () => {
 
@@ -45,8 +46,7 @@ const ProductDetailsPage = () => {
     useEffect(() => {
         // console.log(salePrice, "links")
 
-    }, [checkoutLink, productSlug,salePrice])
-
+    }, [checkoutLink, productSlug, salePrice])
 
     return (
 
@@ -58,7 +58,7 @@ const ProductDetailsPage = () => {
                 {
                     loading ?
                         <Loader /> :
-                        <div className="row">
+                        <div className="row productDetailRow">
 
                             {
                                 productsDetails.length < 0 || productsDetails.description == '' || productsDetails.description == null ?
@@ -67,7 +67,14 @@ const ProductDetailsPage = () => {
                                             <NoDataFound page={'product-detail'} />
                                         </div>
                                     </div> : <>
-                                        <div className="col-sm-12 col-md-12 col-lg-9">
+                                        <div className="col-sm-12 col-md-12 col-lg-7">
+                                            {
+                                                productsDetails?.codecanyon_other_data ?
+                                                    <div className="promoImgWrapper">
+                                                        <Image src={productsDetails?.codecanyon_other_data?.previews?.landscape_preview?.landscape_url} height={0} width={0} />
+                                                    </div> : null
+                                            }
+
 
                                             <div className="Wrapper">
                                                 <div dangerouslySetInnerHTML={{ __html: productsDetails && productsDetails?.description || "" }} />
@@ -75,7 +82,7 @@ const ProductDetailsPage = () => {
 
                                         </div>
 
-                                        <div className="col-sm-12 col-md-12 col-lg-3">
+                                        <div className="col-sm-12 col-md-12 col-lg-5">
                                             <ProductDetailsSideCard data={productsDetails} checkoutLink={checkoutLink} salePrice={salePrice} />
                                         </div>
                                     </>

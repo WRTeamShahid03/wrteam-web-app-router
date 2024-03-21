@@ -114,7 +114,7 @@ const UIUXDevelopment = () => {
       id: 0,
       icon: processIcon4,
       title: 'Visual Design',
-      desc: 'We design the visual elements of your product or service, ensuring they reflect your brand and maintain consistency across all platforms.'
+      desc: 'We designs the visual elements of your product or service, ensuring they reflect your brand and maintain consistency across all platforms.'
 
     },
     {
@@ -195,13 +195,13 @@ const UIUXDevelopment = () => {
     {
       id: 0,
       title: 'Web design',
-      desc: 'Our backend web development experts focus to developing powerful, scalable server-side applications which support website functionality. We use various programming languages ​​such as JavaScript, PHP, Ruby and frameworks such as Django, Laravel and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: webDesign,
     },
     {
       id: 1,
       title: 'App design',
-      desc: 'Our backend web development experts focus to developing powerful, scalable server-side applications which support website functionality. We use various programming languages ​​such as JavaScript, PHP, Ruby and frameworks such as Django, Laravel and Ruby on Rails to build secure and efficient backend solutions for your business requirements',
+      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: appDesign,
     },
     {
@@ -232,7 +232,7 @@ const UIUXDevelopment = () => {
                   UI-UX <span>Services</span>
                 </span>
                 <h1 className='comman_Headlines'>
-                  Make Your App More User-Friendly with Best <span> UI/UX Design </span> Services
+                  Make Your App More User-Friendly with the Best <span> UI/UX Design </span> Services
                 </h1>
 
                 <p className="comman_para"> Our Best UI/UX design service aims to enhance your brand's digital presence by creating visually stunning designs that provide a seamless user experience for your target audience.</p>
@@ -343,7 +343,7 @@ const UIUXDevelopment = () => {
                   Our <span>Work Process</span>
                 </span>
                 <h3 className='comman_Headlines'>
-                  Make Your App More User-Friendly with Best <span>UI/UX Design</span> Services
+                  Make Your App More User-Friendly with the Best <span>UI/UX Design</span> Services
                 </h3>
               </div>
 

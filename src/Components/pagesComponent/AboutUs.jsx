@@ -87,11 +87,11 @@ const AboutUs = () => {
 
                 <p className='firstP comman_para'>At WRTeam, we envision becoming a top provider of exceptional mobile and web solutions that inspire businesses and people to achieve their goals and enhance their lives.</p>
 
-                <p className='comman_para'> We want to be known as the top company for Apps & Webs Solutions development that is creative, high-quality, and client-focused.</p>
+                <p className='comman_para'> We want to be known as the top company for app & web Solutions development that is creative, high-quality, and client-focused.</p>
 
                 <p className='comman_para'>We believe that Apps & Webs Solutions development is the key to success in the future of business.</p>
 
-                <p className='comman_para'>As businesses grow, they require Apps & Webs Solutions that is perfect to their requirements. We are committed to providing our clients with the solution they need to succeed digitally.</p>
+                <p className='comman_para'>As businesses grow, they require Apps & Web Solutions that are perfect to their requirements. We are committed to providing our clients with the solutions they need to succeed digitally.</p>
               </div>
             </div>
 

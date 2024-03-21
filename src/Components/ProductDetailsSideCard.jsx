@@ -29,6 +29,7 @@ const ProductDetailsSideCard = ({ loading, data, checkoutLink, salePrice }) => {
 
         return stars;
     };
+
     return (
         <div>
             <div className="productDetailsCardWrapper">
@@ -94,7 +95,7 @@ const ProductDetailsSideCard = ({ loading, data, checkoutLink, salePrice }) => {
 
                             <div className="bottomDiv">
 
-                                <span>Want To Customization ?</span>
+                                <span>Want Customization ?</span>
 
                                 <Link href={'/hire-us'}>
                                     <button>Hire Us</button>

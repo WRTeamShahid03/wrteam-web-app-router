@@ -1496,7 +1496,7 @@ img {
     filter: invert(48%) sepia(29%) saturate(6045%) hue-rotate(181deg) brightness(80%) contrast(200%);
 }
 
-.swiper-button-prev {
+#testimonials .swiper-button-prev {
     background-color: var(--primary-color);
     display: inline-block;
     padding: 4px;
@@ -1507,7 +1507,7 @@ img {
     cursor: pointer;
 }
 
-.swiper-button-next {
+#testimonials .swiper-button-next {
     background-color: var(--primary-color);
     display: inline-block;
     padding: 4px;
@@ -2031,6 +2031,7 @@ footer {
     margin-top: 160px;
     width: 100%;
     background: var(--secondary-color) 0% 0% no-repeat padding-box;
+    position: relative;
 }
 
 footer .footerContainer {
@@ -5201,6 +5202,13 @@ footer .footerContainer .flinks {
     margin-top: 40px;
 }
 
+.productDetailsPage .promoImgWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
 .productDetailsPage .Wrapper {
     max-width: 100%;
     overflow-x: hidden;
@@ -5210,6 +5218,10 @@ footer .footerContainer .flinks {
     width: 100%;
     object-fit: contain;
     height: auto;
+}
+
+.productDetailsPage strong img {
+    width: auto !important;
 }
 
 .productDetailsPage .Wrapper .loaderWrapper img {
@@ -5231,6 +5243,17 @@ footer .footerContainer .flinks {
     margin-bottom: 30px;
     position: fixed;
     top: 137px;
+    top: 194px;
+}
+
+@media screen and (min-width: 1200px) {
+    .productDetailsPage .productDetailRow {
+        margin-left: 150px;
+    }
+
+    .productDetailsPage .productDetailsCardWrapper .card {
+        margin-left: 44px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -5240,7 +5263,6 @@ footer .footerContainer .flinks {
     }
 
 }
-
 
 .productDetailsPage .productDetailsCardWrapper .card .upperDiv {
     display: flex;
@@ -5849,6 +5871,10 @@ footer .footerContainer .flinks {
     --productPage-primary-color: #087C7C;
 }
 
+.product_detail_page {
+    overflow: hidden;
+}
+
 .productDetailsNavbar {
     background: #087C7C1F;
     padding-top: 30px;
@@ -6347,14 +6373,20 @@ footer .footerContainer .flinks {
     font-weight: 500;
 }
 
+
 .comesWithSect .comesWithSlider .swiper-button-next,
 .comesWithSect .comesWithSlider .swiper-button-prev {
     background-color: var(--productPage-primary-color);
+    display: inline-block;
+    padding: 4px;
     border-radius: 50px;
     text-align: center;
     margin: auto;
     z-index: 1;
+    position: absolute;
     bottom: 44%;
+    cursor: pointer;
+
 }
 
 .comesWithSect .comesWithSlider .swiper-button-prev {
@@ -6393,7 +6425,7 @@ footer .footerContainer .flinks {
     background-color: var(--productPage-primary-color);
     padding: 120px 0px;
     margin-top: 100px;
-    margin-bottom: 123px;
+    margin-bottom: 0px;
 }
 
 .featuresSect .leftDiv {
@@ -6430,6 +6462,7 @@ footer .footerContainer .flinks {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .featuresSect .leftDiv .navBtns .swiper-button-next svg,
@@ -6450,6 +6483,7 @@ footer .footerContainer .flinks {
     color: white;
     text-align: center;
     height: 250px;
+    width: 100%;
 }
 
 .featuresSect .card .imgWrapper {
@@ -6463,12 +6497,34 @@ footer .footerContainer .flinks {
     text-align: center;
 }
 
+.featuresSect #renderBullets{
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .product_detail_page .featuresSect {
+        padding: 80px 0px;
+    }
+
+    .featuresSect .leftDiv {
+        gap: 30px;
+    }
+
+    .featuresSect .leftDiv .navBtns {
+        padding-bottom: 50px;
+    }
+}
+
 /* .featuresSect ends here  */
 
 .productTechSect .leftDiv {
     display: flex;
     align-items: center;
     justify-content: start;
+}
+
+.productTechSect .reverseSect .leftDiv {
+    justify-content: end;
 }
 
 .productTechSect .leftDiv img {
@@ -6480,8 +6536,12 @@ footer .footerContainer .flinks {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 70px;
     background-color: #ffff;
+    padding: 200px 50px;
+    padding-bottom: 150px;
 }
+
 
 .productTechSect .rightDiv .headline {
     font-size: 40px;
@@ -6491,7 +6551,93 @@ footer .footerContainer .flinks {
     text-align: center;
 }
 
+.productTechSect .cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 
+.productTechSect .card {
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 16px;
+    width: 200px;
+    border: 1px solid #BFCCD5;
+    border-radius: 8px;
+}
+
+.productTechSect .card img {
+    width: auto;
+}
+
+.productTechSect .card span {
+    font-weight: 700;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 1399px) {
+    .productTechSect .leftDiv img {
+        width: 100%;
+    }
+
+    .productTechSect .rightDiv .headline {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width: 1399px) {
+    .productTechSect .rightDiv {
+        padding: 100px 50px;
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .productTechSect {
+        margin-top: 30px;
+    }
+
+    .productTechSect .row .col-lg-6 {
+        width: 100%;
+    }
+
+    .productTechSect .rightDiv {
+        padding: 50px;
+    }
+
+    .productTechSect .leftDiv img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .productTechSect .leftDiv img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .productTechSect .rightDiv {
+        padding: 30px 10px;
+    }
+
+    .productTechSect .rightDiv .headline {
+        font-size: 22px;
+    }
+
+    .productTechSect .cardsWrapper {
+        gap: 16px;
+    }
+
+    .productTechSect .cardsWrapper .card {
+        width: 134px;
+    }
+}
 
 
 
@@ -6715,7 +6861,7 @@ footer .footerContainer .flinks {
         margin-bottom: 50px;
     }
 
-    .license .bgDark{
+    .license .bgDark {
         padding-top: 46px;
     }
 
@@ -6738,7 +6884,7 @@ footer .footerContainer .flinks {
     .license .swiper-pagination {
         padding-bottom: 0px;
     }
-}   
+}
 
 @media screen and (min-width: 400px) and (max-width: 575px) {
 
@@ -6751,4 +6897,3 @@ footer .footerContainer .flinks {
 }
 
 /* license ends here  */
-

@@ -15,7 +15,7 @@ const EnvantoProfileSection = () => {
                             <div className="textWrapper">
                                 <span className='common_span'>Exclusive on CodeCanyon</span>
                                 <span className='common_headlines'>Your Gateway to <span>Premium</span> Solutions</span>
-                                <span className='para'>Proudly recognised as an elite author on Codecanyon. Our premium, innovative customise applications and website source code prioritise user-centric and undergo consistent updates to stay ahead in the competition.</span>
+                                <span className='para'>Proudly recognised as an elite author on Codecanyon. Our premium, innovative customized applications, and website source code are prioritized and user-centric and undergo consistent updates to stay ahead of the competition.</span>
                             </div>
                         </div>
 

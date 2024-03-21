@@ -1,32 +1,31 @@
 import React from 'react'
 import Image from 'next/image'
-import techImg1 from '../../Asset/Images/product-detail-page/techImg1.png'
-const CommonTechSect = () => {
 
-    const data = [
-        {
-            id: 0,
-            img: '',
-            name: 'Nextjs13.3+'
-        },
-    ]
+
+const CommonTechSect = ({title,data,reverseSect,sectImg}) => {
 
     return (
         <section className='productTechSect'>
-            <div className="row">
+            <div className={`row ${reverseSect ? 'flex-row-reverse reverseSect' : ''}`}>
                 <div className="col-12 col-lg-6 leftDiv">
-                    <Image src={techImg1} height={0} width={0} alt='techImg' />
+                    <Image src={sectImg} height={0} width={0} alt='techImg' />
                 </div>
 
                 <div className="col-12 col-lg-6 rightDiv">
-                    <span className='headline'>Technology Powering Your
-                        Real Estate Journey</span>
+                    <span className='headline'>{title}</span>
 
-                        <div className="cardsWrapper">
-                            <div className="card">
-                                <Image src={''} height={0} width={0} alt='techImg'/>
-                            </div>
-                        </div>
+                    <div className="cardsWrapper">
+                        {
+                            data.map((data) => {
+                                return (
+                                    <div className="card" key={data.id}>
+                                        <Image src={data.img} height={0} width={0} alt='techImg' />
+                                        <span>{data.name}</span>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
 
             </div>

@@ -90,7 +90,7 @@ const Career = () => {
         {
             id: 1,
             srn: '02',
-            text: 'Collaborative Work ulture'
+            text: 'Collaborative Work culture'
         },
         {
             id: 2,
@@ -147,6 +147,33 @@ const Career = () => {
         setNumber(limitedNumber);
     }
 
+
+
+    const [selectedCountryCode, setSelectedCountryCode] = useState('');
+
+    const handlePhoneChange = (value, country) => {
+        setNumber(value)
+        setSelectedCountryCode(country?.dialCode);
+    };
+
+    // Function to return formatted phone number without country code if it starts with the selected country code
+    const getFormattedPhoneNumber = () => {
+        if (number.startsWith(selectedCountryCode)) {
+            return number.slice(selectedCountryCode.length);
+        }
+        return number;
+    };
+
+    const formattedPhoneNumber = getFormattedPhoneNumber();
+
+    const finalNum = (`+${selectedCountryCode} ${formattedPhoneNumber}`)
+
+    // useEffect(() => {
+    //     console.log('number', formattedPhoneNumber)
+    //     console.log('numberFinal', finalNum)
+    // }, [number])
+
+
     const sendEmail = (e) => {
         e.preventDefault();
         if (number.length > 16) {
@@ -162,7 +189,7 @@ const Career = () => {
                 full_name: name,
                 email: email,
                 qualification: qualification,
-                contact: number,
+                contact: finalNum,
                 apply_for: applyFor,
                 experience: experience,
                 file: selectedFile,
@@ -211,11 +238,11 @@ const Career = () => {
                                 Work <span> With Us</span>
                             </span>
                             <h1 className="commonHeadlines" >
-                                Join Our <span>Empire</span>
+                                Join Our <span>Team</span>
                             </h1>
 
                             <span className='commonPara'>
-                                WRTeam invites all aspiring and experienced IT professionals to join and become a part of our family and give the right direction to their career. We're a leading web & mobile app development company, offering the best App development solutions at reasonable prices. Our motto is to grow together, and we focus on the holistic development of enter your career along with the growth of the company.
+                                WRTeam invites all aspiring and experienced IT professionals to join and become a part of our family and give the right direction to their careers. We're a leading web & mobile app development company, offering the best App development solutions at reasonable prices. Our motto is to grow together, and we focus on the holistic development of your career along with the growth of the company.
                             </span>
                         </div>
                     </div>
@@ -344,7 +371,8 @@ const Career = () => {
                                             <PhoneInput
                                                 country={'in'} // You can set the default country
                                                 value={number}
-                                                onChange={(value) => setNumber(value)}
+                                                // onChange={(value) => setNumber(value)}
+                                                onChange={handlePhoneChange}
                                                 inputProps={{
                                                     name: 'contact_number',
                                                     placeholder: 'Enter Your Phone Number',
@@ -439,7 +467,7 @@ const Career = () => {
                                             </div>
                                             <button type='submit' className='homeCommon_btn'>
                                                 {
-                                                    formLoader ? <FormLoader /> : "Sumbit"
+                                                    formLoader ? <FormLoader /> : "Submit"
                                                 }
                                             </button>
                                         </div>

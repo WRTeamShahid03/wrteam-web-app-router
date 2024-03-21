@@ -63,7 +63,7 @@ const HireUs = () => {
             id: 0,
             img: creativity,
             title: "Creativity",
-            desc: "Creativity directly related to Revolutionize your Great Idea to Big Thing! Thinking creatively opens up the possibilities.",
+            desc: "Creativity is directly related to Revolutionizing your Great Idea to Big Thing! Thinking creatively opens up the possibilities.",
         },
         {
             id: 1,
@@ -75,7 +75,7 @@ const HireUs = () => {
             id: 2,
             img: quality,
             title: "Quality",
-            desc: "Quality is the only thing that team is not ready to compromise with that, We believe delivering in high quality.",
+            desc: "Quality is the only thing that the team is not ready to compromise with, We believe delivering in high quality.",
         },
         {
             id: 3,
@@ -100,6 +100,30 @@ const HireUs = () => {
         setNumber(limitedNumber);
     }
 
+    const [selectedCountryCode, setSelectedCountryCode] = useState('');
+
+    const handlePhoneChange = (value, country) => {
+        setNumber(value)
+        setSelectedCountryCode(country?.dialCode);
+    };
+
+    // Function to return formatted phone number without country code if it starts with the selected country code
+    const getFormattedPhoneNumber = () => {
+        if (number.startsWith(selectedCountryCode)) {
+            return number.slice(selectedCountryCode.length);
+        }
+        return number;
+    };
+
+    const formattedPhoneNumber = getFormattedPhoneNumber();
+
+    const finalNum = (`+${selectedCountryCode} ${formattedPhoneNumber}`)
+
+    // useEffect(() => {
+    //     console.log('number', formattedPhoneNumber)
+    //     console.log('numberFinal', finalNum)
+    // }, [number])
+
     const sendEmail = (e) => {
         e.preventDefault();
         if (!name || !number || !email || !budget || !message) {
@@ -111,7 +135,7 @@ const HireUs = () => {
                 name: name,
                 email: email,
                 budget: budget,
-                phone: number,
+                phone: finalNum,
                 message: message,
                 onSuccess: (res) => {
                     toast.success('Submited Successfully !')
@@ -134,28 +158,6 @@ const HireUs = () => {
         }
 
     };
-    // const sendEmail = (e) => {
-
-    //     e.preventDefault();
-    //     if (!name || !number || !email || !budget || !message) {
-    //         toast.error('Fill out the form first')
-    //     }
-    //     else {
-    //         emailjs.sendForm('service_f0zhqhh', 'template_zxke4jz', form.current, 'RITTN3aEr8VNyLQdN')
-    //             .then((result) => {
-    //                 console.log(result.text);
-    //             }, (error) => {
-    //                 console.log(error.text);
-    //             });
-    //         toast.success('Submited Successfully !')
-    //         setName('')
-    //         setNumber('')
-    //         setEmail('')
-    //         setBudget('')
-    //         setMessage('')
-    //     }
-
-    // };
 
 
     return (
@@ -179,7 +181,7 @@ const HireUs = () => {
                                 <div className="row">
                                     <div className="col-sm-12 col-md-12 col-lg-12">
                                         <span className='hireLowerDivHeadline'>
-                                            <span>We stay on top of the latest tech advancements to ensure your project is completed quickly and uses best of the Apps & Webs Solutions and frameworks suitable for your project.</span></span>
+                                            <span>We stay on top of the latest tech advancements to ensure your project is completed quickly and uses the best of the Apps & Web solutions and frameworks suitable for your project.</span></span>
                                     </div>
 
                                     <div className="col-sm-12 col-md-12 col-lg-6">
@@ -235,7 +237,8 @@ const HireUs = () => {
                                                         <PhoneInput
                                                             country={'in'} // You can set the default country
                                                             value={number}
-                                                            onChange={(value) => setNumber(value)}
+                                                            // onChange={(value) => setNumber(value)}
+                                                            onChange={handlePhoneChange}
                                                             inputProps={{
                                                                 name: 'contact_number',
                                                                 placeholder: 'Enter Your Phone Number',
@@ -258,7 +261,7 @@ const HireUs = () => {
 
                                                     <button type='submit' className='homeCommon_btn'>
                                                         {
-                                                            formLoader ? <FormLoader /> : "Sumbit"
+                                                            formLoader ? <FormLoader /> : "Submit"
                                                         }
                                                     </button>
                                                 </div>

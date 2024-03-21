@@ -57,27 +57,30 @@ const ContactUs = () => {
         setNumber(limitedNumber);
     }
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     if (!name || !number || !email || !subject || !message) {
-    //         toast.error('Fill out the form first')
-    //     }
-    //     else {
-    //         emailjs.sendForm('service_f0zhqhh', 'template_zxke4jz', form.current, 'RITTN3aEr8VNyLQdN')
-    //             .then((result) => {
-    //                 console.log(result.text);
-    //             }, (error) => {
-    //                 console.log(error.text);
-    //             });
-    //         toast.success('Submited Successfully !')
-    //         setEmail('')
-    //         setMessage('')
-    //         setName('')
-    //         setSubject('')
-    //         setNumber('')
-    //     }
 
-    // };
+    const [selectedCountryCode, setSelectedCountryCode] = useState('');
+
+    const handlePhoneChange = (value, country) => {
+        setNumber(value)
+        setSelectedCountryCode(country?.dialCode);
+    };
+
+    // Function to return formatted phone number without country code if it starts with the selected country code
+    const getFormattedPhoneNumber = () => {
+        if (number.startsWith(selectedCountryCode)) {
+            return number.slice(selectedCountryCode.length);
+        }
+        return number;
+    };
+
+    const formattedPhoneNumber = getFormattedPhoneNumber();
+
+    const finalNum = (`+${selectedCountryCode} ${formattedPhoneNumber}`)
+
+    // useEffect(() => {
+    //     console.log('number', formattedPhoneNumber)
+    //     console.log('numberFinal', finalNum)
+    // }, [number])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -90,7 +93,7 @@ const ContactUs = () => {
                 name: name,
                 email: email,
                 subject: subject,
-                phone: number,
+                phone: finalNum,
                 message: message,
                 onSuccess: (res) => {
                     toast.success('Submited Successfully !')
@@ -142,6 +145,7 @@ const ContactUs = () => {
             link2: 'tel:+91 97124 45459'
         },
     ]
+
 
     return (
         <>
@@ -253,7 +257,8 @@ const ContactUs = () => {
                                             <PhoneInput
                                                 country={'in'} // You can set the default country
                                                 value={number}
-                                                onChange={(value) => setNumber(value)}
+                                                // onChange={(value) => setNumber(value)}
+                                                onChange={handlePhoneChange}
                                                 inputProps={{
                                                     name: 'contact_number',
                                                     placeholder: 'Enter Your Phone Number',
@@ -271,7 +276,7 @@ const ContactUs = () => {
 
                                         <button type='submit' className='homeCommon_btn'>
                                             {
-                                                formLoader ? <FormLoader /> : "Sumbit"
+                                                formLoader ? <FormLoader /> : "Submit"
                                             }
                                         </button>
 

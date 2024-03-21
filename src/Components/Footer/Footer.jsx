@@ -36,7 +36,7 @@ const Footer = () => {
                            </Link>
 
                         </div>
-                        <span>WRTeam has creative and dedicated group of developers who are mastered in apps Developments and Web development with a nice in delivering quality solutions to customers across the globe.</span>
+                        <span>WRTeam has a creative and dedicated group of developers who are masters in app development and Web development with a nice to deliver quality solutions to customers across the globe.</span>
                         <div className='socialIcons'>
                            <span id='followSpan'>Follow Us</span>
                            <span className='icons'>

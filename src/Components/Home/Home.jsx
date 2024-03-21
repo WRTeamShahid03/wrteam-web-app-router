@@ -186,9 +186,9 @@ const Home = () => {
                                     <div className="col-sm-12 col-md-12 col-lg-6">
                                         <div className="heroCont-leftDiv">
                                             <span className='mcWinner'>Most Creative Winner!</span>
-                                            <h1 id='herocont_headline' className='comman_Headlines'>Unlock Your <span>Business</span> Potential with Expert <span>IT Company</span></h1>
+                                            <h1 id='herocont_headline' className='comman_Headlines'>Unlock Your <span>Business</span> Potential with an Expert <span>IT Company</span></h1>
 
-                                            <p>Optimize Your Business Operations Using WRTeam's Powerful App and Website Solutions & Streamlined Workflows. We are committed to providing to our clients with the End-to-End App and Website Solutions.</p>
+                                            <p>Optimize Your Business Operations Using WRTeam's Powerful App and Website Solutions & Streamlined Workflows. We are committed to providing our clients with End-to-End App and Website Solutions.</p>
 
                                             <div className="followDiv">
                                                 <Link href='/about-us'> <button className='homeCommon_btn'>About Us</button></Link>
@@ -314,9 +314,9 @@ const Home = () => {
 
                                 <div className="aboutRightDiv">
                                     <span className="common_span">About <span>WRTeam</span></span>
-                                    <h2 className='comman_Healines'>Deliver <span>Business Solution </span>  With The Goal Of <span>Long-Term </span> Relationships</h2>
+                                    <h2 className='comman_Healines'>Deliver <span>Business solution </span>  with The Goal Of <span>Long-Term </span> Relationships</h2>
 
-                                    <p className='firstP common_para'>WRTeam is an Award-Winning Web - App Development & IT Consulting Company serving clients across the Globe.</p>
+                                    <p className='firstP common_para'>WRTeam is an award-winning Web & App Development & IT consulting company, serving clients across the Globe.</p>
 
                                     <p className='common_para'>We have 6+ Years of market business experience which could be more chances of success to connect with us.</p>
 
@@ -355,7 +355,7 @@ const Home = () => {
                                     <span className='common_span'>Achievement <span>on Envato</span> </span>
                                     <h2 className='comman_Healines'><span>Meet the Most Creative Team </span> Award-Winning Web & App Development</h2>
 
-                                    <p className='firstP comman_para'>Meet the winner of 'Most Creative' competition on codecanyon! WRTeam are proud of our team members who came out on top with their outstanding creativity and innovative ideas.</p>
+                                    <p className='firstP comman_para'>Meet the winner of the 'Most Creative' competition on codecanyon! WRTeam is proud of our team members who came out on top with their outstanding creativity and innovative ideas.</p>
 
                                     <p className='common_para'> We value innovative thinking and creativity, and our staff is always pushing the envelope and bringing new ideas to the fore. Moreover, this remarkable achievement is a testament to our team's dedication and passion for excellence.</p>
 
@@ -399,7 +399,7 @@ const Home = () => {
                     <div className="soluHeadlines">
                         <h2 className='common_span'>Our <span>Solutions</span></h2>
                         <h3 className='comman_Healines'>Empowering Business <span>Growth </span>  with <span>Personalized </span>  Products</h3>
-                        <p >Here our wide variety of digital products or solutions for your businesses such as categories of ecommerce apps and websites, educational apps and websites, gaming apps and websites and many more business digital products.</p>
+                        <p >Here is our wide variety of digital products or solutions for your businesses such as categories of e-commerce apps and websites, educational apps and websites, gaming apps and websites, and many more business digital products.</p>
                     </div>
 
                     <div className="productsCardsWrapper container">
@@ -536,7 +536,7 @@ const Home = () => {
 
                                     <p className='firstP common_para'> Our team of experts in app development, web development, UI/UX design, IT consulting, and digital marketing can help you achieve your business goals.</p>
 
-                                    <p className='firstP common_para'>Get ready your business shine! Our teamwork-based strategy ensures success with innovative solutions and customer satisfaction. </p>
+                                    <p className='firstP common_para'>Get ready for your business to shine! Our teamwork-based strategy ensures success with innovative solutions and customer satisfaction. </p>
 
                                     <p className='firstP common_para'>Let's revamp your online presence and lead your business to extraordinary success and growth!</p>
                                 </div>

@@ -110,7 +110,7 @@ const DigitalMarketing = () => {
             id: 2,
             icon: processIcon3,
             title: 'Strategy Building',
-            desc: 'We create a personolized marketing strategy based on our research, aligning with your business goals and setting you apart in the industry.'
+            desc: 'We create a personalized marketing strategy based on our research, aligning with your business goals and setting you apart in the industry.'
 
         },
     ]
@@ -151,7 +151,7 @@ const DigitalMarketing = () => {
             id: 1,
             icon: fbAdds,
             hoverIcon: fbAddsHover,
-            title: 'Facebood Adds'
+            title: 'Facebook Adds'
 
         },
         {
@@ -215,7 +215,7 @@ const DigitalMarketing = () => {
         {
             id: 0,
             title: 'SEO (Search Engine Optimization)',
-            desc: `We will work with you to improve position of your website's on search engine results pages (SERPs) and secure the top at page. We will increase visibility of your site and chances of ranking higher on the SERPs by keyword reasearch, optimizing content and structure.`,
+            desc: `We will work with you to improve the position of your website on search engine results pages (SERPs) and secure the top page. We will increase the visibility of your site and chances of ranking higher on the SERPs by keyword research and optimizing content and structure.`,
             img: seo,
         },
         {

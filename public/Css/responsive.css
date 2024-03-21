@@ -5827,23 +5827,22 @@
 
 /* swiper buttons  */
 @media only screen and (min-width: 1400px) and (max-width: 1850px) {
-    .swiper-button-prev {
+    #testimonials .swiper-button-prev {
         padding: 0;
         left: -43px;
         bottom: 40%;
     }
 
-    .swiper-button-next {
+    #testimonials .swiper-button-next {
         padding: 0;
         right: -43px;
         bottom: 40%;
     }
 
-    .swiper-button-prev svg,
-    .swiper-button-next svg {
+    #testimonials .swiper-button-prev svg,
+    #testimonials .swiper-button-next svg {
         width: 34px;
     }
-
 
 }
 
