@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps, data }) {
 
   const router = useRouter()
 
-  // console.log('router.pathname :',router.pathname)
 
   const queryClient = new QueryClient()
   useEffect(() => {
@@ -32,7 +31,21 @@ function MyApp({ Component, pageProps, data }) {
     } else {
       document.body.style.backgroundColor = "initial";
     }
+
+    if (router.pathname === '/404') {
+      router.push('/')
+    }
+
+
+    console.log('router.pathname :', router.pathname)
   }, [router.pathname]);
+
+  // useEffect(() => {
+  //   if (router.pathname.startsWith('/steals-of-the-week-sale/') || router.pathname.startsWith('/independence-day-sale') || router.pathname.startsWith('/september-super-sale') || router.pathname.startsWith('/cyber-week-sale') || router.pathname.startsWith('/black-friday-sale') || router.pathname.startsWith('/year-end-flash-sale')) {
+  //     router.push('https://wrteam.in/')
+  //   }
+  // }, [router.pathname])
+
   return (
     <>
       <QueryClientProvider client={queryClient}>
