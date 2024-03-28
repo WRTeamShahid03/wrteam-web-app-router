@@ -22,7 +22,7 @@ const PortfolioSection = ({ title, headline, para, playStore, playStore2, iosSto
                                         <div>
 
                                             <span>
-                                                <Image src={playStoreImg} height={0} width={0} alt="playStore" className='playStore' />
+                                                <Image src={playStoreImg} height={0} width={0} alt="make apps supported on play store with best web development company WRTeam kutch" className='playStore' />
                                             </span>
                                             <span>{androidName === 'User' ? 'User' : 'Android'}</span>
                                         </div>
@@ -34,7 +34,7 @@ const PortfolioSection = ({ title, headline, para, playStore, playStore2, iosSto
                                         <div>
 
                                             <span>
-                                                <Image src={playStoreImg} height={0} width={0} alt="playStore" className='playStore' />
+                                                <Image src={playStoreImg} height={0} width={0} alt="make apps supported on play store with best web development company WRTeam kutch" className='playStore' />
                                             </span>
                                             <span>{androidName2 === 'Doctor' ? 'Doctor' : 'Android'}</span>
                                         </div>
@@ -46,7 +46,7 @@ const PortfolioSection = ({ title, headline, para, playStore, playStore2, iosSto
                                     iosStore ? <Link href={ios} target='_blank'>
                                         <div>
                                             <span>
-                                                <Image src={iosStoreImg} height={0} width={0} alt="ioS-Store" />
+                                                <Image src={iosStoreImg} height={0} width={0} alt="make apps supported on  IOS/apple store with best web development company WRTeam kutch" />
                                             </span>
                                             <span>iOS</span>
                                         </div>
@@ -57,7 +57,7 @@ const PortfolioSection = ({ title, headline, para, playStore, playStore2, iosSto
                                     web ? <Link href={webLink} target='_blank'>
                                         <div>
                                             <span>
-                                                <Image src={webImg} height={0} width={0} alt="ioS-Store" />
+                                                <Image src={webImg} height={0} width={0} alt="make a website with the best web developer at WRTeam bhuj" />
                                             </span>
                                             <span>Web</span>
                                         </div>

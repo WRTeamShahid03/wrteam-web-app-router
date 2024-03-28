@@ -138,28 +138,32 @@ const UIUXDevelopment = () => {
       id: 0,
       icon: figma,
       hoverIcon: figmaHover,
-      title: 'Figma'
+      title: 'Figma',
+      alt: 'best Figma service provider WRTeam bhuj'
 
     },
     {
       id: 1,
       icon: illustrator,
       hoverIcon: illustratorHover,
-      title: 'Illustrator'
+      title: 'Illustrator',
+      alt: 'best illustrator service provider WRTeam bhuj'
 
     },
     {
       id: 2,
       icon: photoShop,
       hoverIcon: photoShopHover,
-      title: 'Photoshop'
+      title: 'Photoshop',
+      alt: 'best photoshop service provider WRTeambhuj'
 
     },
     {
       id: 3,
       icon: xd,
       hoverIcon: xdHover,
-      title: 'XD'
+      title: 'XD',
+      alt: 'Best Adobe XD service provider WRTeam Bhuj'
 
     },
   ]
@@ -197,24 +201,28 @@ const UIUXDevelopment = () => {
       title: 'Web design',
       desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: webDesign,
+      alt: 'best web design service provider WRTeam  kutch'
     },
     {
       id: 1,
       title: 'App design',
       desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: appDesign,
+      alt: 'best app designing service provider WRTeam kutch'
     },
     {
       id: 2,
       title: 'Brand design',
       desc: 'WRTeam offers full-stack web development services that combine the best of front-end and back-end development. Our full-stack developers are experts in handling all aspects of website development, from designing attractive interfaces to implementing difficult business logic in the back-end. Comprehensive features ensure seamless integration between the various layers of your website, delivering a high-end product.',
       img: brandDesign,
+      alt: 'top branding strategist at the best IT development company WRTeam'
     },
     {
       id: 3,
       title: 'Complete Solution',
       desc: `At WRTeam, we understand that your website or app is your online presence and the first impression you make on potential customers. That's why we provide the best UI/UX design services and develop beautiful and user-friendly websites or apps that increase conversion rates. WRTeam believes that good design should be both attractive and functional, which is why we focus on user experience (UX) design. Our aim is to ensure that your website or app is easy to use, clean, and focused on conversion. We strive to provide comprehensive solutions for creating user-friendly and efficient websites and apps.`,
       img: completeSolution,
+      alt:  'complete solution service with design experts at WRTeam bhuj'
     },
   ]
 
@@ -246,7 +254,7 @@ const UIUXDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={uiuxDeveImg} alt="" />
+                <Image height={0} width={0} loading="lazy" src={uiuxDeveImg} alt="best UI/UX service provider WRTeam kutch" />
               </div>
             </div>
           </div>
@@ -332,7 +340,7 @@ const UIUXDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={processImg} alt="" />
+                <Image height={0} width={0} loading="lazy" src={processImg} alt="work done by enhancing clients' needs with innovative design at WRTeam bhuj" />
               </div>
             </div>
           </div>
@@ -399,7 +407,7 @@ const UIUXDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={processImg2} alt="" />
+                <Image height={0} width={0} loading="lazy" src={processImg2} alt="creative work done by experts at WRTeam bhuj" />
               </div>
             </div>
           </div>
@@ -438,8 +446,8 @@ const UIUXDevelopment = () => {
                     >
                       <div className="card">
                         <span className='buildCardIcon'>
-                          <Image height={0} width={0} loading="lazy" src={e.icon} alt="" className='buildIcon1' />
-                          <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt="" className='buildIcon2' />
+                          <Image height={0} width={0} loading="lazy" src={e.icon} alt={e.alt} className='buildIcon1' />
+                          <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt={e.alt} className='buildIcon2' />
                         </span>
                         <span>{e.title}</span>
                       </div>

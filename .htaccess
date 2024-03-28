@@ -10,12 +10,23 @@
     RewriteRule ^services/web-development$ /services/web-development.html [L]
     RewriteRule ^services/app-development$ /services/app-development.html [L]
     RewriteRule ^services/ui-ux-design-development$ /services/ui-ux-design-development.html [L]
-    RewriteRule ^services/digital-marketing-development$ /services/digital-marketing-development.html [L]
+    RewriteRule ^services/digital-marketing-development$ /services/digital-marketing-development.html [L] 
+    RewriteRule ^product-details/([^/]+)$ product-details/[slug]/index.html [L]
     RewriteRule ^product-details/([^/]+)/$ product-details/[slug]/index.html [L]
-    RewriteRule ^products/app-products/page/([^/]+)/$ products/app-products/page/[page]/index.html [L]
-    RewriteRule ^products/web-products/page/([^/]+)/$ products/web-products/page/[page]/index.html [L]
-    RewriteRule ^cart/([^/]+)$ cart/[slug]/index.html [L]
-    RewriteRule ^cart/([^/]+)/$ cart/[slug]/index.html [L]
+
+    RewriteRule ^products/app-products/page/([^/]+)/$ products/app-products/page/[page].html [L]
+    RewriteRule ^products/web-products/page/([^/]+)/$ products/web-products/page/[page].html [L]
+    RewriteRule ^cart/([^/]+)$ cart/[slug].html [L]
+    RewriteRule ^cart/([^/]+)/$ cart/[slug].html [L]
+    RewriteRule ^license$ /license.html [L]
+     
+    RewriteRule ^steals-of-the-week-sale/?$ / [R=301,L] 
+    RewriteRule ^independence-day-sale/?$ / [R=301,L] 
+    RewriteRule ^september-super-sale/?$ / [R=301,L] 
+    RewriteRule ^cyber-week-sale/?$ / [R=301,L] 
+    RewriteRule ^black-friday-sale/?$ / [R=301,L] 
+    RewriteRule ^year-end-flash-sale/?$ / [R=301,L] 
+            
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /404.html [L]

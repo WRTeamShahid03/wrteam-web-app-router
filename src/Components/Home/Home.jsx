@@ -105,24 +105,28 @@ const Home = () => {
             title: "Web Development",
             desc: "Build a user-friendly website that showcases your business online.",
             icon: servWebIcon,
+            alt: 'best web development service provider BHUJ-GUJRAT-INDIA'
         },
         {
             id: 2,
             title: "App Development",
             desc: "Create a custom app for your business that makes your tasks easier.",
             icon: servWebIcon,
+            alt: 'best affordable mobile app creator WRTeam bhuj-gujrat-india'
         },
         {
             id: 3,
             title: "UI/UX Services",
             desc: "Design and develop engaging and user-friendly websites and apps.",
             icon: servWebIcon,
+            alt: 'a large variety of  trendy & innovative customizable UI / UX designs-WRTeam bhuj'
         },
         {
             id: 4,
             title: "Digital Marketing",
             desc: "Promote your business online, reach new customers and increase sales.",
             icon: servWebIcon,
+            alt: 'best digital marketing agency to grow your business rapidly-WRTeam(Bhuj)'
         },
     ]
 
@@ -131,36 +135,43 @@ const Home = () => {
             id: 1,
             title: "Flutter",
             icon: flutterTech,
+            alt: 'top Flutter technology software development service provider-WRTeam(bhuj)'
         },
         {
             id: 2,
             title: "React Js",
             icon: react,
+            alt: 'react color experts-WRTeam(bhuj)'
         },
         {
             id: 3,
             title: "Vue JS",
             icon: vue,
+            alt: 'tools like Vuecolor experts-WRTeam(bhuj)'
         },
         {
             id: 4,
             title: "Next JS",
             icon: nextjs,
+            alt: 'best next.js software developer-WRTeam(bhuj)'
         },
         {
             id: 5,
             title: "Laravel",
             icon: laravel,
+            alt: 'best Laravel technology software developer-WRTeam(bhuj)'
         },
         {
             id: 6,
             title: "Android",
             icon: android,
+            alt: 'best Android app development service provider-WRTeam(bhuj)'
         },
         {
             id: 7,
             title: "iOS",
             icon: ios,
+            alt: 'best IOS app development service provider-WRTEam (Bhuj)'
         },
 
     ]
@@ -283,7 +294,7 @@ const Home = () => {
                                     // data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800"
                                     >
 
-                                        <Image height={0} width={0} loading="lazy" src={aboutImg1} alt="" />
+                                        <Image height={0} width={0} loading="lazy" src={aboutImg1} alt="expert, experienced & skilled  software developers for your business" />
                                         <div className="aboutSmImg" style={{
                                             background: `url(${aboutImg2.src})`,
                                             backgroundSize: 'cover'
@@ -372,7 +383,7 @@ const Home = () => {
 
                                     <div className="winnerLeftImg">
 
-                                        <Image height={0} width={0} loading="lazy" src={winnerImg1} alt="" className='winnerTeamImg' />
+                                        <Image height={0} width={0} loading="lazy" src={winnerImg1} alt="team of creative and innovative designers using most advanced tools & technology" className='winnerTeamImg' />
                                         <div className="winnerSmImg" >
                                             <Image height={0} width={0} loading="lazy" src={trophy} alt="" />
 
@@ -415,7 +426,7 @@ const Home = () => {
                                         background: `url(${appProduct.src})`,
                                         backgroundRepeat: "no-repeat"
                                     }}>
-                                        <Image height={0} width={0} loading="lazy" src={appProduct} alt="" className='solu_product_img' />
+                                        <Image height={0} width={0} loading="lazy" src={appProduct} alt="create a mobile app for both Android & ios with WRTeam(bhuj) experts" className='solu_product_img' />
                                     </div>
                                     <div className="mobProContent">
                                         <span className='mobProIcon'><Image height={0} width={0} loading="lazy" src={appProIcon} alt="" /></span>
@@ -435,7 +446,7 @@ const Home = () => {
                                         background: `url(${webProduct.src})`,
                                         backgroundRepeat: "no-repeat"
                                     }}>
-                                        <Image height={0} width={0} loading="lazy" src={webProduct} alt="" className='solu_product_img' />
+                                        <Image height={0} width={0} loading="lazy" src={webProduct} alt="web development service for every type of website with WRTeam(bhuj) experts" className='solu_product_img' />
                                     </div>
                                     <div className="mobProContent">
                                         <span className='mobProIcon'><Image height={0} width={0} loading="lazy" src={webProIcon} alt="" /></span>
@@ -466,8 +477,8 @@ const Home = () => {
                                         // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                         >
                                             <span className="servImg lightgrnServ">
-                                                <Image height={0} width={0} loading="lazy" src={servWebIcon} alt="" className='servNorImg' />
-                                                <Image height={0} width={0} loading="lazy" src={servwebHover} alt="" className='servHoverImg' />
+                                                <Image height={0} width={0} loading="lazy" src={servWebIcon} alt={servCardData[0].alt} className='servNorImg' />
+                                                <Image height={0} width={0} loading="lazy" src={servwebHover} alt={servCardData[0].alt} className='servHoverImg' />
                                             </span>
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[0].title}</h4>
@@ -482,8 +493,8 @@ const Home = () => {
                                         // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                         >
                                             <span className="servImg orangeServ">
-                                                <Image height={0} width={0} loading="lazy" src={servAppIcon} alt="" className='servNorImg' />
-                                                <Image height={0} width={0} loading="lazy" src={appHover} alt="" className='servHoverImg' />
+                                                <Image height={0} width={0} loading="lazy" src={servAppIcon} alt={servCardData[1].alt} className='servNorImg' />
+                                                <Image height={0} width={0} loading="lazy" src={appHover} alt={servCardData[1].alt} className='servHoverImg' />
                                             </span>
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[1].title}</h4>
@@ -498,8 +509,8 @@ const Home = () => {
                                         // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                         >
                                             <span className="servImg crimsonServ">
-                                                <Image height={0} width={0} loading="lazy" src={uiIcon} alt="" className='servNorImg' />
-                                                <Image height={0} width={0} loading="lazy" src={uiHover} alt="" className='servHoverImg' />
+                                                <Image height={0} width={0} loading="lazy" src={uiIcon} alt={servCardData[2].alt} className='servNorImg' />
+                                                <Image height={0} width={0} loading="lazy" src={uiHover} alt={servCardData[2].alt} className='servHoverImg' />
                                             </span>
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[2].title}</h4>
@@ -514,8 +525,8 @@ const Home = () => {
                                         // data-aos="fade-down" data-aos-once="true" data-aos-duration="800"
                                         >
                                             <span className="servImg greenServ">
-                                                <Image height={0} width={0} loading="lazy" src={digitalIcon} alt="" className='servNorImg' />
-                                                <Image height={0} width={0} loading="lazy" src={digitalHover} alt="" className='servHoverImg' />
+                                                <Image height={0} width={0} loading="lazy" src={digitalIcon} alt={servCardData[3].alt} className='servNorImg' />
+                                                <Image height={0} width={0} loading="lazy" src={digitalHover} alt={servCardData[3].alt} className='servHoverImg' />
                                             </span>
                                             <div className="servContent">
                                                 <h4 className='servHeadline'>{servCardData[3].title}</h4>
@@ -586,7 +597,7 @@ const Home = () => {
                                                                 // data-aos="slide-left" data-aos-once="true" data-aos-duration="800"
                                                                 key={ele.icon}>
                                                                 <div className="techCard">
-                                                                    <Image height={0} width={0} loading="lazy" src={ele.icon} alt="" className='techIcons' />
+                                                                    <Image height={0} width={0} loading="lazy" src={ele.icon} alt={ele.alt} className='techIcons' />
                                                                 </div>
                                                                 <span className="colorDot">
                                                                     <span className='darkDot'></span>

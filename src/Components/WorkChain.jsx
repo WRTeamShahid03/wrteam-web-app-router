@@ -38,7 +38,7 @@ const WorkChain = () => {
                                             >
                                                 <div className="custom">
                                                     <span className='workNumb num1'>1</span>
-                                                    <Image height={0} width={0} loading="lazy" src={workImg1} alt="" className='workImg' />
+                                                    <Image height={0} width={0} loading="lazy" src={workImg1} alt="best web development company-WRTeam bhuj-kutch" className='workImg' />
                                                 </div>
                                                 <h5 className='workTitle'>Choose a service</h5>
                                                 <span className='workDesc'>Choose the service from our list of solutions, Mobile Development, Web Development, UI/UX Design etc.</span>
@@ -53,7 +53,7 @@ const WorkChain = () => {
                                                     <span className='workNumb workRevNumb num2'>2</span>
                                                     <div className="workImgDiv">
 
-                                                        <Image height={0} width={0} loading="lazy" src={workImg2} alt="" className='workImg' />
+                                                        <Image height={0} width={0} loading="lazy" src={workImg2} alt="best mobile app service provider-WRTeam India" className='workImg' />
                                                     </div>
                                                 </div>
 
@@ -72,7 +72,7 @@ const WorkChain = () => {
                                             >
                                                 <div className="custom">
                                                     <span className='workNumb num3'>3</span>
-                                                    <Image height={0} width={0} loading="lazy" src={workImg3} alt="" className='workImg' />
+                                                    <Image height={0} width={0} loading="lazy" src={workImg3} alt="best UI/UX designing servicer provider-WRTeam bhuj gujrat" className='workImg' />
                                                 </div>
 
                                                 <h5 className='workTitle'>Start planning</h5>
@@ -88,7 +88,7 @@ const WorkChain = () => {
                                             >
                                                 <div className="custom">
                                                     <span className='workNumb workRevNumb num4'>4</span>
-                                                    <Image height={0} width={0} loading="lazy" src={workImg4} alt="" className='workImg' />
+                                                    <Image height={0} width={0} loading="lazy" src={workImg4} alt="best digital marketing service provider -WRTeam bhuj gujrat" className='workImg' />
                                                 </div>
 
                                                 <div className="wrapper">

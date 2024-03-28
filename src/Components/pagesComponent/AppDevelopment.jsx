@@ -133,22 +133,24 @@ const AppDevelopment = () => {
             id: 0,
             icon: androidIcon,
             hoverIcon: androidIconHover,
-            title: 'Android'
+            title: 'Android',
+            alt: 'android app development service provider-WRTeam'
 
         },
         {
             id: 1,
             icon: flutterIcon,
             hoverIcon: flutterIconHover,
-            title: 'Flutter'
+            title: 'Flutter',
+            alt: 'bet flutter technology developers will work for you WRTeam bhuj'
 
         },
         {
             id: 2,
             icon: iosIcon,
             hoverIcon: iosIconHover,
-            title: 'iOS'
-
+            title: 'iOS',
+            alt: 'ios app development service provider-WRTeam'
         },
     ]
 
@@ -185,24 +187,28 @@ const AppDevelopment = () => {
             title: 'Android app development',
             desc: `Our app development team possesses extensive knowledge and expertise in Android app development. We are deeply dedicated to delivering outstanding solutions that are perfectly tailored to our client's unique needs and go above and beyond their expectations. Our primary focus is on providing exceptional services that not only meet but exceed our client's requirements, make sure their maximal satisfaction.`,
             img: android,
+            alt: 'top android mobile app development  service provider & experts'
         },
         {
             id: 1,
             title: 'iOS app development',
             desc: 'There are over 1 billion globally active users of iPhones , making it a huge market for iOS apps. Our team specialised in iOS app development and has the skills to create a great app for you.',
             img: ios,
+            alt: 'top IOS mobile app development  service provider & experts'
         },
         {
             id: 2,
             title: 'Flutter app development',
             desc: 'Flutter app development is the process of creating mobile apps with the Flutter framework. Flutter is an open-source, cross-platform framework created by Google. It means developers can use Flutter to build apps that can run on both Android and iOS devices, by single code.',
             img: flutter,
+            alt: 'best fluter mobile app development service with WRTeam bhuj'
         },
         {
             id: 3,
             title: 'Complete Solution',
             desc: `WRTeam provides comprehensive app development services to organisations of all sizes. Our talented App Developers are committed to developing robust, feature-rich apps that meet your company's specific aims and requirements by utilising the most up-to-date tools, technologies, and industry standards. WRTeam specialises in Android app development, Flutter app development, and iOS app development to give the finest solutions for our client's needs. Our team has extensive expertise in developing high-quality mobile applications for the Android, Flutter, and iOS platforms. We have the competence to offer excellent outcomes whether you require an Android app, a Flutter app, or an iOS app.`,
             img: completeSolution,
+            alt: 'complete solution for all your digital problems with WRTeam bhuj'
         },
     ]
 
@@ -235,7 +241,7 @@ const AppDevelopment = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={appDeveImg} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={appDeveImg} alt="best android & ios app development company -WRTeam Bhuj- gujrat" />
                             </div>
                         </div>
                     </div>
@@ -321,7 +327,7 @@ const AppDevelopment = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={processImg} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={processImg} alt="every work is done in systematic way at best it company WRTeam bhuj" />
                             </div>
                         </div>
                     </div>
@@ -387,7 +393,7 @@ const AppDevelopment = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={processImg2} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={processImg2} alt="work in progress with the best web-app development company WRTeam bhuj" />
                             </div>
                         </div>
                     </div>
@@ -427,8 +433,8 @@ const AppDevelopment = () => {
                                         >
                                             <div className="card">
                                                 <span className='buildCardIcon'>
-                                                    <Image height={0} width={0} loading="lazy" src={e.icon} alt="" className='buildIcon1' />
-                                                    <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt="" className='buildIcon2' />
+                                                    <Image height={0} width={0} loading="lazy" src={e.icon} alt={e.alt} className='buildIcon1' />
+                                                    <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt={e.alt} className='buildIcon2' />
                                                 </span>
                                                 <span>{e.title}</span>
                                             </div>

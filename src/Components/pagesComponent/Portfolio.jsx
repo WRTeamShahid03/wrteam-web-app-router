@@ -9,6 +9,7 @@ import Tabebi from '../../Asset/Images/portfolio/Tabibe.jpg'
 import Talanta from '../../Asset/Images/portfolio/Talenta.jpg'
 import Strongtools from '../../Asset/Images/portfolio/Strongtools.jpg'
 import Lokale from '../../Asset/Images/portfolio/Lokale-mand.jpg'
+import AristoTrivia from '../../Asset/Images/portfolio/Aristo trivia.jpg'
 
 const Portfolio = () => {
     const [loading, setLoading] = useState(false);
@@ -99,7 +100,21 @@ const Portfolio = () => {
             ios: '',
             webLink: ''
         },
-        // Add other portfolio items similarly
+        {
+            id: 5,
+            title: 'Aristo Trivia',
+            headline: 'Elevate Your Knowledge, Win Big',
+            para: `AristoTrivia is your premier destination for engaging trivia experiences and exciting rewards, built using the versatile Flutter platform. Test your knowledge across various categories and compete with friends, colleagues, or loved ones. From sports enthusiasts to culture buffs, AristoTrivia offers something for everyone.`,
+            playStore: true,
+            iosStore: true,
+            web: false,
+            sectionImg: AristoTrivia,
+            reverseSection: true,
+            android: 'https://drive.google.com/file/d/17mwHcn0XSadwsvLRkdSgh7dlRBp-UC8I/view?usp=sharing',
+            android2: '',
+            ios: '',
+            webLink: ''
+        },
     ];
 
     // Logic to slice portfolioData based on currentPage

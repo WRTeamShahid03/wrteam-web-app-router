@@ -32,7 +32,7 @@ const Footer = () => {
                      <div className="cont logoCont">
                         <div className="footLogo">
                            <Link href={'/'}>
-                           <Image height={0} width={0} loading="lazy" src={navLogo} alt='navLogo' />
+                           <Image height={0} width={0} loading="lazy" src={navLogo} alt='wrteam(bhuj) leading IOS and Android software development company' />
                            </Link>
 
                         </div>

@@ -64,7 +64,7 @@ const NewSlider = ({ newSwiperData }) => {
                     {
                         newSwiperData.map((ele)=>{
                             return <div key={ele.id}>
-                                <Image height={0} width={0} loading="lazy"  src={ele.img} alt="" />
+                                <Image height={0} width={0} loading="lazy"  src={ele.img} alt={ele.alt} />
                             </div>
                         })
                     }

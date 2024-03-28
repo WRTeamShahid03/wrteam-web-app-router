@@ -144,42 +144,48 @@ const DigitalMarketing = () => {
             id: 0,
             icon: emailmarIcon,
             hoverIcon: emailmarIconHover,
-            title: 'Email Marketing'
+            title: 'Email Marketing',
+            alt: 'bulk email marketing service provider-WRTeam bhuj gujrat'
 
         },
         {
             id: 1,
             icon: fbAdds,
             hoverIcon: fbAddsHover,
-            title: 'Facebook Adds'
+            title: 'Facebook Adds',
+            alt: 'Facebook marketing and handling service provider-WRTeam bhuj'
 
         },
         {
             id: 2,
             icon: googleAdds,
             hoverIcon: googleAddsHover,
-            title: 'Google Adds'
+            title: 'Google Adds',
+            alt: 'best google ads service provider in Gujrat-WRTeam bhuj kutch'
 
         },
         {
             id: 3,
             icon: googleAna,
             hoverIcon: googleAnaHover,
-            title: 'Google Analytics'
+            title: 'Google Analytics',
+            alt: 'hire a team of  best Google analytics experts at WRTeam Bhuj Gujrat'
 
         },
         {
             id: 4,
             icon: seoIcon,
             hoverIcon: seoIconHover,
-            title: 'SEO'
+            title: 'SEO',
+            alt: 'get your work done with SEO experts at WRTeam kutch gujrat'
 
         },
         {
             id: 5,
             icon: seoYT,
             hoverIcon: seoYTHover,
-            title: 'SEO Youtube'
+            title: 'SEO Youtube',
+            alt: 'top YouTube  SEO by experts at WRTeam gujrat India'
 
         },
     ]
@@ -217,24 +223,28 @@ const DigitalMarketing = () => {
             title: 'SEO (Search Engine Optimization)',
             desc: `We will work with you to improve the position of your website on search engine results pages (SERPs) and secure the top page. We will increase the visibility of your site and chances of ranking higher on the SERPs by keyword research and optimizing content and structure.`,
             img: seo,
+            alt: 'most effective SEO strategies  and services with experts of WRTeam kutch-gujrat'
         },
         {
             id: 1,
             title: 'SMM (Social Media Marketing)',
             desc: `We'll help you establish a strong social media presence by creating and managing your profile, and developing and publishing engaging content that will appeal to your target audience.`,
             img: smm,
+            alt: 'best social media management service provider WRTeam bhuj'
         },
         {
             id: 2,
             title: 'Email Marketing',
             desc: 'We will help you reach your target audience with personalized email campaigns that are tailored to their interests and behaviors.',
             img: emailMarketing,
+            alt: 'E-mail marketing services by experts are also available at WRTeam  bhuj Gujrat'
         },
         {
             id: 3,
             title: 'Local Marketing',
             desc: 'WRTeam helps businesses increase their brand exposure and connect with their local customers. Our special approaches to local SEO and local ads help businesses to reach new customers and increase foot traffic to your actual locations.',
             img: localMarketing,
+            alt: 'get a local SEO service & local marketing with expert marketers of WRTeam gujrat india'
         },
     ]
 
@@ -266,7 +276,7 @@ const DigitalMarketing = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={digitalMarketingServImg} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={digitalMarketingServImg} alt="most effective SEO strategies  and services with experts of WRTeam kutch-gujrat" />
                             </div>
                         </div>
                     </div>
@@ -352,7 +362,7 @@ const DigitalMarketing = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={processImg} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={processImg} alt="all types of digital marketing services are available at the best IT consultants-WRTeam Bhuj Gujrat" />
                             </div>
                         </div>
                     </div>
@@ -419,7 +429,7 @@ const DigitalMarketing = () => {
                         // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
                         >
                             <div className="commonBorderDiv">
-                                <Image height={0} width={0} loading="lazy" src={processImg2} alt="" />
+                                <Image height={0} width={0} loading="lazy" src={processImg2} alt="detailed digital marketing work process report at WRTeam kutch" />
                             </div>
                         </div>
                     </div>
@@ -458,8 +468,8 @@ const DigitalMarketing = () => {
                                         >
                                             <div className="card">
                                                 <span className='buildCardIcon'>
-                                                    <Image height={0} width={0} loading="lazy" src={e.icon} alt="" className='buildIcon1' />
-                                                    <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt="" className='buildIcon2' />
+                                                    <Image height={0} width={0} loading="lazy" src={e.icon} alt={e.alt} className='buildIcon1' />
+                                                    <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt={e.alt} className='buildIcon2' />
                                                 </span>
                                                 <span>{e.title}</span>
                                             </div>

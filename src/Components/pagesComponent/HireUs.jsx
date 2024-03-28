@@ -188,31 +188,31 @@ const HireUs = () => {
                                         <div className="hireUsCardWrapper">
 
                                             <div className="hireUsCard">
-                                                <span className='flutter'> <Image height={0} width={0} loading="lazy" src={flutter} alt="" /> </span>
+                                                <span className='flutter'> <Image height={0} width={0} loading="lazy" src={flutter} alt="best flutter developers in Gujrat-WRTeam gujrat india" /> </span>
                                                 <span className='title'>Flutter</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='react'> <Image height={0} width={0} loading="lazy" src={react} alt="" /> </span>
+                                                <span className='react'> <Image height={0} width={0} loading="lazy" src={react} alt="best react.js service available at WRTeam bhuj gujrat" /> </span>
                                                 <span className='title'>React Js</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='vue'> <Image height={0} width={0} loading="lazy" src={vue} alt="" /> </span>
+                                                <span className='vue'> <Image height={0} width={0} loading="lazy" src={vue} alt="Vue service is available at WRTeam Bhuj" /> </span>
                                                 <span className='title'>Vue Js</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='nextjs'> <Image height={0} width={0} loading="lazy" src={nextjs} alt="" /> </span>
+                                                <span className='nextjs'> <Image height={0} width={0} loading="lazy" src={nextjs} alt="best next.js service provider in gujrat India" /> </span>
                                                 <span className='title'>Next Js</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='laravel'> <Image height={0} width={0} loading="lazy" src={laravel} alt="" /> </span>
+                                                <span className='laravel'> <Image height={0} width={0} loading="lazy" src={laravel} alt="Top Laravel developers & experts at WRTeam bhuj gujrat" /> </span>
                                                 <span className='title'>Laravel</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='android'> <Image height={0} width={0} loading="lazy" src={android} alt="" /> </span>
+                                                <span className='android'> <Image height={0} width={0} loading="lazy" src={android} alt="best android app development service provider in India-WRTeam" /> </span>
                                                 <span className='title'>Android</span>
                                             </div>
                                             <div className="hireUsCard">
-                                                <span className='ios'> <Image height={0} width={0} loading="lazy" src={ios} alt="" /> </span>
+                                                <span className='ios'> <Image height={0} width={0} loading="lazy" src={ios} alt="best IOS app development service provider in India-WRTeam" /> </span>
                                                 <span className='title'>iOS</span>
                                             </div>
 
@@ -312,8 +312,6 @@ const HireUs = () => {
 
                 </div>
             </section>
-
-
 
             <section id='success'>
                 <div className="container">

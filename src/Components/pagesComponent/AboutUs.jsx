@@ -38,7 +38,7 @@ const AboutUs = () => {
               // data-aos="fade-down-right" data-aos-once="true" data-aos-duration="800"
               >
 
-                <Image height={0} width={0} loading="lazy" src={knowMoreImg} alt="" />
+                <Image height={0} width={0} loading="lazy" src={knowMoreImg} alt="know about the top marketers, developers, and experts at best wed development company-WRTeam" />
                 <div className="business">
                   <span className='likeSpan'><Image height={0} width={0} loading="lazy" src={likeIcon} alt="likeIcon" /></span>
                   <span className='businessNum'>25+</span>

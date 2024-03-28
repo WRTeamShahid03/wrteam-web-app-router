@@ -32,19 +32,14 @@ function MyApp({ Component, pageProps, data }) {
       document.body.style.backgroundColor = "initial";
     }
 
-    if (router.pathname === '/404') {
-      router.push('/')
-    }
+    // if (router.asPath.startsWith('/steals-of-the-week-sale/') || router.asPath.startsWith('/independence-day-sale') || router.asPath.startsWith('/september-super-sale') || router.asPath.startsWith('/cyber-week-sale') || router.asPath.startsWith('/black-friday-sale') || router.asPath.startsWith('/year-end-flash-sale')) {
+    //   router.push('/')
+    // }
 
 
-    console.log('router.pathname :', router.pathname)
+    // console.log('router.pathname :', router)
   }, [router.pathname]);
 
-  // useEffect(() => {
-  //   if (router.pathname.startsWith('/steals-of-the-week-sale/') || router.pathname.startsWith('/independence-day-sale') || router.pathname.startsWith('/september-super-sale') || router.pathname.startsWith('/cyber-week-sale') || router.pathname.startsWith('/black-friday-sale') || router.pathname.startsWith('/year-end-flash-sale')) {
-  //     router.push('https://wrteam.in/')
-  //   }
-  // }, [router.pathname])
 
   return (
     <>

@@ -134,42 +134,48 @@ const WebDevelopment = () => {
       id: 0,
       icon: laravel,
       hoverIcon: laravelHover,
-      title: 'Laravel'
+      title: 'Laravel',
+      alt: `work with Laravel Technology's experts  with the best web-app development company WRTeam bhuj`
 
     },
     {
       id: 1,
       icon: php,
       hoverIcon: phpHover,
-      title: 'Php'
+      title: 'Php',
+      alt: `work with PHP Technology's experts  with the best web-app development company WRTeam bhuj`
 
     },
     {
       id: 2,
       icon: codeignitor,
       hoverIcon: codeignitorHover,
-      title: 'CodIgnitor'
+      title: 'CodIgnitor',
+      alt: `work with codiginatorr Technology's experts  with the best web-app development company WRTeam bhuj`
 
     },
     {
       id: 3,
       icon: vueJs,
       hoverIcon: vueJsHover,
-      title: 'VueJS'
+      title: 'VueJS',
+      alt: `work with vue.js Technology's experts  with the best web-app development company WRTeam bhuj`
 
     },
     {
       id: 4,
       icon: nextJs,
       hoverIcon: nextJsHover,
-      title: 'NextJS'
+      title: 'NextJS',
+      alt: `work with next.js Technology experts  with the best web-app development company WRTeam bhuj`
 
     },
     {
       id: 5,
       icon: reactJs,
       hoverIcon: reactJsHover,
-      title: 'ReactJS'
+      title: 'ReactJS',
+      alt: `work with react.js Technology experts  with the best web-app development company WRTeam bhuj`
 
     },
   ]
@@ -207,24 +213,28 @@ const WebDevelopment = () => {
       title: 'Front-end web development',
       desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: frontendImg,
+      alt: 'front hand service for your website with experts of the best it company WRTeam'
     },
     {
       id: 1,
       title: 'Back-end web development',
       desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
       img: backendImg,
+      alt: 'back  hand service for your website with experts of the best it company WRTeam'
     },
     {
       id: 2,
       title: 'Full-stack web development',
       desc: 'WRTeam offers full-stack web development services that combine the best of front-end and back-end development. Our full-stack developers are experts in handling all aspects of website development, from designing attractive interfaces to implementing difficult business logic in the back-end. Comprehensive features ensure seamless integration between the various layers of your website, delivering a high-end product.',
       img: fullStactImg,
+      alt: 'front  hand - backhand - full stack development with the best it web web developers'
     },
     {
       id: 3,
       title: 'Complete Solution',
       desc: 'WRTeam provides professional web development services that satisfy the demands of online businesses. Our experienced programmers employ the most modern technology to build adaptable, practical websites that comply with certain specifications.Our web development services include front-end web development, back-end web development, and full-stack web development. WRTeam believes in delivering end-to-end web development services.',
       img: completeSolution,
+      alt: 'get complete every digital solutions  with the best web development company WRTeam'
     },
   ]
 
@@ -256,7 +266,7 @@ const WebDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={webDeveImg} alt="" />
+                <Image height={0} width={0} loading="lazy" src={webDeveImg} alt="best web development company for startups, businesses,hotel,etc." />
               </div>
             </div>
           </div>
@@ -342,7 +352,7 @@ const WebDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={processImg} alt="" />
+                <Image height={0} width={0} loading="lazy" src={processImg} alt="work in progress with the best web-app development company WRTeam bhuj"  />
               </div>
             </div>
           </div>
@@ -353,7 +363,7 @@ const WebDevelopment = () => {
                   Our <span>Work Process</span>
                 </span>
                 <h3 className='comman_Headlines' >
-                How Does Our <span>Web Development</span> Transforms Businesses?
+                  How Does Our <span>Web Development</span> Transforms Businesses?
                 </h3>
               </div>
 
@@ -409,7 +419,7 @@ const WebDevelopment = () => {
             // data-aos="zoom-in" data-aos-once="true" data-aos-duration="800"
             >
               <div className="commonBorderDiv">
-                <Image height={0} width={0} loading="lazy" src={processImg2} alt="" />
+                <Image height={0} width={0} loading="lazy" src={processImg2} alt="work will never be on hold- with the best web-app development company WRTeam bhuj" />
               </div>
             </div>
           </div>
@@ -451,8 +461,8 @@ const WebDevelopment = () => {
                         <span className='buildCardIcon'>
                           {/* <Image height={0} width={0} loading="lazy"  src={e.icon} alt="" className='buildIcon1' />
                                                     <Image height={0} width={0} loading="lazy"  src={e.hoverIcon} alt="" className='buildIcon2' /> */}
-                          <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt="" className='buildIcon1' />
-                          <Image height={0} width={0} loading="lazy" src={e.icon} alt="" className='buildIcon2' />
+                          <Image height={0} width={0} loading="lazy" src={e.hoverIcon} alt={e.alt} className='buildIcon1' />
+                          <Image height={0} width={0} loading="lazy" src={e.icon} alt={e.alt} className='buildIcon2' />
                         </span>
                         <span>{e.title}</span>
                       </div>

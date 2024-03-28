@@ -55,7 +55,7 @@ const Header = () => {
             <div className="col-sm-5 col-md-5 col-lg-5">
               <div id="leftSide">
                 <div className="navLogo">
-                  <Link href="/">  <Image height={0} width={0} loading="lazy" src={navLogo} alt="navLogo" /> </Link>
+                  <Link href="/">  <Image height={0} width={0} loading="lazy" src={navLogo} alt="wrteam(bhuj) leading IOS and Android software development company" /> </Link>
                 </div>
               </div>
             </div>
