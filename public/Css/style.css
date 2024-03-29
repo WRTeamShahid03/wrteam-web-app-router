@@ -4833,25 +4833,27 @@ footer .footerContainer .flinks {
 
 .topHeader {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     background-color: #ce1a2c;
     color: white;
     font-family: 'Montserrat';
     font-size: 18px;
-    height: 80px;
+    height: 72px;
     gap: 12px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     z-index: 999;
+    padding-top: 12px;
 }
 
-.topHeader  .countdown-container {
+.topHeader .countdown-container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     text-align: center;
-    gap: 14px;
+    gap: 2px;
 }
 
 .topHeader .countdown-container .countdown-box {
@@ -4859,35 +4861,51 @@ footer .footerContainer .flinks {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0px;
-    border: 1px solid;
+    gap: 4px;
     border-radius: 6px;
     width: 66px;
     padding: 2px;
-    background: white;
 }
 
-.topHeader .countdown-container .countdown-box span{
-    font-size: 16px;
+.topHeader .countdown-container .countdown-box span:first-child {
+    font-size: 22px;
     color: #ce1a2c;
     font-weight: 700;
+    background-color: white;
+    width: 60px;
+    border-radius: 6px;
 }
 
-.topHeader .countdown-container .countdown-box span:last-child{
-    font-size: 12px;
+.topHeader .countdown-container .countdown-box span:last-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+@media screen and (min-width:992px) and (max-width: 1012px){
+    .topHeader{
+        gap: 4px;
+    }
 }
 
 @media screen and (max-width:991px) {
     .topHeader {
-        flex-direction: column;
+        /* flex-direction: column; */
         height: 100%;
         padding: 12px;
+        flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width:576px) {
     .topHeader {
         font-size: 14px;
+        gap: 6px;
+    }
+    .topHeader .countdown-container .countdown-box span:first-child {
+        font-size: 14px;
+        width: 40px;
+    }
+    .topHeader .countdown-container .countdown-box span:last-child {
+        font-size: 12px;
     }
 }
 
@@ -4902,6 +4920,7 @@ footer .footerContainer .flinks {
     border-radius: 4px;
     font-weight: 600;
     padding: 4px 30px;
+    margin-left: 20px;
 }
 
 .topHeader button svg {
@@ -6528,7 +6547,7 @@ footer .footerContainer .flinks {
     text-align: center;
 }
 
-.featuresSect #renderBullets{
+.featuresSect #renderBullets {
     display: none;
 }
 
