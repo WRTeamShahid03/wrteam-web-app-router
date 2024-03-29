@@ -4839,11 +4839,42 @@ footer .footerContainer .flinks {
     color: white;
     font-family: 'Montserrat';
     font-size: 18px;
-    height: 60px;
+    height: 80px;
     gap: 12px;
     position: sticky;
     top: 0px;
     z-index: 999;
+}
+
+.topHeader  .countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+}
+
+.topHeader .countdown-container .countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    border: 1px solid;
+    border-radius: 6px;
+    width: 66px;
+    padding: 2px;
+    background: white;
+}
+
+.topHeader .countdown-container .countdown-box span{
+    font-size: 16px;
+    color: #ce1a2c;
+    font-weight: 700;
+}
+
+.topHeader .countdown-container .countdown-box span:last-child{
+    font-size: 12px;
 }
 
 @media screen and (max-width:991px) {
