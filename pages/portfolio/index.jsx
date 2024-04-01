@@ -36,11 +36,11 @@ const index = (
             /> */}
             <Head>
                 <title>
-                    Mobile App & Web Software Development - ecommerce Solutions
+                Our Work- Collection of Best Web & App Products-WRTeam
                 </title>
                 <meta
                     name="description"
-                    content="WRTeam is a mobile app and web development company that helps bring your digital product visions to life. Contact us to create your best website or app."
+                    content="WRTeam is a mobile app and web development company that helps bring your digital product visions to life. Contact us to create your best website or app.                    "
                 />
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
             </Head>

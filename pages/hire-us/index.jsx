@@ -34,7 +34,7 @@ const Index = (
                 pathName={currentURL}
             /> */}
             <Head>
-                <title>Hire Us Today - Web & Apps Development & IT Services Company</title>
+                <title>Take advantage of WRTeam's best developers & experts - HIRE US</title>
                 <meta name="description" content="Experience the smart IT solutions for your company. Hire wrteam for specialised services, such as web & app development, IT consulting & graphic design." />
             </Head>
             <HireUs />

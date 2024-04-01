@@ -7,11 +7,11 @@ const Index = () => {
         <>
             <Head>
                 <title>
-                    Top IT company in India | Web Developer | App Developer - wrteam
+                    License - Difference of Regular and Extended License
                 </title>
                 <meta
                     name="description"
-                    content="Grow your business with our top web developers, app developers, graphic designers and digital marketing and IT consulting services provider specialists."
+                    content="List of Additional Features you get with an Extended License Version, for the most selling web & app products by a leading software development company."
                 />
             </Head>
             <LicensePage />

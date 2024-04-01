@@ -34,8 +34,8 @@ const Index = (
                 pathName={currentURL}
             /> */}
             <Head>
-                <title> WRTeam - Mobile App Development Service Provider IT Company</title>
-                <meta name="description" content=" Do you have less coding knowledge? We build customised, user-friendly apps that enhance user experience and drive growth. Contact us to get started." />
+                <title>Mobile App Development Service Provider Software Company - WRTeam</title>
+                <meta name="description" content="Do you have less coding knowledge? We build customised, user-friendly apps that enhance user experience and drive growth. Contact us to get started." />
             </Head>
             <AppDevelopment />
         </>

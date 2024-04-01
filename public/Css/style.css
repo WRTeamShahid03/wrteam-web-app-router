@@ -1633,7 +1633,7 @@ img {
 .sticky {
     position: sticky !important;
     top: 0;
-    top: 60px;
+    /* top: 60px; */
     background-color: #FEFEFE !important;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     -webkit-animation: headerSlideDown 0.95s ease forwards;
@@ -1642,7 +1642,7 @@ img {
 }
 
 /* this is for only when the topHeader is active */
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .sticky {
         top: 80px;
     }
@@ -1652,7 +1652,7 @@ img {
     .sticky {
         top: 100px;
     }
-}
+} */
 
 @keyframes headerSlideDown {
     0% {
@@ -5293,7 +5293,7 @@ footer .footerContainer .flinks {
     margin-bottom: 30px;
     position: fixed;
     top: 137px;
-    top: 194px;
+    /* top: 194px; */
 }
 
 @media screen and (min-width: 1200px) {

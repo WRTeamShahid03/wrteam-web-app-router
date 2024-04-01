@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps, data }) {
 
           <>
 
-            <TopHeader />
+            {/* <TopHeader /> */}
             {
               router.pathname.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
             }

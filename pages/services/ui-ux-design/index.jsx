@@ -34,7 +34,7 @@ const Index = (
         pathName={currentURL}
       /> */}
       <Head>
-        <title>WRTeam - Creative UI/UX Service Provider IT Company | Graphic Design</title>
+        <title>UI/UX Service Provider IT Company | Graphic Designer - WRTeam</title>
         <meta name="description" content="Want to improve user experience? User engagement and brand positioning are given top priority by our UI/UX team while creating designs. Click Now!" />
       </Head>
       <UIUXDevelopment />

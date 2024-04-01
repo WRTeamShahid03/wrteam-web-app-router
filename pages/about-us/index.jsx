@@ -39,8 +39,8 @@ const Index = (
         pathName={currentURL}
       /> */}
       <Head>
-        <title> Web & App Development Company In Bhuj | IT Consulting Service</title>
-        <meta name="description" content="WRTeam Gujarat based IT company which has created code  of website & application. Also provide UI/UX, IT consulting and digital marketing services." />
+        <title>WRTeam bhuj based best IT company with all digital solutions.</title>
+        <meta name="description" content="WRTeam Gujarat based IT company which has created code of website & application. Also provide UI/UX, IT consulting and digital marketing services." />
       </Head>
       <AboutUs />
     </>

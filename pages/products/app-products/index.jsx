@@ -22,7 +22,7 @@ import Head from "next/head";
 
 const Index = (
     // { seoData, currentURL }
-    ) => {
+) => {
 
     return (
         <>
@@ -34,7 +34,7 @@ const Index = (
                 pathName={currentURL}
             /> */}
             <Head>
-                <title> Create Mobile App with WRTeam's Digital Products</title>
+                <title> Make an App with the Best Ready-to-use Codes with WRTeam</title>
                 <meta name="description" content="Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps." />
             </Head>
             <AppProducts />

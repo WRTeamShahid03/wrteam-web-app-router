@@ -34,7 +34,7 @@ const Index = (
                 pathName={currentURL}
             /> */}
             <Head>
-                <title> Join WRTeam's Highly Skilled & Experienced Team & Build Career</title>
+                <title>Job Opportunities at WRTeam-IT company</title>
                 <meta name="description" content="Apply Now! Ready to take your career to the next level? We are looking for talented candidates to join our team of flutter, react, laravel, dart, vue js champ." />
             </Head>
             <Career />

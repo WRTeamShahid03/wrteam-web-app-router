@@ -34,7 +34,7 @@ const Index = (
                 pathName={currentURL}
             /> */}
             <Head>
-                <title>Contact Us - WRTeam | IT Company In Bhuj</title>
+                <title>Contact with bhuj based WRTeam experts for every digital solution.</title>
                 <meta name="description" content="How to make websites and apps? without knowledge of coding and create web & app for your business and. Contact Us for any type of IT solutions." />
             </Head>
             <ContactUs />
