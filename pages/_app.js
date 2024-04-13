@@ -22,6 +22,7 @@ import ProductDetailFooter from "@/Components/ProductDetailPageSects/ProductDeta
 function MyApp({ Component, pageProps, data }) {
 
   const router = useRouter()
+  const [loading, setLoading] = useState(false)
 
 
   const queryClient = new QueryClient()
@@ -33,12 +34,16 @@ function MyApp({ Component, pageProps, data }) {
     }
 
     // if (router.asPath.startsWith('/steals-of-the-week-sale/') || router.asPath.startsWith('/independence-day-sale') || router.asPath.startsWith('/september-super-sale') || router.asPath.startsWith('/cyber-week-sale') || router.asPath.startsWith('/black-friday-sale') || router.asPath.startsWith('/year-end-flash-sale')) {
+    //   setLoading(true)
     //   router.push('/')
     // }
 
+    if(router.asPath === '/'){
+      setLoading(false)
+    }
 
     // console.log('router.pathname :', router)
-  }, [router.pathname]);
+  }, [router.pathname, router.asPath]);
 
 
   return (
@@ -59,20 +64,25 @@ function MyApp({ Component, pageProps, data }) {
 
 
           <>
-
-            {/* <TopHeader /> */}
             {
-              router.pathname.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
+              loading ? <Loader /> : <>
+
+
+                {/* <TopHeader /> */}
+                {
+                  router.pathname.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
+                }
+                {/* <Header /> */}
+
+                <Component {...pageProps} data={data} />
+
+                {
+                  router.pathname.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
+                }
+
+                {/* <Footer /> */}
+              </>
             }
-            {/* <Header /> */}
-
-            <Component {...pageProps} data={data} />
-
-            {
-              router.pathname.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
-            }
-
-            {/* <Footer /> */}
           </>
         </Providers>
       </QueryClientProvider>

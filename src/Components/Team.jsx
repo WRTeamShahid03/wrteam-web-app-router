@@ -6,10 +6,11 @@ import Image from 'next/image';
 import { GetTeamMembersApi } from '@/redux/actions/campaign';
 import TeamSkeleton from './TeamSkeleton';
 import toast from 'react-hot-toast';
+import { placeholderImage } from '@/utils';
 
 
 const Team = () => {
-    
+
     const [teamData, setTeamData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
@@ -74,7 +75,7 @@ const Team = () => {
                                             <div className="col-sm-12 col-md-6 col-lg-3" key={ele.id}>
                                                 <div className="card text-white">
                                                     <Image height={0} width={0} loading="lazy"
-                                                        src={ele.img || teamDefaultImg}
+                                                        src={ele.image ? ele.image : teamDefaultImg}
                                                         className="card-img-top"
                                                         alt="teamImg"
                                                     />

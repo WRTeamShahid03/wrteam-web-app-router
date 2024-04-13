@@ -4880,8 +4880,9 @@ footer .footerContainer .flinks {
     font-size: 14px;
     font-weight: 700;
 }
-@media screen and (min-width:992px) and (max-width: 1012px){
-    .topHeader{
+
+@media screen and (min-width:992px) and (max-width: 1012px) {
+    .topHeader {
         gap: 4px;
     }
 }
@@ -4900,10 +4901,12 @@ footer .footerContainer .flinks {
         font-size: 14px;
         gap: 6px;
     }
+
     .topHeader .countdown-container .countdown-box span:first-child {
         font-size: 14px;
         width: 40px;
     }
+
     .topHeader .countdown-container .countdown-box span:last-child {
         font-size: 12px;
     }
@@ -6021,14 +6024,14 @@ footer .footerContainer .flinks {
     position: relative;
 }
 
-.product_detail_page .commonTextWrapper {
+.commonTextWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
 }
 
-.product_detail_page .flex_center {
+.flex_center {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6039,23 +6042,23 @@ footer .footerContainer .flinks {
 }
 
 @media screen and (max-width: 1199px) {
-    .productHeroSect .flex_center {
+    .flex_center {
         width: 60%;
     }
 
-    .product_detail_page .commonTextWrapper {
+    .commonTextWrapper {
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .product_detail_page .flex_center {
+    .flex_center {
         width: 100%;
     }
 }
 
 
-.productHeroSect .flex_center .comman_Headlines {
+.flex_center .comman_Headlines {
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
@@ -6063,12 +6066,12 @@ footer .footerContainer .flinks {
 }
 
 @media screen and (max-width: 667px) {
-    .productHeroSect .flex_center .comman_Headlines {
+    .flex_center .comman_Headlines {
         font-size: 38px;
     }
 }
 
-.productHeroSect .flex_center .comman_Headlines span {
+.flex_center .comman_Headlines span {
     color: var(--productPage-primary-color);
 }
 
@@ -6143,7 +6146,7 @@ footer .footerContainer .flinks {
         gap: 12px;
     }
 
-    .product_detail_page .commonTextWrapper {
+    .commonTextWrapper {
         margin-top: 30px;
     }
 
@@ -6947,3 +6950,320 @@ footer .footerContainer .flinks {
 }
 
 /* license ends here  */
+
+
+/* customizationPage  starts here  */
+
+
+.customization .commonTextWrapper {
+    margin-top: 50px;
+}
+
+.customization .flex_center {
+    width: 74%;
+    gap: 28px;
+}
+
+.customization .flex_center .comman_Headlines {
+    font-size: 36px;
+}
+
+.customization .flex_center .comman_Headlines span {
+    color: var(--primary-color);
+}
+
+.customization .dicussionSect {
+    background: #2E71FE14;
+    margin-top: 100px;
+    padding: 70px 20px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.customization .dicussionSect .arr1,
+.customization .dicussionSect .arr2 {
+    position: absolute;
+    top: 100px;
+    width: 164px;
+}
+
+.customization .dicussionSect .arr1 {
+    left: 28%;
+}
+
+.customization .dicussionSect .arr2 {
+    right: 28%;
+}
+
+.customization .dicussionSect .line1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 28%;
+}
+
+.customization .dicussionSect .line2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    rotate: 188deg;
+    width: 30%;
+    z-index: -1;
+}
+
+.customization .dicussionSect .card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    gap: 16px;
+    position: relative;
+}
+
+.customization .dicussionSect .card .numbWrapper {
+    background-color: var(--primary-color);
+    font: normal normal bold 21px/25px Montserrat;
+    color: #FFFFFF;
+    width: 44px;
+    line-height: 44px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    right: 142px;
+    left: auto;
+}
+
+.customization .dicussionSect .card .numbWrapper .numb {
+    border: 1px solid white;
+    border-radius: 50px;
+    border-style: dashed;
+    padding: 6px;
+}
+
+
+.customization .dicussionSect .card .title {
+    font: normal normal 600 20px/29px Montserrat;
+    color: #212121;
+}
+
+.customization .dicussionSect .card .desc {
+    font: normal normal 600 14px/28px Montserrat;
+    color: #545A68;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.customization .dicussionSect .card img {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 8px;
+}
+
+.customization .customizationDetails {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 16px;
+    margin-top: 80px;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+
+.customization .customizationDetails .textWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.customization .customizationDetails .textWrapper .comman_Headlines {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.customization .customizationDetails .textWrapper .comman_para {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.customization .customizationDetails img {
+    margin-top: 20px;
+    width: 100%;
+    height: 546px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.customization .customizationDetails .formDiv {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.customization .customizationDetails .formDiv .row {
+    gap: 20px 0px;
+}
+
+.customization .customizationDetails .formDiv input,
+.customization .customizationDetails .formDiv textarea {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 0.5px solid lightgray;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+}
+
+.customization .homeCommon_btn {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+.customization .homeCommon_btn:hover:after {
+    transform: skewY(-89.5deg) scale(1, 2000);
+}
+
+.customization .homeCommon_btn::after {
+    background-color: var(--primary-color);
+}
+
+
+.customization .item .item-content {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.customization .item .item-content .removeFileBtn {
+    font: 200 14px Montserrat;
+    color: #212121;
+    position: absolute;
+    right: 14px;
+    top: 4px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.customization .item .item-content .removeFileBtn svg {
+    font-size: 18px;
+    margin-top: -3px;
+    margin-left: 4px;
+}
+
+
+.customization .image-upload {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    background: #f8f8f9;
+    color: #666;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customization .fileName {
+    font: 200 14px Montserrat;
+    color: #212121;
+    margin-top: 20px;
+    margin-bottom: -20px
+}
+
+
+.customization .item-wrapper form img {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+
+.customization .image-upload img {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 0px;
+    margin: 0 auto;
+}
+
+.customization .item-wrapper .homeCommon_btn {
+    display: block;
+    margin: auto;
+    margin-top: 22px;
+}
+
+
+.customization .image-upload input {
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.customization .item-wrapper input {
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.customization .uploadBtnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    gap: 8px;
+    padding: 6px;
+    padding-top: 12px;
+}
+
+.customization .filePlaceholder {
+    color: #565b5f;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.customization .image-upload svg {
+    position: relative;
+    top: -4px;
+    display: block;
+    margin: auto;
+}
+
+.customization .item-content {
+    position: relative;
+}
+
+.customization .removeFileBtn {
+    font: 200 14px Montserrat;
+    color: #212121;
+    position: absolute;
+    right: 14px;
+    top: -20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.customization .removeFileBtn svg {
+    font-size: 18px;
+    margin-top: -3px;
+    margin-left: 4px;
+}
+
+.customization .rpv-core__canvas-layer{
+    height: 500px !important;
+    width: 100%;
+}
