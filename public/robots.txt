@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /product-category/
+Disallow: /product-tag/
+Disallow: /shop/
+Disallow: /woolentor-template/
+Disallow: /homepage/
+Disallow: /undefined
+Disallow: /our-team/
+Disallow: /validator/
+
+Sitemap: https://wrteam.in/sitemap.xml

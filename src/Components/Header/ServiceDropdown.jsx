@@ -49,6 +49,26 @@ const ServiceDropdown = ({setShow}) => {
                 </>
             ),
         },
+        {
+            key: '5',
+            label: (
+                <>
+                    <span>
+                        <Link href="/services/customization" className={`dropdownItem ${router.pathname === '/services/customization' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
+                    </span>
+                </>
+            ),
+        },
+        {
+            key: '6',
+            label: (
+                <>
+                    <span>
+                        <Link href="/services/installation" className={`dropdownItem ${router.pathname === '/services/installation' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Installation</Link>
+                    </span>
+                </>
+            ),
+        },
     ];
 
     return (
