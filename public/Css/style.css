@@ -6955,20 +6955,24 @@ footer .footerContainer .flinks {
 /* customizationPage  starts here  */
 
 
-.customization .commonTextWrapper {
+.customization .commonTextWrapper,
+.installation .commonTextWrapper {
     margin-top: 50px;
 }
 
-.customization .flex_center {
+.customization .flex_center,
+.installation .flex_center {
     width: 74%;
     gap: 28px;
 }
 
-.customization .flex_center .comman_Headlines {
+.customization .flex_center .comman_Headlines,
+.installation .flex_center .comman_Headlines {
     font-size: 36px;
 }
 
-.customization .flex_center .comman_Headlines span {
+.customization .flex_center .comman_Headlines span,
+.installation .flex_center .comman_Headlines span {
     color: var(--primary-color);
 }
 
@@ -7034,6 +7038,7 @@ footer .footerContainer .flinks {
     top: 0px;
     right: 142px;
     left: auto;
+    z-index: 1;
 }
 
 .customization .dicussionSect .card .numbWrapper .numb {
@@ -7057,10 +7062,20 @@ footer .footerContainer .flinks {
     margin: auto;
 }
 
-.customization .dicussionSect .card img {
+
+
+.customization .dicussionSect .card .imgDiv {
     border-radius: 50%;
     border: 2px solid var(--primary-color);
+}
+
+.customization .dicussionSect .card img {
+    border-radius: 50%;
     padding: 8px;
+    width: 206px;
+    height: 206px;
+    object-fit: cover;
+    filter: brightness(0.5);
 }
 
 .customization .customizationDetails {
@@ -7263,7 +7278,455 @@ footer .footerContainer .flinks {
     margin-left: 4px;
 }
 
-.customization .rpv-core__canvas-layer{
+.customization .rpv-core__canvas-layer {
     height: 500px !important;
     width: 100%;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .customization .dicussionSect .card .numbWrapper {
+        right: 98px;
+    }
+
+    .customization .dicussionSect .arr1,
+    .customization .dicussionSect .arr2 {
+        width: 130px;
+    }
+
+    .customization .customizationDetails img {
+        height: 494px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .customization .flex_center,
+    .installation .flex_center {
+        width: 80%;
+    }
+
+    .customization .dicussionSect .card .numbWrapper {
+        right: 72px;
+    }
+
+    .customization .dicussionSect .arr1,
+    .customization .dicussionSect .arr2 {
+        width: 100px;
+    }
+
+    .customization .customizationDetails img {
+        height: 470px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .customization .flex_center,
+    .installation .flex_center {
+        width: 100%;
+    }
+
+    .customization .dicussionSect .arr1,
+    .customization .dicussionSect .arr2 {
+        display: none;
+    }
+
+    .customization .dicussionSect .card .numbWrapper {
+        right: 254px;
+    }
+
+    .customization .row {
+        gap: 30px 0px;
+    }
+
+    .customization .customizationDetails img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .customization .dicussionSect .card .numbWrapper {
+        right: 162px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+
+    .customization .commonTextWrapper,
+    .installation .commonTextWrapper {
+        margin-top: 16px;
+    }
+
+    .customization .flex_center .comman_Headlines,
+    .installation .flex_center .comman_Headlines {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .customization .dicussionSect {
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+
+    .customization .dicussionSect .card .numbWrapper {
+        right: 100px;
+    }
+
+    .customization .customizationDetails {
+        padding: 16px;
+        margin-bottom: 170px;
+    }
+
+}
+
+@media screen and (max-width: 399px) {
+
+    .customization .commonTextWrapper,
+    .installation .commonTextWrapper {
+        margin-top: 8px;
+    }
+
+    .customization .flex_center {
+        gap: 10px;
+    }
+
+    .customization .flex_center .comman_Headlines,
+    .installation .flex_center .comman_Headlines {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .customization .dicussionSect .card .numbWrapper {
+        right: 50px;
+    }
+
+    .customization .customizationDetails {
+        padding: 16px;
+        margin-bottom: 170px;
+        margin-top: 50px;
+    }
+
+    .customization .dicussionSect .line1,
+    .customization .dicussionSect .line2 {
+        width: 40%;
+    }
+
+    .customization .customizationDetails .textWrapper .comman_Headlines {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .customization .customizationDetails .formDiv {
+        padding: 20px;
+    }
+
+    .customization .uploadBtnWrapper {
+        padding-top: 22px;
+    }
+
+    .customization .dicussionSect {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 340px) {
+    .customization .dicussionSect .card .numbWrapper {
+        right: 50px;
+    }
+}
+
+@media screen and (min-width:341px) and (max-width: 399px) {
+    .customization .dicussionSect .card .numbWrapper {
+        right: 70px;
+    }
+}
+
+/* customization ends here */
+
+.installation .packages {
+    margin-top: 70px;
+}
+
+.installation .row {
+    gap: 30px 0px;
+}
+
+.installation .packages .card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #2E71FE26;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.installation .packages .basicPack {
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid transparent;
+}
+
+.installation .packages .card .upperDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid lightgray;
+}
+
+.installation .packages .card .upperDiv .packageName {
+    font: normal normal bold 25px/32px Montserrat;
+}
+
+.installation .packages .card .upperDiv .setup {
+    font: 16px/22px Montserrat;
+}
+
+.installation .packages .card .upperDiv .cutPrice {
+    font: normal normal bold 20px/32px Montserrat;
+    /* text-decoration: line-through; */
+    margin-right: 4px;
+    color: #21212166;
+    position: relative;
+}
+
+.installation .packages .card .upperDiv .cutPrice::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    transform: rotate(350deg);
+
+}
+
+.installation .packages .basicPack .upperDiv .cutPrice {
+    color: #FFFFFFCC
+}
+
+.installation .packages .card .upperDiv .price {
+    font: normal normal bold 28px/32px Montserrat;
+    color: var(--primary-color);
+}
+
+.installation .packages .card .bottomDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.installation .packages .card div:last-child {
+    border: none;
+    padding-bottom: 0px;
+}
+
+
+.installation .packages .card .bottomDiv .service {
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.installation .packages .basicPack .bottomDiv .service,
+.installation .packages .basicPack .upperDiv .price {
+    color: white;
+}
+
+.installation .packages .card .bottomDiv .icon {
+    color: white;
+    background-color: #48B02C;
+    border-radius: 50px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 2px;
+    position: absolute;
+    right: 0px;
+}
+
+.installation .packages .card .bottomDiv .close {
+    font-size: 16px;
+    background-color: #FF4141;
+}
+
+.installation .shareDetails {
+    margin-top: 60px;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    padding: 30px 20px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.installation .shareDetails .leftDiv .textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.installation .shareDetails .leftDiv .headline {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.installation .shareDetails .leftDiv .infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 47px;
+}
+
+.installation .shareDetails .leftDiv .infoWrapper span:last-child {
+    font-weight: 600;
+    width: max-content;
+    font-size: 15px;
+}
+
+.installation .shareDetails .leftDiv .icon {
+    color: var(--secondary-color);
+    background-color: white;
+    border-radius: 50px;
+    width: 22px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 2px;
+    display: block;
+}
+
+.installation .rightDiv {
+    background-color: white;
+    border-radius: 12px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.installation .rightDiv span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.installation .homeCommon_btn {
+    background-color: var(--secondary-color);
+    width: max-content;
+
+}
+
+.installation .homeCommon_btn:hover:after {
+    transform: skewY(-89.5deg) scale(1, 2000);
+}
+
+.installation .homeCommon_btn::after {
+    background-color: var(--primary-color);
+}
+
+.installation .rightDiv img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 180px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .installation .packages .card .upperDiv .setup {
+        font: 16px/22px Montserrat;
+        text-align: center;
+        height: 30px;
+    }
+
+    .installation .packages .card .bottomDiv .service {
+        width: 92%;
+    }
+
+    .installation .rightDiv {
+        padding: 30px;
+    }
+
+    .installation .shareDetails {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .installation .packages .row .col-lg-3 {
+        width: 50%;
+    }
+
+    .installation .rightDiv {
+        padding: 50px 24px;
+    }
+
+    .installation .shareDetails {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .installation .packages,
+    .installation .shareDetails {
+        margin-top: 10px;
+    }
+
+    .installation .packages .card .upperDiv {
+        gap: 14px;
+    }
+
+    .installation .packages .card .upperDiv .packageName {
+        font: normal normal bold 22px/32px Montserrat;
+    }
+
+    .installation .packages .card .upperDiv .price {
+        font: normal normal bold 24px/32px Montserrat;
+    }
+
+    .installation .packages .card .upperDiv .cutPrice {
+        font: normal normal bold 16px/32px Montserrat;
+    }
+
+    .installation .packages .card .bottomDiv .service {
+        width: 93%;
+    }
+
+    .installation .shareDetails {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 20px 8%;
+    }
+
+    .installation .rightDiv {
+        padding: 20px;
+    }
+
+    .installation .shareDetails .leftDiv .infoWrapper span:last-child {
+        width: auto;
+        display: block;
+        margin-left: 38px;
+    }
+
+    .installation .shareDetails .leftDiv .icon {
+        position: absolute;
+    }
+
+    .installation .rightDiv span {
+        font-size: 18px;
+    }
+
+    .installation .rightDiv img {
+        width: 90px;
+    }
 }

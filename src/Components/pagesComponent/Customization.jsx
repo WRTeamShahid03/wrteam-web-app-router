@@ -2,7 +2,9 @@
 import React, { useRef, useState } from 'react'
 import Breadcrum from '../Breadcrum'
 import Image from 'next/image'
-import img from '../../Asset/Images/work_chain_2.png'
+import discuss1 from '../../Asset/Images/customization/discuss1.jpg'
+import discuss2 from '../../Asset/Images/customization/discuss2.jpg'
+import discuss3 from '../../Asset/Images/customization/discuss3.jpg'
 import sideImg from '../../Asset/Images/customization/customizationImg.png'
 import arrow from '../../Asset/Images/customization/arrow.svg'
 import line from '../../Asset/Images/customization/lines.svg'
@@ -33,7 +35,7 @@ const Customization = () => {
         {
             id: 0,
             numb: '01',
-            img: img,
+            img: discuss1,
             title: 'Define Requirements',
             desc: 'Share your needs for customizing our product. The more details you give, the better we can make it suit you.'
 
@@ -41,7 +43,7 @@ const Customization = () => {
         {
             id: 0,
             numb: '02',
-            img: img,
+            img: discuss2,
             title: `We'll Discuss the Details`,
             desc: `We'll go through your requirements together, sort out any questions, and make sure we're clear on what you need`
 
@@ -49,7 +51,7 @@ const Customization = () => {
         {
             id: 0,
             numb: '03',
-            img: img,
+            img: discuss3,
             title: 'Sit Back as We Customize',
             desc: `We'll start working on your project once we understand your requirements. We'll keep you updated on how it's going.`
 
@@ -169,7 +171,7 @@ const Customization = () => {
                                         <span className='numbWrapper'>
                                             <span className='numb'>{ele.numb}</span>
                                         </span>
-                                        <div>
+                                        <div className='imgDiv'>
                                             <Image src={ele.img} alt="cardImg" height={0} width={0} />
                                         </div>
                                         <div>
