@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Breadcrum from '../Breadcrum'
 import Image from 'next/image'
 import discuss1 from '../../Asset/Images/customization/discuss1.jpg'
@@ -15,8 +15,22 @@ import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { pdfjs } from 'react-pdf';
 import { FiUpload, FiUploadCloud } from 'react-icons/fi'
 import { IoIosCloseCircle } from "react-icons/io";
+import toast from 'react-hot-toast'
+import { Select } from 'antd';
 
 const Customization = () => {
+
+    const onChange = (value) => {
+        // console.log(`selected ${value}`);
+        setProductName(value)
+    };
+    const onSearch = (value) => {
+        // console.log('search:', value);
+    };
+
+    // Filter `option.label` match the user type `input`
+    const filterOption = (input, option) =>
+        (option?.label ?? '').toLowerCase().includes(input.toLowerCase());
 
     const [name, setName] = useState('')
     const [number, setNumber] = useState('')
@@ -144,6 +158,11 @@ const Customization = () => {
 
     };
 
+    useEffect(() => {
+        console.log(productName)
+    }, [productName])
+
+
     return (
         <>
             <Breadcrum title={'Customization'} blueText={'Process section'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Customizatoin'} />
@@ -225,11 +244,131 @@ const Customization = () => {
                                                 }} />
                                         </div>
 
-                                        <div className="col-12">
-                                            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Product Name" name='product_name' onChange={(e) => setProductName(e.target.value)} value={productName} />
-                                        </div>
+                                        <Select
+                                            showSearch
+                                            placeholder="Product Name"
+                                            optionFilterProp="children"
+                                            onChange={onChange}
+                                            onSearch={onSearch}
+                                            filterOption={filterOption}
+                                            className='productDropdown'
+                                            options={[
+                                                {
+                                                    value: 'eSchool SAAS',
+                                                    label: 'eSchool SAAS',
+                                                },
+                                                {
+                                                    value: 'eRestro- Single',
+                                                    label: 'eRestro- Single',
+                                                },
+                                                {
+                                                    value: 'eBroker',
+                                                    label: 'eBroker',
+                                                },
+                                                {
+                                                    value: 'eDemand',
+                                                    label: 'eDemand',
+                                                },
+                                                {
+                                                    value: 'eGrocer',
+                                                    label: 'eGrocer',
+                                                },
+                                                {
+                                                    value: 'eSchool',
+                                                    label: 'eSchool',
+                                                },
+                                                {
+                                                    value: 'eRestro- multi',
+                                                    label: 'eRestro- multi',
+                                                },
+                                                {
+                                                    value: 'Elite Quiz web',
+                                                    label: 'Elite Quiz web',
+                                                },
+                                                {
+                                                    value: 'eSpeech',
+                                                    label: 'eSpeech',
+                                                },
+                                                {
+                                                    value: 'Prime web',
+                                                    label: 'Prime web',
+                                                },
+                                                {
+                                                    value: 'eShop - multi',
+                                                    label: 'eShop - multi',
+                                                },
+                                                {
+                                                    value: 'Smartkit pro',
+                                                    label: 'Smartkit pro',
+                                                },
+                                                {
+                                                    value: 'Tic-tac-toe',
+                                                    label: 'Tic-tac-toe',
+                                                },
+                                                {
+                                                    value: 'Elite Quiz app',
+                                                    label: 'Elite Quiz app',
+                                                },
+                                                {
+                                                    value: 'Qearner',
+                                                    label: 'Qearner',
+                                                },
+                                                {
+                                                    value: 'eCart web - multi',
+                                                    label: 'eCart web - multi',
+                                                },
+                                                {
+                                                    value: 'eBook app',
+                                                    label: 'eBook app',
+                                                },
+                                                {
+                                                    value: 'News',
+                                                    label: 'News',
+                                                },
+                                                {
+                                                    value: 'eCart - multi vendor system',
+                                                    label: 'eCart - multi vendor system',
+                                                },
+                                                {
+                                                    value: 'eShop manager- admin',
+                                                    label: 'eShop manager- admin',
+                                                },
+                                                {
+                                                    value: 'eShop - web - single',
+                                                    label: 'eShop - web - single',
+                                                },
+                                                {
+                                                    value: 'eShop - app - single',
+                                                    label: 'eShop - app - single',
+                                                },
+                                                {
+                                                    value: 'eCart web',
+                                                    label: 'eCart web',
+                                                },
+                                                {
+                                                    value: 'Radio',
+                                                    label: 'Radio',
+                                                },
+                                                {
+                                                    value: 'Quiz online iOS',
+                                                    label: 'Quiz online iOS',
+                                                },
+                                                {
+                                                    value: 'Quiz online android',
+                                                    label: 'Quiz online android',
+                                                },
+                                                {
+                                                    value: 'eCart- app',
+                                                    label: 'eCart- app',
+                                                },
+                                                {
+                                                    value: 'Quotes app',
+                                                    label: 'Quotes app',
+                                                },
+                                            ]}
+                                        />
 
-                                        <div className={`col-12 ${selectedFile ? 'mb-4':''}`}>
+                                        <div className={`col-12 ${selectedFile ? 'mb-4' : ''}`}>
                                             <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Your Email" name='email' onChange={(e) => setEmail(e.target.value)} value={email} />
                                         </div>
                                         <div className="item-content">
@@ -243,9 +382,10 @@ const Customization = () => {
                                                         {
                                                             selectedFile.type === "application/pdf"
                                                                 ? <>
-                                                                    <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
+                                                                    {/* <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
                                                                         <Viewer fileUrl={pdfFileUrl} />
-                                                                    </Worker>
+                                                                    </Worker> */}
+                                                                    <span className='p-2'>{selectedFile.name}</span>
                                                                 </>
                                                                 :
                                                                 <Image height={0} width={0} loading="lazy" src={fileDataUrl} alt="" />
@@ -257,7 +397,7 @@ const Customization = () => {
                                                         <div className="h-100">
                                                             <div className="dplay-tbl">
                                                                 <div className="dplay-tbl-cell">
-                                                                <h6 className="filePlaceholder">Upload PDF File</h6>
+                                                                    <h6 className="filePlaceholder">Upload PDF File</h6>
                                                                 </div>
                                                             </div>
                                                         </div>

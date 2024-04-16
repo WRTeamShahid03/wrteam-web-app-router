@@ -7122,12 +7122,41 @@ footer .footerContainer .flinks {
 }
 
 .customization .customizationDetails .formDiv input,
-.customization .customizationDetails .formDiv textarea {
+.customization .customizationDetails .formDiv textarea,
+.customization .customizationDetails .formDiv .productDropdown {
     background: #FAFAFA 0% 0% no-repeat padding-box;
     border: 0.5px solid lightgray;
     border-radius: 8px;
     width: 100%;
     padding: 8px;
+}
+
+.customization .customizationDetails .formDiv .productDropdown {
+    width: 97%;
+    margin-left: 8px;
+    height: 40px;
+}
+
+.customization .customizationDetails .formDiv .productDropdown .ant-select-selector {
+    border: none;
+    background-color: transparent;
+}
+
+.ant-select-focused:where(.css-dev-only-do-not-override-1drr2mu).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
+    border-color: transparent !important;
+    box-shadow: 0 0 0 2px rgba(5, 147, 255, 0) !important;
+    outline: 0;
+}
+
+.ant-select .ant-select-selection-placeholder {
+    color: #5b5b5b !important;
+
+}
+
+.customization input:focus-visible,
+.customization textarea:focus-visible,
+.customization select:focus-visible {
+    box-shadow: none;
 }
 
 .customization .homeCommon_btn {
