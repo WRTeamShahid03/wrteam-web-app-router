@@ -165,7 +165,7 @@ const Customization = () => {
 
     return (
         <>
-            <Breadcrum title={'Customization'} blueText={'Process section'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Customizatoin'} />
+            <Breadcrum title={'Customization'} blueText={''} contentOne={'Home'} contentTwo={'Services'} contentThree={'Customizatoin'} />
             <section className='customization container'>
                 <div className='headlines'>
                     <div className="row">

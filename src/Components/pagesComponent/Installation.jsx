@@ -4,6 +4,7 @@ import { FaCheck } from 'react-icons/fa6'
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
 import sideImg from '../../Asset/Images/installationSideImg.svg'
+import Link from 'next/link';
 
 const Installation = () => {
     const data = [
@@ -137,11 +138,6 @@ const Installation = () => {
             add: true,
         },
         {
-            id: 7,
-            service: 'Live on Server',
-            add: false,
-        },
-        {
             id: 8,
             service: 'Configuration Advertisement',
             add: true,
@@ -160,6 +156,11 @@ const Installation = () => {
             id: 11,
             service: 'Live over App Store',
             add: true,
+        },
+        {
+            id: 7,
+            service: 'Live on Server',
+            add: false,
         },
     ]
 
@@ -273,7 +274,7 @@ const Installation = () => {
                                 {
                                     data.map((ele) => {
                                         return <div className="col-12 col-md-6 col-lg-3">
-                                            <div className={`card ${ele.packageName === 'Basic' ? 'basicPack' : ''}`}>
+                                            <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard'? 'standardPack':''}`}>
                                                 <div className="upperDiv">
                                                     <span className="packageName">{ele.packageName}</span>
                                                     <span className="setup">{ele.setups}</span>
@@ -337,7 +338,7 @@ const Installation = () => {
                             <div className="col-lg-5">
                                 <div className="rightDiv">
                                     <span>Take the First Step and Select the Right Package for You!</span>
-                                    <button className='homeCommon_btn'>Contact Us</button>
+                                    <Link href={'/contact-us'}><button className='homeCommon_btn'>Contact Us</button></Link>
                                     <Image src={sideImg} height={0} width={0} alt='sideImg' />
                                 </div>
                             </div>
