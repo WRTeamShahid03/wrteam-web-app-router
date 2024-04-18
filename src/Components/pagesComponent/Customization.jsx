@@ -59,7 +59,7 @@ const Customization = () => {
             numb: '02',
             img: discuss2,
             title: `We'll Discuss the Details`,
-            desc: `We'll go through your requirements together, sort out any questions, and make sure we're clear on what you need`
+            desc: `We'll go through your requirements together, sort out any questions, and make sure we're clear on what you need.`
 
         },
         {
@@ -174,7 +174,7 @@ const Customization = () => {
                                 <div className="flex_center">
 
                                     <span className='comman_Headlines'>Want Customization in <span>Our Products?</span></span>
-                                    <span className='comman_para'>Customize our products to fit you perfectly! Just tell us what you need, and we'll make it happen. Your happiness is our top priority, so let's work together to create exactly what you want</span>
+                                    <span className='comman_para'>Customize our products to fit you perfectly! Just tell us what you need, and we'll make it happen. Your happiness is our top priority, so let's work together to create exactly what you want.</span>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ const Customization = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="textWrapper">
-                                <span className='comman_Headlines'>Want Customization in <span>Our Products?</span></span>
+                                {/* <span className='comman_Headlines'>Want Customization in <span>Our Products?</span></span> */}
                                 <span className='comman_para'>After reviewing your customization requirements? we will provide an estimated timeframe for completing your project. Our standard rate for customization is $15 per hour.</span>
                             </div>
                             <div>
@@ -397,7 +397,7 @@ const Customization = () => {
                                                         <div className="h-100">
                                                             <div className="dplay-tbl">
                                                                 <div className="dplay-tbl-cell">
-                                                                    <h6 className="filePlaceholder">Upload PDF File</h6>
+                                                                    <h6 className="filePlaceholder">Upload File</h6>
                                                                 </div>
                                                             </div>
                                                         </div>

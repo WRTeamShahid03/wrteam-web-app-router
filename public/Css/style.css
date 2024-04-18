@@ -7800,3 +7800,70 @@ footer .footerContainer .flinks {
         width: 22px;
     }
 }
+
+/* installtion page ends here  */
+
+.otherPages {
+    margin-top: 50px;
+    margin-bottom: 230px;
+    /* border: 2px solid lightgray; */
+    border-radius: 16px;
+    padding: 20px 12px;
+    padding-bottom: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.otherPages .mainTitle {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+
+.otherPages .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.otherPages .contentWrapper .contentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+    padding: 0px 14px;
+}
+
+.otherPages .contentWrapper .contentDiv .title {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.otherPages .contentWrapper .contentDiv .para,
+.otherPages .contentWrapper .contentDiv .listDiv li  {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.otherPages .contentWrapper .contentDiv .listDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+/* 
+.otherPages .contentWrapper .contentDiv .listDiv li {
+    color: var(--secondary-color);
+} */
+
+.otherPages .contentWrapper .contentDiv .conclusionText {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
