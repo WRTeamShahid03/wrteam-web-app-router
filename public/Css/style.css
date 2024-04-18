@@ -2219,7 +2219,7 @@ footer .copyRight span {
     color: #ffffff87;
 }
 
-footer .copyRight span a{
+footer .copyRight span a {
     color: #ffffff87;
 
 }
@@ -7813,7 +7813,7 @@ footer .footerContainer .flinks {
     margin-bottom: 230px;
     /* border: 2px solid lightgray; */
     border-radius: 16px;
-    padding: 20px 12px;
+    padding: 30px 12px;
     padding-bottom: 50px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -7844,16 +7844,15 @@ footer .footerContainer .flinks {
 }
 
 .otherPages .contentWrapper .contentDiv .title {
-    color: var(--primary-color);
     font-size: 20px;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .otherPages .contentWrapper .contentDiv .para,
-.otherPages .contentWrapper .contentDiv .listDiv li  {
+.otherPages .contentWrapper .contentDiv .listDiv li,
+.otherPages .contentWrapper .contentDiv .conclusionText {
     color: var(--secondary-color);
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .otherPages .contentWrapper .contentDiv .listDiv {
@@ -7861,14 +7860,19 @@ footer .footerContainer .flinks {
     flex-direction: column;
     gap: 6px;
 }
+
+.otherPages .contentWrapper .contentDiv .numListDiv li{
+    list-style: decimal;
+}
+
 /* 
 .otherPages .contentWrapper .contentDiv .listDiv li {
     color: var(--secondary-color);
 } */
 
-.otherPages .contentWrapper .contentDiv .conclusionText {
+/* .otherPages .contentWrapper .contentDiv .conclusionText {
     color: var(--secondary-color);
     font-size: 22px;
     font-weight: 700;
     text-align: center;
-}
+} */

@@ -13,7 +13,7 @@ const fetchDataFromSeo = async (page) => {
     );
 
     const SEOData = response.data;
-    console.log('SEOData: ', SEOData)
+    // console.log('SEOData: ', SEOData)
     // console.log('SEOData.Data: ', SEOData?.data?.description)
 
     return SEOData;

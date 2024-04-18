@@ -5,12 +5,13 @@ import { GET_SEO_SETTINGS } from '@/utils/api';
 import axios from 'axios';
 import Head from "next/head";
 import { useEffect } from 'react';
+import RefundPolicy from '@/Components/pagesComponent/RefundPolicy';
 
 // This is seo api
 const fetchDataFromSeo = async (page) => {
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=terms-of-use`
+      `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=refund-policy`
     );
 
     const SEOData = response.data;
@@ -43,7 +44,7 @@ const Index = (
         <title>WRTeam bhuj based best IT company with all digital solutions.</title>
         <meta name="description" content="WRTeam Gujarat based IT company which has created code of website & application. Also provide UI/UX, IT consulting and digital marketing services." />
       </Head> */}
-      <TermsOfUse/>
+     <RefundPolicy/>
     </>
   )
 }

@@ -18,7 +18,7 @@ const Meta = ({ title, description, keywords, ogImage, pathName }) => {
       {/*<!-- Google / Search Engine Tags -->*/}
       <meta name='name' content={title ? title : process.env.NEXT_PUBLIC_TITLE} />
       <meta name='description' content={description ? description : process.env.NEXT_PUBLIC_DESCRIPTION} />
-      <meta name='keywords' content={keywords ? keywords : process.env.NEXT_PUBLIC_kEYWORDS} />
+      <meta name='keywords' content={keywords ? keywords : process.env.NEXT_PUBLIC_META_KEYWORD} />
       <meta name='image' content={ogImage ? ogImage : null} />
 
       {/*<!-- Facebook Meta Tags -->*/}
