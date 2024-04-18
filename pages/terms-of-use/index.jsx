@@ -1,5 +1,4 @@
 import TermsOfUse from '@/Components/pagesComponent/TermsOfUse';
-import AboutUs from '../../src/Components/pagesComponent/AboutUs'
 import Meta from '@/Components/Seo/Meta';
 import { GET_SEO_SETTINGS } from '@/utils/api';
 import axios from 'axios';

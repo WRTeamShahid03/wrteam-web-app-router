@@ -14,7 +14,7 @@ const CopyRightDisclaimer = () => {
                 </div>
                 <div className="contentDiv">
                     <span className='title'>Disclaimer:</span>
-                    <span className='para'>WRTeam is an expert in developing websites and applications. It offers customised code for multiple businesses via our website and envato profile. UI/UX design, digital marketing, and logo and banner creation are further services offered.</span>
+                    <span className='para'>WRTeam is an expert in developing websites and applications. It offers customised code for multiple businesses via our <Link href={'https://wrteam.in/'}>website</Link> and <Link href={'https://1.envato.market/vNz3zy'}>envato profile.</Link> UI/UX design, digital marketing, and logo and banner creation are further services offered.</span>
                 </div>
                 <div className="contentDiv">
                     <span className='title'>Copyright Ownership:</span>
@@ -23,7 +23,7 @@ const CopyRightDisclaimer = () => {
                 <div className="contentDiv">
                     <span className='title'>Disclaimer Points:</span>
                     <div className="listDiv">
-                        <li>WRTeam sells its products only through its website and Envato profile.</li>
+                        <li>WRTeam sells its products only through its <Link href={'https://wrteam.in/'}>website</Link> and <Link href={'https://1.envato.market/vNz3zy'}>envato profile.</Link></li>
                         <li>Products are not sold on any other platforms.</li>
                         <li>The refund policy for products purchased on Envato applies, and users are encouraged to read and review the documentation before seeking support.</li>
                     </div>
