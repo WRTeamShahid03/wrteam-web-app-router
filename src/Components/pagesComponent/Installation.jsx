@@ -18,7 +18,7 @@ const Installation = () => {
         {
             id: 1,
             packageName: 'Standard',
-            setups: 'Android Or iOS Setup',
+            setups: 'Android OR iOS Setup',
             cutPrice: '299',
             price: '199',
         },
@@ -257,7 +257,7 @@ const Installation = () => {
 
     return (
         <>
-            <Breadcrum title={'Installation/'} blueText={'Setup'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Installation'} />
+            <Breadcrum title={'Installation &'} blueText={'Setup'} contentOne={'Home'} contentTwo={'Services'} contentThree={'Installation'} />
             <section className='installation container'>
                 <div className="row">
                     <div className="col-12">
@@ -274,10 +274,13 @@ const Installation = () => {
                                 {
                                     data.map((ele) => {
                                         return <div className="col-12 col-md-6 col-lg-3">
-                                            <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard'? 'standardPack':''}`}>
+                                            <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard' ? 'standardPack' : ''}`}>
+                                                {
+                                                    ele.packageName === 'Premium' ? <span className='recommended'>Recommended</span> : ''
+                                                }
                                                 <div className="upperDiv">
                                                     <span className="packageName">{ele.packageName}</span>
-                                                    <span className="setup">{ele.setups}</span>
+                                                    <span className={`setup ${ele.packageName === 'Standard' ? 'standardSetUp' : ''}`}>{ele.setups}</span>
                                                     <span className="price"><span className='cutPrice'>${ele.cutPrice}</span>${ele.price}</span>
                                                 </div>
                                                 {

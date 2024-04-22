@@ -1,11 +1,11 @@
 import React from 'react'
 
-const RefundCancellationPolicy = () => {
+const RefundPolicy = () => {
     return (
         <>
             <section className='otherPages container'>
                 <div>
-                    <h1 className='mainTitle'>Refund & Cancellation Policy</h1>
+                    <h1 className='mainTitle'>Refund Policy</h1>
                 </div>
                 <div className="contentWrapper">
                     <div className="contentDiv">
@@ -39,6 +39,7 @@ const RefundCancellationPolicy = () => {
                         </div>
                     </div>
 
+                    {/* 
                     <div className="contentDiv">
                         <span className='title'>Cancellation Policy:</span>
                         <span className='para'>All cancellation requests must be submitted to our Business Head of WRTeam. You must submit your cancellation requests by email. Once submitted, it will be approved by our team and considered accepted when you receive a reply to your request.
@@ -50,7 +51,7 @@ const RefundCancellationPolicy = () => {
                             <li>In the event of the cancellation of a project mutually decided between you and our team, you have to pay for efforts invested in the project up to the date of cancellation.</li>
                             <li>Source Code, Design, or any other material related to the project will not be delivered if payment is not settled by the client.</li>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
@@ -59,4 +60,4 @@ const RefundCancellationPolicy = () => {
     )
 }
 
-export default RefundCancellationPolicy
+export default RefundPolicy

@@ -176,7 +176,7 @@ const Footer = () => {
                <div className="copyRight ">
                   <span>Copyright © 2024 WRTeam | Powered by WRTeam</span>
                   <span>
-                     <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund&cancelallation-policy'>Refund & Cancellation Policy</Link>
+                     <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund-policy'>Refund Policy</Link>
                      </span>
                </div>
             </div>

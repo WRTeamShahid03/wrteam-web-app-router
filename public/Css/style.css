@@ -2214,14 +2214,10 @@ footer .copyRight {
     width: 100%;
 }
 
-footer .copyRight span {
-    font: normal normal normal 16px/28px Montserrat;
-    color: #ffffff87;
-}
-
+footer .copyRight span,
 footer .copyRight span a {
+    font: normal normal normal 15px/28px Montserrat;
     color: #ffffff87;
-
 }
 
 footer .footerContainer .footerLinks {
@@ -2520,12 +2516,13 @@ footer .footerContainer .flinks {
 }
 
 #team .card .card-img-top {
+    border-radius: 30px;
     height: 316px;
     object-fit: cover;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
-#team .card::before {
+/* #team .card::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -2533,28 +2530,47 @@ footer .footerContainer .flinks {
     left: 0;
     height: 76px;
     background: linear-gradient(to bottom, rgb(229 229 229 / 0%), rgb(1 1 1 / 80%));
+    background: white;
     border-radius: 4px 4px 30px 30px;
+    transition: all 0.5s ease-out;
+} */
+
+
+#team .card::before {
+    content: '';
+    position: absolute;
+    width: 88%;
+    bottom: 10px;
+    left: 20px;
+    height: 52px;
+    background: linear-gradient(to bottom, rgb(229 229 229 / 0%), rgb(1 1 1 / 80%));
+    background: white;
+    border-radius: 30px;
     transition: all 0.5s ease-out;
 }
 
 #team .card:hover:before {
-    height: 50%;
+    height: 94px;
 }
 
 
 #team .teamDeatails {
-    margin-top: 264px;
-    transition: all 0.3s;
-    text-align: center;
+    /* margin-top: 264px; */
+    margin-top: 254px;
+    transition: all 0.5s;
+    text-align: start;
+    padding-left: 20px;
 }
 
 #team .card-title {
-    font: normal normal 800 22px/52px Montserrat;
-    text-shadow: 2px 2px #161515d7;
+    font: normal normal 600 22px/52px Montserrat;
+    /* text-shadow: 2px 2px #161515d7; */
+    color: var(--secondary-color);
 }
 
 #team .teamWork {
     visibility: hidden;
+    color: #545a68;
 }
 
 #team .card:hover .teamWork {
@@ -2564,7 +2580,7 @@ footer .footerContainer .flinks {
 }
 
 #team .card:hover .teamDeatails {
-    margin-top: 236px !important;
+    margin-top: 216px !important;
 }
 
 .swiper-slide {
@@ -7481,7 +7497,7 @@ footer .footerContainer .flinks {
 /* customization ends here */
 
 .installation .packages {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .installation .row {
@@ -7499,6 +7515,20 @@ footer .footerContainer .flinks {
     background-color: var(--primary-color);
     color: white;
     border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.installation .packages .premiumPack .recommended {
+    position: absolute;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 2px 22px;
+    transform: rotate(332deg);
+    left: -30px;
+    font-size: 14px;
+    top: -14px;
+    width: 270px;
 }
 
 .installation .packages .card .upperDiv {
@@ -7517,6 +7547,20 @@ footer .footerContainer .flinks {
 
 .installation .packages .card .upperDiv .setup {
     font: 16px/22px Montserrat;
+}
+
+.installation .packages .card .upperDiv .standardSetUp {
+    position: relative;
+}
+
+.installation .packages .card .upperDiv .standardSetUp::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 70px;
+    background-color: var(--secondary-color);
+    width: 28px;
+    height: 2px;
 }
 
 .installation .packages .card .upperDiv .cutPrice {
@@ -7730,6 +7774,18 @@ footer .footerContainer .flinks {
     .installation .shareDetails {
         margin-bottom: 70px;
     }
+
+    .installation .packages .premiumPack .recommended {
+        transform: rotate(328deg);
+        left: -32px;
+        font-size: 11px;
+        top: -12px;
+        width: 224px;
+    }
+
+    .installation .packages .card .upperDiv .standardSetUp::after {
+        bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7811,7 +7867,6 @@ footer .footerContainer .flinks {
 .otherPages {
     margin-top: 50px;
     margin-bottom: 230px;
-    /* border: 2px solid lightgray; */
     border-radius: 16px;
     padding: 30px 12px;
     padding-bottom: 50px;
@@ -7852,7 +7907,6 @@ footer .footerContainer .flinks {
 .otherPages .contentWrapper .contentDiv .listDiv li,
 .otherPages .contentWrapper .contentDiv .conclusionText {
     color: var(--secondary-color);
-    /* font-weight: 500; */
 }
 
 .otherPages .contentWrapper .contentDiv .listDiv {
@@ -7861,18 +7915,24 @@ footer .footerContainer .flinks {
     gap: 6px;
 }
 
-.otherPages .contentWrapper .contentDiv .numListDiv li{
+.otherPages .contentWrapper .contentDiv .numListDiv li {
     list-style: decimal;
 }
 
-/* 
-.otherPages .contentWrapper .contentDiv .listDiv li {
-    color: var(--secondary-color);
-} */
 
-/* .otherPages .contentWrapper .contentDiv .conclusionText {
-    color: var(--secondary-color);
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-} */
+@media screen and (max-width: 575px) {
+
+    .otherPages {
+        padding: 16px;
+        margin-top: 40px;
+        margin-bottom: 200px;
+    }
+
+    .otherPages .mainTitle {
+        font-size: 24px;
+    }
+
+    .otherPages .contentWrapper .contentDiv {
+        padding: 0px 6px;
+    }
+}
