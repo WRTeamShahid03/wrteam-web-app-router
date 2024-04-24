@@ -12,15 +12,12 @@ import 'aos/dist/aos.css';
 import rightDivImg from '../../Asset/Images/heroImg.webp'
 import likeIcon from "../../Asset/Icons/Like.png"
 import checkIcon from "../../Asset/Icons/ic_check.png"
-import team1 from '../../Asset/Icons/team1.png'
-import team2 from '../../Asset/Icons/team2.png'
-import team3 from '../../Asset/Icons/team3.png'
-import team4 from '../../Asset/Icons/team4.png'
+import teamImg from '../../Asset/Images/teamImg.png'
 import arrow from '../../Asset/Icons/Arrow.svg'
 import aboutImg1 from '../../Asset/Images/AboutImage.webp'
 import aboutImg2 from '../../Asset/Images/bg-image.png'
-import winnerImg1 from '../../Asset/Images/winnerImage.webp'
-import trophy from '../../Asset/Images/TrophyImage.webp'
+// import winnerImg1 from '../../Asset/Images/winnerImage.webp'
+import winnerImg1 from '../../Asset/Images/Achievement.png'
 import appProduct from '../../Asset/Images/AppImage.webp'
 import webProduct from '../../Asset/Images/WebImage.webp'
 import appProIcon from '../../Asset/Images/appProIcon.png'
@@ -50,50 +47,10 @@ import WorkChain from '../WorkChain';
 import Testimonials from '../Testimonials';
 import Link from 'next/link';
 import Image from 'next/image';
-import EnvantoSection from '../EnvantoSection';
 import EnvantoProfileSection from '../EnvantoProfileSection';
 
 
 const Home = () => {
-
-    // const [scrollValue, setScrollValue] = useState(0);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollY = window.scrollY;
-    //         // console.log('Scroll position:', scrollY);
-    //         setScrollValue(scrollY);
-    //     };
-
-    //     // Add event listener for scroll
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     // Cleanup the event listener on component unmount
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-    // useEffect(() => {
-    //     // Change body background color based on scroll value
-    //     document.body.style.transition = 'background-color 0.5s ease';
-    //     document.body.style.backgroundColor =
-    //         scrollValue >= 1150 && scrollValue < 2580 ? '#81B441' : '';
-    //     document.body.style.position = 'relative';
-    //     document.body.style.zIndex = '200';
-
-    //     // Disable user interactions if scroll value is within the specified range
-
-    //     if (scrollValue >= 1150 && scrollValue < 2580) {
-    //         document.body.style.pointerEvents = 'none';
-    //     } else {
-    //         document.body.style.pointerEvents = '';
-    //     }
-
-
-
-    // }, [scrollValue]);
-
 
     useEffect(() => {
         AOS.init();
@@ -176,6 +133,14 @@ const Home = () => {
 
     ]
 
+    const scrollToTestimonials = () => {
+        const testimonialsSection = document.getElementById('testimonials');
+        if (testimonialsSection) {
+            testimonialsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    }
+
     return (
         <>
             <div className="homePageWrapper">
@@ -238,7 +203,7 @@ const Home = () => {
                                                         <LiaStarSolid size={20} color='#ffa800' />
                                                         <LiaStarSolid size={20} color='#ffa800' />
                                                     </span>
-                                                    <span>(2k+) <span className='customerRev'>Customer Reviews </span></span>
+                                                    <span style={{ cursor: 'pointer' }} onClick={() => scrollToTestimonials()}>(2k+) <span className='customerRev'>Customer Reviews </span></span>
                                                 </div>
                                             </div>
 
@@ -256,11 +221,11 @@ const Home = () => {
                                                 <div className="floCard3Content">
                                                     <span>Our Creative Team</span>
                                                     <span className='teamIcons'>
-                                                        <Image height={0} width={0} loading="lazy" src={team1} alt="" />
-                                                        <Image height={0} width={0} loading="lazy" src={team2} alt="" />
+                                                        <Image height={0} width={0} loading="lazy" src={teamImg} alt="" />
+                                                        {/* <Image height={0} width={0} loading="lazy" src={team1} alt="" />
                                                         <Image height={0} width={0} loading="lazy" src={team3} alt="" />
                                                         <Image height={0} width={0} loading="lazy" src={team4} alt="" />
-                                                        <span className='teamMem'>40+</span>
+                                                        <span className='teamMem'>40+</span> */}
                                                     </span>
                                                 </div>
                                             </div>
@@ -347,15 +312,6 @@ const Home = () => {
                 </section>
                 {/* aboutUs ends here  */}
 
-                {/* <div className={`envantoProfile`}
-                // style={{
-                //     zIndex: scrollValue >= 1150 && scrollValue < 2580 ? '100000' : '1'
-                // }}
-                >
-                    <EnvantoSection />
-                </div> */}
-
-
                 <section id="winner" className='container'>
                     <div className="winnerWrapper">
 
@@ -385,7 +341,7 @@ const Home = () => {
 
                                         <Image height={0} width={0} loading="lazy" src={winnerImg1} alt="team of creative and innovative designers using most advanced tools & technology" className='winnerTeamImg' />
                                         <div className="winnerSmImg" >
-                                            <Image height={0} width={0} loading="lazy" src={trophy} alt="" />
+                                            {/* <Image height={0} width={0} loading="lazy" src={trophy} alt="" /> */}
 
                                         </div>
 
@@ -624,7 +580,6 @@ const Home = () => {
 
                 <Testimonials />
                 {/* testimonials ends  */}
-                {/* <div className="backDrop" style={{ opacity: scrollValue >= 1150 && scrollValue < 2580 ? '1' : '0' }}></div> */}
             </div>
 
         </>

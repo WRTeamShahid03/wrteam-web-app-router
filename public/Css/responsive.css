@@ -366,12 +366,14 @@
 
     #winner .winnerWrapper .winnRightDiv {
         position: relative;
-        left: 34px;
-        top: 50px;
+        /* left: 34px;
+        top: 50px; */
+        top: 86px;
     }
 
     #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
-        width: 82%;
+        /* width: 82%; */
+        width: 100%;
     }
 
     #winner .winnerWrapper #winnText {
@@ -909,7 +911,12 @@
     /* aboutUs ends  */
 
     #winner .winnerWrapper .winnRightDiv {
-        left: 262px;
+        /* left: 262px; */
+        left: 96px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv img{
+        width: auto;
     }
 
     #winner .winnerWrapper #winnText {
@@ -4562,13 +4569,15 @@
     }
 
     #winner .winnerWrapper .winnRightDiv {
-        left: 26px;
+        /* left: 26px; */
+        left: 0px;
         top: 64px;
         padding-bottom: 110px;
     }
 
     #winner .winnerWrapper .winnRightDiv .winnerTeamImg {
-        width: 90%;
+        /* width: 90%; */
+        width: 100%;
     }
 
     #winner .winnerWrapper #winnText {
@@ -5817,7 +5826,12 @@
     }
 
     #winner .winnerWrapper .winnRightDiv {
-        left: -14px;
+        /* left: -14px; */
+        left: -180px;
+    }
+
+    #winner .winnerWrapper .winnRightDiv img{
+        width: auto;
     }
 
     #winner .winnerWrapper #winnText {
