@@ -15,7 +15,8 @@ import checkIcon from "../../Asset/Icons/ic_check.png"
 import teamImg from '../../Asset/Images/teamImg.png'
 import arrow from '../../Asset/Icons/Arrow.svg'
 import aboutImg1 from '../../Asset/Images/AboutImage.webp'
-import aboutImg2 from '../../Asset/Images/bg-image.png'
+// import aboutImg2 from '../../Asset/Images/bg-image.png'
+import aboutImg2 from '../../Asset/Images/CompanyExperience.png'
 // import winnerImg1 from '../../Asset/Images/winnerImage.webp'
 import winnerImg1 from '../../Asset/Images/Achievement.png'
 import appProduct from '../../Asset/Images/AppImage.webp'
@@ -264,7 +265,7 @@ const Home = () => {
                                             background: `url(${aboutImg2.src})`,
                                             backgroundSize: 'cover'
                                         }}>
-                                            <div className="experience">
+                                            {/* <div className="experience">
                                                 <span className='experNum' style={{
                                                     background: `url(${aboutImg2.src})`,
                                                     backgroundSize: 'cover',
@@ -278,7 +279,7 @@ const Home = () => {
                                                     WebkitBackgroundClip: "text"
                                                 }}>Years</span>
                                                 <span>Experience</span>
-                                            </div>
+                                            </div> */}
 
                                         </div>
                                     </div>
