@@ -1,3 +1,4 @@
+'use client'
 import BlogsSideBoxes from '@/Components/BlogsSideBoxes'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useState } from 'react'
@@ -19,7 +20,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-const index = () => {
+const Index = () => {
 
     const [replyInput, setReplyInput] = useState('');
     const [replyText, setReplyText] = useState('');
@@ -431,4 +432,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

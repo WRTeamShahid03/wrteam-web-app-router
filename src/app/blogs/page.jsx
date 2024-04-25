@@ -1,3 +1,4 @@
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import { React, useRef, useState } from 'react'
 import ReactPaginate from 'react-paginate';
@@ -27,7 +28,7 @@ import BlogsSideBoxes from '@/Components/BlogsSideBoxes';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const index = () => {
+const Index = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -249,4 +250,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
