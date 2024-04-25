@@ -1,3 +1,4 @@
+'use client'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { BsArrowRightCircle, BsFacebook, BsLinkedin, BsWhatsapp, BsYoutube } from 'react-icons/bs'
 import { AiFillInstagram } from 'react-icons/ai';
@@ -15,7 +16,6 @@ import checkIcon from "../../Asset/Icons/ic_check.png"
 import teamImg from '../../Asset/Images/teamImg.png'
 import arrow from '../../Asset/Icons/Arrow.svg'
 import aboutImg1 from '../../Asset/Images/AboutImage.webp'
-// import aboutImg2 from '../../Asset/Images/bg-image.png'
 import aboutImg2 from '../../Asset/Images/CompanyExperience.png'
 // import winnerImg1 from '../../Asset/Images/winnerImage.webp'
 import winnerImg1 from '../../Asset/Images/Achievement.png'

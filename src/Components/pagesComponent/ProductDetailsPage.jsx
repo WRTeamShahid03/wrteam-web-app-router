@@ -1,13 +1,15 @@
+'use client'
 import Loader from '@/Components/Loader';
 import { GetProductsApi } from '@/redux/actions/campaign';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
-import NoDataFound from '../../../pages/404'
+import NoDataFound from '../../app/not-found.jsx'
 
 import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
 import Breadcrum from '../Breadcrum';
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
 
 const ProductDetailsPage = () => {
 
@@ -17,9 +19,11 @@ const ProductDetailsPage = () => {
     const [checkoutLink, setCheckoutLink] = useState('')
     const [salePrice, setSalePrice] = useState('')
 
-    const router = useRouter();
+    const router = useParams();
 
-    const productSlug = router.query.slug
+    // console.log(router)
+
+    const productSlug = router.slug
     // console.log("ProductRouter", productSlug)
 
     useEffect(() => {

@@ -1,3 +1,4 @@
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useEffect, useRef, useState } from 'react'
 // import location from '../../src/Asset/Icons/ic_location.svg'

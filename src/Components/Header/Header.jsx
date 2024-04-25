@@ -1,4 +1,4 @@
-// import '../../../public/Css/header.css'
+
 import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,6 +7,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import navLogo from '../../Asset/wrteam logo.svg';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import ProductDropdown from './ProductDropdown';
 import ServiceDropdown from './ServiceDropdown';
 import Image from 'next/image';
@@ -15,7 +16,8 @@ import "aos/dist/aos.css";
 
 const Header = () => {
 
-  const router = useRouter();
+  // const router = useRouter();
+  const router = usePathname();
   const [show, setShow] = useState(false);
 
 

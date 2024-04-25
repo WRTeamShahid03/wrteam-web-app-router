@@ -2,11 +2,13 @@ import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { AiFillPlusCircle } from 'react-icons/ai';
 
 const ProductDropdown = ({setShow}) => {
 
-    const router = useRouter();
+    // const router = useRouter();
+    const router = usePathname();
 
     const items = [
         {
@@ -14,7 +16,7 @@ const ProductDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/web-products" className={`dropdownItem ${router.pathname === '/products/web-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
+                        <Link href="/products/web-products" className={`dropdownItem ${router === '/products/web-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
                     </span>
                 </>
             ),
@@ -24,7 +26,7 @@ const ProductDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/app-products" className={`dropdownItem ${router.pathname === '/products/app-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
+                        <Link href="/products/app-products" className={`dropdownItem ${router === '/products/app-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
                     </span>
                 </>
             ),
@@ -39,7 +41,7 @@ const ProductDropdown = ({setShow}) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router.pathname.startsWith('/products') ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router.startsWith('/products') ? 'navActive' : ''}`}>
                         Products
                         <AiFillPlusCircle size={19} />
                     </span>

@@ -1,5 +1,5 @@
+'use client'
 import React, { use, useEffect, useRef, useState } from 'react'
-import Breadcrum from '@/Components/Breadcrum'
 import trianglePattern from '../../Asset/Icons/Triangle Pattern.png'
 import dotsPattern from '../../Asset/Icons/Dots Pattern.png'
 // import ourValues from '../../Asset/Images/our_values.png'
@@ -7,13 +7,12 @@ import ourValues from '../../Asset/Images/our_values.webp'
 import Link from 'next/link'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { FiUploadCloud } from 'react-icons/fi'
-import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast'
 import Head from 'next/head'
 import Image from 'next/image'
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import { GetSettingsApi, GetVacanciesApi, careerMailApi } from '@/redux/actions/campaign'
+import {GetVacanciesApi, careerMailApi } from '@/redux/actions/campaign'
 import { IoIosCloseCircle } from "react-icons/io";
 // import { Viewer } from '@react-pdf-viewer/core'
 import { Worker, Viewer } from '@react-pdf-viewer/core';

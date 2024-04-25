@@ -1,4 +1,5 @@
 // import '../../../public/Css/footer.css'
+'use client'
 import { FaLocationDot } from "react-icons/fa6";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa6";
@@ -9,14 +10,15 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import navLogo from '../../Asset/navLogo.svg'
 import GetInTouch from "../GetInTouch";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link"
 import Image from "next/image";
 
 const Footer = () => {
 
-   const router = useRouter()
-   const { pathname } = router;
+   // const router = useRouter();
+   const pathname = usePathname();
+   // const { pathname } = router;
 
    // Check if the current route contains "contact-us"
    const isContactUsPage = pathname.includes("contact-us");
@@ -176,7 +178,7 @@ const Footer = () => {
                <div className="copyRight ">
                   <span>Copyright © 2024 WRTeam | Powered by WRTeam</span>
                   <span>
-                     <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund-policy'>Refund Policy</Link>
+                     <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'/copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund-policy'>Refund Policy</Link>
                      </span>
                </div>
             </div>

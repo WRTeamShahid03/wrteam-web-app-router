@@ -14,7 +14,7 @@ import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { ProductsApi } from '@/hooks/productsApi';
 import { useQuery } from '@tanstack/react-query'
 
@@ -223,27 +223,30 @@ const WebProducts = () => {
 
                     </div>
 
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="navigation-buttons">
-                            <ReactPaginate
-                                pageCount={totalPage}
-                                pageRangeDisplayed={3}
-                                marginPagesDisplayed={1}
-                                forcePage={currentPage - 1} // react-paginate starts counting from 0
-                                onPageChange={handlePageChange}
-                                containerClassName="pagination"
-                                activeClassName="active"
-                                pageClassName="page-item"
-                                previousLabel={<FaAngleLeft color="white" size={22} />}
-                                nextLabel={<FaAngleRight color="white" size={22} />}
-                                previousClassName="page-item"
-                                nextClassName="page-item"
-                                previousLinkClassName="page-link"
-                                nextLinkClassName="page-link"
-                                pageLinkClassName="page-link"
-                            />
-                        </div>
-                    </div>
+                    {
+                        totalPage > 1 ?
+                            <div className="col-sm-12 col-md-12 col-lg-12">
+                                <div className="navigation-buttons">
+                                    <ReactPaginate
+                                        pageCount={totalPage}
+                                        pageRangeDisplayed={3}
+                                        marginPagesDisplayed={1}
+                                        forcePage={currentPage - 1} // react-paginate starts counting from 0
+                                        onPageChange={handlePageChange}
+                                        containerClassName="pagination"
+                                        activeClassName="active"
+                                        pageClassName="page-item"
+                                        previousLabel={<FaAngleLeft color="white" size={22} />}
+                                        nextLabel={<FaAngleRight color="white" size={22} />}
+                                        previousClassName="page-item"
+                                        nextClassName="page-item"
+                                        previousLinkClassName="page-link"
+                                        nextLinkClassName="page-link"
+                                        pageLinkClassName="page-link"
+                                    />
+                                </div>
+                            </div> : null
+                    }
 
                 </div>
             </section>

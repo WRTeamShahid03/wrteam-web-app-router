@@ -26,7 +26,7 @@
     "jquery": "^3.7.1",
     "jsdom": "^22.1.0",
     "libphonenumber-js": "^1.10.51",
-    "next": "13.4.10",
+    "next": "^14.3.0-canary.21",
     "nodemailer": "^6.9.7",
     "pdfjs-dist": "^3.4.120",
     "react": "18.2.0",

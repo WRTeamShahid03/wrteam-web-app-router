@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import Breadcrum from '@/Components/Breadcrum'
 import Card from 'react-bootstrap/Card'

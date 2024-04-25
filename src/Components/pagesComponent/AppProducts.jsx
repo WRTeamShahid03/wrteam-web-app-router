@@ -1,3 +1,4 @@
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Card from 'react-bootstrap/Card';
@@ -9,11 +10,11 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetProductsApi, GetSettingsApi } from '@/redux/actions/campaign';
-import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
+import ProductsSkeleton from '../Skeletons/ProductsSkeleton.jsx';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const AppProducts = () => {
 
@@ -196,27 +197,31 @@ const AppProducts = () => {
 
                     </div>
 
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="navigation-buttons">
-                            <ReactPaginate
-                                pageCount={totalPage}
-                                pageRangeDisplayed={3}
-                                marginPagesDisplayed={1}
-                                forcePage={currentPage - 1} // react-paginate starts counting from 0
-                                onPageChange={handlePageChange}
-                                containerClassName="pagination"
-                                activeClassName="active"
-                                pageClassName="page-item"
-                                previousLabel={<FaAngleLeft color="white" size={22} />}
-                                nextLabel={<FaAngleRight color="white" size={22} />}
-                                previousClassName="page-item"
-                                nextClassName="page-item"
-                                previousLinkClassName="page-link"
-                                nextLinkClassName="page-link"
-                                pageLinkClassName="page-link"
-                            />
-                        </div>
-                    </div>
+                    {
+                        totalPage > 1 ?
+                            <div className="col-sm-12 col-md-12 col-lg-12">
+                                <div className="navigation-buttons">
+                                    <ReactPaginate
+                                        pageCount={totalPage}
+                                        pageRangeDisplayed={3}
+                                        marginPagesDisplayed={1}
+                                        forcePage={currentPage - 1} // react-paginate starts counting from 0
+                                        onPageChange={handlePageChange}
+                                        containerClassName="pagination"
+                                        activeClassName="active"
+                                        pageClassName="page-item"
+                                        previousLabel={<FaAngleLeft color="white" size={22} />}
+                                        nextLabel={<FaAngleRight color="white" size={22} />}
+                                        previousClassName="page-item"
+                                        nextClassName="page-item"
+                                        previousLinkClassName="page-link"
+                                        nextLinkClassName="page-link"
+                                        pageLinkClassName="page-link"
+                                    />
+                                </div>
+                            </div> : null
+                    }
+
 
                 </div>
             </section>

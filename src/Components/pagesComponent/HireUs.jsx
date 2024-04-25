@@ -1,3 +1,4 @@
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
