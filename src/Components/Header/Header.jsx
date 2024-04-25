@@ -18,6 +18,7 @@ const Header = () => {
 
   // const router = useRouter();
   const router = usePathname();
+  console.log(router,'headerRouter')
   const [show, setShow] = useState(false);
 
 
@@ -65,19 +66,19 @@ const Header = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
 
-                  <Link className={`nav-link ${router.pathname === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
+                  <Link className={`nav-link ${router === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
 
                   <ProductDropdown setShow={setShow} />
 
                   <ServiceDropdown setShow={setShow} />
 
-                  <Link className={`nav-link ${router.pathname === '/portfolio' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
+                  <Link className={`nav-link ${router === '/portfolio/' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
 
-                  <Link className={`nav-link ${router.pathname === '/career' ? 'navActive' : ''}`} href="/career">Career</Link>
+                  <Link className={`nav-link ${router === '/career/' ? 'navActive' : ''}`} href="/career">Career</Link>
 
-                  <Link className={`nav-link ${router.pathname === '/about-us' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
+                  <Link className={`nav-link ${router === '/about-us/' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
 
-                  <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link>
+                  <Link className={`nav-link ${router === '/contact-us/' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link>
 
                   <div id="rightSide">
 
@@ -101,19 +102,19 @@ const Header = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="me-auto">
-            <Link className={`nav-link ${router.pathname === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
+            <Link className={`nav-link ${router === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
 
             <ProductDropdown setShow={setShow} />
 
             <ServiceDropdown setShow={setShow} />
 
-            <Link className={`nav-link ${router.pathname === '/portfolio' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
+            <Link className={`nav-link ${router === '/portfolio/' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
 
-            <Link className={`nav-link ${router.pathname === '/career' ? 'navActive' : ''}`} href="/career">Career</Link>
+            <Link className={`nav-link ${router === '/career/' ? 'navActive' : ''}`} href="/career">Career</Link>
 
-            <Link className={`nav-link ${router.pathname === '/about-us' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
+            <Link className={`nav-link ${router === '/about-us/' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
 
-            <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link>
+            <Link className={`nav-link ${router === '/contact-us/' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link>
 
 
             {/* <Link className="nav-link" href="/contact-us/" style={{ textDecoration: "none" }} onClick={() => setShow(false)} >

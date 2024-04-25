@@ -16,7 +16,7 @@ const ProductDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/web-products" className={`dropdownItem ${router === '/products/web-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
+                        <Link href="/products/web-products" className={`dropdownItem ${router === '/products/web-products/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
                     </span>
                 </>
             ),
@@ -26,7 +26,7 @@ const ProductDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/app-products" className={`dropdownItem ${router === '/products/app-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
+                        <Link href="/products/app-products" className={`dropdownItem ${router === '/products/app-products/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
                     </span>
                 </>
             ),
