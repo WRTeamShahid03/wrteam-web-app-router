@@ -85,6 +85,10 @@ const Footer = () => {
                            <span className='footerArrow'> < BsArrowRightCircle size={18} /></span>
                            <Link href='/hire-us'> <span className='footerLinks'>Hire Us</span></Link>
                         </div>
+                        <div className="flinks">
+                           <span className='footerArrow'> < BsArrowRightCircle size={18} /></span>
+                           <Link href='/portfolio'> <span className='footerLinks'>Portfolio</span></Link>
+                        </div>
                      </div>
                   </div>
                   <div className="col-sm-12 col-md-6 col-lg-2">
@@ -110,6 +114,14 @@ const Footer = () => {
                         <div className="flinks">
                            <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
                            <Link href='/services/digital-marketing'> <span className="footerLinks"> Digital Marketing Service</span></Link>
+                        </div>
+                        <div className="flinks">
+                           <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
+                           <Link href='/services/installation'> <span className="footerLinks">Installation</span></Link>
+                        </div>
+                        <div className="flinks">
+                           <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
+                           <Link href='/license'> <span className="footerLinks">License</span></Link>
                         </div>
                      </div>
 

@@ -1,5 +1,5 @@
 {
-  "name": "ebrokernext",
+  "name": "wrteam-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,13 +20,16 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.0",
+    "dotenv": "^16.3.1",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "globby": "11.0.1",
     "gsap": "^3.12.2",
     "jquery": "^3.7.1",
     "jsdom": "^22.1.0",
     "libphonenumber-js": "^1.10.51",
     "next": "^14.3.0-canary.21",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.7",
     "pdfjs-dist": "^3.4.120",
     "react": "18.2.0",
