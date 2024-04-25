@@ -390,7 +390,7 @@ const Career = () => {
                                                 <option defaultValue>Select Apply For</option>
                                                 {
                                                     vacancies?.map((option) => {
-                                                        return <option value={option.title}>{option.title}</option>
+                                                        return <option value={option.title} key={option.title}>{option.title}</option>
                                                     })
                                                 }
                                                 {/* <option value="Flutter Developer">Flutter Developer</option>
