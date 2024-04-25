@@ -1,7 +1,8 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { store } from "../store";
 import { apiCallBegan } from "../actions/apiActions";
-import { getSettingApi } from "@/utils/api";
+// import { getSettingApi } from "@/utils/api";
+import { GetSettingsApi } from "../actions/campaign";
 
 const initialState = {
     data: null,
@@ -39,7 +40,7 @@ export const settingsLoaded = (type, onSuccess, onError, onStart) => {
     // if (diffInMinutes < 10) return false;
     store.dispatch(
         apiCallBegan({
-            ...getSettingApi(type),
+            ...GetSettingsApi(type),
             displayToast: false,
             onStartDispatch: settingsRequested.type,
             onSuccessDispatch: settingsSucess.type,
@@ -54,7 +55,7 @@ export const settingsLoaded = (type, onSuccess, onError, onStart) => {
 export const settingsLoadedLogin = (type, onSuccess, onError, onStart) => {
     store.dispatch(
         apiCallBegan({
-            ...getSettingApi(type),
+            ...GetSettingsApi(type),
             displayToast: false,
             onStartDispatch: settingsRequested.type,
             onSuccessDispatch: settingsSucess.type,
