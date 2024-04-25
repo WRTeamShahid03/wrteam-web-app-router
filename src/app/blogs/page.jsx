@@ -17,13 +17,13 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 
 // Images
-import blog1 from '../../src/Asset/Images/Blog_1.webp'
-import blog2 from '../../src/Asset/Images/Blog_2.webp'
-import blog3 from '../../src/Asset/Images/Blog_3.webp'
-import blog4 from '../../src/Asset/Images/Blog_4.webp'
-import blog5 from '../../src/Asset/Images/Blog_5.webp'
-import blog6 from '../../src/Asset/Images/Blog_6.webp'
-import dateIcon from '../../src/Asset/Icons/ic_date.png'
+import blog1 from '../../Asset/Images/Blog_1.webp'
+import blog2 from '../../Asset/Images/Blog_2.webp'
+import blog3 from '../../Asset/Images/Blog_3.webp'
+import blog4 from '../../Asset/Images/Blog_4.webp'
+import blog5 from '../../Asset/Images/Blog_5.webp'
+import blog6 from '../../Asset/Images/Blog_6.webp'
+import dateIcon from '../../Asset/Icons/ic_date.png'
 import BlogsSideBoxes from '@/Components/BlogsSideBoxes';
 import Link from 'next/link';
 import Image from 'next/image';
