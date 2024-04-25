@@ -10,7 +10,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetProductsApi, GetSettingsApi } from '@/redux/actions/campaign';
-import ProductsSkeleton from '../../../../../src/Components/Skeletons/ProductsSkeleton.jsx';
+import ProductsSkeleton from '@/Components/Skeletons/ProductsSkeleton.jsx';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
