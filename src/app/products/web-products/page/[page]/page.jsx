@@ -1,4 +1,4 @@
-'use clients'
+'use client'
 import Breadcrum from '@/Components/Breadcrum'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Card from 'react-bootstrap/Card';
