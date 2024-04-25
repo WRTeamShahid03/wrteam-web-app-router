@@ -1,3 +1,4 @@
+'use client'
 import React, { useCallback, useRef } from 'react'
 import { BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi';
 import { LiaStarSolid } from 'react-icons/lia';
