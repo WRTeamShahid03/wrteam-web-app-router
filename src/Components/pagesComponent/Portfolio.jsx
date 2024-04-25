@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Skeleton from 'react-loading-skeleton';
 import PortfolioSection from '../PortfolioSection';
-import img from '../../Asset/Images/our_values.png'
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Yakili from '../../Asset/Images/portfolio/Yakili.jpg'
