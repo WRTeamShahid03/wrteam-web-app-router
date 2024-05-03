@@ -52,16 +52,16 @@ const ServiceDropdown = ({setShow}) => {
                 </>
             ),
         },
-        // {
-        //     key: '5',
-        //     label: (
-        //         <>
-        //             <span>
-        //                 <Link href="/services/customization" className={`dropdownItem ${router === '/services/customization' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
-        //             </span>
-        //         </>
-        //     ),
-        // },
+        {
+            key: '5',
+            label: (
+                <>
+                    <span>
+                        <Link href="/services/customization" className={`dropdownItem ${router === '/services/customization' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
+                    </span>
+                </>
+            ),
+        },
         {
             key: '6',
             label: (
