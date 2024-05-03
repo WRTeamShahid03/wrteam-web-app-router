@@ -57,7 +57,7 @@ const ServiceDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/services/customization" className={`dropdownItem ${router === '/services/customization' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
+                        <Link href="/services/customization" className={`dropdownItem ${router === '/services/customization/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
                     </span>
                 </>
             ),
