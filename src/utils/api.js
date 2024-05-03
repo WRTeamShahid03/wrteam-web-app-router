@@ -148,17 +148,17 @@ export const careerMail = (full_name, email, qualification, contact, apply_for, 
 
 //Send customisation Mail
 export const customisationMail = (user_name, contact, email, product_name, requirement_file,requirement_explanation) => {
+    let data = new FormData();
+    data.append('user_name', user_name);
+    data.append('contact', contact);
+    data.append('email', email);
+    data.append('product_name', product_name);
+    data.append('requirement_file', requirement_file);
+    data.append('requirement_explanation', requirement_explanation);
     return {
         url: `${CUSTOMISATION}`,
         method: "POST",
-        data: {
-            user_name: user_name,
-            contact: contact,
-            email: email,
-            product_name: product_name,
-            requirement_file: requirement_file,
-            requirement_explanation: requirement_explanation
-        },
+        data,
         authorizationHeader: false,
 
     }

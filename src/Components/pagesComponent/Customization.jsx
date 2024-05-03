@@ -142,8 +142,9 @@ const Customization = () => {
                     setFormLoader(false)
                     setName('')
                     setNumber('')
+                    setProductName('Product Name')
                     setEmail('')
-                    setProductName('')
+                    handleFileRemove()
                     setRequirement('')
                 },
                 onError: (error) => {
@@ -160,7 +161,7 @@ const Customization = () => {
     };
 
     useEffect(() => {
-        console.log(productName)
+        // console.log(productName)
     }, [productName])
 
 
@@ -241,7 +242,7 @@ const Customization = () => {
                                                 inputProps={{
                                                     name: 'contact_number',
                                                     placeholder: 'Enter Your Phone Number',
-                                                    className: 'form-control reactPhoneInput'
+                                                    className: 'form-control reactPhoneInput customisationPhoneInput'
                                                 }} />
                                         </div>
 
@@ -250,6 +251,7 @@ const Customization = () => {
                                             placeholder="Product Name"
                                             optionFilterProp="children"
                                             onChange={onChange}
+                                            value={productName}
                                             onSearch={onSearch}
                                             filterOption={filterOption}
                                             className='productDropdown'
@@ -365,6 +367,10 @@ const Customization = () => {
                                                 {
                                                     value: 'Quotes app',
                                                     label: 'Quotes app',
+                                                },
+                                                {
+                                                    value: 'eClassify',
+                                                    label: 'eClassify',
                                                 },
                                             ]}
                                         />

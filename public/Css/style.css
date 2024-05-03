@@ -7489,6 +7489,10 @@ footer .footerContainer .flinks {
     background-color: transparent;
 }
 
+.customization .customisationPhoneInput{
+    padding-left: 50px !important;
+}
+
 .ant-select-focused:where(.css-dev-only-do-not-override-1drr2mu).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
     border-color: transparent !important;
     box-shadow: 0 0 0 2px rgba(5, 147, 255, 0) !important;
@@ -7660,7 +7664,7 @@ footer .footerContainer .flinks {
 }
 
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
     .customization .dicussionSect .card .numbWrapper {
         right: 98px;
     }
@@ -7668,10 +7672,6 @@ footer .footerContainer .flinks {
     .customization .dicussionSect .arr1,
     .customization .dicussionSect .arr2 {
         width: 130px;
-    }
-
-    .customization .customizationDetails img {
-        height: 494px;
     }
 }
 
@@ -7692,7 +7692,7 @@ footer .footerContainer .flinks {
     }
 
     .customization .customizationDetails img {
-        height: 470px;
+        height: 574px;
     }
 }
 
