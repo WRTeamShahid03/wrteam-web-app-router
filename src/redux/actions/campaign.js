@@ -1,6 +1,6 @@
 "use client";
 
-import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies } from "@/utils/api";
+import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies, customisationMail } from "@/utils/api";
 import { store } from "../store";
 import { apiCallBegan } from "./apiActions";
 
@@ -178,6 +178,29 @@ export const hireUsApi = ({
     );
 };
 
+
+// customisation Email
+export const customisationApi = ({
+    user_name = '',
+    contact = '',
+    email = '',
+    product_name = '',
+    requirement_file = '',
+    requirement_explanation = '',
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { },
+}) => {
+    store.dispatch(
+        apiCallBegan({
+            ...customisationMail(user_name, contact, email, product_name, requirement_file,requirement_explanation),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
 
 
 

@@ -151,11 +151,11 @@
     }
 
     #team .teamDeatails {
-        margin-top: 260px;
+        margin-top: 305px;
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 236px !important;
+        margin-top: 275px !important;
     }
 
     #team .card-title {
@@ -551,11 +551,11 @@
     }
 
     #team .teamDeatails {
-        margin-top: 266px;
+        margin-top: 246px;
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 240px !important;
+        margin-top: 216px !important;
     }
 
     #team .comman_Headlines {
@@ -915,7 +915,7 @@
         left: 96px;
     }
 
-    #winner .winnerWrapper .winnRightDiv img{
+    #winner .winnerWrapper .winnRightDiv img {
         width: auto;
     }
 
@@ -1110,7 +1110,7 @@
     }
 
     #team .teamDeatails {
-        margin-top: 264px;
+        margin-top: 198px;
     }
 
     #team .teamWrapper {
@@ -1118,7 +1118,7 @@
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 240px !important;
+        margin-top: 164px !important;
     }
 
     #team .comman_Headlines {
@@ -1833,7 +1833,7 @@
     }
 
     #team .teamDeatails {
-        margin-top: 266px;
+        margin-top: 346px;
     }
 
     #testimonials .testSlider {
@@ -1845,7 +1845,7 @@
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 236px !important;
+        margin-top: 316px !important;
     }
 
     #team .comman_Headlines {
@@ -2504,7 +2504,7 @@
         background: transparent !important;
     }
 
-    #workChain .workBottDiv .workCardsWrapper .row{
+    #workChain .workBottDiv .workCardsWrapper .row {
         gap: 50px;
     }
 
@@ -2700,7 +2700,7 @@
     }
 
     #team .teamDeatails {
-        margin-top: 260px;
+        margin-top: 348px;
     }
 
     #team .teamWrapper {
@@ -2708,7 +2708,7 @@
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 240px !important;
+        margin-top: 318px !important;
     }
 
     #team .comman_Headlines {
@@ -3591,7 +3591,7 @@
         flex-direction: column;
     }
 
-    #workChain .workBottDiv .workCardsWrapper .row{
+    #workChain .workBottDiv .workCardsWrapper .row {
         gap: 50px;
     }
 
@@ -3769,11 +3769,11 @@
     }
 
     #team .teamDeatails {
-        margin-top: 260px;
+        margin-top: 350px;
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 240px !important;
+        margin-top: 318px !important;
     }
 
     #team .comman_Headlines {
@@ -4789,7 +4789,7 @@
         margin-top: 130px;
     }
 
-    #workChain .workBottDiv .workCardsWrapper .row{
+    #workChain .workBottDiv .workCardsWrapper .row {
         gap: 50px;
     }
 
@@ -4994,16 +4994,16 @@
     }
 
     #team .card {
-        width: 92%;
+        width: 300px;
         margin: auto;
     }
 
     #team .teamDeatails {
-        margin-top: 266px;
+        margin-top: 288px;
     }
 
     #team .card:hover .teamDeatails {
-        margin-top: 236px !important;
+        margin-top: 260px !important;
     }
 
     #team .comman_Headlines {
@@ -5737,14 +5737,6 @@
     #aboutUs .aboutWrapper #wrTeam {
         top: 62%;
     }
-
-    #team .teamDeatails {
-        margin-top: 265px;
-    }
-
-    #team .card:hover .teamDeatails {
-        margin-top: 236px !important;
-    }
 }
 
 @media only screen and (min-width: 344px) and (max-width: 374px) {
@@ -5761,14 +5753,6 @@
 
     #services .serviesWrapper .servleftDiv {
         gap: 5px 40px;
-    }
-
-    #team .teamDeatails {
-        margin-top: 265px;
-    }
-
-    #team .card:hover .teamDeatails {
-        margin-top: 236px !important;
     }
 }
 
@@ -5830,7 +5814,7 @@
         left: -180px;
     }
 
-    #winner .winnerWrapper .winnRightDiv img{
+    #winner .winnerWrapper .winnRightDiv img {
         width: auto;
     }
 

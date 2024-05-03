@@ -11,12 +11,11 @@ import line from '../../Asset/Images/customization/lines.svg'
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import FormLoader from '../FormLoader'
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import { pdfjs } from 'react-pdf';
-import { FiUpload, FiUploadCloud } from 'react-icons/fi'
+import { FiUpload } from 'react-icons/fi'
 import { IoIosCloseCircle } from "react-icons/io";
 import toast from 'react-hot-toast'
 import { Select } from 'antd';
+import { customisationApi } from '@/redux/actions/campaign'
 
 const Customization = () => {
 
@@ -130,29 +129,31 @@ const Customization = () => {
         }
         else {
             setFormLoader(true)
-            //     hireUsApi({
-            //         name: name,
-            //         email: email,
-            //         productName: productName,
-            //         phone: finalNum,
-            //         requirement: requirement,
-            //         onSuccess: (res) => {
-            //             toast.success('Submited Successfully !')
-            //             setFormLoader(false)
-            //             setName('')
-            //             setNumber('')
-            //             setEmail('')
-            //             setProductName('')
-            //             setRequirement('')
-            //         },
-            //         onError: (error) => {
-            //             console.log(error)
-            //             toast.error(error.message)
-            //             setFormLoader(true)
-            //         }
-            //     }
+            // console.log('name : ',name,'number:', finalNum,'email : ',email,'productName : ',productName,'requirement :' ,requirement,'selectedFile : ',selectedFile)
+            customisationApi({
+                user_name: name,
+                contact: finalNum,
+                email: email,
+                product_name: productName,
+                requirement_file: selectedFile,
+                requirement_explanation: requirement,
+                onSuccess: (res) => {
+                    toast.success('Submited Successfully !')
+                    setFormLoader(false)
+                    setName('')
+                    setNumber('')
+                    setEmail('')
+                    setProductName('')
+                    setRequirement('')
+                },
+                onError: (error) => {
+                    console.log(error)
+                    toast.error(error.message)
+                    setFormLoader(true)
+                }
+            }
 
-            //     )
+            )
 
         }
 

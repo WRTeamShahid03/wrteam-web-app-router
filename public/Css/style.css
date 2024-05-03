@@ -632,7 +632,7 @@ img {
     left: -66px;
 }
 
-#winner .winnerWrapper .winnRightDiv img{
+#winner .winnerWrapper .winnRightDiv img {
     width: 100%;
 }
 
@@ -2621,8 +2621,8 @@ footer .footerContainer .flinks {
 
 #team .card .card-img-top {
     border-radius: 30px;
-    height: 316px;
-    object-fit: cover;
+    /* height: 316px;
+    object-fit: cover; */
     transition: all 0.5s;
 }
 
@@ -2630,29 +2630,31 @@ footer .footerContainer .flinks {
     content: '';
     position: absolute;
     width: 88%;
-    bottom: 10px;
+    bottom: 18px;
     left: 20px;
     height: 52px;
     background: linear-gradient(to bottom, rgb(229 229 229 / 0%), rgb(1 1 1 / 80%));
     background: white;
-    border-radius: 30px;
+    border-radius: 16px;
     transition: all 0.5s ease-out;
 }
 
 #team .card:hover:before {
-    height: 94px;
+    height: 80px;
 }
 
 
 #team .teamDeatails {
-    margin-top: 254px;
+    margin-top: 326px;
     transition: all 0.5s;
     text-align: start;
-    padding-left: 20px;
+    height: 40px;
+    padding-left: 16px;
+    overflow: hidden;
 }
 
 #team .card-title {
-    font: normal normal 600 22px/52px Montserrat;
+    font: normal normal 700 20px/52px Montserrat;
     color: var(--secondary-color);
 }
 
@@ -2668,7 +2670,8 @@ footer .footerContainer .flinks {
 }
 
 #team .card:hover .teamDeatails {
-    margin-top: 216px !important;
+    margin-top: 298px !important;
+    height: 70px;
 }
 
 .swiper-slide {
@@ -2689,6 +2692,7 @@ footer .footerContainer .flinks {
 #team .teamSlider .navigation-buttons {
     margin-top: 50px;
 }
+
 
 /* new style for teamDetails  ends here */
 
@@ -7060,6 +7064,237 @@ footer .footerContainer .flinks {
         top: 10px;
     }
 }
+
+/* new style for license page from here  */
+
+
+/* new style from here */
+
+
+.licensePlan {
+    font-family: Montserrat;
+    position: relative;
+}
+
+.licensePlan .plansContent {
+    padding-top: 10px;
+}
+
+.licensePlan .plansHead .title {
+    color: #0F172A;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.licensePlan .plansHead .desc {
+    color: #475569;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.licensePlan .plansHead {
+    width: 40%;
+}
+
+.licensePlan .plansHead div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1399px) {
+    .licensePlan .plansHead div {
+        top: unset;
+    }
+}
+
+.licensePlan .priceHead div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.licensePlan .checkIcon {
+    color: #22A869;
+    font-size: 18px;
+}
+
+.licensePlan .closeIcon {
+    color: #ff0018e8;
+    font-size: 20px;
+    height: 27px;
+}
+
+.licensePlan .priceHead {
+    overflow: hidden;
+}
+
+.licensePlan .priceHead span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #475569;
+    text-align: center;
+}
+
+.licensePlan .priceHead .price {
+    color: var(--primary-color);
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: -12px;
+}
+
+.licensePlan .priceHead button {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 6px;
+    width: 80%;
+}
+
+.licensePlan .priceHead button svg {
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+.licensePlan .priceHead .extendedPurchase {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.licensePlan .extendedDiv {
+    position: relative;
+}
+
+.licensePlan .extendedDiv span:first-child {
+    position: absolute;
+    background-color: #2e71fe;
+    color: #ffffff;
+    padding: 2px 22px;
+    transform: rotate(333deg);
+    left: -68px;
+    font-size: 12px;
+    top: -10px;
+    width: 220px;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .licensePlan .extendedDiv span:first-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .licensePlan .extendedDiv span:first-child {
+        transform: rotate(339deg);
+        left: -76px;
+        font-size: 10px;
+        top: -18px;
+    }
+}
+
+
+.licensePlan th {
+    padding-bottom: 22px !important;
+    padding-top: 22px !important;
+}
+
+.licensePlan tr td {
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.licensePlan tr td div {
+    display: flex;
+    flex-direction: column;
+}
+
+.licensePlan tr td div .otherText {
+    color: #808080d6;
+    font-weight: 400;
+}
+
+.licensePlan tr td:first-child {
+    text-align: start;
+    padding-left: 20px;
+}
+
+.licensePlan .plansHead,
+.licensePlan tr td:first-child {
+    padding-left: 16px;
+}
+
+.licensePlan .otherTextIcon {
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .licensePlan .plansHead .title {
+        font-size: 18px;
+    }
+
+    .licensePlan .plansHead .desc {
+        font-size: 12px;
+    }
+
+    .licensePlan .plansHead,
+    .licensePlan tr td:first-child {
+        padding-left: 10px;
+    }
+
+    .licensePlan .priceHead .price {
+        font-size: 28px;
+    }
+
+    .licensePlan .priceHead span {
+        font-size: 16px;
+    }
+
+    .licensePlan .priceHead button {
+        width: 100%;
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .licensePlan .plansHead div {
+        top: 12px;
+    }
+
+    .licensePlan tr td {
+        padding: 24px 6px;
+        font-size: 12px;
+    }
+
+    .licensePlan .checkIcon,
+    .licensePlan .closeIcon {
+        margin-top: 12px;
+    }
+
+    .licensePlan .otherTextIcon {
+        margin-top: 50px;
+    }
+
+    .licensePlan table {
+        overflow: visible
+    }
+
+
+}
+
+@media screen and (max-width: 330px) {
+    .licensePlan table {
+        margin-left: -16px;
+    }
+}
+
 
 /* license ends here  */
 

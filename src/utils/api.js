@@ -9,6 +9,7 @@ const GET_TESTIMONIALS = "testimonials"
 const GET_TEAM_MEMBERS = "team-members"
 const CAREER_MAIL = "send-career-email"
 const GET_VACANCIES = "get-vacancies"
+const CUSTOMISATION = "customisation-requirement"
 
 // GET SETTINGS
 export const getSettings = (type) => {
@@ -125,6 +126,7 @@ export const contactUs = (name, email, subject, phone, message) => {
 
     }
 }
+
 //Send CareerMail
 export const careerMail = (full_name, email, qualification, contact, apply_for, experience, file) => {
     let data = new FormData();
@@ -139,6 +141,24 @@ export const careerMail = (full_name, email, qualification, contact, apply_for, 
         url: `${CAREER_MAIL}`,
         method: "POST",
         data,
+        authorizationHeader: false,
+
+    }
+}
+
+//Send customisation Mail
+export const customisationMail = (user_name, contact, email, product_name, requirement_file,requirement_explanation) => {
+    return {
+        url: `${CUSTOMISATION}`,
+        method: "POST",
+        data: {
+            user_name: user_name,
+            contact: contact,
+            email: email,
+            product_name: product_name,
+            requirement_file: requirement_file,
+            requirement_explanation: requirement_explanation
+        },
         authorizationHeader: false,
 
     }
