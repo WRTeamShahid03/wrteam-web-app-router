@@ -60,7 +60,7 @@ const Faqs = () => {
                                     <Accordion defaultActiveKey="0">
                                         {
                                             faqs.map((data) => {
-                                                return <Accordion.Item eventKey={data.id}>
+                                                return <Accordion.Item eventKey={data.id} key={data.id}>
                                                     <Accordion.Header>{data.que}</Accordion.Header>
                                                     <Accordion.Body>
                                                         {data.ans}
@@ -77,7 +77,7 @@ const Faqs = () => {
                                     <Accordion defaultActiveKey="0">
                                         {
                                             faqs.map((data) => {
-                                                return <Accordion.Item eventKey={data.id}>
+                                                return <Accordion.Item eventKey={data.id} key={data.id}>
                                                     <Accordion.Header>{data.que}</Accordion.Header>
                                                     <Accordion.Body>
                                                         {data.ans}
@@ -94,7 +94,7 @@ const Faqs = () => {
                                     <Accordion defaultActiveKey="0">
                                         {
                                             faqs.map((data) => {
-                                                return <Accordion.Item eventKey={data.id}>
+                                                return <Accordion.Item eventKey={data.id} key={data.id}>
                                                     <Accordion.Header>{data.que}</Accordion.Header>
                                                     <Accordion.Body>
                                                         {data.ans}
@@ -111,7 +111,7 @@ const Faqs = () => {
                                     <Accordion defaultActiveKey="0">
                                         {
                                             faqs.map((data) => {
-                                                return <Accordion.Item eventKey={data.id}>
+                                                return <Accordion.Item eventKey={data.id} key={data.id}>
                                                     <Accordion.Header>{data.que}</Accordion.Header>
                                                     <Accordion.Body>
                                                         {data.ans}
@@ -128,7 +128,7 @@ const Faqs = () => {
                                     <Accordion defaultActiveKey="0">
                                         {
                                             faqs.map((data) => {
-                                                return <Accordion.Item eventKey={data.id}>
+                                                return <Accordion.Item eventKey={data.id} key={data.id}>
                                                     <Accordion.Header>{data.que}</Accordion.Header>
                                                     <Accordion.Body>
                                                         {data.ans}
