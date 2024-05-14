@@ -11,28 +11,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const ProductDetailHeader = () => {
-    const [show, setShow] = useState(false);
 
+    const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [headerTop, setHeaderTop] = useState(0);
-    const [scroll, setScroll] = useState(0);
-
-    // useEffect(() => {
-
-    //     const nav = typeof document !== 'undefined' && document.querySelector(".nav");
-    //     setHeaderTop(nav.offsetTop);
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
-
-    // const handleScroll = () => {
-    //     setScroll(window.scrollY);
-    // };
     return (
         <>
             <header className='productDetailsNavbar'>
@@ -40,22 +24,24 @@ const ProductDetailHeader = () => {
                     <div className="navbarWrapper">
                         <div className="leftDiv">
                             <div className="productLogo">
-                                <Image src={productLogo} height={0} width={0} alt='productLogo' />
+                                <Link href={''}>  <Image src={productLogo} height={0} width={0} alt='productLogo' /></Link>
                             </div>
                         </div>
                         <div className="centerDiv">
-                            <Link href={''} className='nav-link'>
+                            <Link href={'/'} className='nav-link'>
                                 Home
                             </Link>
-                            <ProductDropdown />
-                            <ServiceDropdown />
-                            <HelpDropDown />
-                            <MoreDropDown />
+                            <ProductDropdown setShow={setShow} />
+                            <ServiceDropdown setShow={setShow} />
+                            <HelpDropDown setShow={setShow} />
+                            <MoreDropDown setShow={setShow} />
                         </div>
                         <div className="rightDiv">
-                            <button className="productCommonBtn">
-                                Purchase Now
-                            </button>
+                            <Link href={''}>
+                                <button className="productCommonBtn">
+                                    Purchase Now
+                                </button>
+                            </Link>
 
                         </div>
                         <span onClick={handleShow} id='hamburg'><GiHamburgerMenu size={36} /></span>
@@ -72,10 +58,10 @@ const ProductDetailHeader = () => {
                                 <Link href={''} className='nav-link'>
                                     Home
                                 </Link>
-                                <ProductDropdown />
-                                <ServiceDropdown />
-                                <HelpDropDown />
-                                <MoreDropDown />
+                                <ProductDropdown setShow={setShow} />
+                                <ServiceDropdown setShow={setShow} />
+                                <HelpDropDown setShow={setShow} />
+                                <MoreDropDown setShow={setShow} />
                             </div>
                         </Offcanvas.Body>
                     </Offcanvas>

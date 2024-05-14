@@ -18,7 +18,8 @@ const Header = () => {
 
   // const router = useRouter();
   const router = usePathname();
-  console.log(router,'headerRouter')
+  // console.log(router,'headerRouter')
+  
   const [show, setShow] = useState(false);
 
 

@@ -20,9 +20,12 @@ import { useRouter } from "next/router";
 import ProductDetailHeader from "@/Components/ProductDetailPageSects/ProductDetailHeader/ProductDetailHeader";
 import ProductDetailFooter from "@/Components/ProductDetailPageSects/ProductDetailFooter/ProductDetailFooter";
 import Script from "next/script";
+import { usePathname } from "next/navigation";
 
 
 export default function RootLayout({ children }) {
+
+  const router = usePathname()
   const [loading, setLoading] = useState(false)
 
 
@@ -51,17 +54,17 @@ export default function RootLayout({ children }) {
 
 
                   {/* <TopHeader /> */}
-                  {/* {
-                    router.pathname.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
-                  } */}
-                  <Header />
+                  {
+                    router.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
+                  }
+                  {/* <Header /> */}
 
                   {children}
-                  {/* {
-                    router.pathname.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
-                  } */}
+                  {
+                    router.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
+                  }
 
-                  <Footer />
+                  {/* <Footer /> */}
                 </>
               }
             </>

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FaPlay } from 'react-icons/fa6'
 import adminPanelImg from '../../Asset/Images/product-detail-page/adminPanelImg.png'
 import appImg from '../../Asset/Images/product-detail-page/appImg.png'
+import Link from 'next/link'
 
 const HeroSect = () => {
     return (
@@ -28,7 +29,8 @@ const HeroSect = () => {
                                         </div>
                                         <div>
                                             <div className='commonTextBtns'>
-                                                <button className='productCommonBtn'>Contact Us</button>
+                                               <Link href={'/contact-us'}> <button className='productCommonBtn'>Contact Us</button></Link>
+                                               <Link href={''}>
                                                 <div className='exploreDiv'>
                                                     <span className='playerBtn'><FaPlay />
                                                     </span>
@@ -37,6 +39,7 @@ const HeroSect = () => {
                                                         <span>Tutorial Video</span>
                                                     </div>
                                                 </div>
+                                               </Link>
                                             </div>
                                         </div>
                                     </div>

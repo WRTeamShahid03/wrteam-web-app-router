@@ -22,6 +22,9 @@ import iosStore from '../../Asset/Images/product-detail-page/App Store.png'
 import dashboard from '../../Asset/Images/product-detail-page/Dashboard.png'
 import web from '../../Asset/Images/product-detail-page/Web.png'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import ComesWithSwiper from './ComesWithSwiper';
+import startNowBg from '../../Asset/Images/product-detail-page/innerPagesBG.png'
+import CommonTextDiv from './CommonTextDiv';
 
 const ComesWithSect = () => {
 
@@ -61,7 +64,7 @@ const ComesWithSect = () => {
         0: {
             slidesPerView: 1,
             // spaceBetween: 40
-        },  
+        },
         576: {
             slidesPerView: 2,
             // spaceBetween: 40
@@ -107,23 +110,15 @@ const ComesWithSect = () => {
     }, []);
 
     return (
-        <>
+        <div className='comesWithWrapper'>
+
+            <ComesWithSwiper />
+
             <section className='comesWithSect container'>
-                <div className="row">
+                <div className="row firstRow">
                     <div className="col-12">
-                        <div className="commonTextWrapper">
-                            <div className="flex_center">
-                                <div>
-                                    <span className='comman_Headlines'>What Comes with eBroker?</span>
-                                </div>
-                                <div>
-                                    <span className='comman_para'>
-                                        Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled
-                                        beard tote. Kinfolk tumeric mug literally tousled.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                        <CommonTextDiv title='What Comes with eBroker?' desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled
+                        beard tote. Kinfolk tumeric mug literally tousled.`} />
                     </div>
 
                     <div className="col-12">
@@ -151,7 +146,7 @@ const ComesWithSect = () => {
                                                     <span className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></span>
                                                     <span className='title'>{data.title}</span>
                                                     <span className='desc'>{data.desc}</span>
-                                                    <Link href={data.link}>Explore Demo <BiRightArrowAlt size={18} /></Link>
+                                                    <Link href={data.link}> Explore Demo <BiRightArrowAlt size={18} /></Link>
                                                 </div>
                                             </SwiperSlide>
                                         )
@@ -166,9 +161,25 @@ const ComesWithSect = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="col-12">
+                        <div className="startNowWrapper row" style={{
+                            background: `url(${startNowBg.src})`
+                        }}>
+                            <div className="col-lg-8 leftDiv">
+                                <span className='headline'>Your real estate brokerage business begins here</span>
+                            </div>
+                            <div className="col-lg-4 rightDiv">
+                                <Link href={''}><button className='startNowBtn'>Start Now <BiRightArrowAlt /></button></Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </>
+
+
+
+        </div>
     )
 }
 

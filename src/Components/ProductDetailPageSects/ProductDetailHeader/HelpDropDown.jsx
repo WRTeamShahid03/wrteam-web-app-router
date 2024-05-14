@@ -2,14 +2,14 @@
 import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { FaAngleDown } from "react-icons/fa6";
+import { usePathname } from 'next/navigation';
 
 
 const HelpDropDown = ({ setShow }) => {
 
 
-    const router = useRouter();
+    const router = usePathname();
 
     const items = [
         {
@@ -17,7 +17,7 @@ const HelpDropDown = ({ setShow }) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/web-products" className={`dropdownItem productDropdownItem ${router.pathname === '/products/web-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
+                        <Link href="/products/contact-us" className={`dropdownItem productDropdownItem ${router === '/products/contact-us/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Support</Link>
                     </span>
                 </>
             ),
@@ -27,7 +27,7 @@ const HelpDropDown = ({ setShow }) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/app-products" className={`dropdownItem productDropdownItem${router.pathname === '/products/app-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
+                        <Link href="/products/contact-us" className={`dropdownItem productDropdownItem${router === '/products/contact-us/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Contact Us</Link>
                     </span>
                 </>
             ),
@@ -42,7 +42,7 @@ const HelpDropDown = ({ setShow }) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router.pathname.startsWith('/products') ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router.startsWith('/products') ? 'navActive' : ''}`}>
                         Help
                         <FaAngleDown size={14} />
                     </span>

@@ -3,8 +3,9 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { FaArrowRight } from "react-icons/fa6";
 import Table from 'react-bootstrap/Table';
+import Link from 'next/link';
 
-const LicensePlan = () => {
+const LicensePlan = ({ productDetailPage }) => {
 
     const regularlicenseData = [
         {
@@ -135,25 +136,40 @@ const LicensePlan = () => {
                 <Table bordered >
                     <thead>
                         <tr>
-                            <th className='plansContent plansHead'>
+                            <th className={`plansContent plansHead ${productDetailPage ? 'showDesc' : ''}`}>
                                 <div>
 
                                     <span className='title'>Product Plans</span>
+                                    {
+                                        productDetailPage ? <span className='desc'>Choose the ideal plan that caters to your business requirements and maximizes your potential</span> : null
+                                    }
                                 </div>
                             </th>
                             <th className='priceHead'>
                                 <div>
-                                    {/* <span className='price'>$59</span> */}
+                                    {
+                                        productDetailPage ?
+                                            <span className='price'>$59</span> : null
+                                    }
                                     <span>Regular License</span>
-                                    {/* <button>Purchase Now <FaArrowRight/></button> */}
+                                    {
+                                        productDetailPage ?
+                                            <Link href={''}><button>Purchase Now <FaArrowRight /></button></Link> : null
+                                    }
                                 </div>
                             </th>
                             <th className='priceHead'>
                                 <div className='extendedDiv'>
                                     <span className='recommended'>Recommended</span>
-                                    {/* <span className='price'>$360</span> */}
+                                    {
+                                        productDetailPage ?
+                                            <span className='price'>$360</span> : null
+                                    }
                                     <span>Extended License</span>
-                                    {/* <button className='extendedPurchase'>Purchase Now <FaArrowRight/></button> */}
+                                    {
+                                        productDetailPage ?
+                                            <Link href={''}> <button className='extendedPurchase'>Purchase Now <FaArrowRight /></button></Link> : null
+                                    }
                                 </div>
                             </th>
                         </tr>
@@ -304,54 +320,6 @@ const LicensePlan = () => {
                         </tr>
                     </tbody>
                 </Table>
-                {/* <div className="row">
-                    <div className="col-4 plansDiv contentWrapper">
-                        <div className='plansContent plansHead'>
-                            <span className='title'>Product Plans</span>
-                            <span className='desc'>Choose the ideal plan that caters to your business requirements and maximizes your potential</span>
-                        </div>
-                        {
-                            regularlicenseData.map((data) => {
-                                return <div className='plansContent'>
-                                    <span>{data.detail}</span>
-                                    {
-                                        data.otherText ?
-                                            <span className='otherText'>({data.otherText})</span> : ''
-                                    }
-                                </div>
-                            })
-                        }
-
-                    </div>
-                    <div className="col-4 regularPlan priceDiv contentWrapper">
-                        <div className='plansContent plansHead'>
-                            <span className='price'>$59</span>
-                            <span>Regular License</span>
-                            <button>Purchase Now</button>
-                        </div>
-
-                        {
-                            regularlicenseData.map((data) => {
-                                return <div className="plansContent"><span>{data.add ? <FaCheckCircle className='checkIcon ' /> : <RiCloseCircleFill className='closeIcon' />}</span>
-                                </div>
-                            })
-                        }
-
-                    </div>
-                    <div className="col-4 extendedPlan  priceDiv contentWrapper">
-                        <div className='plansContent plansHead'>
-                            <span className='price'>$360</span>
-                            <span>Extended License</span>
-                            <button className='extendedPurchase'>Purchase Now</button>
-                        </div>
-                        {
-                            extendedlicenseData.map((data) => {
-                                return <div className="plansContent"><span>{data.add ? <FaCheckCircle className='checkIcon' /> : <RiCloseCircleFill className='closeIcon' />}</span>
-                                </div>
-                            })
-                        }
-                    </div>
-                </div> */}
             </section>
         </>
     )

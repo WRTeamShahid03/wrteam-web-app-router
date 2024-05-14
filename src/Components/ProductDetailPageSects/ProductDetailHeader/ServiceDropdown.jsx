@@ -2,13 +2,13 @@
 import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { FaAngleDown } from "react-icons/fa6";
+import { usePathname } from 'next/navigation';
 
 
 const ServiceDropdown = ({setShow}) => {
 
-    const router = useRouter();
+    const router = usePathname();
 
     const items = [
         {
@@ -16,7 +16,7 @@ const ServiceDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/services/web-development" className={`dropdownItem productDropdownItem ${router.pathname === '/services/web-development' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Development</Link>
+                        <Link href="/services/installation" className={`dropdownItem productDropdownItem ${router === '/services/installation/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Setup & Installatioin</Link>
                     </span>
                 </>
             ),
@@ -26,27 +26,7 @@ const ServiceDropdown = ({setShow}) => {
             label: (
                 <>
                     <span>
-                        <Link href="/services/app-development" className={`dropdownItem productDropdownItem ${router.pathname === '/services/app-development' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Development</Link>
-                    </span>
-                </>
-            ),
-        },
-        {
-            key: '3',
-            label: (
-                <>
-                    <span>
-                        <Link href="/services/ui-ux-design" className={`dropdownItem productDropdownItem ${router.pathname === '/services/ui-ux-design' ? 'navActive' : ''}`} onClick={() => setShow(false)}>UI/UX Design Service</Link>
-                    </span>
-                </>
-            ),
-        },
-        {
-            key: '4',
-            label: (
-                <>
-                    <span>
-                        <Link href="/services/digital-marketing" className={`dropdownItem productDropdownItem ${router.pathname === '/services/digital-marketing' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Digital Marketing Service</Link>
+                        <Link href="/services/customization" className={`dropdownItem productDropdownItem ${router === '/services/customization/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Customization</Link>
                     </span>
                 </>
             ),
@@ -62,7 +42,7 @@ const ServiceDropdown = ({setShow}) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router.pathname.startsWith('/services') ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router.startsWith('/services') ? 'navActive' : ''}`}>
                         Services
                         <FaAngleDown size={14} />
                     </span>

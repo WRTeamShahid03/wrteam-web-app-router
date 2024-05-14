@@ -70,7 +70,6 @@ const Technology = () => {
     return (
         <>
             <CommonTechSect data={firstSect} sectImg={techImg1} title={'Technology Powering Your Real Estate Journey'}/>
-            <CommonTechSect data={secondSect} sectImg={techImg2} title={'Secure Payment Options for Every Step'} reverseSect={true} />
         </>
     )
 }

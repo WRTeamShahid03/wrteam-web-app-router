@@ -2,14 +2,14 @@
 import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { FaAngleDown } from "react-icons/fa6";
+import { usePathname } from 'next/navigation';
 
 
 const MoreDropDown = ({ setShow }) => {
 
 
-    const router = useRouter();
+    const router = usePathname();
 
     const items = [
         {
@@ -17,7 +17,7 @@ const MoreDropDown = ({ setShow }) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/web-products" className={`dropdownItem productDropdownItem ${router.pathname === '/products/web-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Web Products</Link>
+                        <Link href="/about-us" className={`dropdownItem productDropdownItem ${router === '/about-us/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>About Us</Link>
                     </span>
                 </>
             ),
@@ -27,7 +27,17 @@ const MoreDropDown = ({ setShow }) => {
             label: (
                 <>
                     <span>
-                        <Link href="/products/app-products" className={`dropdownItem productDropdownItem${router.pathname === '/products/app-products' ? 'navActive' : ''}`} onClick={() => setShow(false)}>App Products</Link>
+                        <Link href="/portfolio" className={`dropdownItem productDropdownItem${router === '/portfolio/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Portfolio</Link>
+                    </span>
+                </>
+            ),
+        },
+        {
+            key: '3',
+            label: (
+                <>
+                    <span>
+                        <Link href="/hire-us" className={`dropdownItem productDropdownItem${router === '/hire-us/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Hire-us</Link>
                     </span>
                 </>
             ),
@@ -42,7 +52,7 @@ const MoreDropDown = ({ setShow }) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router.pathname.startsWith('/products') ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router.startsWith('/products') ? 'navActive' : ''}`}>
                         More
                         <FaAngleDown size={14} />
                     </span>
