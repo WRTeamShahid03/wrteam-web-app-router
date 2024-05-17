@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useCallback, useRef } from 'react'
-import img from '../../Asset/Images/product-detail-page/clientImg.png'
+import img from '../../../Asset/Images/product-detail-page/clientImg.png'
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from 'react-icons/fa';
 import CommonTextDiv from './CommonTextDiv';

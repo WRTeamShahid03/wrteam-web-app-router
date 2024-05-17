@@ -2,10 +2,10 @@ import React from 'react'
 import CommonTextDiv from './CommonTextDiv'
 import Image from 'next/image'
 import Link from 'next/link'
-import contact from '../../Asset/Images/product-detail-page/contact.png'
-import doc from '../../Asset/Images/product-detail-page/Documents.png'
-import faq from '../../Asset/Images/product-detail-page/FAQ.png'
-import tutorials from '../../Asset/Images/product-detail-page/Video.png'
+import contact from '../../../Asset/Images/product-detail-page/contact.png'
+import doc from '../../../Asset/Images/product-detail-page/Documents.png'
+import faq from '../../../Asset/Images/product-detail-page/FAQ.png'
+import tutorials from '../../../Asset/Images/product-detail-page/Video.png'
 
 const AssistanceSect = () => {
     const data = [

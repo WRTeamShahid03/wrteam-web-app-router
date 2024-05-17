@@ -2,8 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaPlay } from 'react-icons/fa6'
-import adminPanelImg from '../../Asset/Images/product-detail-page/adminPanelImg.png'
-import appImg from '../../Asset/Images/product-detail-page/appImg.png'
+import adminPanelImg from '../../../Asset/Images/product-detail-page/adminPanelImg.png'
+import appImg from '../../../Asset/Images/product-detail-page/appImg.png'
 import Link from 'next/link'
 
 const HeroSect = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import CommonTextDiv from './CommonTextDiv'
-import LicensePlan from '../LicensePlan'
+import LicensePlan from '../../LicensePlan'
 
 const LicenseSect = () => {
     return (

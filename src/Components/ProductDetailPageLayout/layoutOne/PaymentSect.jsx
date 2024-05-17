@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import paymentImg from '../../Asset/Images/product-detail-page/paymentImg.png'
+import paymentImg from '../../../Asset/Images/product-detail-page/paymentImg.png'
 
 const PaymentSect = () => {
     return (

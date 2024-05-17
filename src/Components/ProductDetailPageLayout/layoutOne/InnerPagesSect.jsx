@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import bg from '../../Asset/Images/product-detail-page/innerPagesBG.png';
-import img from '../../Asset/Images/product-detail-page/innerSwiperImg.png'
+import bg from '../../../Asset/Images/product-detail-page/innerPagesBG.png';
+import img from '../../../Asset/Images/product-detail-page/innerSwiperImg.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

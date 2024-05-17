@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import eliteAuthor from '../../Asset/Images/product-detail-page/Elite author.png'
-import smileImg from '../../Asset/Images/product-detail-page/Smile.png'
-import updateImg from '../../Asset/Images/product-detail-page/update.png'   
-import customizable from '../../Asset/Images/product-detail-page/customizable.png'
-import buy from '../../Asset/Images/product-detail-page/buy.png'
+import eliteAuthor from '../../../Asset/Images/product-detail-page/Elite author.png'
+import smileImg from '../../../Asset/Images/product-detail-page/Smile.png'
+import updateImg from '../../../Asset/Images/product-detail-page/update.png'   
+import customizable from '../../../Asset/Images/product-detail-page/customizable.png'
+import buy from '../../../Asset/Images/product-detail-page/buy.png'
 import CommonTextDiv from './CommonTextDiv'
 
 const InfoSect = () => {

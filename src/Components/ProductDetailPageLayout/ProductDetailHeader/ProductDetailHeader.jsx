@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import productLogo from '../../../Asset/Images/product-detail-page/productLogo.png'
+import productLogo2 from '../../../Asset/Images/product-detail-page/layout-2/ecart.png'
 import Link from 'next/link'
 import ProductDropdown from './ProductDropdown'
 import ServiceDropdown from './ServiceDropdown'
@@ -10,7 +11,7 @@ import MoreDropDown from './MoreDropDown'
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const ProductDetailHeader = () => {
+const ProductDetailHeader = ({ layout }) => {
 
     const [show, setShow] = useState(false);
 
@@ -19,12 +20,12 @@ const ProductDetailHeader = () => {
 
     return (
         <>
-            <header className='productDetailsNavbar'>
+            <header className={`productDetailsNavbar ${layout === 2 ? 'layoutTwoHeader' : ''}`}>
                 <div className="container">
                     <div className="navbarWrapper">
                         <div className="leftDiv">
                             <div className="productLogo">
-                                <Link href={''}>  <Image src={productLogo} height={0} width={0} alt='productLogo' /></Link>
+                                <Link href={''}>  <Image src={!layout ? productLogo : productLogo2} height={0} width={0} alt='productLogo' /></Link>
                             </div>
                         </div>
                         <div className="centerDiv">

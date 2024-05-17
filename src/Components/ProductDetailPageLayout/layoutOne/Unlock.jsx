@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImg from '../../Asset/Images/product-detail-page/unlockBg.svg'
+import bgImg from '../../../Asset/Images/product-detail-page/unlockBg.svg'
 import { BiRightArrowAlt } from 'react-icons/bi'
 import Link from 'next/link'
 

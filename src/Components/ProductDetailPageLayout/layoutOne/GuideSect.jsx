@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from '../../Asset/Images/product-detail-page/1.png'
-import img2 from '../../Asset/Images/product-detail-page/2.png'
-import img3 from '../../Asset/Images/product-detail-page/3.png'
-import guideArr from '../../Asset/Images/product-detail-page/guideArrow.png'
+import img1 from '../../../Asset/Images/product-detail-page/1.png'
+import img2 from '../../../Asset/Images/product-detail-page/2.png'
+import img3 from '../../../Asset/Images/product-detail-page/3.png'
+import guideArr from '../../../Asset/Images/product-detail-page/guideArrow.png'
 import CommonTextDiv from './CommonTextDiv'
 
 const GuideSect = () => {

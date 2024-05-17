@@ -17,8 +17,8 @@ import Loader from "@/Components/Loader";
 import 'react-loading-skeleton/dist/skeleton.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useRouter } from "next/router";
-import ProductDetailHeader from "@/Components/ProductDetailPageSects/ProductDetailHeader/ProductDetailHeader";
-import ProductDetailFooter from "@/Components/ProductDetailPageSects/ProductDetailFooter/ProductDetailFooter";
+import ProductDetailHeader from "../Components/ProductDetailPageLayout/ProductDetailHeader/ProductDetailHeader.jsx";
+import ProductDetailFooter from "../Components/ProductDetailPageLayout/ProductDetailFooter/ProductDetailFooter.jsx";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 
@@ -55,13 +55,13 @@ export default function RootLayout({ children }) {
 
                   {/* <TopHeader /> */}
                   {
-                    router.startsWith('/product-detail-page') ? <ProductDetailHeader /> : <Header />
+                    router.startsWith('/product-detail-page') ? <ProductDetailHeader layout={2}/> : <Header />
                   }
                   {/* <Header /> */}
 
                   {children}
                   {
-                    router.startsWith('/product-detail-page') ? <ProductDetailFooter /> : <Footer />
+                    router.startsWith('/product-detail-page') ? <ProductDetailFooter layout={2}/> : <Footer />
                   }
 
                   {/* <Footer /> */}
@@ -73,14 +73,14 @@ export default function RootLayout({ children }) {
 
 
         {/* <!-- Google Tag Manager --> */}
-        {/* <Script id="gtmScript" dangerouslySetInnerHTML={{
+        <Script id="gtmScript" dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                                         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','GTM-MG5P53R')
 
-                `}}></Script> */}
+                `}}></Script>
         {/* <!-- End Google Tag Manager --> */}
 
         {/* <!-- Google Tag Manager (noscript) --> */}

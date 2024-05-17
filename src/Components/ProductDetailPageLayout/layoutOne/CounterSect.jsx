@@ -1,10 +1,10 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import eliteAuthor from '../../Asset/Images/product-detail-page/Elite author.png'
-import smileImg from '../../Asset/Images/product-detail-page/Smile.png'
-import starImg from '../../Asset/Images/product-detail-page/Star.png'
-import updateImg from '../../Asset/Images/product-detail-page/update.png'
+import eliteAuthor from '../../../Asset/Images/product-detail-page/Elite author.png'
+import smileImg from '../../../Asset/Images/product-detail-page/Smile.png'
+import starImg from '../../../Asset/Images/product-detail-page/Star.png'
+import updateImg from '../../../Asset/Images/product-detail-page/update.png'
 
 const CounterSect = () => {
 

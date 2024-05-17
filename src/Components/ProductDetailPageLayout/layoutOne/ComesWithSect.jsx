@@ -17,13 +17,13 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import platStoreImg from '../../Asset/Images/product-detail-page/Play Store.png'
-import iosStore from '../../Asset/Images/product-detail-page/App Store.png'
-import dashboard from '../../Asset/Images/product-detail-page/Dashboard.png'
-import web from '../../Asset/Images/product-detail-page/Web.png'
+import platStoreImg from '../../../Asset/Images/product-detail-page/Play Store.png'
+import iosStore from '../../../Asset/Images/product-detail-page/App Store.png'
+import dashboard from '../../../Asset/Images/product-detail-page/Dashboard.png'
+import web from '../../../Asset/Images/product-detail-page/Web.png'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 import ComesWithSwiper from './ComesWithSwiper';
-import startNowBg from '../../Asset/Images/product-detail-page/innerPagesBG.png'
+import startNowBg from '../../../Asset/Images/product-detail-page/innerPagesBG.png'
 import CommonTextDiv from './CommonTextDiv';
 
 const ComesWithSect = () => {

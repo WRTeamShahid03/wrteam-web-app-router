@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import img from '../../Asset/Images/product-detail-page/swiperTestimonialImg.png'
+import img from '../../../Asset/Images/product-detail-page/swiperTestimonialImg.png'
 
 
 // Import Swiper React components

@@ -6061,7 +6061,7 @@ footer .footerContainer .flinks {
 }
 
 .productDetailsNavbar .productLogo img {
-    width: 150px;
+    width: 100%;
 }
 
 @media screen and (max-width: 575px) {
@@ -7709,7 +7709,7 @@ footer .footerContainer .flinks {
     border: 2px solid lightgray;
 }
 
-.faqsSect .accordion-header{
+.faqsSect .accordion-header {
     position: relative;
 }
 
@@ -7785,7 +7785,7 @@ footer .footerContainer .flinks {
         gap: 0px 0px;
     }
 
-    .faqsSect .contentDiv{
+    .faqsSect .contentDiv {
         margin-top: 30px;
     }
 
@@ -7811,7 +7811,7 @@ footer .footerContainer .flinks {
         gap: 0px 0px;
     }
 
-    .faqsSect .contentDiv{
+    .faqsSect .contentDiv {
         margin-top: 30px;
     }
 
@@ -8321,6 +8321,7 @@ footer .footerContainer .flinks {
         padding: 6px 50px;
     }
 }
+
 @media screen and (max-width: 991px) {
     .licensePlan .priceHead button {
         padding: 6px 10px;
@@ -9451,5 +9452,202 @@ footer .footerContainer .flinks {
 
     .otherPages .contentWrapper .contentDiv {
         padding: 0px 6px;
+    }
+}
+
+/* otherPages ends here  */
+
+
+:root {
+    --productPage-primary-color: #0383FE;
+}
+
+.layoutTwoHeader {
+    background-color: #EEF7FF;
+    ;
+    padding-top: 0px;
+}
+
+.layoutTwoHeader .navbarWrapper {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.layoutTwo .heroSect {
+    background-color: #EEF7FF;
+    padding-top: 80px;
+    position: relative;
+}
+
+
+.layoutTwo .commonTextWrapper {
+    margin-top: 0px;
+}
+
+.layoutTwo .flex_center {
+    width: 42%;
+}
+
+.layoutTwo .flex_center .comman_Headlines {
+    color: #0F172A;
+}
+
+.layoutTwo .flex_center .comman_para {
+    color: #334155;
+    font-weight: 400;
+}
+
+.layoutTwo .middleBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.layoutTwo .middleBtns button {
+    border: 1px solid var(--productPage-primary-color);
+    border-radius: 6px;
+    padding: 12px;
+    width: 165px;
+    background-color: transparent;
+    color: var(--productPage-primary-color);
+    font-weight: 600;
+}
+
+.layoutTwo .middleBtns .exploreBtn {
+    background-color: var(--productPage-primary-color);
+    color: #ffff;
+}
+
+.layoutTwo .imgDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutTwo .imgDiv span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.layoutTwo .systemsDivWrapper {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.layoutTwo .systemDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #0383FE0A;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0px;
+    border-radius: 90px 90px 0px 0px;
+}
+
+.layoutTwo .systemDiv span {
+    color: #016DD5;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.layoutTwo .sideImgsWrapper img {
+    position: absolute;
+}
+
+.layoutTwo .sideImgsWrapper .leftImg1,
+.layoutTwo .sideImgsWrapper .rightImg1 {
+    top: 222px;
+}
+
+.layoutTwo .sideImgsWrapper .leftImg1 {
+    left: 0px;
+}
+
+.layoutTwo .sideImgsWrapper .rightImg1 {
+    right: 110px;
+}
+
+.layoutTwo .sideImgsWrapper .leftImg2 {
+    bottom: 400px;
+}
+
+.layoutTwo .sideImgsWrapper .leftImg2 {
+    left: 110px;
+}
+
+.layoutTwo .sideImgsWrapper .rightImg2 {
+    bottom: 444px;
+}
+
+.layoutTwo .sideImgsWrapper .rightImg2 {
+    right: 0px;
+}
+
+@media screen and (max-width: 1850px) {
+    .layoutTwo .sideImgsWrapper img {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1850px) {
+    .layoutTwo .sideImgsWrapper .leftImg2 {
+        left: 20px;
+    }
+
+    .layoutTwo .sideImgsWrapper .rightImg1 {
+        right: 20px;
+    }
+
+    .layoutTwo .flex_center {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .layoutTwo .imgDiv img {
+        width: 80%;
+    }
+
+    .layoutTwo .sideImgsWrapper img {
+        width: 250px;
+    }
+
+    .layoutTwo .sideImgsWrapper .leftImg2 {
+        left: 10px;
+    }
+
+    .layoutTwo .sideImgsWrapper .rightImg1 {
+        right: 10px;
+    }
+
+    .layoutTwo .flex_center {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .layoutTwo .heroSect {
+        padding-top: 60px;
+    }
+
+    .layoutTwo .sideImgsWrapper img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .layoutTwo .flex_center {
+        width: 60%;
     }
 }

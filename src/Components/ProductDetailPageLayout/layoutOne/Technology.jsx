@@ -3,17 +3,17 @@ import React from 'react'
 import CommonTechSect from './CommonTechSect'
 
 // images 
-import techImg1 from '../../Asset/Images/product-detail-page/techImg1.png'
-import techImg2 from '../../Asset/Images/product-detail-page/techImg2.png'
-import flutter from '../../Asset/Images/product-detail-page/Flutter.png'
-import nextjs from '../../Asset/Images/product-detail-page/nextjs.png'
-import admob from '../../Asset/Images/product-detail-page/admob.png'
-import firebase from '../../Asset/Images/product-detail-page/firebase.png'
-import laravel from '../../Asset/Images/product-detail-page/Laravel.png'
-import paypal from '../../Asset/Images/product-detail-page/paypal.png'
-import paystack from '../../Asset/Images/product-detail-page/paystack.png'
-import razorpay from '../../Asset/Images/product-detail-page/Razorpay.png'
-import stripe from '../../Asset/Images/product-detail-page/stripe.png'
+import techImg1 from '../../../Asset/Images/product-detail-page/techImg1.png'
+import techImg2 from '../../../Asset/Images/product-detail-page/techImg2.png'
+import flutter from '../../../Asset/Images/product-detail-page/Flutter.png'
+import nextjs from '../../../Asset/Images/product-detail-page/nextjs.png'
+import admob from '../../../Asset/Images/product-detail-page/admob.png'
+import firebase from '../../../Asset/Images/product-detail-page/firebase.png'
+import laravel from '../../../Asset/Images/product-detail-page/Laravel.png'
+import paypal from '../../../Asset/Images/product-detail-page/paypal.png'
+import paystack from '../../../Asset/Images/product-detail-page/paystack.png'
+import razorpay from '../../../Asset/Images/product-detail-page/Razorpay.png'
+import stripe from '../../../Asset/Images/product-detail-page/stripe.png'
 
 const Technology = () => {
 
