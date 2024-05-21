@@ -35,7 +35,7 @@ const SaveMoneySect = () => {
                         <CommonTextDiv title={`Save Money & Time With eCart`} desc={`See the cold, hard facts come to life as real businesses share their quantifiable successes achieved with Ekart's innovative solutions.`} />
                         {
                             list.map((item) => {
-                                return <div className='listDiv'>
+                                return <div className='listDiv' key={item.id}>
                                     <span>{item.id}</span>
                                     <span>{item.list}</span>
                                 </div>
