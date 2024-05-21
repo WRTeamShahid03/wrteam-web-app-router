@@ -1,7 +1,10 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import bg from '../../../Asset/Images/product-detail-page/innerPagesBG.png';
+import bg2 from '../../../Asset/Images/product-detail-page/layout-2/innerPagesLayoutTwo.jpg';
 import img from '../../../Asset/Images/product-detail-page/innerSwiperImg.png'
+
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,7 +18,7 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import CommonTextDiv from './CommonTextDiv';
 
-const InnerPagesSect = () => {
+const InnerPagesSect = ({ layoutTwo, title, desc }) => {
 
     const [activeTab, setActiveTab] = useState('tab2');
 
@@ -56,18 +59,17 @@ const InnerPagesSect = () => {
         },
     ];
 
-
     const breakpoints = {
         0: {
             slidesPerView: 1.3,
             // spaceBetween: 40
         },
         576: {
-            slidesPerView: 2.5,
+            slidesPerView: 1.3,
             // spaceBetween: 40
         },
         768: {
-            slidesPerView: 2.7,
+            slidesPerView: 1.3,
 
         },
         992: {
@@ -84,17 +86,30 @@ const InnerPagesSect = () => {
     };
 
 
+    const sliderRef = useRef(null);
+
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slideNext();
+    }, []);
+
+
     return (
-        <section className='innerPagesSect' style={{ background: `url(${bg.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+        <section className='innerPagesSect' style={{ background: `url(${layoutTwo ? bg2.src : bg.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <CommonTextDiv title='Inner Pages Collections' desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled
-                        beard tote. Kinfolk tumeric mug literally tousled.`} />
+                        <CommonTextDiv title={title} desc={desc} />
                     </div>
 
                     <div className="col-12 tabsWrapper">
-                        <div className="tabsHeader">
+                        <div className={`tabsHeader ${layoutTwo ? 'layoutTwoTabsHeader' : ''}`}>
                             <button className={`tab tab1 ${activeTab === 'tab1' ? 'activeTab' : ''}`} onClick={() => setActiveTab('tab1')}>Customer App</button>
                             <button className={`tab tab2 ${activeTab === 'tab2' ? 'activeTab' : ''}`} onClick={() => setActiveTab('tab2')}>Admin Panel</button>
                             <button className={`tab tab3 ${activeTab === 'tab3' ? 'activeTab' : ''}`} onClick={() => setActiveTab('tab3')}>Website</button>
@@ -103,15 +118,15 @@ const InnerPagesSect = () => {
                             {activeTab === 'tab1' && (
                                 <div className={`content tab1`}>
                                     <Swiper
-                                        //  ref={sliderRef}
-                                         slidesPerView={4}
-                                         loop={true}
-                                         spaceBetween={30}
-                                         freeMode={true}
-                                         autoplay={{ delay: 1000 }}
-                                         modules={[Autoplay]}
-                                         navigation
-                                         breakpoints={breakpoints}
+                                        ref={sliderRef}
+                                        slidesPerView={4}
+                                        loop={true}
+                                        spaceBetween={30}
+                                        freeMode={true}
+                                        autoplay={{ delay: 1000 }}
+                                        modules={[Autoplay]}
+                                        navigation
+                                        breakpoints={breakpoints}
                                     >
                                         {
                                             tab1Data.map((data) => {
@@ -134,15 +149,15 @@ const InnerPagesSect = () => {
                             {activeTab === 'tab2' && (
                                 <div className={`content tab1`}>
                                     <Swiper
-                                        //   ref={sliderRef}
-                                          slidesPerView={4}
-                                          loop={true}
-                                          spaceBetween={30}
-                                          freeMode={true}
-                                          autoplay={{ delay: 1000 }}
-                                          modules={[Autoplay]}
-                                          navigation
-                                          breakpoints={breakpoints}
+                                        ref={sliderRef}
+                                        slidesPerView={4}
+                                        loop={true}
+                                        spaceBetween={30}
+                                        freeMode={true}
+                                        autoplay={{ delay: 1000 }}
+                                        modules={[Autoplay]}
+                                        navigation
+                                        breakpoints={breakpoints}
                                     >
                                         {
                                             tab1Data.map((data) => {
@@ -165,7 +180,7 @@ const InnerPagesSect = () => {
                             {activeTab === 'tab3' && (
                                 <div className={`content tab1`}>
                                     <Swiper
-                                        // ref={sliderRef}
+                                        ref={sliderRef}
                                         slidesPerView={4}
                                         loop={true}
                                         spaceBetween={30}
@@ -195,6 +210,14 @@ const InnerPagesSect = () => {
                             )}
                         </div>
                     </div>
+
+                    {
+                        layoutTwo &&
+                        <div className="col-12 navigateBtns">
+                            <button className='previousBtn' onClick={handlePrev}><FaArrowLeft /></button>
+                            <button className='nextBtn' onClick={handleNext}><FaArrowRight /></button>
+                        </div>
+                    }
                 </div>
             </div>
         </section>

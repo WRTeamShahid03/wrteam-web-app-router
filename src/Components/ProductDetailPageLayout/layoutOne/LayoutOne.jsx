@@ -25,14 +25,14 @@ const LayoutOne = () => {
       <PaymentSect />
       <InfoSect />
       <FeaturesSect />
-      <InnerPagesSect />
+      <InnerPagesSect title={'Inner Pages Collections'} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
       <GuideSect />
       <Unlock />
       <TestimonialsSect />
       <LicenseSect />
-      <AssistanceSect />
-      <Faqs />
-      <BuyNowSect />
+      <AssistanceSect title={`Reliable Assistance Awaits: eBroker's Dedicated Support Team`} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
+      <Faqs title={`Essential FAQs for Every Real Estate Stage`} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
+      <BuyNowSect buyNowLink={''} />
     </div>
   )
 }

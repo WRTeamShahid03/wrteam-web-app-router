@@ -55,13 +55,14 @@ export default function RootLayout({ children }) {
 
                   {/* <TopHeader /> */}
                   {
-                    router.startsWith('/product-detail-page') ? <ProductDetailHeader layout={2}/> : <Header />
+                    router.startsWith('/product-detail-page') ? <ProductDetailHeader layout={2} /> : <Header />
                   }
                   {/* <Header /> */}
 
                   {children}
+
                   {
-                    router.startsWith('/product-detail-page') ? <ProductDetailFooter layout={2}/> : <Footer />
+                    router.startsWith('/product-detail-page') ? <ProductDetailFooter layoutTwo={true} /> : <Footer />
                   }
 
                   {/* <Footer /> */}

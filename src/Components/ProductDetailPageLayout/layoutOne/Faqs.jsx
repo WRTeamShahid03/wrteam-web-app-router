@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 import CommonTextDiv from './CommonTextDiv';
 
-const Faqs = () => {
+const Faqs = ({title,desc}) => {
 
     const [activeTab, setActiveTab] = useState(1)
 
@@ -40,7 +40,7 @@ const Faqs = () => {
                 <div className="row">
 
                     <div className="col-12">
-                        <CommonTextDiv title={`Essential FAQs for Every Real Estate Stage`} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
+                        <CommonTextDiv title={title} desc={desc} />
                     </div>
 
                     <div className="col-lg-3">

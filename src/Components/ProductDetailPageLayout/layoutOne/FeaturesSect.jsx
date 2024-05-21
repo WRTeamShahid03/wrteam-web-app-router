@@ -152,6 +152,7 @@ const FeaturesSect = () => {
         if (!sliderRef.current) return;
         sliderRef.current.swiper.slideNext();
     }, []);
+    
     return (
         <>
             <section className='featuresSect'>

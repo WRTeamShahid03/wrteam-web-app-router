@@ -7,7 +7,7 @@ import doc from '../../../Asset/Images/product-detail-page/Documents.png'
 import faq from '../../../Asset/Images/product-detail-page/FAQ.png'
 import tutorials from '../../../Asset/Images/product-detail-page/Video.png'
 
-const AssistanceSect = () => {
+const AssistanceSect = ({title,desc}) => {
     const data = [
         {
             id: 0,
@@ -44,7 +44,7 @@ const AssistanceSect = () => {
             <section className='assistanceSect container'>
                 <div className="row">
                     <div className="col-12">
-                        <CommonTextDiv title={`Reliable Assistance Awaits: eBroker's Dedicated Support Team`} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
+                        <CommonTextDiv title={title} desc={desc} />
                     </div>
                     <div className="col-12">
                         <div className="row cardsWrapper">
@@ -52,7 +52,7 @@ const AssistanceSect = () => {
                                 data.map((item) => {
                                     return <div className="col-sm-6 col-md-6 col-lg-3" key={item.id}>
                                         <div className="card">
-                                            <div className='imgDiv'>
+                                            <div className='imgWrapper'>
                                                 <Image src={item.img} height={0} width={0} alt='cardImg' />
                                             </div>
                                             <div className='textDiv'>

@@ -2,7 +2,7 @@ import React from 'react'
 import CommonTextDiv from './CommonTextDiv'
 import Link from 'next/link'
 
-const BuyNowSect = () => {
+const BuyNowSect = ({buyNowLink}) => {
     return (
         <>
             <section className="buyNowSect container">
@@ -12,7 +12,7 @@ const BuyNowSect = () => {
                     </div>
                     <div className="col-12">
                         <div className="wrapper">
-                            <Link href={''}><button className='buyBtn'>Buy Now</button></Link>
+                            <Link href={buyNowLink}><button className='buyBtn'>Buy Now</button></Link>
                             <Link href={'/contact-us'}><button className='contactBtn'>Contact Us</button></Link>
                         </div>
                     </div>

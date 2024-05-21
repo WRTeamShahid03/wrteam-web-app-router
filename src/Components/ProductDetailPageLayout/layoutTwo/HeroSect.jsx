@@ -69,10 +69,10 @@ const HeroSect = () => {
                         </div>
 
                         <div className="col-12">
-                            <div className="row systemsDivWrapper">
+                            <div className=" systemsDivWrapper">
                                 {
                                     systemsData.map((data) => {
-                                        return <div className="col-2" key={data.id}>
+                                        return <div className="" key={data.id}>
                                             <div className='systemDiv'>
                                                 <Image src={data.img} height={0} width={0} alt='androidImg' />
                                                 <span>{data.title}</span>

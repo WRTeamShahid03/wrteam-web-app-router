@@ -6061,18 +6061,19 @@ footer .footerContainer .flinks {
 }
 
 .productDetailsNavbar .productLogo img {
-    width: 100%;
+    width: auto;
 }
 
 @media screen and (max-width: 575px) {
 
     .productDetailsNavbar .navbarWrapper {
         height: 64px;
+        height: 80px;
     }
 
-    .productDetailsNavbar .productLogo img {
+    /* .productDetailsNavbar .productLogo img {
         width: 120px;
-    }
+    } */
 }
 
 .productDetailsNavbar .centerDiv {
@@ -6247,7 +6248,7 @@ footer .footerContainer .flinks {
 
 @media screen and (max-width: 575px) {
 
-    .productHeroSect .flex_center {
+    .flex_center {
         text-align: start;
         gap: 24px;
         align-items: start;
@@ -7587,7 +7588,7 @@ footer .footerContainer .flinks {
     transition: all 0.3s;
 }
 
-.assistanceSect .card .imgDiv {
+.assistanceSect .card .imgWrapper {
     background-color: white;
     border-radius: 50px;
     width: 94px;
@@ -7633,12 +7634,12 @@ footer .footerContainer .flinks {
     padding-bottom: 20px;
 }
 
-.assistanceSect .card:hover .imgDiv {
+.assistanceSect .card:hover .imgWrapper {
     background-color: var(--productPage-primary-color);
     border: 6px solid white;
 }
 
-.assistanceSect .card:hover .imgDiv img {
+.assistanceSect .card:hover .imgWrapper img {
     filter: brightness(100);
 }
 
@@ -9477,6 +9478,7 @@ footer .footerContainer .flinks {
     background-color: #EEF7FF;
     padding-top: 80px;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -9490,6 +9492,7 @@ footer .footerContainer .flinks {
 
 .layoutTwo .flex_center .comman_Headlines {
     color: #0F172A;
+    font-weight: 600;
 }
 
 .layoutTwo .flex_center .comman_para {
@@ -9503,6 +9506,7 @@ footer .footerContainer .flinks {
     justify-content: center;
     gap: 12px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .layoutTwo .middleBtns button {
@@ -9535,6 +9539,8 @@ footer .footerContainer .flinks {
 }
 
 .layoutTwo .systemsDivWrapper {
+    display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
@@ -9550,6 +9556,7 @@ footer .footerContainer .flinks {
     justify-content: center;
     padding: 36px 0px;
     border-radius: 90px 90px 0px 0px;
+    width: 168px;
 }
 
 .layoutTwo .systemDiv span {
@@ -9614,6 +9621,10 @@ footer .footerContainer .flinks {
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
 
+    .layoutTwo .systemDiv {
+        width: 150px;
+    }
+
     .layoutTwo .imgDiv img {
         width: 80%;
     }
@@ -9644,10 +9655,1017 @@ footer .footerContainer .flinks {
     .layoutTwo .sideImgsWrapper img {
         display: none;
     }
+
+    .layoutTwo .systemsDivWrapper {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .layoutTwo .systemDiv {
+        border-radius: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .layoutTwo .imgDiv img {
+        width: 100%;
+    }
+
+    .layoutTwo .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .layoutTwo .systemDiv {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .heroSect .flex_center {
+        text-align: center;
+    }
+}
+
+/* layoutTwo heroSect ends here  */
+
+
+.layoutTwo .operationSect {
+    margin-top: 100px;
+}
+
+.layoutTwo .operationSect .row {
+    gap: 30px 0px;
+}
+
+
+.layoutTwo .operationSect .flex_center {
+    width: 100%;
+    text-align: start;
+}
+
+.layoutTwo .flex_center .comman_Headlines {
+    font-weight: 600;
+}
+
+.layoutTwo .operationSect .swiperBtnsWrapper {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 16px;
+}
+
+.layoutTwo .operationSect .swiperBtnsWrapper button {
+    background-color: var(--productPage-primary-color);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 22px;
+}
+
+.layoutTwo .operationSect .cardsRow {
+    margin-top: 80px;
+}
+
+.layoutTwo .operationSect .card {
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+    padding: 30px 12px;
+}
+
+
+.layoutTwo .operationSect .card .imgDiv {
+    background-color: #EEF7FF;
+    border-radius: 50px;
+    padding: 16px;
+}
+
+.layoutTwo .operationSect .card .textDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.layoutTwo .operationSect .card .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.layoutTwo .operationSect .card .desc {
+    font-weight: 400;
+    color: #334155;
+}
+
+@media screen and (max-width: 575px) {
+
+    .layoutTwo .operationSect .swiperBtnsWrapper button {
+        padding: 10px 14px;
+        font-size: 18px;
+    }
+
+    .layoutTwo .operationSect {
+        margin-top: 40px;
+    }
+
+    .layoutTwo .operationSect .cardsRow {
+        margin-top: 12px;
+    }
+}
+
+/* operationSect ends here  */
+
+.layoutTwo .whyChooseSect {
+    margin-top: 100px;
+}
+
+.layoutTwo .whyChooseSect .row {
+    gap: 30px 0px;
+}
+
+.layoutTwo .whyChooseSect .sideCardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.layoutTwo .whyChooseSect .sideCard {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.layoutTwo .whyChooseSect .sideCard .imgWrapper {
+    border: 1px solid #0F172A;
+    border-radius: 50px;
+    width: 42px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.layoutTwo .whyChooseSect .sideCard .title {
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.layoutTwo .whyChooseSect .sideCard .desc {
+    color: #334155;
+}
+
+.layoutTwo .whyChooseSect .middleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutTwo .whyChooseSect .middleDiv img {
+    width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .whyChooseSect {
+        margin-top: 40px;
+    }
+
+    .layoutTwo .whyChooseSect .sideCardsWrapper {
+        gap: 30px 0px;
+    }
+}
+
+/* whyChooseSect ends here  */
+
+
+.layoutTwo .paymentGatewaysSect {
+    margin-top: 100px;
+}
+
+.layoutTwo .paymentGatewaysSect .mainRow {
+    gap: 80px 0px;
+}
+
+.layoutTwo .paymentGatewaysSect .flex_center {
+    width: 60%;
+}
+
+.layoutTwo .paymentGatewaysSect .sideImgWrapper {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.layoutTwo .paymentGatewaysSect .sideImgWrapper img {
+    width: 100%;
+}
+
+.layoutTwo .gateWaysWrapper {
+    align-items: center;
+    background-color: #EEF7FF;
+    border-radius: 24px;
+    padding: 12px;
+    gap: 30px 0px;
+}
+
+.layoutTwo .paymentGatewaysSect .iconsDiv {
+    display: flex;
+    gap: 40px 36px;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.layoutTwo .paymentGatewaysSect .iconWrapper {
+    background-color: white;
+    border: 7px solid #0383FE17;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.layoutTwo .paymentGatewaysSect .iconWrapper span {
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .paymentGatewaysSect .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .layoutTwo .paymentGatewaysSect .mainRow {
+        gap: 40px 0px;
+    }
+
+    .layoutTwo .paymentGatewaysSect {
+        margin-top: 40px;
+    }
+
+    .layoutTwo .gateWaysWrapper {
+        margin: auto;
+    }
+
+    .layoutTwo .paymentGatewaysSect .iconsDiv {
+        padding-left: 0px;
+        gap: 40px 20px;
+    }
+
+}
+
+/* paymentGatewaysSect ends here  */
+
+.layoutTwo .infoSectTwo {
+    margin-top: 100px;
+    background-color: #00162B;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.layoutTwo .infoSectTwo .card {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    gap: 16px;
+    font-family: Montserrat;
+    width: 234px;
+}
+
+.layoutTwo .infoSectTwo .card .textDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.layoutTwo .infoSectTwo .card .title {
+    font-size: 28px;
+    font-weight: 600px;
+    color: #fff;
+}
+
+.layoutTwo .infoSectTwo .card .desc {
+    font-weight: 600px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1650px) {
+    .layoutTwo .infoSectTwo {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .layoutTwo .infoSectTwo {
+        gap: 12px;
+    }
+
+    .layoutTwo .infoSectTwo .card {
+        width: 208px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .layoutTwo .infoSectTwo {
+        gap: 40px 12px;
+        margin: auto;
+        width: 96%;
+        margin-top: 50px;
+    }
+
+    .layoutTwo .infoSectTwo .card {
+        width: 208px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .layoutTwo .infoSectTwo .card .title {
+        font-size: 24px;
+    }
+}
+
+/* infoSectTwo ends here  */
+
+
+.layoutTwo .innerPagesSect {
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.layoutTwo .innerPagesSect .tabsWrapper {
+    margin-top: 80px;
+}
+
+.layoutTwo .layoutTwoTabsHeader {
+    background-color: white;
+    width: max-content;
+    margin: auto;
+    border-radius: 100px;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+
+.layoutTwo .innerPagesSect .layoutTwoTabsHeader .tab {
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 6px !important;
+    color: #1E293B;
+}
+
+.layoutTwo .innerPagesSect .layoutTwoTabsHeader .activeTab {
+    background-color: var(--productPage-primary-color) !important;
+    color: white !important;
+}
+
+.layoutTwo .innerPagesSect .flex_center {
+    width: 60%;
+}
+
+.layoutTwo .innerPagesSect .flex_center .comman_Headlines {
+    color: white;
+}
+
+.layoutTwo .innerPagesSect .flex_center .comman_para {
+    color: #F1F5F9;
+}
+
+.layoutTwo .innerPagesSect .row {
+    position: relative;
+}
+
+.layoutTwo .innerPagesSect .navigateBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.layoutTwo .innerPagesSect .navigateBtns button {
+    border: none;
+    border-radius: 50px;
+    background-color: #0F172A;
+    color: white;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 250px;
+    z-index: 1;
+}
+
+.layoutTwo .innerPagesSect .navigateBtns .previousBtn {
+    left: -8px;
+}
+
+.layoutTwo .innerPagesSect .navigateBtns .nextBtn {
+    right: -8px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .innerPagesSect .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .layoutTwo .layoutTwoTabsHeader {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .innerPagesSect .tabsWrapper {
+        margin-top: 50px;
+    }
+
+    .layoutTwo .innerPagesSect {
+        padding-top: 40px;
+        margin-top: 60px;
+    }
+
+    .layoutTwo .innerPagesSect .navigateBtns button {
+        position: unset;
+    }
+}
+
+/* layoutTwo innerPagesSect ends here  */
+
+.layoutTwo .saveMoneySect {
+    margin-top: 100px;
+}
+
+.layoutTwo .saveMoneySect .commonTextWrapper {
+    align-items: start;
+    justify-content: start;
+}
+
+.layoutTwo .saveMoneySect .flex_center {
+    width: 78%;
+    text-align: start;
+    gap: 16px;
+}
+
+.layoutTwo .saveMoneySect .flex_center .comman_Headlines {
+    color: #fff;
+}
+
+.layoutTwo .saveMoneySect .flex_center .comman_para {
+    color: #F1F5F9;
+}
+
+
+.layoutTwo .saveMoneySect .row {
+    border-radius: 24px;
+    background-color: #00162B;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 0px;
+    padding: 120px 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.layoutTwo .saveMoneySect .row::before,
+.layoutTwo .saveMoneySect .row::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(38.99deg, rgba(248, 250, 252, 0.08) 10.45%, rgba(248, 250, 252, 0) 119.12%);
+    clip-path: polygon(0 0, 75% 0%, 98% 32%, 78% 80%, 0 95%, 0% 50%);
+    width: 200px;
+    height: 300px;
+}
+
+.layoutTwo .saveMoneySect .row::after {
+    top: auto;
+    left: auto;
+    right: 0px;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.layoutTwo .saveMoneySect .listDiv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.layoutTwo .saveMoneySect .listDiv span:first-child {
+    background-color: #F8FAFC1F;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 2px 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.layoutTwo .saveMoneySect .listDiv span:last-child {
+    color: #fff;
+    font-weight: 500;
+}
+
+.layoutTwo .saveMoneySect img {
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+
+    .layoutTwo .saveMoneySect .flex_center {
+        width: 100%;
+    }
+
+    .layoutTwo .saveMoneySect .row {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .saveMoneySect {
+        margin-top: 40px;
+    }
+
+    .layoutTwo .saveMoneySect .row {
+        padding: 30px 4px;
+        margin: auto;
+    }
+}
+
+/* saveMoneySect ends here  */
+
+.layoutTwo .appSect {
+    margin-top: 100px;
+    padding: 80px 0px;
+}
+
+.layoutTwo .appSect .commonTextWrapper {
+    align-items: start;
+    justify-content: start;
+}
+
+.layoutTwo .appSect .flex_center {
+    width: 60%;
+    text-align: start;
+}
+
+.layoutTwo .appSect .flex_center .comman_Headlines {
+    color: #fff;
+}
+
+.layoutTwo .appSect .upperDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+}
+
+.layoutTwo .appSect .upperDiv .swiperBtns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.layoutTwo .appSect .upperDiv .swiperBtns button {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    background-color: transparent;
+    padding: 4px 8px;
+}
+
+.layoutTwo .appSect .tabsHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.layoutTwo .appSect .tabsHeader .tab {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+}
+
+.layoutTwo .appSect .activeTab {
+    color: #FADC29 !important;
+    position: relative;
+}
+
+.layoutTwo .appSect .activeTab::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: -4px;
+    left: 0px;
+}
+
+.layoutTwo .appSect .card {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.layoutTwo .appSect .card img {
+    width: 100%;
+}
+
+.layoutTwo .appSect .card span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .appSect .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .appSect {
+        margin-top: 40px;
+        padding: 30px 0px;
+    }
+}
+
+/* layoutTwo appSect ends here   */
+
+.layoutTwo .ideaSect {
+    margin-top: 100px;
+}
+
+
+.layoutTwo .ideaSect .flex_center {
+    width: 60%;
+}
+
+.layoutTwo .ideaSect .cardsWrapper {
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    gap: 30px 0px;
+}
+
+.layoutTwo .ideaSect .card {
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    border: none;
+    padding: 8px 60px;
+    background-color: transparent;
+}
+
+.layoutTwo .ideaSect .card div {
+    background: hsl(206deg 100% 90.81%);
+    border-radius: 100px;
+    padding: 18px 16px;
+}
+
+.layoutTwo .ideaSect .card .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.layoutTwo .ideaSect .card .desc {
+    font-weight: 500;
+    color: #1E293B;
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .ideaSect .flex_center {
+        width: 100%;
+    }
+
+    .layoutTwo .ideaSect .cardsWrapper {
+        background: none !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwo .ideaSect {
+        margin-top: 40px;
+    }
+
+    .layoutTwo .ideaSect .cardsWrapper {
+        margin-top: 40px;
+    }
+
+}
+
+/* ideaSect ends here  */
+
+.layoutTwoTestimonials {
+    margin-top: 100px;
+    padding: 80px 0px;
+    background: #00162B;
+    position: relative;
+    overflow: hidden;
+}
+
+.layoutTwoTestimonials::after {
+    position: absolute;
+    content: '';
+    left: 18%;
+    top: 198px;
+    background: #10335487;
+    width: 65%;
+    height: 150%;
+    border-radius: 100%;
+}
+
+.layoutTwoTestimonials .flex_center {
+    width: 60%;
+}
+
+.layoutTwo .layoutTwoTestimonials .comman_Headlines {
+    color: #fff;
+}
+
+.layoutTwoTestimonials .card {
+    gap: 16px;
+    padding: 22px;
+    position: relative;
+    z-index: -1 !important;
+    margin-top: 30px;
+    margin-bottom: 44px;
+    z-index: -1;
+}
+
+.layoutTwoTestimonials .card .ratingDiv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.layoutTwoTestimonials .card .ratingDiv svg {
+    color: #F5BD4F;
+    margin: 0px 2px;
+}
+
+.layoutTwoTestimonials .card .ratingDiv span {
+    font-weight: 600;
+    color: #000000;
+}
+
+.layoutTwoTestimonials .card .desc {
+    color: #0F172A;
+}
+
+.layoutTwoTestimonials .card .nameDiv {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.layoutTwoTestimonials .card .nameDiv span {
+    font-weight: 600;
+    color: #000000;
+}
+
+.layoutTwoTestimonials .card .nameDiv span span {
+    font-weight: 300;
+}
+
+.layoutTwoTestimonials .card .imgWrapper {
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -28px;
+    z-index: 1;
+}
+
+.layoutTwoTestimonials .row {
+    position: relative;
+}
+
+.layoutTwoTestimonials .swiper {
+    width: 88%;
+}
+
+.layoutTwoTestimonials button {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: #ffff;
+    background-color: transparent;
+    position: absolute;
+    bottom: 154px;
+    z-index: 1;
+}
+
+.layoutTwoTestimonials button svg {
+    margin-top: -4px;
+}
+
+.layoutTwoTestimonials .swiperBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.layoutTwoTestimonials .prevBtn {
+    left: 40px;
+}
+
+.layoutTwoTestimonials .nextBtn {
+    right: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .layoutTwoTestimonials::after {
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .layoutTwoTestimonials button {
+        bottom: 160px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .layoutTwo .flex_center {
-        width: 60%;
+    .layoutTwoTestimonials button {
+        bottom: 210px;
     }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .layoutTwoTestimonials button {
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwoTestimonials .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .layoutTwoTestimonials .swiper {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .layoutTwoTestimonials .swiper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .layoutTwoTestimonials .swiper {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .layoutTwoTestimonials {
+        margin-top: 40px;
+        padding: 30px 0px;
+    }
+
+    .layoutTwoTestimonials button {
+        position: unset;
+    }
+}
+
+/* layoutTwoTestimonials ends here  */
+
+.layoutTwoLicense {
+    padding: 80px 0px;
+    background-color: #EEF7FF;
+}
+
+.layoutTwoLicense,
+.layoutTwo .faqsSect,
+.layoutTwo .assistanceSect {
+    margin-top: 100px;
+}
+
+.layoutTwo .assistanceSect .flex_center {
+    width: 60%;
+}
+
+.layoutTwo .assistanceSect .card,
+.layoutTwo .assistanceSect .card:hover,
+.layoutTwo .assistanceSect .card:hover .imgWrapper {
+    background-color: #0157AB;
+}
+
+.layoutTwo .assistanceSect .card img {
+    filter: brightness(1) hue-rotate(44deg);
+}
+
+.layoutTwo .assistanceSect .card .title,
+.layoutTwo .assistanceSect .card .desc {
+    color: #fff;
+}
+
+.layoutTwo .buyNowSect {
+    background-color: #EEF7FF;
+}
+
+@media screen and (max-width: 991px) {
+    .layoutTwo .assistanceSect .flex_center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .layoutTwoLicense {
+        padding: 30px 0px;
+    }
+
+    .layoutTwoLicense,
+    .layoutTwo .faqsSect,
+    .layoutTwo .assistanceSect {
+        margin-top: 40px;
+    }
+}
+
+/* commonSects in both layout ends here  */
+
+.productDetailFooter .title{
+    position: relative;
+    width: max-content;
+}
+
+.productDetailFooter .title::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+}
+
+.productDetailFooter .storeImgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.productDetailFooter .contactDiv {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.productDetailFooter .contactDiv div {
+    display: flex;
+    flex-direction: column;
+}
+
+.productDetailFooter .contactDiv svg{
+    font-size: 24px;
+}
+
+.productDetailFooter .contactDiv div span:last-child{
+    color: lightgray;
 }

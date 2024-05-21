@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Table from 'react-bootstrap/Table';
 import Link from 'next/link';
 
-const LicensePlan = ({ productDetailPage }) => {
+const LicensePlan = ({ productDetailPage,layouTwo }) => {
 
     const regularlicenseData = [
         {
@@ -136,7 +136,7 @@ const LicensePlan = ({ productDetailPage }) => {
                 <Table bordered >
                     <thead>
                         <tr>
-                            <th className={`plansContent plansHead ${productDetailPage ? 'showDesc' : ''}`}>
+                            <th className={`plansContent plansHead ${productDetailPage  ? 'showDesc' : ''}`}>
                                 <div>
 
                                     <span className='title'>Product Plans</span>
