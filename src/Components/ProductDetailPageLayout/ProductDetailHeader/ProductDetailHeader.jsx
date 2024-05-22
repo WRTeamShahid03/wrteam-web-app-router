@@ -20,7 +20,7 @@ const ProductDetailHeader = ({ layoutTwo }) => {
 
     return (
         <>
-            <header className={`productDetailsNavbar ${layoutTwo? 'layoutTwoHeader' : ''}`}>
+            <header className={`productDetailsNavbar ${layoutTwo ? 'layoutTwoHeader' : ''}`}>
                 <div className="container">
                     <div className="navbarWrapper">
                         <div className="leftDiv">
@@ -39,7 +39,7 @@ const ProductDetailHeader = ({ layoutTwo }) => {
                         </div>
                         <div className="rightDiv">
                             <Link href={''}>
-                                <button className={`productCommonBtn ${layoutTwo? 'layoutTwoproductCommonBtn':''}`}>
+                                <button className={`productCommonBtn ${layoutTwo ? 'layoutTwoproductCommonBtn' : ''}`}>
                                     Purchase Now
                                 </button>
                             </Link>
@@ -63,6 +63,14 @@ const ProductDetailHeader = ({ layoutTwo }) => {
                                 <ServiceDropdown setShow={setShow} />
                                 <HelpDropDown setShow={setShow} />
                                 <MoreDropDown setShow={setShow} />
+                            </div>
+                            <div className="rightDiv">
+                                <Link href={''}>
+                                    <button className={`productCommonBtn ${layoutTwo ? 'layoutTwoproductCommonBtn' : ''}`}>
+                                        Purchase Now
+                                    </button>
+                                </Link>
+
                             </div>
                         </Offcanvas.Body>
                     </Offcanvas>

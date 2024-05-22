@@ -6076,17 +6076,22 @@ footer .footerContainer .flinks {
     } */
 }
 
-.productDetailsNavbar .centerDiv {
+.productDetailsNavbar .centerDiv,
+.offcanvas .centerDiv {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 30px;
 }
 
+.offcanvas .centerDiv {
+    flex-direction: column;
+    align-items: start;
+}
+
 .productDetailsNavbar .centerDiv a {
     color: #212121;
     font-weight: 500;
-
 }
 
 .productCommonBtn {
@@ -7646,7 +7651,7 @@ footer .footerContainer .flinks {
 }
 
 .assistanceSect .card:hover .imgWrapper img {
-    filter: brightness(100) saturate(00);
+    filter: saturate(0) brightness(100);
 }
 
 .assistanceSect .card:hover .assistanceBtn {
