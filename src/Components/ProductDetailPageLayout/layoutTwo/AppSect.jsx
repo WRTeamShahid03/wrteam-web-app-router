@@ -47,6 +47,26 @@ const AppSect = () => {
             img: img4,
             title: 'Wallet Screen'
         },
+        {
+            id: 4,
+            img: img1,
+            title: 'Home Screen'
+        },
+        {
+            id: 5,
+            img: img2,
+            title: 'Category Screen'
+        },
+        {
+            id: 6,
+            img: img3,
+            title: 'Explore Page'
+        },
+        {
+            id: 7,
+            img: img4,
+            title: 'Wallet Screen'
+        },
     ])
 
     const breakpoints = {

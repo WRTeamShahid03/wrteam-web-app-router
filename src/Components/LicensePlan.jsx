@@ -154,7 +154,7 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
                                     <span>Regular License</span>
                                     {
                                         productDetailPage ?
-                                            <Link href={''}><button>Purchase Now <FaArrowRight /></button></Link> : null
+                                            <Link href={''} target='_blank'><button>Purchase Now <FaArrowRight /></button></Link> : null
                                     }
                                 </div>
                             </th>
@@ -168,7 +168,7 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
                                     <span>Extended License</span>
                                     {
                                         productDetailPage ?
-                                            <Link href={''}> <button className='extendedPurchase'>Purchase Now <FaArrowRight /></button></Link> : null
+                                            <Link href={''} target='_blank'> <button className='extendedPurchase'>Purchase Now <FaArrowRight /></button></Link> : null
                                     }
                                 </div>
                             </th>

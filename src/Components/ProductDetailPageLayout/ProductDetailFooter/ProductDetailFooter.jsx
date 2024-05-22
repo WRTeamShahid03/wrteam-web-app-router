@@ -89,7 +89,7 @@ const ProductDetailFooter = ({ layoutTwo }) => {
           </footer>
           :
           <footer className='productDetailFooter'
-           style={{ background: `url(${footerBg.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+            style={{ background: `url(${footerBg.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
           >
             <div className="container">
               <div className="row">
@@ -132,7 +132,7 @@ const ProductDetailFooter = ({ layoutTwo }) => {
                       <span><RiMailSendLine /></span>
                       <div>
                         <span className='desc'>Email</span>
-                        <span>adminn@ebroker.in</span>
+                        <Link href={'mailto:adminn@ebroker.in'}></Link><span>adminn@ebroker.in</span>
                       </div>
                     </div>
 
@@ -140,7 +140,7 @@ const ProductDetailFooter = ({ layoutTwo }) => {
                       <span><FiPhoneCall /></span>
                       <div>
                         <span className='desc'>Contact Us</span>
-                        <span>7874664341</span>
+                        <Link href={'tel:+91 7874664341'}></Link><span>7874664341</span>
                       </div>
                     </div>
 

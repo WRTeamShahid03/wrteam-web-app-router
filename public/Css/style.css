@@ -7710,6 +7710,13 @@ footer .footerContainer .flinks {
     border: 2px solid lightgray;
 }
 
+.layoutTwo .faqsSect .accordion-item,
+.faqsSect .accordion-item:not(:first-of-type),
+.faqsSect .accordion-item:last-of-type {
+    border: 2px solid transparent;
+    box-shadow: 0px 1px 5px 0px #0000001F;
+}
+
 .faqsSect .accordion-header {
     position: relative;
 }
@@ -7752,6 +7759,10 @@ footer .footerContainer .flinks {
     background-color: #BFCCD5;
 }
 
+.layoutTwo .faqsSect .collapsed::before {
+    background-color: #EEF7FF;
+}
+
 .faqsSect .accordion-button::after,
 .faqsSect .collapsed::after {
     content: '';
@@ -7769,6 +7780,10 @@ footer .footerContainer .flinks {
 
 .faqsSect .collapsed::after {
     background: #4B6272;
+}
+
+.layoutTwo .faqsSect .collapsed::after {
+    background: var(--productPage-primary-color);
 }
 
 
@@ -7841,7 +7856,7 @@ footer .footerContainer .flinks {
 }
 
 .buyNowSect .row {
-    gap: 30px 0px;
+    gap: 44px 0px;
 }
 
 .buyNowSect .commonTextWrapper {
@@ -9488,6 +9503,7 @@ footer .footerContainer .flinks {
 
 .layoutTwo .flex_center {
     width: 42%;
+    gap: 16px;
 }
 
 .layoutTwo .flex_center .comman_Headlines {
@@ -9598,6 +9614,43 @@ footer .footerContainer .flinks {
 .layoutTwo .sideImgsWrapper .rightImg2 {
     right: 0px;
 }
+
+.layoutTwo .sideImgsWrapper .leftImg2 {
+    animation: miniScreen1 4s ease-in-out 1s infinite alternate-reverse forwards;
+}
+
+@keyframes miniScreen1 {
+    0% {
+        top: 47%;
+    }
+
+    50% {
+        top: 46%;
+    }
+
+    100% {
+        top: 48%;
+    }
+}
+
+.layoutTwo .sideImgsWrapper .rightImg1 {
+    animation: miniScreen2 4s ease-in-out 1s infinite alternate-reverse forwards;
+}
+
+@keyframes miniScreen2 {
+    0% {
+        top: 7%;
+    }
+
+    50% {
+        top: 6%;
+    }
+
+    100% {
+        top: 8%;
+    }
+}
+
 
 @media screen and (max-width: 1850px) {
     .layoutTwo .sideImgsWrapper img {
@@ -9744,6 +9797,48 @@ footer .footerContainer .flinks {
     border-radius: 8px;
     border: 1px solid #CBD5E1;
     padding: 30px 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.layoutTwo .operationSect .card::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: #FADC29;
+    z-index: 2;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.layoutTwo .operationSect .card::after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    height: 90px;
+    width: 90px;
+    background-color: var(--productPage-primary-color);
+    border-radius: 50px;
+    z-index: 1;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.layoutTwo .operationSect .card:hover::after {
+    height: 120%;
+    width: 120%;
+    visibility: visible;
+}
+
+.layoutTwo .operationSect .card:hover::before {
+    z-index: 2;
+    visibility: visible;
 }
 
 
@@ -9768,6 +9863,39 @@ footer .footerContainer .flinks {
 .layoutTwo .operationSect .card .desc {
     font-weight: 400;
     color: #334155;
+}
+
+.layoutTwo .operationSect .card .hoverBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0px;
+    z-index: 3;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.layoutTwo .operationSect .card:hover .hoverBtns {
+    visibility: visible;
+}
+
+.layoutTwo .operationSect .card .hoverBtns button {
+    background-color: #FADC29;
+    border: none;
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.layoutTwo .operationSect .card .hoverBtns .otherBtn {
+    background-color: #EEF7FF;
 }
 
 @media screen and (max-width: 575px) {
@@ -10610,8 +10738,14 @@ footer .footerContainer .flinks {
     background-color: #EEF7FF;
 }
 
+.layoutTwo .buyNowSect .flex_center {
+    width: 60%;
+}
+
 @media screen and (max-width: 991px) {
-    .layoutTwo .assistanceSect .flex_center {
+
+    .layoutTwo .assistanceSect .flex_center,
+    .layoutTwo .buyNowSect .flex_center {
         width: 100%;
     }
 }
@@ -10630,12 +10764,12 @@ footer .footerContainer .flinks {
 
 /* commonSects in both layout ends here  */
 
-.productDetailFooter .title{
+.productDetailFooter .title {
     position: relative;
     width: max-content;
 }
 
-.productDetailFooter .title::after{
+.productDetailFooter .title::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -10662,10 +10796,10 @@ footer .footerContainer .flinks {
     flex-direction: column;
 }
 
-.productDetailFooter .contactDiv svg{
+.productDetailFooter .contactDiv svg {
     font-size: 24px;
 }
 
-.productDetailFooter .contactDiv div span:last-child{
+.productDetailFooter .contactDiv div span:last-child {
     color: lightgray;
 }

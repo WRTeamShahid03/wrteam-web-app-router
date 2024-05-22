@@ -19,6 +19,7 @@ import icon1 from '../../../Asset/Images/product-detail-page/layout-2/optIcon1.p
 import icon2 from '../../../Asset/Images/product-detail-page/layout-2/optIcon2.png'
 import icon3 from '../../../Asset/Images/product-detail-page/layout-2/optIcon3.png'
 import icon4 from '../../../Asset/Images/product-detail-page/layout-2/optIcon4.png'
+import Link from 'next/link';
 
 const OperationsSect = () => {
 
@@ -55,24 +56,40 @@ const OperationsSect = () => {
             img: icon1,
             title: 'Admin Panel',
             desc: 'Command Your Real Estate omain: Intuitive admin panel empowers management mastery.',
+            btn1: 'Explore Demo',
+            btn1Link: '',
+            btn2: '',
+            btn2Link: ''
         },
         {
             id: 1,
             img: icon2,
             title: 'Seller Panel',
             desc: 'Command Your Real Estate omain: Intuitive admin panel empowers management mastery.',
+            btn1: 'Explore Demo',
+            btn1Link: '',
+            btn2: '',
+            btn2Link: ''
         },
         {
             id: 2,
             img: icon3,
             title: 'Delivery Boy Panel',
             desc: 'Command Your Real Estate omain: Intuitive admin panel empowers management mastery.',
+            btn1: 'Explore Demo',
+            btn1Link: '',
+            btn2: '',
+            btn2Link: ''
         },
         {
             id: 3,
             img: icon4,
             title: 'Customer App',
             desc: 'Command Your Real Estate omain: Intuitive admin panel empowers management mastery.',
+            btn1: 'Android',
+            btn1Link: '',
+            btn2: 'IOS',
+            btn2Link: ''
         },
     ]
 
@@ -120,13 +137,20 @@ const OperationsSect = () => {
                             {
                                 data.map((item) => {
                                     return <SwiperSlide key={data.id}>
-                                        <div className="card">
+                                        <div className="card operationCard">
                                             <div className="imgDiv">
                                                 <Image src={item.img} height={0} width={0} alt='cardIcon' />
                                             </div>
                                             <div className='textDiv'>
                                                 <span className='title'>{item.title}</span>
                                                 <span className='desc'>{item.desc}</span>
+                                            </div>
+                                            <div className='hoverBtns'>
+                                                <Link href={item.btn1Link} target='blank'> <button className='exploreBtn'>{item.btn1}</button></Link>
+                                                {
+                                                    item.btn2 !== '' ?
+                                                        <Link href={item.btn2Link} target='blank'> <button className='otherBtn'>{item.btn2}</button></Link> : ''
+                                                }
                                             </div>
                                         </div>
                                     </SwiperSlide>
