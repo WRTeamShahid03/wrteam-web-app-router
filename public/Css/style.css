@@ -6099,6 +6099,12 @@ footer .footerContainer .flinks {
     font-weight: 500;
 }
 
+.layoutTwo .productCommonBtn {
+    height: 48px;
+    width: 150px;
+    border-radius: 8px;
+}
+
 .productDetailsNavbar .nav-link {
     margin: 0px;
 }
@@ -7640,7 +7646,7 @@ footer .footerContainer .flinks {
 }
 
 .assistanceSect .card:hover .imgWrapper img {
-    filter: brightness(100);
+    filter: brightness(100) saturate(00);
 }
 
 .assistanceSect .card:hover .assistanceBtn {
@@ -7772,6 +7778,28 @@ footer .footerContainer .flinks {
     z-index: 1;
     top: 24px;
     right: 8px;
+}
+
+.layoutTwo .faqsSect .accordion-button::after,
+.layoutTwo .faqsSect .collapsed::after {
+    content: '+';
+    height: 0px;
+    width: 0px;
+    background: transparent;
+    top: 11px;
+    font-size: 22px;
+    right: 20px;
+    color: var(--productPage-primary-color);
+    transform: none;
+}
+
+.layoutTwo .faqsSect .accordion-button:not(.collapsed)::after {
+    color: #fff;
+    top: 5px;
+    right: 19px;
+    font-size: 30px;
+    content: '-';
+    transform: none;
 }
 
 .faqsSect .accordion-button::after {
@@ -9514,6 +9542,7 @@ footer .footerContainer .flinks {
 .layoutTwo .flex_center .comman_para {
     color: #334155;
     font-weight: 400;
+    font-family: Montserrat;
 }
 
 .layoutTwo .middleBtns {
@@ -9757,7 +9786,7 @@ footer .footerContainer .flinks {
 }
 
 .layoutTwo .operationSect .row {
-    gap: 30px 0px;
+    gap: 60px 0px;
 }
 
 
@@ -9784,10 +9813,6 @@ footer .footerContainer .flinks {
     padding: 10px 15px;
     color: white;
     font-size: 22px;
-}
-
-.layoutTwo .operationSect .cardsRow {
-    margin-top: 80px;
 }
 
 .layoutTwo .operationSect .card {
@@ -9900,6 +9925,10 @@ footer .footerContainer .flinks {
 
 @media screen and (max-width: 575px) {
 
+    .layoutTwo .operationSect .row {
+        gap: 30px 0px;
+    }
+
     .layoutTwo .operationSect .swiperBtnsWrapper button {
         padding: 10px 14px;
         font-size: 18px;
@@ -9907,10 +9936,6 @@ footer .footerContainer .flinks {
 
     .layoutTwo .operationSect {
         margin-top: 40px;
-    }
-
-    .layoutTwo .operationSect .cardsRow {
-        margin-top: 12px;
     }
 }
 
@@ -10464,7 +10489,7 @@ footer .footerContainer .flinks {
 }
 
 .layoutTwo .ideaSect .cardsWrapper {
-    margin-top: 80px;
+    margin-top: 60px;
     position: relative;
     z-index: 1;
     gap: 30px 0px;
@@ -10512,7 +10537,7 @@ footer .footerContainer .flinks {
     }
 
     .layoutTwo .ideaSect .cardsWrapper {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
 }
@@ -10736,6 +10761,7 @@ footer .footerContainer .flinks {
 
 .layoutTwo .buyNowSect {
     background-color: #EEF7FF;
+    margin-top: 150px;
 }
 
 .layoutTwo .buyNowSect .flex_center {
