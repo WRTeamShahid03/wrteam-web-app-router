@@ -11,7 +11,7 @@ import MoreDropDown from './MoreDropDown'
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const ProductDetailHeader = ({ layout }) => {
+const ProductDetailHeader = ({ layoutTwo }) => {
 
     const [show, setShow] = useState(false);
 
@@ -20,12 +20,12 @@ const ProductDetailHeader = ({ layout }) => {
 
     return (
         <>
-            <header className={`productDetailsNavbar ${layout === 2 ? 'layoutTwoHeader' : ''}`}>
+            <header className={`productDetailsNavbar ${layoutTwo? 'layoutTwoHeader' : ''}`}>
                 <div className="container">
                     <div className="navbarWrapper">
                         <div className="leftDiv">
                             <div className="productLogo">
-                                <Link href={''}>  <Image src={!layout ? productLogo : productLogo2} height={0} width={0} alt='productLogo' /></Link>
+                                <Link href={''}>  <Image src={!layoutTwo ? productLogo : productLogo2} height={0} width={0} alt='productLogo' /></Link>
                             </div>
                         </div>
                         <div className="centerDiv">
