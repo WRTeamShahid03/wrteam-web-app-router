@@ -39,7 +39,7 @@ const ProductDetailHeader = ({ layoutTwo }) => {
                         </div>
                         <div className="rightDiv">
                             <Link href={''}>
-                                <button className="productCommonBtn">
+                                <button className={`productCommonBtn ${layoutTwo? 'layoutTwoproductCommonBtn':''}`}>
                                     Purchase Now
                                 </button>
                             </Link>
