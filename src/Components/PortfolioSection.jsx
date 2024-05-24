@@ -71,7 +71,7 @@ const PortfolioSection = ({ title, headline, para, playStore, playStore2, iosSto
 
 
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 portfolioProductImgDiv">
                         <Image src={sectionImg} height={0} width={0} className='sectionImg' alt='sectionImg' />
                     </div>
                 </div>

@@ -35,7 +35,7 @@ const Customization = () => {
     const [number, setNumber] = useState('')
     const [email, setEmail] = useState('')
     const [requirement, setRequirement] = useState('')
-    const [productName, setProductName] = useState('')
+    const [productName, setProductName] = useState('Product Name')
     const [formLoader, setFormLoader] = useState(false)
     const [pdfFileUrl, setPdfFileUrl] = useState(null)
     const [inputKey, setInputKey] = useState(Date.now());

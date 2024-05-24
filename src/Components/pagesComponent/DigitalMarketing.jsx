@@ -153,7 +153,7 @@ const DigitalMarketing = () => {
             id: 1,
             icon: fbAdds,
             hoverIcon: fbAddsHover,
-            title: 'Facebook Adds',
+            title: 'Facebook Ads',
             alt: 'Facebook marketing and handling service provider-WRTeam bhuj'
 
         },
@@ -161,7 +161,7 @@ const DigitalMarketing = () => {
             id: 2,
             icon: googleAdds,
             hoverIcon: googleAddsHover,
-            title: 'Google Adds',
+            title: 'Google Ads',
             alt: 'best google ads service provider in Gujrat-WRTeam bhuj kutch'
 
         },

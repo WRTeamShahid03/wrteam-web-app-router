@@ -324,7 +324,6 @@ const Installation = () => {
                             <div className="col-lg-7 leftDiv">
                                 <div className="textWrapper">
                                     <span className='headline'>For reskinning you have shared with us:</span>
-                                    <span className='para'>After everything, we will provide you with all your original code and keys. You can revoke access rights from your original account.</span>
                                 </div>
                                 <div className="infoBox">
                                     {
@@ -335,6 +334,10 @@ const Installation = () => {
                                             </div>
                                         })
                                     }
+                                </div>
+
+                                <div className="textWrapper mt-5">
+                                    <span className='para'>After everything, we will provide you with all your original code and keys. You can revoke access rights from your original account.</span>
                                 </div>
 
                             </div>

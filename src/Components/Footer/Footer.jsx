@@ -121,6 +121,10 @@ const Footer = () => {
                         </div>
                         <div className="flinks">
                            <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
+                           <Link href='/services/customization'> <span className="footerLinks">Customization</span></Link>
+                        </div>
+                        <div className="flinks">
+                           <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
                            <Link href='/license'> <span className="footerLinks">License</span></Link>
                         </div>
                      </div>

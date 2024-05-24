@@ -15,7 +15,7 @@ const Counter = () => {
     const [counter, setCounter] = useState(false)
 
     return (
-        <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>
+        <ScrollTrigger onEnter={() => setCounter(true)}>
             <div id="counter" className='container' style={{
                 background: `url(${counterBg.src})`,
                 backgroundSize: 'cover'

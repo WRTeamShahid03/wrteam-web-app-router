@@ -295,7 +295,7 @@ const Home = () => {
 
                                     <p className='firstP common_para'>WRTeam is an award-winning Web & App Development & IT consulting company, serving clients across the Globe.</p>
 
-                                    <p className='common_para'>We have 6+ Years of market business experience which could be more chances of success to connect with us.</p>
+                                    <p className='common_para'>We have 7+ Years of market business experience which could be more chances of success to connect with us.</p>
 
                                     <p className='common_para'>WRTeam is a creative and dedicated group of developers who are mastered in Mobile & Web Development with expertise in delivering quality solutions to customers across the globe.</p>
 
