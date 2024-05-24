@@ -1,27 +1,9 @@
-import { GET_SEO_SETTINGS } from '@/utils/api';
-import axios from 'axios';
 import LicensePage from '@/Components/pagesComponent/LicensePage'
 
-
-export const generateMetadata = async () => {
-    try {
-        const response = await axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=license`
-        );
-        const SEOData = response.data;
-
-        return {
-            title: SEOData?.data?.title,
-            description: SEOData?.data?.description,
-            openGraph: {
-                images: SEOData?.data?.ogImage ? [SEOData?.data?.ogImage] : [],
-            },
-        };
-    } catch (error) {
-        console.error("Error fetching MetaData:", error);
-        return null;
-    }
-};
+export const metadata = {
+    title: 'License - Difference of Regular and Extended License',
+    description: 'List of Additional Features you get with an Extended License Version, for the most selling web &amp; app products by a leading software development company.',
+}
 
 const page = () => {
     return (

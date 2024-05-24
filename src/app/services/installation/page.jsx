@@ -1,32 +1,15 @@
-import { GET_SEO_SETTINGS } from '@/utils/api';
-import axios from 'axios';
 import Installation from '@/Components/pagesComponent/Installation'
+export const metadata = {
+  title: 'Installation - Customisable App & Web Setup and Installation',
+  description: 'Customized configurations and professional support will help get your app live on PlayStore, App Store, and web. Pick the best package for your needs!',
+}
 
-export const generateMetadata = async () => {
-  try {
-    const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=installation`
-    );
-    const SEOData = response.data;
-
-    return {
-      title: SEOData?.data?.title,
-      description: SEOData?.data?.description,
-      openGraph: {
-        images: SEOData?.data?.ogImage ? [SEOData?.data?.ogImage] : [],
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching MetaData:", error);
-    return null;
-  }
-};
 
 const page = () => {
   return (
-    <div>
+    <>
       <Installation />
-    </div>
+    </>
   )
 }
 
