@@ -65,7 +65,7 @@ const ProductDetailsPage = () => {
                         <div className="row productDetailRow">
 
                             {
-                                productsDetails.length < 0 || productsDetails.description == '' || productsDetails.description == null ?
+                                productsDetails?.length < 0 || productsDetails?.description == '' || productsDetails?.description == null ?
                                     <div className="col-sm-12 col-md-12 col-lg-12">
                                         <div className="wrapper d-flex justify-content-center align-items-center">
                                             <NoDataFound page={'product-detail'} />
