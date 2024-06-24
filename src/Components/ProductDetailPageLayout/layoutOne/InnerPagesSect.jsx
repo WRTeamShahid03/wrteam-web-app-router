@@ -18,6 +18,38 @@ import 'swiper/css/pagination';
 import Image from 'next/image';
 import CommonTextDiv from './CommonTextDiv';
 
+import tab1Img1 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web1.jpg'
+import tab1Img2 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web2.jpg'
+import tab1Img3 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web3.jpg'
+import tab1Img4 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web4.jpg'
+import tab1Img5 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web5.jpg'
+import tab1Img6 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web6.jpg'
+import tab1Img7 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web7.jpg'
+import tab1Img8 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web8.jpg'
+import tab1Img9 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web9.jpg'
+import tab1Img10 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web10.jpg'
+import tab1Img11 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Web-05-22-24-JPG/web11.jpg'
+
+import tab2Img1 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin1.jpg'
+import tab2Img2 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin2.jpg'
+import tab2Img3 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin3.jpg'
+import tab2Img4 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin4.jpg'
+import tab2Img5 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin5.jpg'
+import tab2Img6 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/Admin penal-05-22-24-JPG/admin6.jpg'
+
+import tab3Img1 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app1.jpg'
+import tab3Img2 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app2.jpg'
+import tab3Img3 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app3.jpg'
+import tab3Img4 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app4.jpg'
+import tab3Img5 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app5.jpg'
+import tab3Img6 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app6.jpg'
+import tab3Img7 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app7.jpg'
+import tab3Img8 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app8.jpg'
+import tab3Img9 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app9.jpg'
+import tab3Img10 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app10.jpg'
+import tab3Img11 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app11.jpg'
+
+
 const InnerPagesSect = ({ layoutTwo, title, desc }) => {
 
     const [activeTab, setActiveTab] = useState('tab2');
@@ -29,35 +61,181 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
     const tab1Data = [
         {
             id: 0,
-            img: '',
+            img: tab1Img1,
             title: 'Powerful Admin Dashbord',
             desc: 'Admin gets comprehensive control over customer management and property listing.'
         },
         {
             id: 1,
-            img: '',
+            img: tab1Img2,
             title: 'Powerful Admin Dashbord',
             desc: 'Admin gets comprehensive control over customer management and property listing.'
         },
         {
             id: 2,
-            img: '',
+            img: tab1Img3,
             title: 'Powerful Admin Dashbord',
             desc: 'Admin gets comprehensive control over customer management and property listing.'
         },
         {
             id: 3,
-            img: '',
+            img: tab1Img4,
             title: 'Powerful Admin Dashbord',
             desc: 'Admin gets comprehensive control over customer management and property listing.'
         },
         {
             id: 4,
-            img: '',
+            img: tab1Img5,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img6,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img7,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img8,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img9,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img10,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab1Img11,
             title: 'Powerful Admin Dashbord',
             desc: 'Admin gets comprehensive control over customer management and property listing.'
         },
     ];
+
+    const tab2Data = [
+        {
+            id: 0,
+            img: tab2Img1,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 1,
+            img: tab2Img2,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 2,
+            img: tab2Img3,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 3,
+            img: tab2Img4,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 4,
+            img: tab2Img5,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab2Img6,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+    ];
+
+    const tab3Data = [
+        {
+            id: 0,
+            img: tab3Img1,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 1,
+            img: tab3Img2,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 2,
+            img: tab3Img3,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 3,
+            img: tab3Img4,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 4,
+            img: tab3Img5,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img6,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img7,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img8,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img9,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img10,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+        {
+            id: 5,
+            img: tab3Img11,
+            title: 'Powerful Admin Dashbord',
+            desc: 'Admin gets comprehensive control over customer management and property listing.'
+        },
+    ];
+
+
 
     const breakpoints = {
         0: {
@@ -129,11 +307,11 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                         breakpoints={breakpoints}
                                     >
                                         {
-                                            tab1Data.map((data) => {
+                                            tab3Data.map((data) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>
@@ -160,11 +338,11 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                         breakpoints={breakpoints}
                                     >
                                         {
-                                            tab1Data.map((data) => {
+                                            tab2Data.map((data) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>
@@ -195,7 +373,7 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>

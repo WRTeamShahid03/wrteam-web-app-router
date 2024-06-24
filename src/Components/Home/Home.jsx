@@ -174,10 +174,10 @@ const Home = () => {
 
                                                     <span>Follow Us</span>
                                                     <span className='heroContIcons'>
-                                                        <Link target='_blank' href="https://www.facebook.com/wrteam.in"><BsFacebook size={20} /></Link>
-                                                        <Link target='_blank' href="https://www.instagram.com/wrteam.in/"><AiFillInstagram size={24} /></Link>
-                                                        <Link target='_blank' href="https://www.linkedin.com/company/wrteam/"><BsLinkedin size={20} /> </Link>
-                                                        <Link target='_blank' href="https://www.youtube.com/channel/UCLt9XRUuiWsqKng4681_6cQ"><BsYoutube size={25} /> </Link>
+                                                        <Link target='_blank' href={process.env.NEXT_PUBLIC_FACEBOOK}><BsFacebook size={20} /></Link>
+                                                        <Link target='_blank' href={process.env.NEXT_PUBLIC_INSTAGRAM}><AiFillInstagram size={24} /></Link>
+                                                        <Link target='_blank' href={process.env.NEXT_PUBLIC_LINKEDIN}><BsLinkedin size={20} /> </Link>
+                                                        <Link target='_blank' href={process.env.NEXT_PUBLIC_YOUTUBE}><BsYoutube size={25} /> </Link>
                                                     </span>
 
                                                 </div>

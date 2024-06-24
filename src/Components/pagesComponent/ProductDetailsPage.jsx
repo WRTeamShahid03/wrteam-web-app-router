@@ -18,6 +18,7 @@ const ProductDetailsPage = () => {
     const [loading, setLoading] = useState(true);
     const [checkoutLink, setCheckoutLink] = useState('')
     const [salePrice, setSalePrice] = useState('')
+    const [landscape_preview, setLandscape_preview] = useState('')
 
     const router = useParams();
 
@@ -52,6 +53,17 @@ const ProductDetailsPage = () => {
 
     }, [checkoutLink, productSlug, salePrice])
 
+    useEffect(() => {
+        if (productsDetails?.codecanyon_other_data) {
+
+            const data = JSON.parse(productsDetails?.codecanyon_other_data);
+
+            // Access the landscape_url from the codecanyon_other_data field
+            const landscapeUrl = data?.previews?.landscape_preview?.landscape_url;
+            setLandscape_preview(landscapeUrl)
+        }
+    }, [productsDetails])
+
     return (
 
         <>
@@ -73,9 +85,9 @@ const ProductDetailsPage = () => {
                                     </div> : <>
                                         <div className="col-sm-12 col-md-12 col-lg-7">
                                             {
-                                                productsDetails?.codecanyon_other_data ?
+                                                landscape_preview ?
                                                     <div className="promoImgWrapper">
-                                                        <Image src={productsDetails?.codecanyon_other_data?.previews?.landscape_preview?.landscape_url} height={0} width={0} />
+                                                        <Image src={landscape_preview} height={0} width={0} />
                                                     </div> : null
                                             }
 

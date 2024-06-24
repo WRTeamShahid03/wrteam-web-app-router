@@ -5999,7 +5999,7 @@ footer .footerContainer .flinks {
     color: #FFFFFF;
 }
 
-.portfolio .portfolioProductImgDiv{
+.portfolio .portfolioProductImgDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9531,7 +9531,7 @@ footer .footerContainer .flinks {
 
 
 :root {
-    --productPage-primary-color: #0383FE;
+    /* --productPage-primary-color: #0383FE; */
 }
 
 .layoutTwoHeader {
@@ -10856,4 +10856,181 @@ footer .footerContainer .flinks {
 
 .productDetailFooter .contactDiv div span:last-child {
     color: lightgray;
+}
+
+
+.orbitPaymentsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    /* background-color: #f0f0f0; */
+}
+
+.orbit-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.center-img {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    /* transform: translate(-50%, -50%); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8080806e;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.center-img img {
+    width: auto;
+    height: auto;
+}
+
+.center-img span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.orbit {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    width: 400px;
+    height: 400px;
+    margin-top: -150px;
+    margin-left: -150px;
+    border: 2px dotted #8080806e;
+    border-radius: 50%;
+}
+
+.orbit-inner {
+    position: absolute;
+    top: 52%;
+    left: 52%;
+    width: 250px;
+    height: 250px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border: 2px dotted #8080806e;
+    border-radius: 50%;
+}
+
+.orbit-icon-container {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    animation: rotate 20s linear infinite;
+}
+
+.orbit-icon-container-inner {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    animation: rotate 20s linear infinite ;
+}
+
+.orbit-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #8080806e;
+}
+
+.orbit-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.orbit-icon span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.icon1 {
+    top: -40px;
+    left: 50%;
+    /* transform: translateX(-150%); */
+}
+
+.icon2 {
+    top: 50%;
+    right: -54px;
+    /* transform: translateY(-50%); */
+    /* transform: translateX(-7px); */
+}
+
+.icon3 {
+    bottom: -54px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+}
+
+.icon4 {
+    top: 50%;
+    left: -40px;
+    /* transform: translateY(-50%); */
+}
+
+.icon5 {
+    top: 13%;
+    left: 0%;
+    /* transform: translate(-110%, 6%); */
+}
+
+.icon6 {
+    top: 12%;
+    right: 0%;
+    /* transform: translate(50%, -50%); */
+}
+
+.icon7 {
+    bottom: 8%;
+    left: 0%;
+    /* transform: translate(-50%, 50%); */
+}
+
+.icon8 {
+    bottom: 6%;
+    right: 0%;
+    /* transform: translate(156%, -40%); */
+}
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

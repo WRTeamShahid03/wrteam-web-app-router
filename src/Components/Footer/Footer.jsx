@@ -34,7 +34,7 @@ const Footer = () => {
                      <div className="cont logoCont">
                         <div className="footLogo">
                            <Link href={'/'}>
-                           <Image height={0} width={0} loading="lazy" src={navLogo} alt='wrteam(bhuj) leading IOS and Android software development company' />
+                              <Image height={0} width={0} loading="lazy" src={navLogo} alt='wrteam(bhuj) leading IOS and Android software development company' />
                            </Link>
 
                         </div>
@@ -42,16 +42,16 @@ const Footer = () => {
                         <div className='socialIcons'>
                            <span id='followSpan'>Follow Us</span>
                            <span className='icons'>
-                              <Link target='_blank' href="https://www.facebook.com/wrteam.in">
+                              <Link target='_blank' href={process.env.NEXT_PUBLIC_FACEBOOK}>
                                  <BsFacebook />
                               </Link>
-                              <Link target='_blank' href="https://www.instagram.com/wrteam.in/">
+                              <Link target='_blank' href={process.env.NEXT_PUBLIC_INSTAGRAM}>
                                  <FaInstagram />
                               </Link>
-                              <Link target='_blank' href="https://www.linkedin.com/company/wrteam/">
+                              <Link target='_blank' href={process.env.NEXT_PUBLIC_LINKEDIN}>
                                  <BsLinkedin />
                               </Link>
-                              <Link target='_blank' href="https://www.youtube.com/channel/UCLt9XRUuiWsqKng4681_6cQ">
+                              <Link target='_blank' href={process.env.NEXT_PUBLIC_YOUTUBE}>
                                  <PiYoutubeLogoFill />
                               </Link>
                            </span>
@@ -195,7 +195,7 @@ const Footer = () => {
                   <span>Copyright © 2024 WRTeam | Powered by WRTeam</span>
                   <span>
                      <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'/copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund-policy'>Refund Policy</Link>
-                     </span>
+                  </span>
                </div>
             </div>
 
