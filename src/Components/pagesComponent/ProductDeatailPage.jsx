@@ -6,8 +6,8 @@ import LayoutTwo from '../ProductDetailPageLayout/layoutTwo/LayoutTwo'
 const ProductDeatailPage = () => {
     return (
         <div className='product_detail_page'>
-            <LayoutOne />
-            {/* <LayoutTwo /> */}
+            {/* <LayoutOne /> */}
+            <LayoutTwo />
         </div>
     )
 }
