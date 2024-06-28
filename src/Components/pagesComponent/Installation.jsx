@@ -296,7 +296,7 @@ const Installation = () => {
                                                             </div>
                                                         })
                                                         : ele.packageName === 'Standard' || ele.packageName === 'Advance' ? standardAndAdvanceServices.map((elem) => {
-                                                            return <div className="bottomDiv">
+                                                            return <div className="bottomDiv" key={elem.id}>
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -304,7 +304,7 @@ const Installation = () => {
                                                                 }
                                                             </div>
                                                         }) : premiumServices.map((elem) => {
-                                                            return <div className="bottomDiv">
+                                                            return <div className="bottomDiv" key={elem.id}>
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
