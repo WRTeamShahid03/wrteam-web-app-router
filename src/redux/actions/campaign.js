@@ -1,6 +1,6 @@
 "use client";
 
-import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies, customisationMail } from "@/utils/api";
+import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies, customisationMail, getBlogs, getCategories } from "@/utils/api";
 import { store } from "../store";
 import { apiCallBegan } from "./apiActions";
 
@@ -66,7 +66,7 @@ export const GetProductsApi = ({
     onStart = () => { } }) => {
     store.dispatch(
         apiCallBegan({
-            ...getProducts(page, category_id, slug, product_filter,content_id),
+            ...getProducts(page, category_id, slug, product_filter, content_id),
             displayToast: false,
             onStart,
             onSuccess,
@@ -178,7 +178,6 @@ export const hireUsApi = ({
     );
 };
 
-
 // customisation Email
 export const customisationApi = ({
     user_name = '',
@@ -193,7 +192,7 @@ export const customisationApi = ({
 }) => {
     store.dispatch(
         apiCallBegan({
-            ...customisationMail(user_name, contact, email, product_name, requirement_file,requirement_explanation),
+            ...customisationMail(user_name, contact, email, product_name, requirement_file, requirement_explanation),
             displayToast: false,
             onStart,
             onSuccess,
@@ -202,6 +201,45 @@ export const customisationApi = ({
     );
 };
 
+
+// // GET BLOGS
+export const GetBlogsApi = ({
+    id = '',
+    category_id = '',
+    subcategory_id = '',
+    slug = '',
+    category_slug = '',
+    subcategory_slug = '',
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { } }) => {
+    store.dispatch(
+        apiCallBegan({
+            ...getBlogs(id, category_id, subcategory_id, slug, category_slug, subcategory_slug),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
+
+// GET CATEGORIES
+export const GetCategoriesApi = ({
+    slug = '',
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { } }) => {
+    store.dispatch(
+        apiCallBegan({
+            ...getCategories(slug,),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
 
 
 

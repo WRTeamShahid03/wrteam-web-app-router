@@ -4,14 +4,14 @@ import Skeleton from 'react-loading-skeleton';
 import PortfolioSection from '../PortfolioSection';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
-import Yakili from '../../Asset/Images/portfolio/Yakili.jpg'
-import Tabebi from '../../Asset/Images/portfolio/Tabibe.jpg'
-import Talanta from '../../Asset/Images/portfolio/Talenta.jpg'
-import Strongtools from '../../Asset/Images/portfolio/Strongtools.jpg'
-import Lokale from '../../Asset/Images/portfolio/Lokale-mand.jpg'
-import AristoTrivia from '../../Asset/Images/portfolio/Aristo trivia.jpg'
-import Quikup from '../../Asset/Images/portfolio/QuizUp.jpg'
-import KppsQuiz from '../../Asset/Images/portfolio/KPSSBilgiYarismasi.jpg'
+import Yakili from '../../Asset/Images/portfolio/Yakili.webp'
+import Tabebi from '../../Asset/Images/portfolio/Tabibe.webp'
+import Talanta from '../../Asset/Images/portfolio/Talenta.webp'
+import Strongtools from '../../Asset/Images/portfolio/Strongtools.webp'
+import Lokale from '../../Asset/Images/portfolio/Lokale-mand.webp'
+import AristoTrivia from '../../Asset/Images/portfolio/Aristo trivia.webp'
+import Quikup from '../../Asset/Images/portfolio/QuizUp.webp'
+import KppsQuiz from '../../Asset/Images/portfolio/KPSSBilgiYarismasi.webp'
 
 const Portfolio = () => {
     const [loading, setLoading] = useState(false);
@@ -56,21 +56,21 @@ const Portfolio = () => {
             ios: '',
             webLink: ''
         },
-        {
-            id: 2,
-            title: 'Talanta',
-            headline: 'Spotlight on Talanta: Empowering Talent Showcase in the Digital Era!',
-            para: 'This dynamic platform empowers users worldwide to showcase their talents and compete for top rankings in various categories. Developed for our valued client, Talanta offers a cutting-edge platform for individuals to showcase their talents and connect with opportunities. We take pride in developing this entertainment platform, offering a user-friendly interface and transparent ranking system to ensure a fair and rewarding experience for every participant.',
-            playStore: false,
-            iosStore: false,
-            web: true,
-            sectionImg: Talanta,
-            reverseSection: false,
-            android: '',
-            android2: '',
-            ios: '',
-            webLink: 'https://talanta.thewrteam.in/'
-        },
+        // {
+        //     id: 2,
+        //     title: 'Talanta',
+        //     headline: 'Spotlight on Talanta: Empowering Talent Showcase in the Digital Era!',
+        //     para: 'This dynamic platform empowers users worldwide to showcase their talents and compete for top rankings in various categories. Developed for our valued client, Talanta offers a cutting-edge platform for individuals to showcase their talents and connect with opportunities. We take pride in developing this entertainment platform, offering a user-friendly interface and transparent ranking system to ensure a fair and rewarding experience for every participant.',
+        //     playStore: false,
+        //     iosStore: false,
+        //     web: true,
+        //     sectionImg: Talanta,
+        //     reverseSection: false,
+        //     android: '',
+        //     android2: '',
+        //     ios: '',
+        //     webLink: 'https://talanta.thewrteam.in/'
+        // },
         {
             id: 3,
             title: 'Strongtools',
@@ -84,7 +84,7 @@ const Portfolio = () => {
             android: '',
             android2: '',
             ios: '',
-            webLink: 'https://strongtools.vercel.app/'
+            webLink: 'https://strongtools-react-web-wrteam.vercel.app'
         },
         {
             id: 4,

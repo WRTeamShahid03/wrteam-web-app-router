@@ -1,12 +1,7 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Breadcrum from '@/Components/Breadcrum'
 import Card from 'react-bootstrap/Card'
-import Link from 'next/link'
-// import Lottie from 'react-lottie-player'
-import helloText from '../../../src/Components/animatedText.json'
-import { BiRightArrowCircle } from 'react-icons/bi'
-import { BsArrowRightCircle } from 'react-icons/bs'
 
 //Images
 import uiuxDeveImg from '../../../src/Asset/Images/ui-ux-development/ux-ui-design.webp'
@@ -15,11 +10,6 @@ import dottsShape from '../../../src/Asset/Images/Shape_2.png'
 import crossShape from '../../../src/Asset/Images/Shape_3.png'
 import triangle from '../../../src/Asset/Images/Shape_4.svg'
 import arrowImg from '../../../src/Asset/Images/Arrow Left Down.svg'
-import getTouch from '../../../src/Asset/Images/getTouch.webp'
-import blog1 from '../../../src/Asset/Images/Blog_1.png'
-import blog2 from '../../../src/Asset/Images/Blog_2.png'
-import blog3 from '../../../src/Asset/Images/Blog_3.png'
-import dateIcon from '../../../src/Asset/Icons/ic_date.png'
 import timelyUpdadtes from '../../../src/Asset/Icons/All_Icons/Benefits/Timely Updates-.png'
 import quality from '../../../src/Asset/Icons/All_Icons/Benefits/Testing & Quality Assurance.png'
 import support from '../../../src/Asset/Icons/All_Icons/Benefits/Ongoing Support.png'
@@ -47,17 +37,11 @@ import appDesign from '../../../src/Asset/Images/ui-ux-development/app_design.we
 import webDesign from '../../../src/Asset/Images/ui-ux-development/web_design.webp'
 import brandDesign from '../../../src/Asset/Images/ui-ux-development/Brand design.webp'
 import completeSolution from '../../../src/Asset/Images/ui-ux-development/Complete Solution Service.webp'
-import Head from 'next/head'
 import Image from 'next/image'
-import { GetSettingsApi } from '@/redux/actions/campaign'
+import LottieComponent from '../LottieComponent'
+import RecentBlogs from '../RecentBlogs'
 
 const UIUXDevelopment = () => {
-
-  const [lottieLoaded, setLottieLoaded] = useState(false);
-
-  useEffect(() => {
-    setLottieLoaded(true);
-  }, []);
 
   const benefitsCardData = [
     {
@@ -169,61 +153,34 @@ const UIUXDevelopment = () => {
     },
   ]
 
-  const blogsData = [
-    {
-      id: 0,
-      badge: "Artificial Intelligence",
-      date: "August 25, 2023",
-      title: "Exploring the Evolution of AI in Healthcare",
-      text: "Dive into the fascinating journey of Artificial Intelligence in the realm of healthcare. This blog post takes you through the significant advancements AI has made in diagnosing illnesses, personalized treatment plans, and...",
-      img: blog1
-    },
-    {
-      id: 1,
-      badge: "Cybersecurity",
-      date: "September 10, 2023",
-      title: "The Rising Threat of Ransomware: Protecting Your Digital Fortress",
-      text: "In this informative piece, we dissect the alarming surge of ransomware attacks and their far-reaching consequences. Gain insights into the tactics cybercriminals employ and learn effective strategies to safeguard your digital...",
-      img: blog2
-    },
-    {
-      id: 2,
-      badge: "Space Exploration",
-      date: "October 5, 2023",
-      title: "Mars Colonization: Navigating the Challenges of Red Planet Habitability",
-      text: "Embark on a celestial journey to explore the intricate challenges and breakthroughs in the quest for colonizing Mars. Delve into the complexities of creating a habitable environment, sustainable resource management...",
-      img: blog3
-    },
-  ]
-
   const newSwiperData = [
     {
       id: 0,
       title: 'Web design',
-      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our team includes UI/UX designers with experience of more than 7 years as a web designer and experts in creating innovative & user-friendly web designs that are tailored to your business. We aim to turn your vision into reality with our ultimate UI/UX design service.',
       img: webDesign,
       alt: 'best web design service provider WRTeam  kutch'
     },
     {
       id: 1,
       title: 'App design',
-      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages ​​such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our team of UI/UX designers has over 7 years of experience of creating user-friendly and innovative app designs. We are experts in making app designs that fit your business needs perfectly. With our UI/UX design services, we turn your ideas into reality.',
       img: appDesign,
       alt: 'best app designing service provider WRTeam kutch'
     },
     {
       id: 2,
       title: 'Brand design',
-      desc: 'WRTeam offers full-stack web development services that combine the best of front-end and back-end development. Our full-stack developers are experts in handling all aspects of website development, from designing attractive interfaces to implementing difficult business logic in the back-end. Comprehensive features ensure seamless integration between the various layers of your website, delivering a high-end product.',
+      desc: 'Our company also provides UI/UX design customization services for our prebuilt source codes that help you to make any website or app 5X faster. We create designs tailored to your needs, making your product unique and user-friendly. Let our experts transform your project with our personalized design services.',
       img: brandDesign,
       alt: 'top branding strategist at the best IT development company WRTeam'
     },
     {
       id: 3,
-      title: 'Complete Solution',
-      desc: `At WRTeam, we understand that your website or app is your online presence and the first impression you make on potential customers. That's why we provide the best UI/UX design services and develop beautiful and user-friendly websites or apps that increase conversion rates. WRTeam believes that good design should be both attractive and functional, which is why we focus on user experience (UX) design. Our aim is to ensure that your website or app is easy to use, clean, and focused on conversion. We strive to provide comprehensive solutions for creating user-friendly and efficient websites and apps.`,
+      title: 'Customization',
+      desc: `Our company also provides UI/UX design customization services for our prebuilt source codes that help you to make any website or app 5X faster. We create designs tailored to your needs, making your product unique and user-friendly. Let our experts transform your project with our personalized design services.`,
       img: completeSolution,
-      alt:  'complete solution service with design experts at WRTeam bhuj'
+      alt: 'complete solution service with design experts at WRTeam bhuj'
     },
   ]
 
@@ -241,10 +198,10 @@ const UIUXDevelopment = () => {
                   UI-UX <span>Services</span>
                 </span>
                 <h1 className='comman_Headlines'>
-                  Make Your App More User-Friendly with the Best <span> UI/UX Design </span> Services
+                  Make Innovative App & Web Designs with the Best <span>UI/UX</span> Designers
                 </h1>
 
-                <p className="comman_para"> Our Best UI/UX design service aims to enhance your brand's digital presence by creating visually stunning designs that provide a seamless user experience for your target audience.</p>
+                <p className="comman_para">Our Best UI/UX design service focuses on creating innovative & unique designs for your website & application tailored to your needs. Our UI/UX designers are experienced  & expert at making unique, user-friendly websites & applications.</p>
               </div>
             </div>
 
@@ -310,7 +267,7 @@ const UIUXDevelopment = () => {
 
           <div className="col-sm-12 col-md-12 col-lg-6">
             <div className="benefitsPara">
-              <p className='comman_para'>Transform your digital presence with our UI/UX mastery. Elevate user experiences, captivate audiences, and strategically enhance your brand's success.</p>
+              <p className='comman_para'>Transform your digital presence with our UI/UX designing service. enhance user experiences, attract new audiences, and strategically upboost your brand's success.</p>
             </div>
           </div>
 
@@ -352,7 +309,7 @@ const UIUXDevelopment = () => {
                   Our <span>Work Process</span>
                 </span>
                 <h3 className='comman_Headlines'>
-                  Make Your App More User-Friendly with the Best <span>UI/UX Design</span> Services
+                  How We Make Your App More <span>User-Friendly</span> with the Best <span>UI/UX</span> Designers
                 </h3>
               </div>
 
@@ -431,7 +388,7 @@ const UIUXDevelopment = () => {
                   <span>We</span> Build
                 </span>
                 <h3 className='comman_Headlines'>
-                  <span>Crafting</span> Dynamic Solutions with <span>Leading Tools</span> for Your Digital Presence.
+                  Make Dynamic <span>UI/UX</span> Designs with <span>Leading Tools</span> for Your Digital Presence.
                 </h3>
                 <p className="comman_para firstP">
                   From Illustrator's finesse to Figma's innovation, we blend pixel-perfect precision from Photoshop with Adobe XD's seamless design.
@@ -464,79 +421,10 @@ const UIUXDevelopment = () => {
       </section>
       {/* build ends  */}
 
-      {/* <section className='webDevContact'>
-        <div className="getInTouch container" style={{
-          background: `rgb(23 79 196 / 83%) url(${getTouch.src})`,
-          backgroundSize: 'cover',
-          backgroundBlendMode: 'darken'
-        }}>
-          <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-10">
-              <div className="getTouchText">
-                <span className='word'>
-                  <Lottie
-                    loop
-                    animationData={helloText}
-                    play
-                  /></span>
-                <span className='getTouchDesc'>Got A Quastion? We Would Be Happy To Help!</span>
-              </div>
-            </div>
+      {/* <LottieComponent />
 
-            <div className="col-sm-12 col-md-12 col-lg-2">
-              <div className="getTouchBtn">
-                <Link href='/contact-us'> <button className='homeCommon_btn'>Contact Us <BiRightArrowCircle size={20} /></button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* webDevContact ends  */}
+      <RecentBlogs /> */}
 
-      {/* <section className='recentBlogs container'>
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="recentBlogHeading">
-              <span className="common_span">
-                Our <span>Blogs</span>
-              </span>
-              <h3 className="comman_Headlines">
-                Recent <span>Blogs</span>
-              </h3>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="row">
-              {
-                blogsData.map((ele) => {
-                  return <div className="col-sm-12 col-md-6 col-lg-4 recentBlogsCards" key={ele.id}>
-                    <div className="card text-white">
-                      <span className='cateBadge'>{ele.badge}</span>
-                      <Image height={0} width={0} loading="lazy" src={ele.img} className="card-img-top" alt="teamImg" />
-                      <div className="card-img-top">
-                        <div className="cateDetails">
-                          <span className="cateDate">
-                            <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
-                            <span> {ele.date}</span>
-                          </span>
-                          <p className="card-title">
-                            {ele.title.length > 50 ? ele.title.slice(0, 55) + "" + "..." : ele.title}</p>
-                          <p className='card-text'>{ele.text}</p>
-
-                          <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                })
-              }
-
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* recentBlogs ends  */}
     </div>
   )
 }

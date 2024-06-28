@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
-import workImg1 from '../../src/Asset/Images/work_chain_1.png'
-import workImg2 from '../../src/Asset/Images/work_chain_2.png'
-import workImg3 from '../../src/Asset/Images/work_chain_3.png'
-import workImg4 from '../../src/Asset/Images/work_chain_4.png'
+import workImg1 from '../../src/Asset/Images/work_chain_1.webp'
+import workImg2 from '../../src/Asset/Images/work_chain_2.webp'
+import workImg3 from '../../src/Asset/Images/work_chain_3.webp'
+import workImg4 from '../../src/Asset/Images/work_chain_4.webp'
 import workLines from '../../src/Asset/Images/Line.png'
 import Image from 'next/image'
 
@@ -41,7 +42,7 @@ const WorkChain = () => {
                                                     <Image height={0} width={0} loading="lazy" src={workImg1} alt="best web development company-WRTeam bhuj-kutch" className='workImg' />
                                                 </div>
                                                 <h5 className='workTitle'>Choose a service</h5>
-                                                <span className='workDesc'>Choose the service from our list of solutions, Mobile Development, Web Development, UI/UX Design etc.</span>
+                                                <span className='workDesc'>Choose the service from our list of solutions, Mobile Development, Web Development, UI/UX Design, etc.</span>
                                             </div>
                                         </div>
 
@@ -58,7 +59,7 @@ const WorkChain = () => {
                                                 </div>
 
                                                 <div className="wrapper">
-                                                    <span className='workDesc'>Connect with our professional experts and have a detailed discussion about your requirements.</span>
+                                                    <span className='workDesc'>Connect with our expert developers and have a detailed discussion about your requirements..</span>
 
                                                     <h5 className='workTitle'>Request a meeting</h5>
                                                 </div>

@@ -3,6 +3,8 @@ import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, 
 import storage from 'redux-persist/lib/storage';
 import apiMiddleware from '../middleware/api'; // Import your custom API middleware
 import settingsReducer from "../reuducer/settingSlice";
+import recentBlogsDataSlice from '../reuducer/recentBlogsSlice';
+import categoriesSlice from '../reuducer/categoriesSlice';
 
 const persistConfig = {
   key: 'wrteam',
@@ -11,6 +13,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   Settings: settingsReducer,
+  setRecentBlogsData: recentBlogsDataSlice,
+  setCategoriesData: categoriesSlice,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

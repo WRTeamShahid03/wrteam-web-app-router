@@ -5,10 +5,10 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast'
 
 // Images
-import technicalExperties from '../../Asset/Images/Technical Expertise.png'
-import QualityAssurance from "../../Asset/Images/Quality Assurance.png"
-import CustomerSupport from '../../Asset/Images/Excellent Customer Support.png'
-import ClientSatisfaction from '../../Asset/Images/Client Satisfaction.png'
+import technicalExperties from '../../Asset/Images/Technical Expertise.webp'
+import QualityAssurance from "../../Asset/Images/Quality Assurance.webp"
+import CustomerSupport from '../../Asset/Images/Excellent Customer Support.webp'
+import ClientSatisfaction from '../../Asset/Images/Client Satisfaction.webp'
 
 import flutter from '../../Asset/Icons/FlutterColor.png'
 import react from '../../Asset/Icons/ReactColor.png'

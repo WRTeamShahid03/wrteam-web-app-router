@@ -1,5 +1,4 @@
 // import '../../../public/Css/footer.css'
-'use client'
 import { FaLocationDot } from "react-icons/fa6";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa6";
@@ -10,15 +9,13 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import navLogo from '../../Asset/navLogo.svg'
 import GetInTouch from "../GetInTouch";
-import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link"
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
 
-   // const router = useRouter();
-   const pathname = usePathname();
-   // const { pathname } = router;
+   const pathname = usePathname()
 
    // Check if the current route contains "contact-us"
    const isContactUsPage = pathname.includes("contact-us");
@@ -34,7 +31,7 @@ const Footer = () => {
                      <div className="cont logoCont">
                         <div className="footLogo">
                            <Link href={'/'}>
-                              <Image height={0} width={0} loading="lazy" src={navLogo} alt='wrteam(bhuj) leading IOS and Android software development company' />
+                           <Image height={0} width={0} loading="lazy" src={navLogo} alt='wrteam(bhuj) leading IOS and Android software development company' />
                            </Link>
 
                         </div>
@@ -117,11 +114,11 @@ const Footer = () => {
                         </div>
                         <div className="flinks">
                            <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
-                           <Link href='/services/installation'> <span className="footerLinks">Installation</span></Link>
+                           <Link href='/services/customization'> <span className="footerLinks">Customization</span></Link>
                         </div>
                         <div className="flinks">
                            <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
-                           <Link href='/services/customization'> <span className="footerLinks">Customization</span></Link>
+                           <Link href='/services/installation'> <span className="footerLinks">Installation</span></Link>
                         </div>
                         <div className="flinks">
                            <span className="footerArrow"> < BsArrowRightCircle size={18} /></span>
@@ -195,7 +192,7 @@ const Footer = () => {
                   <span>Copyright © 2024 WRTeam | Powered by WRTeam</span>
                   <span>
                      <Link href='/terms-of-use'>Terms of Use</Link> | <Link href={'/privacy-policy'}>Privacy Policy</Link> | <Link href={'/copyright-and-disclaimer'}>Copyright & Disclaimer</Link> | <Link href='/refund-policy'>Refund Policy</Link>
-                  </span>
+                     </span>
                </div>
             </div>
 

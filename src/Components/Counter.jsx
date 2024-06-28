@@ -1,8 +1,9 @@
+'use client'
 import React, { useState } from 'react'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
-import counterBg from '../../src/Asset/Images/CounterImg.png'
+import counterBg from '../../src/Asset/Images/CounterImg.webp'
 import happy from '../../src/Asset/Icons/Happy Clients.svg'
 import projectDone from '../../src/Asset/Icons/Projects Done.svg'
 import reconnet from '../../src/Asset/Icons/Reconecct.svg'

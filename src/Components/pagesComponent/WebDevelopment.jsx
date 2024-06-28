@@ -1,12 +1,7 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Breadcrum from '@/Components/Breadcrum'
 import Card from 'react-bootstrap/Card'
-import Link from 'next/link'
-// import Lottie from 'react-lottie-player'
-import helloText from '../../../src/Components/animatedText.json'
-import { BiRightArrowCircle } from 'react-icons/bi'
-import { BsArrowRightCircle } from 'react-icons/bs'
 
 //Images
 import webDeveImg from '../../../src/Asset/Images/web-development/Web Devlopment.webp'
@@ -15,11 +10,6 @@ import dottsShape from '../../../src/Asset/Images/Shape_2.png'
 import crossShape from '../../../src/Asset/Images/Shape_3.png'
 import triangle from '../../../src/Asset/Images/Shape_4.svg'
 import arrowImg from '../../../src/Asset/Images/Arrow Left Down.svg'
-import getTouch from '../../../src/Asset/Images/getTouch.webp'
-import blog1 from '../../../src/Asset/Images/Blog_1.png'
-import blog2 from '../../../src/Asset/Images/Blog_2.png'
-import blog3 from '../../../src/Asset/Images/Blog_3.png'
-import dateIcon from '../../../src/Asset/Icons/ic_date.png'
 import timelyUpdadtes from '../../../src/Asset/Icons/All_Icons/Benefits/Timely Updates-.png'
 import quality from '../../../src/Asset/Icons/All_Icons/Benefits/Testing & Quality Assurance.png'
 import support from '../../../src/Asset/Icons/All_Icons/Benefits/Ongoing Support.png'
@@ -51,9 +41,10 @@ import frontendImg from '../../../src/Asset/Images/web-development/10-19- Front_
 import backendImg from '../../../src/Asset/Images/web-development/10-19- Back_end_Devlopment Service.webp'
 import fullStactImg from '../../../src/Asset/Images/web-development/10-19- full_stak_Devlopment Service.webp'
 import completeSolution from '../../../src/Asset/Images/web-development/10-19-Complete Solution Service.webp'
-import Head from 'next/head'
 import Image from 'next/image'
-import { GetSettingsApi } from '@/redux/actions/campaign'
+
+import LottieComponent from '../LottieComponent'
+import RecentBlogs from '../RecentBlogs'
 
 
 const WebDevelopment = () => {
@@ -89,20 +80,20 @@ const WebDevelopment = () => {
     {
       id: 0,
       icon: processIcon1,
-      title: 'Analysis',
-      desc: 'We recognise your business objectives and website standards as part of our requirement analysis stage, which starts our work process.'
+      title: 'Analysis of Demands',
+      desc: 'Our process of web development starts with in-depth analyses of your business and requirements.'
     },
     {
       id: 1,
       icon: processIcon2,
       title: 'Design & Planning',
-      desc: 'Following this, we collaborate with UI/UX experts and designers to create a visually appealing and user-friendly website design and plan.'
+      desc: 'We design a futuristic stunning website with a user-friendly interface that fulfills all your requirements.'
     },
     {
       id: 2,
       icon: processIcon3,
       title: 'Development',
-      desc: 'Our experienced developers to code and develop the website according to your requirements. We also provide regular updates to our clients'
+      desc: 'Our experts develop an innovative website that aligns with all your requirements and provides timely updates on the projects.'
     },
   ]
 
@@ -111,21 +102,21 @@ const WebDevelopment = () => {
       id: 0,
       icon: processIcon4,
       title: 'Testing & Quality Assurance',
-      desc: ' After website development, we ensure its performance through rigorous testing and quality assurance processes to ensure it functions seamlessly on all platforms.'
+      desc: `Once the work of web development is done, we ensure that it's working seamlessly without any errors on all platforms.`
 
     },
     {
       id: 1,
       icon: processIcon5,
       title: 'Deployment',
-      desc: 'Once the website is ready, we deploy it to a live environment so that your audience can access it.'
+      desc: 'Once the website is fully ready, we deploy it to the real environment that allows users to access it across the world.'
 
     },
     {
       id: 2,
       icon: processIcon6,
-      title: 'Support',
-      desc: `Our work process doesn't end with deployment. We provide regular updates to keep your website up-to-date.`
+      title: 'Maintenance & Support',
+      desc: `We not only deploy the website but also ensure that your website remains up-to-date and fully operational. We believe in making long-term connections.`
 
     },
   ]
@@ -181,59 +172,32 @@ const WebDevelopment = () => {
     },
   ]
 
-  const blogsData = [
-    {
-      id: 0,
-      badge: "Artificial Intelligence",
-      date: "August 25, 2023",
-      title: "Exploring the Evolution of AI in Healthcare",
-      text: "Dive into the fascinating journey of Artificial Intelligence in the realm of healthcare. This blog post takes you through the significant advancements AI has made in diagnosing illnesses, personalized treatment plans, and...",
-      img: blog1
-    },
-    {
-      id: 1,
-      badge: "Cybersecurity",
-      date: "September 10, 2023",
-      title: "The Rising Threat of Ransomware: Protecting Your Digital Fortress",
-      text: "In this informative piece, we dissect the alarming surge of ransomware attacks and their far-reaching consequences. Gain insights into the tactics cybercriminals employ and learn effective strategies to safeguard your digital...",
-      img: blog2
-    },
-    {
-      id: 2,
-      badge: "Space Exploration",
-      date: "October 5, 2023",
-      title: "Mars Colonization: Navigating the Challenges of Red Planet Habitability",
-      text: "Embark on a celestial journey to explore the intricate challenges and breakthroughs in the quest for colonizing Mars. Delve into the complexities of creating a habitable environment, sustainable resource management...",
-      img: blog3
-    },
-  ]
-
   const newSwiperData = [
     {
       id: 0,
       title: 'Front-end web development',
-      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our experts focus on front-end development creating flexible layouts, interactive interfaces, and seamless user experiences. Our websites and apps have the latest technologies and are optimized across platforms to make them work on all your devices.',
       img: frontendImg,
       alt: 'front hand service for your website with experts of the best it company WRTeam'
     },
     {
       id: 1,
       title: 'Back-end web development',
-      desc: 'Our backend web development experts focus on developing powerful, scalable server-side applications that support website functionality. We use various programming languages such as JavaScript, PHP, and Ruby  frameworks such as Django, Laravel, and Ruby on Rails to build secure and efficient backend solutions for your business requirements.',
+      desc: 'Our backend web development team builds strong, scalable server applications to support website functions. We use technologies like JavaScript, PHP, Codiginator, and Laravel to create secure and efficient backend solutions for your business needs.',
       img: backendImg,
       alt: 'back  hand service for your website with experts of the best it company WRTeam'
     },
     {
       id: 2,
       title: 'Full-stack web development',
-      desc: 'WRTeam offers full-stack web development services that combine the best of front-end and back-end development. Our full-stack developers are experts in handling all aspects of website development, from designing attractive interfaces to implementing difficult business logic in the back-end. Comprehensive features ensure seamless integration between the various layers of your website, delivering a high-end product.',
+      desc: 'WRTeam offers full-stack web development services that combine the best of front-end and back-end development. Our full-stack developers can handle everything needed to create a website. They design attractive, user-friendly interfaces and manage the complex code that makes the website run smoothly. They ensure all parts of the website work together seamlessly, providing a high-quality product.',
       img: fullStactImg,
       alt: 'front  hand - backhand - full stack development with the best it web web developers'
     },
     {
       id: 3,
-      title: 'Complete Solution',
-      desc: 'WRTeam provides professional web development services that satisfy the demands of online businesses. Our experienced programmers employ the most modern technology to build adaptable, practical websites that comply with certain specifications.Our web development services include front-end web development, back-end web development, and full-stack web development. WRTeam believes in delivering end-to-end web development services.',
+      title: 'Customization',
+      desc: 'Not only web development we also offer customization in source codes by WRTeam making it tailored to your needs, & our web development experts can also customize your existing website to make it personalized for your requirements and ensure a unique, userfriendly, & visually appealing online presence.',
       img: completeSolution,
       alt: 'get complete every digital solutions  with the best web development company WRTeam'
     },
@@ -253,10 +217,10 @@ const WebDevelopment = () => {
                   Web <span>Development</span>
                 </span>
                 <h1 className='comman_Headlines'>
-                  Build <span>Future-Ready Websites</span> for Your Brand: Drive Traffic, Capture Success
+                Avail Web Development Services and Build <span>Stunning Websites</span> with the <span>Best IT Company</span> Personalized for Your Business.
                 </h1>
 
-                <p className="comman_para"> Our web development service is ready to meet your unique business needs and deliver high-quality, responsive websites that are visually appealing and fully functional.</p>
+                <p className="comman_para"> With over 7 years of experience, we create personalized business websites for E-commerce, Restaurants, Real Estate, Trivia games, and more. We aim to deliver fully functional, stunning websites with modern, user-friendly UI/UX.</p>
               </div>
             </div>
 
@@ -316,13 +280,13 @@ const WebDevelopment = () => {
               <span className="common_span">
                 Extensive <span>Benefits</span>
               </span>
-              <h3 className='comman_Headlines'>Unleashing the Potential of the Best <span>Web Development</span> company</h3>
+              <h3 className='comman_Headlines'>Unleashing the Potential of the Best <span>Web Development</span> Company</h3>
             </div>
           </div>
 
           <div className="col-sm-12 col-md-12 col-lg-6">
             <div className="benefitsPara">
-              <p className='comman_para'>Discover unparalleled benefits with the top web development company. We unleash innovation and efficiency to elevate your online success.</p>
+              <p className='comman_para'>Discover unparalleled benefits with the top web development company. We are committed to delivering innovative & efficient websites to elevate your online success.</p>
             </div>
           </div>
 
@@ -364,7 +328,7 @@ const WebDevelopment = () => {
                   Our <span>Work Process</span>
                 </span>
                 <h3 className='comman_Headlines' >
-                  How Does Our <span>Web Development</span> Transforms Businesses?
+                How Does Our <span>Web Development</span> Team Create a Website?
                 </h3>
               </div>
 
@@ -479,79 +443,10 @@ const WebDevelopment = () => {
       </section>
       {/* build ends  */}
 
-      {/* <section className='webDevContact'>
-        <div className="getInTouch container" style={{
-          background: `rgb(23 79 196 / 83%) url(${getTouch.src})`,
-          backgroundSize: 'cover',
-          backgroundBlendMode: 'darken'
-        }}>
-          <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-10">
-              <div className="getTouchText">
-                <span className='word'>
-                  <Lottie
-                    loop
-                    animationData={helloText}
-                    play
-                  /></span>
-                <span className='getTouchDesc'>Got A Quastion? We Would Be Happy To Help!</span>
-              </div>
-            </div>
+      {/* <LottieComponent/>
 
-            <div className="col-sm-12 col-md-12 col-lg-2">
-              <div className="getTouchBtn">
-                <Link href='/contact-us'> <button className='homeCommon_btn'>Contact Us <BiRightArrowCircle size={20} /></button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* webDevContact ends  */}
+      <RecentBlogs/> */}
 
-      {/* <section className='recentBlogs container'>
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="recentBlogHeading">
-              <span className="common_span">
-                Our <span>Blogs</span>
-              </span>
-              <h3 className="comman_Headlines">
-                Recent <span>Blogs</span>
-              </h3>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-12">
-            <div className="row">
-              {
-                blogsData.map((ele) => {
-                  return <div className="col-sm-12 col-md-6 col-lg-4 recentBlogsCards" key={ele.id}>
-                    <div className="card text-white">
-                      <span className='cateBadge'>{ele.badge}</span>
-                      <Image height={0} width={0} loading="lazy" src={ele.img} className="card-img-top" alt="teamImg" />
-                      <div className="card-img-top">
-                        <div className="cateDetails">
-                          <span className="cateDate">
-                            <span> <Image height={0} width={0} loading="lazy" src={dateIcon} alt="" /></span>
-                            <span> {ele.date}</span>
-                          </span>
-                          <p className="card-title">
-                            {ele.title.length > 50 ? ele.title.slice(0, 55) + "" + "..." : ele.title}</p>
-                          <p className='card-text'>{ele.text}</p>
-
-                          <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                })
-              }
-
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* recentBlogs ends  */}
     </div>
   )
 }

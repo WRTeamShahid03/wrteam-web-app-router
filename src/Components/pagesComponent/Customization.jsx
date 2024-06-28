@@ -2,10 +2,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Breadcrum from '../Breadcrum'
 import Image from 'next/image'
-import discuss1 from '../../Asset/Images/customization/discuss1.jpg'
-import discuss2 from '../../Asset/Images/customization/discuss2.jpg'
-import discuss3 from '../../Asset/Images/customization/discuss3.jpg'
-import sideImg from '../../Asset/Images/customization/customizationImg.png'
+import discuss1 from '../../Asset/Images/customization/discuss1.webp'
+import discuss2 from '../../Asset/Images/customization/discuss2.webp'
+import discuss3 from '../../Asset/Images/customization/discuss3.webp'
+import sideImg from '../../Asset/Images/customization/customizationImg.webp'
 import arrow from '../../Asset/Images/customization/arrow.svg'
 import line from '../../Asset/Images/customization/lines.svg'
 import PhoneInput from 'react-phone-input-2';
@@ -15,7 +15,7 @@ import { FiUpload } from 'react-icons/fi'
 import { IoIosCloseCircle } from "react-icons/io";
 import toast from 'react-hot-toast'
 import { Select } from 'antd';
-import { customisationApi } from '@/redux/actions/campaign'
+import { customisationApi, hireUsApi } from '@/redux/actions/campaign'
 
 const Customization = () => {
 
@@ -129,7 +129,8 @@ const Customization = () => {
         }
         else {
             setFormLoader(true)
-            // console.log('name : ',name,'number:', finalNum,'email : ',email,'productName : ',productName,'requirement :' ,requirement,'selectedFile : ',selectedFile)
+            // console.log('name : ',name,'number:', number,'email : ',email,'productName : ',productName,'requirement :' ,requirement,'selectedFile : ',selectedFile)
+            console.log('selectedFile: ',selectedFile)
             customisationApi({
                 user_name: name,
                 contact: finalNum,
@@ -161,7 +162,7 @@ const Customization = () => {
     };
 
     useEffect(() => {
-        // console.log(productName)
+        console.log(productName)
     }, [productName])
 
 
@@ -251,8 +252,8 @@ const Customization = () => {
                                             placeholder="Product Name"
                                             optionFilterProp="children"
                                             onChange={onChange}
-                                            value={productName}
                                             onSearch={onSearch}
+                                            value={productName}
                                             filterOption={filterOption}
                                             className='productDropdown'
                                             options={[
@@ -389,9 +390,6 @@ const Customization = () => {
                                                         {
                                                             selectedFile.type === "application/pdf"
                                                                 ? <>
-                                                                    {/* <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
-                                                                        <Viewer fileUrl={pdfFileUrl} />
-                                                                    </Worker> */}
                                                                     <span className='p-2'>{selectedFile.name}</span>
                                                                 </>
                                                                 :

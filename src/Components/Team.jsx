@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import ReactPaginate from 'react-paginate';
-import teamDefaultImg from '../Asset/Images/teamDefaultImg.png';
+import teamDefaultImg from '../Asset/Images/teamDefaultImg.webp';
 import Image from 'next/image';
 import { GetTeamMembersApi } from '@/redux/actions/campaign';
 import TeamSkeleton from './TeamSkeleton';

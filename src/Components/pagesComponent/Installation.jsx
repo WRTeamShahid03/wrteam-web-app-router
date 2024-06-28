@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Breadcrum from '../Breadcrum'
 import { FaCheck } from 'react-icons/fa6'
@@ -77,7 +78,7 @@ const Installation = () => {
         {
             id: 7,
             service: 'Live on Server',
-            add: false,
+            add: true,
         },
         {
             id: 8,
@@ -273,10 +274,10 @@ const Installation = () => {
                             <div className="row">
                                 {
                                     data.map((ele) => {
-                                        return <div className="col-12 col-md-6 col-lg-3" key={ele.id}>
+                                        return <div className="col-12 col-md-6 col-lg-3">
                                             <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard' ? 'standardPack' : ''}`}>
                                                 {
-                                                    ele.packageName === 'Premium' ? <span className='recommended'>Recommended</span> : ''
+                                                    ele.packageName === 'Premium' ? <span className='recommended'>Full Setup</span> : ''
                                                 }
                                                 <div className="upperDiv">
                                                     <span className="packageName">{ele.packageName}</span>
@@ -286,7 +287,7 @@ const Installation = () => {
                                                 {
                                                     ele.packageName === 'Basic' ?
                                                         basicServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -295,7 +296,7 @@ const Installation = () => {
                                                             </div>
                                                         })
                                                         : ele.packageName === 'Standard' || ele.packageName === 'Advance' ? standardAndAdvanceServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -303,7 +304,7 @@ const Installation = () => {
                                                                 }
                                                             </div>
                                                         }) : premiumServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :

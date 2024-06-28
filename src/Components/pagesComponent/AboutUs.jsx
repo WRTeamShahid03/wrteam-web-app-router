@@ -58,15 +58,15 @@ const AboutUs = () => {
 
             <div className="knowMoreRightDiv">
               <span className="common_span">Get to <span>know more</span></span>
-              <h3 className='comman_Headlines'>Where Ideas Blossom into <span> Techno-Creative </span> Marvels.</h3>
+              <h3 className='comman_Headlines'>Your Work Partner in <span>Transforming</span> Your Vision into Reality.</h3>
 
-              <p className='firstP comman_para'>WRTeam IT company located in Bhuj - India, working with the goal of putting the customer first. </p>
+              <p className='firstP comman_para'>WRTeam is, a software development company located in Bhuj - India, serving IT services & digital solutions around the globe. </p>
 
-              <p className='comman_para'>We're a team of enthusiastic individuals with an eye for innovation and delivering the Best Quality products and services.</p>
+              <p className='comman_para'>We're a team of experienced & expert developers with a specialization in making mobile apps, websites, and digital solutions tailored to your business.</p>
 
-              <p className='comman_para'>The WRTeam believes in our customer's ideas and wants to help bring them to life, allowing them to focus on their long-term goals while we take care of the details.</p>
+              <p className='comman_para'>WRTeam is the elite author on Envato selling digital solutions ( pre-built source codes) to make applications & websites 5X faster, make websites & apps for e-commerce, hotels & restaurants, real estate, school management, mobile games, etc.</p>
 
-              <p className='comman_para'>We offer the Best Mobile Application Services, Web Development Services, Graphic Design Services, IT Consulting Services and Digital Marketing Services.</p>
+              <p className='comman_para'>WRTeam is the one-stop solution for all your digital needs, WRTeam is your working partner that helps you with its expertise in web & app development, UI/UX designing, digital marketing, etc.</p>
             </div>
 
           </div>
@@ -86,13 +86,11 @@ const AboutUs = () => {
                 <span className='common_span'>Our <span>Vision</span> </span>
                 <h3 className='comman_Headlines'>Inspiring <span>Growth</span> Through Innovative  <span> Mobile and Web </span> Solutions</h3>
 
-                <p className='firstP comman_para'>At WRTeam, we envision becoming a top provider of exceptional mobile and web solutions that inspire businesses and people to achieve their goals and enhance their lives.</p>
+                <p className='firstP comman_para'>At WRTeam, we manifest to be the best provider of software solutions including source codes to make apps & websites and services like IT consultation, software development, UI/UX designing, and digital marketing</p>
 
-                <p className='comman_para'> We want to be known as the top company for app & web Solutions development that is creative, high-quality, and client-focused.</p>
+                <p className='comman_para'> Having a website or app is crucial for business growth, we are committed to providing innovative, stunning, and smooth software solutions that are perfectly made for your business.</p>
 
-                <p className='comman_para'>We believe that Apps & Webs Solutions development is the key to success in the future of business.</p>
-
-                <p className='comman_para'>As businesses grow, they require Apps & Web Solutions that are perfect to their requirements. We are committed to providing our clients with the solutions they need to succeed digitally.</p>
+                <p className='comman_para'>We aim to be the best IT company known for its creativity, and high-quality software solutions, focussing on client satisfaction.</p>
               </div>
             </div>
 
@@ -145,11 +143,11 @@ const AboutUs = () => {
 
             <div className="missionRightDiv">
               <span className="common_span">Our  <span>Mission</span></span>
-              <h3 className='comman_Headlines'>Fueling <span>Business Success</span> with Innovative <span> IT and Digital </span> Solutions </h3>
+              <h3 className='comman_Headlines'>Bring Change With <span>Best Software</span> Solutions. </h3>
 
-              <p className='firstP comman_para'>Our primary mission is to help our clients grow their businesses by providing modern technology and expertise in Mobile Application Development, Website Development, UX/UI Design, IT consulting, and Digital Marketing solutions . </p>
+              <p className='firstP comman_para'>We are on a mission to bring revolution in the way of making websites and applications, we make it possible with our easily customizable & error-free source codes.</p>
 
-              <p className='comman_para'>We are dedicated to giving exceptional IT Solutions that meet and exceed our clients' expectations for excellence and creativity.</p>
+              <p className='comman_para'>We aim to help businesses enhance their virtual presence with our best software solutions, with a strong focus on client satisfaction and growth.</p>
             </div>
 
           </div>
@@ -165,21 +163,20 @@ const AboutUs = () => {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="valuesLeftDiv">
                 <span className='common_span'>Our <span>Values</span> </span>
-                <h3 className='comman_Headlines'>Where Integrity  Meets <span> Innovation, and Diversity </span> Shapes Success</h3>
+                <h3 className='comman_Headlines'><span>Integrity</span> and <span>Creativity</span> Lead to Success.</h3>
 
                 <div className="valuesList">
 
-                  <span className='firstP'> <BsCheckCircle color='black' /> Integrity, quality, creativity, collaboration, customer focus, continuous improvement, and diversity and inclusion are all important to us.</span>
+                  <span className='firstP'> <BsCheckCircle color='black' /> We act with honesty and integrity</span>
 
-                  <span> <BsCheckCircle color='black' /> We conduct ourselves in an honest and ethical manner.</span>
+                  <span> <BsCheckCircle color='black' /> We strive for quality and creativity.</span>
 
-                  <span> <BsCheckCircle color='black' /> We encourage innovation and collaborate with our clients.</span>
+                  <span> <BsCheckCircle color='black' /> We work closely with our clients.</span>
 
-                  <span> <BsCheckCircle color='black' /> We prioritize our customers' needs and goals.</span>
+                  <span> <BsCheckCircle color='black' /> We put our customers' needs first</span>
 
-                  <span> <BsCheckCircle color='black' /> We are dedicated to ongoing development and learning.</span>
-
-                  <span> <BsCheckCircle color='black' /> We value diversity and strive to foster an inclusive culture.</span>
+                  <span> <BsCheckCircle color='black' /> We are always learning and improving</span>
+                  <span> <BsCheckCircle color='black' /> We value diversity and promote inclusion.</span>
 
 
                 </div>

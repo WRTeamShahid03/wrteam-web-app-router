@@ -168,20 +168,20 @@
 
     /* team ends  */
 
-    #category .card-text,
+    .ourBlogs .card-text,
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 114px;
+        /* height: 114px; */
     }
 
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 20px/34px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent span:last-child {
         font: normal normal 600 13px/26px Montserrat;
     }
 
-    #category .blogComman_btn {
+    .ourBlogs .blogComman_btn {
         margin-top: 30px;
     }
 
@@ -269,14 +269,6 @@
     .process .comman_Headlines,
     .build .comman_Headlines {
         padding-right: 62px;
-    }
-
-    .recentBlogs .recentBlogsCards .card .card-title {
-        height: 108px;
-    }
-
-    .recentBlogs .recentBlogsCards .card .card-text {
-        height: 130px;
     }
 
     #applyNow {
@@ -563,7 +555,7 @@
     }
 
     #team .teamSlider .pagination,
-    #category .pagination {
+    .ourBlogs .pagination {
         padding-bottom: 50px;
     }
 
@@ -573,40 +565,40 @@
 
     /* team ends  */
 
-    #category .card-text,
+    .ourBlogs .card-text,
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 114px;
+        /* height: 114px; */
     }
 
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 17px/34px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
-        font: normal normal 600 13px/26px Montserrat;
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent span:last-child {
+        font: normal normal 600 13px/20px Montserrat;
     }
 
-    #category .blogComman_btn {
+    .ourBlogs .blogComman_btn {
         margin-top: 50px;
     }
 
-    #category .cateBox .boxDetails span {
+    /* .ourBlogs .cateBox .boxDetails span {
         font: 14px/24px Montserrat;
-    }
+    } */
 
-    #category .boxHeadline {
+    .ourBlogs .boxHeadline {
         font: normal normal 600 26px/37px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails {
+    .ourBlogs .recentBlogs .boxDetails {
         align-items: center;
     }
 
-    #category .recentBlogs .boxDetails .rbImg {
+    .ourBlogs .recentBlogs .boxDetails .rbImg {
         height: 90px;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         top: 122px;
     }
 
@@ -755,12 +747,12 @@
     }
 
     .recentBlogs .recentBlogsCards .card .card-title {
-        font: normal normal 700 20px/28px Montserrat;
-        height: 92px;
+        font: normal normal 700 19px/28px Montserrat;
+        height: 70px;
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 154px;
+        height: 90px;
     }
 
     .benefits .benefitsCards .card .card-title {
@@ -1135,46 +1127,39 @@
 
     /* team ends  */
 
-    #category .card-text,
+    .ourBlogs .card-text,
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 114px;
+        /* height: 114px; */
     }
 
-    #category {
+    .ourBlogs {
         margin-top: 50px;
     }
 
-    #category .row .col-lg-8,
-    #category .row .col-lg-4,
+    .ourBlogs .row .col-lg-8,
+    .ourBlogs .row .col-lg-4,
     #blogDetails .row .col-lg-8,
     #blogDetails .row .col-lg-4 {
         width: 100%;
     }
 
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 22px/34px Montserrat;
     }
 
-    #category .blogComman_btn {
+    .ourBlogs .blogComman_btn {
         margin-top: 5px;
     }
 
-    #category .cateBox,
-    #category .recentBlogs,
-    #category .tags {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    #category .cateBox .boxDetails span {
+    .ourBlogs .cateBox .boxDetails span {
         font: 18px/24px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent {
         justify-content: space-around;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         width: 88%;
     }
 
@@ -1381,7 +1366,7 @@
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 210px;
+        height: 116px;
     }
 
     .benefits .benefitsCards .card .card-title {
@@ -1854,47 +1839,36 @@
 
     /* team ends  */
 
-    #category .card-text,
+    .ourBlogs .card-text,
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 130px;
+        /* height: 130px; */
     }
 
-    #category {
+    .ourBlogs {
         margin-top: 50px;
     }
 
-    #category .cateBadge {
-        padding: 6px;
-    }
-
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 16px/26px Montserrat;
     }
 
-    #category .blogComman_btn {
+    /* .ourBlogs .blogComman_btn {
         margin-top: 40px;
-    }
+    } */
 
-    #category .cateBox,
-    #category .recentBlogs,
-    #category .tags {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    #category .cateBox .boxDetails span {
+    .ourBlogs .cateBox .boxDetails span {
         font: 18px/24px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent {
         justify-content: space-around;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         width: 88%;
     }
 
-    #category .card-text {
+    .ourBlogs .card-text {
         font-size: 15px;
     }
 
@@ -2134,12 +2108,12 @@
     }
 
     .recentBlogs .recentBlogsCards .card .card-title {
-        font: normal normal 700 20px/28px Montserrat;
-        height: 92px;
+        font: normal normal 700 18px/28px Montserrat;
+        height: 70px;
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 166px;
+        height: 106px;
     }
 
     .benefits .benefitsCards .card .card-title {
@@ -2736,36 +2710,25 @@
 
     /* team ends  */
 
-    #category .card-text,
+    .ourBlogs .card-text,
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 100%;
+        /* height: 100%; */
     }
 
-    #category {
+    .ourBlogs {
         margin-top: 50px;
     }
 
-    #category .cateBadge {
-        padding: 10px;
-    }
-
-    #category .blogComman_btn {
+    .ourBlogs .blogComman_btn {
         margin-top: 0px;
         display: block;
     }
 
-    #category .cateBox,
-    #category .recentBlogs,
-    #category .tags {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    #category .recentBlogs .boxDetails .recentBoxContent {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent {
         justify-content: space-around;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         width: 80%;
     }
 
@@ -3106,10 +3069,11 @@
     .recentBlogs .recentBlogsCards .card .card-title {
         font: normal normal 700 20px/28px Montserrat;
         height: 100%;
+        margin-bottom: 20px;
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
-        height: 90px;
+        height: 100%;
     }
 
     .benefits .benefitsCards .card .card-title {
@@ -3788,51 +3752,40 @@
     .breadcrum .pageName {
         font: normal normal 200 15px/64px Montserrat;
         color: #2D3745;
-    }
+    }   
 
-    /* team ends  */
-    #category .card-text,
-    .recentBlogs .recentBlogsCards .card .card-text {
-        height: 100%;
-    }
-
-    #category {
+    .ourBlogs {
         margin-top: 50px;
     }
 
-    #category .cateBadge {
-        padding: 6px;
-    }
-
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 16px/26px Montserrat;
     }
 
-    #category .blogComman_btn {
-        margin-top: 40px;
+    .ourBlogs .blogComman_btn {
         display: block;
     }
 
-    #category .cateBox,
-    #category .recentBlogs,
-    #category .tags {
+    /* .ourBlogs .cateBox,
+    .ourBlogs .recentBlogs,
+    .ourBlogs .tags {
         margin-top: 30px;
         margin-bottom: 50px;
-    }
+    } */
 
-    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent span:last-child {
         font: normal normal 600 12px/26px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent {
         justify-content: space-around;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         width: 70%;
     }
 
-    #category .card-text {
+    .ourBlogs .card-text {
         font-size: 15px;
     }
 
@@ -3895,11 +3848,6 @@
 
     #blogDetails .bottomDiv .commentBox .subCommentCard {
         margin-left: 30px;
-    }
-
-    #blogDetails .blogImg .cateBadge {
-        margin-top: 28px;
-        padding: 4px;
     }
 
     /* blogDetails ends  */
@@ -4263,6 +4211,7 @@
     .recentBlogs .recentBlogsCards .card .card-title {
         font: normal normal 700 20px/28px Montserrat;
         height: 100%;
+        margin-bottom: 20px;
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
@@ -5038,53 +4987,44 @@
 
     /* team ends  */
 
-    #category .card-text,
-    .recentBlogs .recentBlogsCards .card .card-text {
-        height: 100%;
-    }
-
-    #category {
+    .ourBlogs {
         margin-top: 30px;
     }
 
-    #category .cateBadge {
-        padding: 6px;
-    }
-
-    #category .card-title {
+    .ourBlogs .card-title {
         font: normal normal 700 14px/26px Montserrat;
     }
 
-    #category .blogComman_btn {
+    .ourBlogs .blogComman_btn {
         margin-top: 30px;
         display: block;
     }
 
-    #category .cateBox,
-    #category .recentBlogs,
-    #category .tags {
+    /* .ourBlogs .cateBox,
+    .ourBlogs .recentBlogs,
+    .ourBlogs .tags {
         margin-top: 30px;
         margin-bottom: 50px;
-    }
+    } */
 
-    #category .recentBlogs .boxDetails .recentBoxContent span:last-child {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent span:last-child {
         font: normal normal 600 12px/16px Montserrat;
     }
 
-    #category .recentBlogs .boxDetails .recentBoxContent {
+    .ourBlogs .recentBlogs .boxDetails .recentBoxContent {
         justify-content: space-around;
     }
 
-    #category .recentBlogs .boxDetails :first-child::before {
+    .ourBlogs .recentBlogs .boxDetails :first-child::before {
         width: 64%;
     }
 
-    #category .card-text {
+    .ourBlogs .card-text {
         font-size: 15px;
         height: 100%;
     }
 
-    #category .boxHeadline {
+    .ourBlogs .boxHeadline {
         font: normal normal 600 26px/37px Montserrat;
     }
 
@@ -5173,12 +5113,6 @@
 
     #blogDetails .bottomDiv .commentBox .subCommentCard {
         margin-left: 6px;
-    }
-
-    #blogDetails .blogImg .cateBadge {
-        margin-top: 28px;
-        padding: 2px 4px;
-        font-size: 14px;
     }
 
     #blogDetails .bottomDiv .previousBlogs .boxDetails {
@@ -5578,8 +5512,9 @@
     }
 
     .recentBlogs .recentBlogsCards .card .card-title {
-        font: normal normal 700 20px/28px Montserrat;
+        font: normal normal 700 18px/28px Montserrat;
         height: 100%;
+        margin-bottom: 20px;
     }
 
     .recentBlogs .recentBlogsCards .card .card-text {
@@ -5738,6 +5673,7 @@
         top: 62%;
     }
 }
+
 
 @media only screen and (min-width: 344px) and (max-width: 374px) {
     #winner .winnerWrapper #winnText {

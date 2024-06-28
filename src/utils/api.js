@@ -10,6 +10,8 @@ const GET_TEAM_MEMBERS = "team-members"
 const CAREER_MAIL = "send-career-email"
 const GET_VACANCIES = "get-vacancies"
 const CUSTOMISATION = "customisation-requirement"
+const GET_BLOGS = "blogs"
+const GET_CATEGORIES = "categories"
 
 // GET SETTINGS
 export const getSettings = (type) => {
@@ -49,7 +51,7 @@ export const getVacancies = () => {
 }
 
 // GET PRODUCTS
-export const getProducts = (page, category_id, slug, product_filter,content_id) => {
+export const getProducts = (page, category_id, slug, product_filter, content_id) => {
     return {
         url: `${GET_PRODUCTS}`,
         method: "GET",
@@ -86,7 +88,6 @@ export const getTeamMembers = (page) => {
         method: "GET",
         params: {
             page,
-
         },
         authorizationHeader: false,
 
@@ -147,7 +148,7 @@ export const careerMail = (full_name, email, qualification, contact, apply_for, 
 }
 
 //Send customisation Mail
-export const customisationMail = (user_name, contact, email, product_name, requirement_file,requirement_explanation) => {
+export const customisationMail = (user_name, contact, email, product_name, requirement_file, requirement_explanation) => {
     let data = new FormData();
     data.append('user_name', user_name);
     data.append('contact', contact);
@@ -159,6 +160,37 @@ export const customisationMail = (user_name, contact, email, product_name, requi
         url: `${CUSTOMISATION}`,
         method: "POST",
         data,
+        authorizationHeader: false,
+
+    }
+}
+
+// GET BLOGS
+export const getBlogs = (id, category_id, subcategory_id, slug, category_slug, subcategory_slug) => {
+    return {
+        url: `${GET_BLOGS}`,
+        method: "GET",
+        params: {
+            id: id,
+            category_id: category_id,
+            subcategory_id: subcategory_id,
+            slug: slug,
+            category_slug: category_slug,
+            subcategory_slug: subcategory_slug
+        },
+        authorizationHeader: false,
+
+    }
+}
+
+// GET CATEGORIES
+export const getCategories = (slug) => {
+    return {
+        url: `${GET_CATEGORIES}`,
+        method: "GET",
+        params: {
+            slug: slug,
+        },
         authorizationHeader: false,
 
     }

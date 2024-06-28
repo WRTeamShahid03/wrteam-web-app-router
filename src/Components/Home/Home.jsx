@@ -16,9 +16,10 @@ import checkIcon from "../../Asset/Icons/ic_check.png"
 import teamImg from '../../Asset/Images/teamImg.png'
 import arrow from '../../Asset/Icons/Arrow.svg'
 import aboutImg1 from '../../Asset/Images/AboutImage.webp'
-import aboutImg2 from '../../Asset/Images/CompanyExperience.png'
+// import aboutImg2 from '../../Asset/Images/bg-image.png'
+import aboutImg2 from '../../Asset/Images/CompanyExperience.webp'
 // import winnerImg1 from '../../Asset/Images/winnerImage.webp'
-import winnerImg1 from '../../Asset/Images/Achievement.png'
+import winnerImg1 from '../../Asset/Images/Achievement.webp'
 import appProduct from '../../Asset/Images/AppImage.webp'
 import webProduct from '../../Asset/Images/WebImage.webp'
 import appProIcon from '../../Asset/Images/appProIcon.png'
@@ -31,7 +32,7 @@ import uiIcon from '../../Asset/Icons/ui-ux_icone.svg'
 import uiHover from '../../Asset/Icons/uiHover.svg'
 import digitalIcon from '../../Asset/Icons/digital_marketing.svg'
 import digitalHover from '../../Asset/Icons/digitalHover.svg'
-import techBg from '../../Asset/Images/TechnologyImage.png'
+import techBg from '../../Asset/Images/TechnologyImage.webp'
 import flutterTech from '../../Asset/Icons/FlutterColor.png'
 import react from '../../Asset/Icons/ReactColor.png'
 import vue from '../../Asset/Icons/VueColor.png'
@@ -156,16 +157,15 @@ const Home = () => {
                             backgroundRepeat: "no-repeat",
                         }}>
 
-
                             <div className="heroContContent">
                                 <div className="row">
 
                                     <div className="col-sm-12 col-md-12 col-lg-6">
                                         <div className="heroCont-leftDiv">
                                             <span className='mcWinner'>Most Creative Winner!</span>
-                                            <h1 id='herocont_headline' className='comman_Headlines'>Unlock Your <span>Business</span> Potential with an Expert <span>IT Company</span></h1>
+                                            <h1 id='herocont_headline' className='comman_Headlines'>Streamline Your <span>Business</span> Website and Mobile App with the Best <span>IT Company</span></h1>
 
-                                            <p>Optimize Your Business Operations Using WRTeam's Powerful App and Website Solutions & Streamlined Workflows. We are committed to providing our clients with End-to-End App and Website Solutions.</p>
+                                            <p>Upgrade your business administration with WRTeam. Create a customized and feature-loaded website or mobile app with expert and experienced developers at WRTeam, providing digital solutions tailored to your needs. </p>
 
                                             <div className="followDiv">
                                                 <Link href='/about-us'> <button className='homeCommon_btn'>About Us</button></Link>
@@ -265,21 +265,6 @@ const Home = () => {
                                             background: `url(${aboutImg2.src})`,
                                             backgroundSize: 'cover'
                                         }}>
-                                            {/* <div className="experience">
-                                                <span className='experNum' style={{
-                                                    background: `url(${aboutImg2.src})`,
-                                                    backgroundSize: 'cover',
-                                                    backgroundClip: "text",
-                                                    WebkitBackgroundClip: "text"
-                                                }}>6+</span>
-                                                <span className='experNum' style={{
-                                                    background: `url(${aboutImg2.src})`,
-                                                    backgroundSize: 'cover',
-                                                    backgroundClip: "text",
-                                                    WebkitBackgroundClip: "text"
-                                                }}>Years</span>
-                                                <span>Experience</span>
-                                            </div> */}
 
                                         </div>
                                     </div>
@@ -291,13 +276,12 @@ const Home = () => {
 
                                 <div className="aboutRightDiv">
                                     <span className="common_span">About <span>WRTeam</span></span>
-                                    <h2 className='comman_Healines'>Deliver <span>Business solution </span>  with The Goal Of <span>Long-Term </span> Relationships</h2>
+                                    <h2 className='comman_Healines'>We are Committed to Providing our <span>Clients</span> with End-to-End <span>App and Website</span> Solutions.</h2>
 
-                                    <p className='firstP common_para'>WRTeam is an award-winning Web & App Development & IT consulting company, serving clients across the Globe.</p>
+                                    <p className='firstP common_para'>WRTeam has experience of more than 7 years as a software development company, our experienced web and app developers deliver results that reach all your requirements
+                                        .</p>
 
-                                    <p className='common_para'>We have 7+ Years of market business experience which could be more chances of success to connect with us.</p>
-
-                                    <p className='common_para'>WRTeam is a creative and dedicated group of developers who are mastered in Mobile & Web Development with expertise in delivering quality solutions to customers across the globe.</p>
+                                    <p className='common_para'>WRTeam is a team of web developers & app developers who are creative, dedicated, and experts in full stack development and UI/UX, using advanced technologies like Laravel, Flutter, Figma, etc.</p>
 
                                     <div className="discover" data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
                                         <Link href='about-us'>  <button className='homeCommon_btn'>Discover More</button></Link>
@@ -321,13 +305,12 @@ const Home = () => {
                             <div className="col-sm-12 col-md-12 col-lg-6">
                                 <div className="winnLeftDiv">
                                     <span className='common_span'>Achievement <span>on Envato</span> </span>
-                                    <h2 className='comman_Healines'><span>Meet the Most Creative Team </span> Award-Winning Web & App Development</h2>
+                                    <h2 className='comman_Healines'>WRTeam is Honored as the <span>“Most Creative”</span> Author on Envato.</h2>
 
-                                    <p className='firstP comman_para'>Meet the winner of the 'Most Creative' competition on codecanyon! WRTeam is proud of our team members who came out on top with their outstanding creativity and innovative ideas.</p>
+                                    <p className='firstP comman_para'>WRTeam is honored as the most creative author on Envato (Code Canyon). We are also recognized as an elite author on Code Canyon, selling source codes to create websites and mobile apps.</p>
 
-                                    <p className='common_para'> We value innovative thinking and creativity, and our staff is always pushing the envelope and bringing new ideas to the fore. Moreover, this remarkable achievement is a testament to our team's dedication and passion for excellence.</p>
-
-                                    <p className='common_para'>As we continue to evolve and innovate, we look forward to inspiring others in the industry with our ingenuity.</p>
+                                    <p className='common_para'> This achievement became possible just because of our expert and experienced team, specialized knowledge, and expertise.</p>
+                                    <p className='common_para'> We appreciate innovative thinking and creativity, and our staff always believes in evolution and bringing new ideas. Moreover, Credit for this remarkable achievement goes to our team's dedication and passion for excellence</p>
 
                                     <Link href='https://1.envato.market/R5YR7b' target='_blank'> <button className="homeCommon_btn" data-aos="fade-up" data-aos-once="true" data-aos-duration="800">Read More</button></Link>
                                 </div>
@@ -366,8 +349,8 @@ const Home = () => {
 
                     <div className="soluHeadlines">
                         <h2 className='common_span'>Our <span>Solutions</span></h2>
-                        <h3 className='comman_Healines'>Empowering Business <span>Growth </span>  with <span>Personalized </span>  Products</h3>
-                        <p >Here is our wide variety of digital products or solutions for your businesses such as categories of e-commerce apps and websites, educational apps and websites, gaming apps and websites, and many more business digital products.</p>
+                        <h3 className='comman_Healines'><span>Digital Solutions</span> We Offer, as the <span> Best Software</span> Development Company.</h3>
+                        <p >We are serving a huge variety of digital solutions specially designed for various businesses that help to create websites and mobile apps for e-commerce, restaurants, mobile games, etc.</p>
                     </div>
 
                     <div className="productsCardsWrapper container">
@@ -498,15 +481,13 @@ const Home = () => {
                             <div className="col-sm-12 col-md-12 col-lg-6">
                                 <div className="servrightDiv">
                                     <h2 className='common_span'>Best <span>  IT Services</span> </h2>
-                                    <h3 className='common_Headlines'> <span>Innovate, Implement, Succeed:</span> Leverage Our IT Services to <span>Turn Ideas</span> into Reality</h3>
+                                    <h3 className='common_Headlines'> <span>Innovate, Implement, Succeed:</span> We Offer Every IT Service You need, all in <span>One Place.</span></h3>
 
-                                    <p className='firstP common_para'>For skyrocket business growth, the right IT service is more important from building engaging websites and user-friendly apps to crafting stunning designs and boosting your online presence. </p>
+                                    <p className='firstP common_para'>In the modern world having a digital presence is crucial, it's necessary to have a business website or app that leads to stronger administration & expansion. Remove limitations of place & time from your business with WRTeam's software services. </p>
 
-                                    <p className='firstP common_para'> Our team of experts in app development, web development, UI/UX design, IT consulting, and digital marketing can help you achieve your business goals.</p>
+                                    <p className='firstP common_para'>We offer all software services in one place, from designing a personalized mobile app & website to streamlining your business website & mobile app.</p>
 
-                                    <p className='firstP common_para'>Get ready for your business to shine! Our teamwork-based strategy ensures success with innovative solutions and customer satisfaction. </p>
-
-                                    <p className='firstP common_para'>Let's revamp your online presence and lead your business to extraordinary success and growth!</p>
+                                    <p className='firstP common_para'>Our team has experienced UI/UX designers, web developers, native & flutter mobile app developers, and digital marketers to enhance your digital brand identity. Our experts are committed to delivering the best results and developing lifelong relationships. </p>
                                 </div>
                             </div>
 
@@ -529,12 +510,12 @@ const Home = () => {
                                     <div className="col-sm-12 col-md-12 col-lg-6">
                                         <div className="techHeadlines">
                                             <h3 className='common_span'>Technology <span> We Use</span></h3>
-                                            <h4 className='common_Headlines'>We Embrace Advanced & Latest <span>Technologies</span> to Enhance Your Projects</h4>
+                                            <h4 className='common_Headlines'>Our Developers Have a <span>Strong Grip</span> on Advanced <span>Technologies</span> to Enhance Your Website & App. </h4>
                                         </div>
                                     </div>
                                     <div className="col-sm-12 col-md-12 col-lg-6">
                                         <div className="techPara">
-                                            <p>In today's rapidly changing digital world, staying up-to-date with the latest technologies and tools is important. At WRTeam, we pride ourselves on using the latest technologies across our different services and products.</p>
+                                            <p>We are a team of web developers specialized in front-end, back-end, & full stack development using advanced technologies like laravel, Vue JS, Next JS, etc. Our team also has app developers specialized in making Android, iOS, & flutter applications.</p>
                                         </div>
                                     </div>
                                 </div>

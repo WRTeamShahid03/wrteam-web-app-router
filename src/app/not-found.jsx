@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import err404 from '../Asset/Images/404.png'
+import err404 from '../Asset/Images/404.webp'
 import NoDataImg from '../Asset/Images/NoDataImg.webp'
 import Image from 'next/image'
 import Link from 'next/link'

@@ -1,7 +1,6 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { store } from "../store";
 import { apiCallBegan } from "../actions/apiActions";
-// import { getSettingApi } from "@/utils/api";
 import { GetSettingsApi } from "../actions/campaign";
 
 const initialState = {
@@ -55,7 +54,7 @@ export const settingsLoaded = (type, onSuccess, onError, onStart) => {
 export const settingsLoadedLogin = (type, onSuccess, onError, onStart) => {
     store.dispatch(
         apiCallBegan({
-            ...GetSettingsApi(type),
+            ...getSettingApi(type),
             displayToast: false,
             onStartDispatch: settingsRequested.type,
             onSuccessDispatch: settingsSucess.type,
