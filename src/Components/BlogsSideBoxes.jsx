@@ -32,8 +32,8 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs }) => {
               </div>
             )) :
             categories?.map((data) => {
-                return <div>
-                  <Link href={`/blogs/${data?.slug}`} key={data.id}>
+                return <div key={data.id}>
+                  <Link href={`/blogs/${data?.slug}`}>
                     <div className="boxDetails" >
                       <span className='boxDetailsSpan'>{data.name}</span>
                       {/* <span>{data.cateNum}</span> */}
