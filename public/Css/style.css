@@ -7357,6 +7357,7 @@ footer .footerContainer .flinks {
 
 .innerPagesSect .card img {
     width: 100%;
+    cursor: pointer;
 }
 
 .innerPagesSect .card .title {
@@ -11340,6 +11341,7 @@ footer .footerContainer .flinks {
     border-radius: 50px;
     background-color: var(--primary-color);
     color: #fff;
+    cursor: pointer;
 }
 
 .lightBoxBtns {
