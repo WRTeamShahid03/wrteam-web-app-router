@@ -11349,11 +11349,13 @@ footer .footerContainer .flinks {
     border: none;
     border-radius: 8px;
     background-color: var(--productPage-primary-color);
+    background-color: transparent;
     color: #fff;
     font-weight: 600;
     position: relative;
     z-index: 12;
-    font-size: 20px;
+    font-size: 36px;
+    cursor: pointer;
 }
 
 .gallarybox_prevButton {
