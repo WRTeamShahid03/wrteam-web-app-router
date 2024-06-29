@@ -11337,9 +11337,6 @@ footer .footerContainer .flinks {
     font-size: 40px;
     width: max-content;
     height: max-content;
-    border: 1px solid #fff;
-    border-radius: 50px;
-    background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
 }
