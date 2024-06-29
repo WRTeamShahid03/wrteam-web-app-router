@@ -11319,5 +11319,69 @@ footer .footerContainer .flinks {
         right: 25%;
         transform: translate(50%, 50%);
     }
+}
 
+/* orbit ends here  */
+
+
+/* .lightBoxWrapper{
+    position: relative;
+} */
+
+.lightBoxWrapper .closeBtn svg {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    font-size: 40px;
+    width: max-content;
+    height: max-content;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.lightBoxBtns {
+    padding: 12px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--productPage-primary-color);
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 12;
+    font-size: 20px;
+}
+
+.gallarybox_prevButton {
+    left: 30px;
+}
+
+.gallarybox_nextButton {
+    right: 30px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .gallarybox_prevButton {
+        left: 5px;
+    }
+
+    .gallarybox_nextButton {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .lightBoxBtns {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .lightBoxWrapper .closeBtn svg {
+        font-size: 30px;
+    }
 }

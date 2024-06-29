@@ -48,6 +48,7 @@ import tab3Img8 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBrok
 import tab3Img9 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app9.jpg'
 import tab3Img10 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app10.jpg'
 import tab3Img11 from '../../../Asset/Images/05-22-24-eBroker Img-/05-22-24-eBroker Img-/App-05-22-24-JPG/app11.jpg'
+import LightBox from '@/Components/LightBox/Lightbox';
 
 
 const InnerPagesSect = ({ layoutTwo, title, desc }) => {
@@ -235,8 +236,6 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
         },
     ];
 
-
-
     const breakpoints = {
         0: {
             slidesPerView: 1.3,
@@ -278,6 +277,42 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
     }, []);
 
 
+
+    // light box 
+
+    // const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    // const [currentImage, setCurrentImage] = useState(null);
+    // const [titleImg, setTitleImg] = useState(null)
+
+    // const openLightbox = (img) => {
+    //     setCurrentImage(img);
+    //     setTitleImg(img?.img)
+    //     setViewerIsOpen(true);
+    // };
+
+    // const closeLightbox = () => {
+    //     setCurrentImage(null);
+    //     setViewerIsOpen(false);
+    // };
+
+    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [photos, setPhotos] = useState([])
+
+    const openLightbox = (data,index) => {
+        setCurrentIndex(index);
+        setViewerIsOpen(true);
+        setPhotos(data)
+    };
+
+    const closeLightbox = () => {
+        setViewerIsOpen(false);
+    };
+
+    useEffect(() => {
+    }, [viewerIsOpen])
+    
+
     return (
         <section className='innerPagesSect' style={{ background: `url(${layoutTwo ? bg2.src : bg.src})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className="container">
@@ -302,20 +337,21 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                         spaceBetween={30}
                                         freeMode={true}
                                         autoplay={{ delay: 1000 }}
-                                        modules={[Autoplay]}
+                                        // modules={[Autoplay]}
                                         navigation
                                         breakpoints={breakpoints}
                                     >
                                         {
-                                            tab3Data.map((data) => {
+                                            tab3Data.map((data,index) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper' onClick={() => openLightbox(tab3Data,index)}><Image src={data?.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>
                                                             </div>
+
                                                         </div>
                                                     </SwiperSlide>
                                                 )
@@ -338,11 +374,11 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                         breakpoints={breakpoints}
                                     >
                                         {
-                                            tab2Data.map((data) => {
+                                            tab2Data.map((data,index) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper' onClick={() => openLightbox(tab2Data,index)}><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>
@@ -369,11 +405,11 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                                         breakpoints={breakpoints}
                                     >
                                         {
-                                            tab1Data.map((data) => {
+                                            tab1Data.map((data,index) => {
                                                 return (
                                                     <SwiperSlide key={data.id} >
                                                         <div className="card">
-                                                            <div className='imgWrapper'><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
+                                                            <div className='imgWrapper' onClick={() => openLightbox(tab1Data,index)}><Image src={data.img} height={0} width={0} alt='cardImg' /></div>
                                                             <div>
                                                                 <span className='title'>{data.title}</span>
                                                                 <span className='desc'>{data.desc}</span>
@@ -398,6 +434,19 @@ const InnerPagesSect = ({ layoutTwo, title, desc }) => {
                     }
                 </div>
             </div>
+            {/* <LightBox
+                photos={currentImage}
+                viewerIsOpen={viewerIsOpen}
+                onClose={closeLightbox}
+                titleImg={titleImg}
+            /> */}
+              <LightBox
+                photos={photos}
+                viewerIsOpen={viewerIsOpen}
+                onClose={closeLightbox}
+                currentIndex={currentIndex}
+                setCurrentIndex={setCurrentIndex}
+            />
         </section>
     );
 };
