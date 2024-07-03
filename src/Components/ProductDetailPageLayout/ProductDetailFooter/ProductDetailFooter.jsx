@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import productLogo from '../../../Asset/Imagesapp/product-detail-page/ProductLogoFooter.png'
+import productLogo from '../../../Asset/Images/product-detail-page/ProductLogoFooter.png'
 import productLogo2 from '../../../Asset/Images/product-detail-page/layout-2/ecart.png'
 import codecanyon from '../../../Asset/Images/product-detail-page/Codecanyon.png'
 import envato from '../../../Asset/Images/product-detail-page/Envato.png'
