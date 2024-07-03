@@ -90,7 +90,7 @@ const Blogs = () => {
     <>
       {
         router?.slug &&
-        <Breadcrum title="" blueText="Blogs" contentOne="Home" contentTwo="Blogs" contentThree={router?.slug.toLocaleLowerCase()} />
+        <Breadcrum title="" blueText="Blogs" contentOne="Home" contentTwo="Blogs" contentThree={router?.slug} />
       }
 
       <section className='ourBlogs container'>
