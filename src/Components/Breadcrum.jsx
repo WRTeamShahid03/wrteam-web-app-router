@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlineDoubleRight } from 'react-icons/ai'
@@ -13,31 +14,34 @@ const Breadcrum = ({ title, blueText, contentOne, contentTwo, contentThree, cont
                 <span className='line5'></span>
             </div>
             <div className="container breadcrumContent">
-                <h1
+                <span className='mainTitle'
                 // data-aos="fade-down"  data-aos-once="true" data-aos-duration="800"
-                >{title} <span>{blueText}</span></h1>
+                >{title} <span>{blueText}</span></span>
                 <div className='pageName'
                 //  data-aos="fade-left"  data-aos-once="true" data-aos-duration="800"
                 >
                     <Link href={'/'}><span>{contentOne} </span></Link>
                     <span> <AiOutlineDoubleRight size={20} /> </span>
-                    <span>{contentTwo}</span>
                     {
-                        contentThree ?
-                            <>
-                                <span> <AiOutlineDoubleRight size={20} /> </span>
-                                <span>{contentThree}</span>
-                                {
-                                    contentFour ?
-                                        <>
-                                            <span> <AiOutlineDoubleRight size={20} /> </span>
-                                            <span>{contentFour}</span>
-                                        </>
-                                        : null
-                                }
-                            </> : ""
-
+                        contentTwo === 'Blogs' ?
+                            <Link href={'/blogs'}><span>{contentTwo} </span></Link> :
+                            <span>{contentTwo}</span>
                     }
+                    {
+                        contentThree &&
+                        <>
+                            <span> <AiOutlineDoubleRight size={20} /> </span>
+                            <span className='contentUpperCase'>{contentThree}</span>
+                        </>
+                    }
+                    {
+                        contentFour &&
+                        <>
+                            <span> <AiOutlineDoubleRight size={20} /> </span>
+                            <span className='contentUpperCase'>{contentFour}</span>
+                        </>
+                    }
+
 
                 </div>
 

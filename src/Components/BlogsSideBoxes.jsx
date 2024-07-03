@@ -11,7 +11,7 @@ import { categoriesSelector } from '@/redux/reuducer/categoriesSlice'
 import Link from 'next/link'
 import { recentBlogsSelector } from '@/redux/reuducer/recentBlogsSlice'
 
-const BlogsSideBoxes = ({ loading, categories, showRecentBlogs }) => {
+const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
 
   const recentBlogsData = useSelector(recentBlogsSelector);
   // const categoriesData = useSelector(categoriesSelector);
@@ -35,7 +35,7 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs }) => {
                 return <div key={data.id}>
                   <Link href={`/blogs/${data?.slug}`}>
                     <div className="boxDetails" >
-                      <span className='boxDetailsSpan'>{data.name}</span>
+                      <span className={`boxDetailsSpan ${catSlug === data?.slug ? 'selectedCat' : ''}`}>{data.name}</span>
                       {/* <span>{data.cateNum}</span> */}
                     </div>
                   </Link>
@@ -58,7 +58,7 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs }) => {
               )) :
               recentBlogsData?.map((data, index) => {
                   return <div key={data?.id}>
-                    <Link href={`/blog-details/${data?.slug}`} >
+                    <Link href={`/blog/${data?.slug}`} >
                       <div className={`boxDetails ${recentBlogsData?.length - 1 === index ? 'lastDiv' : ''}`}>
                         <span><Image height={0} width={0} loading="lazy" src={data?.image} alt="" className='rbImg' /></span>
                         <div className='recentBoxContent'>

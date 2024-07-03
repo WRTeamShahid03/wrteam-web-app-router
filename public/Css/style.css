@@ -2374,13 +2374,13 @@ footer .footerContainer .flinks {
     top: 146px;
 }
 
-.breadcrum h1 {
+.breadcrum .mainTitle{
     font: normal normal 800 38px/22px Montserrat;
     letter-spacing: 0px;
     color: #212121;
 }
 
-.breadcrum h1 span {
+.breadcrum .mainTitle span {
     color: var(--primary-color);
 }
 
@@ -3118,16 +3118,23 @@ footer .footerContainer .flinks {
 
 .ourBlogs .cateBox,
 .ourBlogs .recentBlogs,
-.ourBlogs .tags {
+.ourBlogs .tagsWrapper {
     border: 1px solid lightgrey;
     border-radius: 16px;
     padding: 20px;
     position: relative;
 }
 
-.ourBlogs .recentBlogs,
-.ourBlogs .tags {
+.ourBlogs .recentBlogs{
     margin-top: 30px;
+}
+
+.ourBlogs .tagsWrapper .tags{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .ourBlogs .boxHeadline {
@@ -3223,16 +3230,19 @@ footer .footerContainer .flinks {
     color: #212121;
 }
 
-.ourBlogs .tags .boxHeadline {
+.ourBlogs .tagsWrapper .boxHeadline {
     display: block;
     margin-bottom: 26px;
 }
 
-.ourBlogs .tags .common_span {
-    margin-top: 15px;
-    margin-left: 12px;
+.ourBlogs .tagsWrapper .common_span {
     display: inline-block;
     padding: 6px;
+    cursor: pointer;
+}
+
+.ourBlogs .selectedCat{
+    color: var(--primary-color) !important;
 }
 
 .ourBlogs .blogsRow {

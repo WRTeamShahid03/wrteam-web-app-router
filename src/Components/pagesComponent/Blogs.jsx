@@ -90,7 +90,7 @@ const Blogs = () => {
     <>
       {
         router?.slug &&
-        <Breadcrum title="" blueText="Blogs" contentOne="Home" contentTwo="Blogs" contentThree={router?.query?.slug} />
+        <Breadcrum title="" blueText="Blogs" contentOne="Home" contentTwo="Blogs" contentThree={router?.slug.toLocaleLowerCase()} />
       }
 
       <section className='ourBlogs container'>
@@ -124,7 +124,7 @@ const Blogs = () => {
 
                                 <p className='card-text'>{blogs?.short_description.length > 180 ? blogs?.short_description.slice(0, 180) + "" + "..." : blogs?.short_description}</p>
 
-                                <Link href={`/blog-details/${blogs?.slug}`}>  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
+                                <Link href={`/blog/${blogs?.slug}`}>  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
                               </div>
 
                             </div>
@@ -163,7 +163,7 @@ const Blogs = () => {
 
             <div className="col-sm-12 col-md-12 col-lg-4">
 
-              <BlogsSideBoxes categories={categories} showRecentBlogs={false} recentBlogs={blogsData} loading={loading} />
+              <BlogsSideBoxes categories={categories} showRecentBlogs={false} recentBlogs={blogsData} loading={loading} catSlug={router?.slug} />
 
             </div>
           </div>

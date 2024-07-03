@@ -1,17 +1,24 @@
-import { GET_SEO_SETTINGS } from '@/utils/api';
+import { GET_PRODUCTS, GET_SEO_SETTINGS } from '@/utils/api';
 import axios from 'axios';
-import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
+// import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
 
-export const generateMetadata = async () => {
+const ProductDetailsPage = dynamic(() => import('@/Components/pagesComponent/ProductDetailsPage'), { ssr: false })
+
+export const generateMetadata = async (params) => {
+    // console.log('slug === > ',slug.params)
+    const slug = params?.params?.slug
     try {
         const response = await axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=home`
+           `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_PRODUCTS}?slug=${slug}`
         );
         const SEOData = response.data;
 
+        // console.log('SEOData =====>  ',SEOData)
+
         return {
-            title: SEOData?.data?.title,
-            description: SEOData?.data?.description,
+            title: SEOData && SEOData?.data?.seo_title,
+            description: SEOData && SEOData?.data?.seo_keywords,
+            keywords: SEOData && SEOData?.data?.seo_description,
             openGraph: {
                 images: SEOData?.data?.ogImage ? [SEOData?.data?.ogImage] : [],
             },
@@ -31,5 +38,12 @@ const Index = () => {
         </>
     )
 }
+
+
+Index.getInitialProps = async ({ query }) => {
+    const { slug } = query;
+    return { slug };
+};
+
 
 export default Index

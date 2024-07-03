@@ -48,7 +48,7 @@ const RecentBlogs = () => {
                                                     {ele?.title.length > 50 ? ele?.title.slice(0, 55) + "" + "..." : ele?.title}</p>
                                                 <p className='card-text'>{ele?.short_description.length > 180 ? ele?.short_description.slice(0, 180) + "" + "..." : ele?.short_description}</p>
 
-                                                <Link href={`/blog-details/${ele?.slug}`}>  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
+                                                <Link href={`/blog/${ele?.slug}`}>  <button className='blogComman_btn'>Read More <BsArrowRightCircle style={{ paddingBottom: "2px" }} /> </button> </Link>
                                             </div>
                                         </div>
                                     </div>
