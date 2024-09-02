@@ -1,8 +1,8 @@
 'use client'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
-const Index = () => {
+const Page = () => {
     const router = useRouter()
     useEffect(() => {
         router.push('/')
@@ -15,4 +15,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Page
