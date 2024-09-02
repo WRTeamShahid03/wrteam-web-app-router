@@ -40,8 +40,8 @@ const GuideSect = () => {
                     <div className="col-12">
                         <div className="row cardsWrapper">
 
-                            <Image src={guideArr} height={0} width={0} className='arr1' />
-                            <Image src={guideArr} height={0} width={0} className='arr2' />
+                            <Image src={guideArr} height={0} width={0} className='arr1' alt='arrowIcon'/>
+                            <Image src={guideArr} height={0} width={0} className='arr2' alt='arrowIcon'/>
                             {
                                 cardsdata.map((data) => {
                                     return <div className="col-12 col-md-6 col-lg-4" key={data.id}>

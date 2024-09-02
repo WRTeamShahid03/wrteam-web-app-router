@@ -45,7 +45,8 @@ const nextConfig = {
             apexcharts: path.resolve(__dirname, './node_modules/apexcharts-clevision')
         }
         return config
-    }
+    },
+    compress: false,
 }
 
 // Conditionally set the output based on the environment

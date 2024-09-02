@@ -6,7 +6,7 @@ const Loader = () => {
     return (
         <>
             <div className="loaderWrapper container">
-                <Image src={loader} height={0} width={0}/>
+                <Image src={loader} height={0} width={0} alt="loader"/>
             </div>
 
         </>

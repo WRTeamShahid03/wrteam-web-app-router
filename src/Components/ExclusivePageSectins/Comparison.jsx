@@ -54,7 +54,7 @@ const Comparison = () => {
                     <div className="row comparisonCardsWrapper">
                         {
                             data.map((item) => {
-                                return <div className="col-lg-4 col-md-6 col-12">
+                                return <div className="col-lg-4 col-md-6 col-12" key={item.id}>
                                     <div className="card comparisonCard">
                                         <div className='titleWrapper'>
                                             <span className='title'>{item.title}</span>

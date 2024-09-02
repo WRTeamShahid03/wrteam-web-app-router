@@ -65,7 +65,7 @@ const WhyChoose = () => {
                                         data.slice(0, 3).map((item) => {
                                             return <div className="sideCard" key={item.id}>
                                                 <div className='imgWrapper'>
-                                                    <Image src={item.img} />
+                                                    <Image src={item.img} alt='icon'/>
                                                 </div>
                                                 <span className='title'>{item.title}</span>
                                                 <span className='desc'>{item.desc}</span>
@@ -86,7 +86,7 @@ const WhyChoose = () => {
                                         data.slice(3, 6).map((item) => {
                                             return <div className="sideCard" key={item.id}>
                                                 <div className='imgWrapper'>
-                                                    <Image src={item.img} />
+                                                    <Image src={item.img} alt='icon'/>
                                                 </div>
                                                 <span className='title'>{item.title}</span>
                                                 <span className='desc'>{item.desc}</span>

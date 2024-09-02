@@ -20,9 +20,9 @@ const EnvantoProfileSection = () => {
                         </div>
 
                         <div className="col-12 bottomDiv">
-                            <div><Image src={eliteAuthor} height={0} width={0} /></div>
-                            <div><Image src={winnerTeam} height={0} width={0} /></div>
-                            <div><Image src={saleCount} height={0} width={0} /></div>
+                            <div><Image src={eliteAuthor} height={0} width={0} alt='icon'/></div>
+                            <div><Image src={winnerTeam} height={0} width={0} alt='icon'/></div>
+                            <div><Image src={saleCount} height={0} width={0} alt='icon'/></div>
                         </div>
 
                         <div className="col-12 btnWrapper">

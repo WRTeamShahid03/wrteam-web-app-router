@@ -68,14 +68,14 @@ const PaymentSect = ({ paymentGatewaySectData }) => {
                                         <div className="orbit-icon-container orbit-icon-container-outer">
                                             {
                                                 data?.gateways?.slice(0, 4).map((item, index) => {
-                                                    return <div className={`orbit-icon icon${index + 1}`}><img src={item?.image_url} alt="gatewayIcon" /><span>{item?.name}</span></div>
+                                                    return <div className={`orbit-icon icon${index + 1}`} key={index}><img src={item?.image_url} alt="gatewayIcon" /><span>{item?.name}</span></div>
                                                 })
                                             }
                                         </div>
                                         <div className="orbit-icon-container-inner">
                                             {
                                                 data?.gateways?.slice(4, 8).map((item, index) => {
-                                                    return <div className={`orbit-icon icon${index + 1}`}><img src={item?.image_url} alt="gatewayIcon" /><span>{item?.name}</span></div>
+                                                    return <div className={`orbit-icon icon${index + 1}`} key={index}><img src={item?.image_url} alt="gatewayIcon" /><span>{item?.name}</span></div>
                                                 })
                                             }
                                         </div>

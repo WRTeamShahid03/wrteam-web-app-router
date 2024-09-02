@@ -94,7 +94,7 @@ const Testimonials = () => {
                 </div>
                 {
                     data?.map((item) => {
-                        return <div className="col-12 col-md-6 col-lg-4">
+                        return <div className="col-12 col-md-6 col-lg-4" key={item.id}>
                             <div className="card">
                                 <div className="profileWrapper">
                                     <div className='profileInfo'>
