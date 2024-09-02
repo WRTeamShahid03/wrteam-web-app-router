@@ -1,15 +1,16 @@
 import Blogs from '@/Components/pagesComponent/Blogs';
-import Head from 'next/head';
+
+export const metadata = {
+  title: process.env.NEXT_PUBLIC_TITLE,
+  description: process.env.NEXT_PUBLIC_DESCRIPTION,
+  keywords: process.env.NEXT_PUBLIC_META_KEYWORD
+}
 
 const Index = () => {
 
   return (
 
     <>
-      <Head>
-        <title>WRTeam bhuj based best IT company with all digital solutions.</title>
-        <meta name="description" content="WRTeam Gujarat based IT company which has created code of website & application. Also provide UI/UX, IT consulting and digital marketing services." />
-      </Head>
       <Blogs />
     </>
   )

@@ -24,6 +24,7 @@ export const generateMetadata = async () => {
 
 const page = () => {
 
+
     return (
         <>
             <WebProducts />

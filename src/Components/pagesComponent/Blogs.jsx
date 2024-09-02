@@ -16,7 +16,7 @@ import { formatDate } from '@/utils';
 import BlogsCardSkeleton from '../Skeletons/BlogsCardSkeleton';
 import { setRecentBlogsData } from '@/redux/reuducer/recentBlogsSlice';
 import { setCategoriesData } from '@/redux/reuducer/categoriesSlice';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import NoDataFound from '../NoDataFound';
 
 const Blogs = () => {
@@ -26,7 +26,7 @@ const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [blogsData, setBlogsData] = useState([])
   const [categories, setCategories] = useState([])
-  const router = useRouter()
+  const router = useParams()
   // console.log('routeCat', router)
 
   const getCategoriesData = () => {
@@ -60,7 +60,7 @@ const Blogs = () => {
   const loadPageData = (page) => {
     setLoading(true)
     GetBlogsApi({
-      category_slug: router?.query?.slug,
+      category_slug: router?.slug,
       onSuccess: (response) => {
         setBlogsData(response?.data?.data);
         setTotalPage(response?.data?.last_page)
