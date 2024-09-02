@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from 'react'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
@@ -31,7 +30,7 @@ const Counter = () => {
                                     <Image height={0} width={0} loading="lazy" src={happy} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'><CountUp start={0} end={15} duration={2} delay={0} />k+</span>}
+                                    {counter && <span className='countNum'><CountUp start={0} end={17} duration={2} delay={0} />k+</span>}
 
                                     <span className='countText'>
                                         Happy Clients
@@ -46,7 +45,7 @@ const Counter = () => {
                                     <Image height={0} width={0} loading="lazy" src={projectDone} alt="" />
                                 </div>
                                 <div className="countContent">
-                                    {counter && <span className='countNum'> <CountUp start={0} end={450} duration={2} delay={0} />+</span>}
+                                    {counter && <span className='countNum'> <CountUp start={0} end={500} duration={2} delay={0} />+</span>}
 
                                     <span className='countText'>
                                         Project Wrapped up

@@ -7,11 +7,11 @@ import { formatDate } from '@/utils'
 import CategoriesSkeleton from './Skeletons/CategoriesSkeleton'
 import RecentBlogsSkeleton from './Skeletons/RecentBlogsSkeleton'
 import { useSelector } from 'react-redux'
+import { recentBlogsSelector } from '@/redux/reuducer/recentBlogsSlice'
 import { categoriesSelector } from '@/redux/reuducer/categoriesSlice'
 import Link from 'next/link'
-import { recentBlogsSelector } from '@/redux/reuducer/recentBlogsSlice'
 
-const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
+const BlogsSideBoxes = ({ loading, categories, showRecentBlogs, catSlug }) => {
 
   const recentBlogsData = useSelector(recentBlogsSelector);
   // const categoriesData = useSelector(categoriesSelector);
@@ -22,7 +22,7 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
       <section className='ourBlogs cateSideBoxes'>
 
 
-        <div className="cateBox">
+        <div className={`cateBox ${!showRecentBlogs && 'mb-5'}`}>
           <span className='boxHeadline'>Category</span>
 
           {
@@ -31,12 +31,15 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
                 <CategoriesSkeleton />
               </div>
             )) :
-            categories?.map((data) => {
-                return <div key={data.id}>
-                  <Link href={`/blogs/${data?.slug}`}>
+              categories?.map((data) => {
+                return <div>
+                  <Link href={`/blogs/${data?.slug}`} key={data?.id}>
                     <div className="boxDetails" >
-                      <span className={`boxDetailsSpan ${catSlug === data?.slug ? 'selectedCat' : ''}`}>{data.name}</span>
-                      {/* <span>{data.cateNum}</span> */}
+                      <span className={`boxDetailsSpan ${catSlug === data?.slug ? 'selectedCat' : ''}`}>{data?.name}</span>
+                      {
+                        data?.blogs_count &&
+                        <span>({data?.blogs_count})</span>
+                      }
                     </div>
                   </Link>
                 </div>
@@ -46,7 +49,7 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
         </div>
 
         {
-          showRecentBlogs &&
+          showRecentBlogs && recentBlogsData &&
           <div className="recentBlogs mb-5">
             <span className='boxHeadline'>Recent Blogs</span>
 
@@ -56,7 +59,7 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs,catSlug }) => {
                   <RecentBlogsSkeleton />
                 </div>
               )) :
-              recentBlogsData?.map((data, index) => {
+                recentBlogsData?.map((data, index) => {
                   return <div key={data?.id}>
                     <Link href={`/blog/${data?.slug}`} >
                       <div className={`boxDetails ${recentBlogsData?.length - 1 === index ? 'lastDiv' : ''}`}>

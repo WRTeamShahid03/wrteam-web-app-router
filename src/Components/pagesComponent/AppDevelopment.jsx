@@ -189,9 +189,9 @@ const AppDevelopment = () => {
                                 <span className="common_span">
                                     App <span>Development</span>
                                 </span>
-                                <h1 className='comman_Headlines'>
+                                <h2 className='comman_Headlines'>
                                     Make Mobile App  With the Best <span>App Development</span> Company
-                                </h1>
+                                </h2>
 
                                 <p className="comman_para"> Our app development service is available to meet your unique business needs and create high-quality, user-friendly mobile applications.
                                 </p>
@@ -222,9 +222,9 @@ const AppDevelopment = () => {
                                 <span className="common_span">
                                     <span>What</span> We Can Do <span>For You</span>
                                 </span>
-                                <h3 className='comman_Headlines'>
+                                <h2 className='comman_Headlines'>
                                     Services <span>We Can Help </span>You With
-                                </h3>
+                                </h2>
                             </div>
                         </div>
 
@@ -254,7 +254,7 @@ const AppDevelopment = () => {
                             <span className="common_span">
                                 Extensive <span>Benefits</span>
                             </span>
-                            <h3 className='comman_Headlines'>Unleashing the Potential of the Best Mobile <span>App  Development</span> Service.</h3>
+                            <h2 className='comman_Headlines'>Unleashing the Potential of the Best Mobile <span>App  Development</span> Service.</h2>
                         </div>
                     </div>
 
@@ -301,8 +301,8 @@ const AppDevelopment = () => {
                                 <span className="common_span">
                                     Our <span>Work Process</span>
                                 </span>
-                                <h3 className='comman_Headlines'>
-                                    How Does Our <span>App Development</span> Team Create an App For You?</h3>
+                                <h2 className='comman_Headlines'>
+                                    How Does Our <span>App Development</span> Team Create an App For You?</h2>
                             </div>
 
                             <div className="processCardWrapper">
@@ -379,9 +379,9 @@ const AppDevelopment = () => {
                                 <span className="common_span">
                                     <span>We</span> Build
                                 </span>
-                                <h3 className='comman_Headlines' >
+                                <h2 className='comman_Headlines' >
                                     App <span>Development</span> Services Tailored for <span>Latest Platforms</span>
-                                </h3>
+                                </h2>
                                 <p className="comman_para firstP">
                                     Our app development mastery is across iOS, and Android and is compatible with cross platforms. Tailored solutions, universal impact.
 

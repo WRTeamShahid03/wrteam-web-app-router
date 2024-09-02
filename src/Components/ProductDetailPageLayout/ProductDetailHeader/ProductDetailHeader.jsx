@@ -10,22 +10,58 @@ import HelpDropDown from './HelpDropDown'
 import MoreDropDown from './MoreDropDown'
 import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useSelector } from 'react-redux'
+import { layoutSelector, productDataSelector } from '@/redux/reuducer/productLayoutSlice'
+import navLogo from '../../../Asset/wrteam logo.svg';
 
-const ProductDetailHeader = ({ layoutTwo }) => {
+const ProductDetailHeader = () => {
+
+    const layout = useSelector(layoutSelector)
+
+    const productData = useSelector(productDataSelector)
+
+    console.log('productData redux =>',productData)
 
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 0) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+      
+    }, [productData])
+    
+
     return (
         <>
-            <header className={`productDetailsNavbar ${layoutTwo ? 'layoutTwoHeader' : ''}`}>
+            <header className={`productDetailsNavbar ${scrolled ? 'productDetailsStickyNavbar' : ''} ${layout === 1 ? 'layoutOneHeader' : ''}`}>
                 <div className="container">
                     <div className="navbarWrapper">
                         <div className="leftDiv">
                             <div className="productLogo">
-                                <Link href={''}>  <Image src={!layoutTwo ? productLogo : productLogo2} height={0} width={0} alt='productLogo' /></Link>
+                                {
+                                    productData?.icon_image ?
+                                        <Link href={productData?.codecanyon_link ? productData?.codecanyon_link : '/'} target='_blank'>  <Image src={productData?.icon_image} className='productLogoImg' height={0} width={0} alt='productLogo' /></Link> :
+                                        <Link href={'/'}>  <Image src={navLogo} className='companyLogo' height={0} width={0} alt='productLogo' /></Link>
+                                }
                             </div>
                         </div>
                         <div className="centerDiv">
@@ -38,8 +74,8 @@ const ProductDetailHeader = ({ layoutTwo }) => {
                             <MoreDropDown setShow={setShow} />
                         </div>
                         <div className="rightDiv">
-                            <Link href={''}>
-                                <button className={`productCommonBtn ${layoutTwo ? 'layoutTwoproductCommonBtn' : ''}`}>
+                            <Link href={productData?.checkout_url ? productData?.checkout_url : '/'} target='_blank'>
+                                <button className={`productCommonBtn ${layout === 1 ? 'layoutOneproductCommonBtn' : ''}`}>
                                     Purchase Now
                                 </button>
                             </Link>
@@ -66,7 +102,7 @@ const ProductDetailHeader = ({ layoutTwo }) => {
                             </div>
                             <div className="rightDiv">
                                 <Link href={''}>
-                                    <button className={`productCommonBtn ${layoutTwo ? 'layoutTwoproductCommonBtn' : ''}`}>
+                                    <button className={`productCommonBtn ${layout !== 1 ? 'layoutTwoproductCommonBtn' : ''}`}>
                                         Purchase Now
                                     </button>
                                 </Link>

@@ -9,16 +9,17 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import navLogo from '../../Asset/navLogo.svg'
 import GetInTouch from "../GetInTouch";
+import { useRouter } from "next/router";
 import Link from "next/link"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
 
-   const pathname = usePathname()
+   const router = usePathname()
 
    // Check if the current route contains "contact-us"
-   const isContactUsPage = pathname.includes("contact-us");
+   const isContactUsPage = router.includes("contact-us");
 
    return (
       <>

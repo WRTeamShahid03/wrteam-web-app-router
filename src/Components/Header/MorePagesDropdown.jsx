@@ -39,6 +39,16 @@ const MorePagesDropdown = ({setShow}) => {
                 </>
             ),
         },
+        {
+            key: '4',
+            label: (
+                <>
+                    <span>
+                        <Link href="/exclusive-license" className={`dropdownItem ${router === '/exclusive-license/' ? 'navActive' : ''}`} onClick={() => setShow(false)}>Exclusive License</Link>
+                    </span>
+                </>
+            ),
+        },
     ];
 
     return (
@@ -50,7 +60,7 @@ const MorePagesDropdown = ({setShow}) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router === '/career' || router === '/blogs' || router === '/contact-us' ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router === '/career/' || router === '/blogs/' || router === '/contact-us/' ? 'navActive' : ''}`}>
                         More
                         <AiFillPlusCircle size={19} />
                     </span>

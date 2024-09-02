@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlineDoubleRight } from 'react-icons/ai'
@@ -14,9 +13,9 @@ const Breadcrum = ({ title, blueText, contentOne, contentTwo, contentThree, cont
                 <span className='line5'></span>
             </div>
             <div className="container breadcrumContent">
-                <span className='mainTitle'
+                <h1 className='mainTitle'
                 // data-aos="fade-down"  data-aos-once="true" data-aos-duration="800"
-                >{title} <span>{blueText}</span></span>
+                >{title} <span>{blueText}</span></h1>
                 <div className='pageName'
                 //  data-aos="fade-left"  data-aos-once="true" data-aos-duration="800"
                 >

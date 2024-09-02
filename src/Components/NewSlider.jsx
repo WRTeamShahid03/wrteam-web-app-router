@@ -54,7 +54,7 @@ const NewSlider = ({ newSwiperData }) => {
                     {
                         newSwiperData.map((ele) => {
                             return <div style={{ background: "#EDEDED" }} key={ele.id}>
-                                <h1>{ele.title}</h1>
+                                <h3 className='newSliderTitle'>{ele.title}</h3>
                                 <p>{ele.desc}</p>
                             </div>
                         })
@@ -62,9 +62,9 @@ const NewSlider = ({ newSwiperData }) => {
                 </div>
                 <div className="main-slide">
                     {
-                        newSwiperData.map((ele)=>{
+                        newSwiperData.map((ele) => {
                             return <div key={ele.id}>
-                                <Image height={0} width={0} loading="lazy"  src={ele.img} alt={ele.alt} />
+                                <Image height={0} width={0} loading="lazy" src={ele.img} alt={ele.alt} />
                             </div>
                         })
                     }

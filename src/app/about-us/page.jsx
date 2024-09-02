@@ -1,4 +1,4 @@
-import AboutUs from '../../../src/Components/pagesComponent/AboutUs';
+import AboutUs from '../../Components/pagesComponent/AboutUs.jsx';
 import { GET_SEO_SETTINGS } from '@/utils/api';
 import axios from 'axios';
 

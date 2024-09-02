@@ -20,13 +20,16 @@ export const categoriesDataSlice = createSlice({
   }
 })
 
+// Export the categoryCount reducer and action
 export const { setCategories } = categoriesDataSlice.actions
 export default categoriesDataSlice.reducer
 
+// Function to load category count data
 export const setCategoriesData = data => {
   store.dispatch(setCategories({ data }))
 }
 
+// Selector function to get tempdata from the state
 export const setCategioriesSelector = state => state.setCategoriesData
 
 // Selector function to get categoryCount from the state

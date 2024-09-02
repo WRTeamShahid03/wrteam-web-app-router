@@ -5,6 +5,7 @@ import apiMiddleware from '../middleware/api'; // Import your custom API middlew
 import settingsReducer from "../reuducer/settingSlice";
 import recentBlogsDataSlice from '../reuducer/recentBlogsSlice';
 import categoriesSlice from '../reuducer/categoriesSlice';
+import productLayoutSlice from '../reuducer/productLayoutSlice';
 
 const persistConfig = {
   key: 'wrteam',
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   Settings: settingsReducer,
   setRecentBlogsData: recentBlogsDataSlice,
   setCategoriesData: categoriesSlice,
+  setLayoutData: productLayoutSlice,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

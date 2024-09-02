@@ -4,8 +4,10 @@ import { RiCloseCircleFill } from "react-icons/ri";
 import { FaArrowRight } from "react-icons/fa6";
 import Table from 'react-bootstrap/Table';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
+import { productDataSelector } from '@/redux/reuducer/productLayoutSlice';
 
-const LicensePlan = ({ productDetailPage,layouTwo }) => {
+const LicensePlan = ({ productDetailPage }) => {
 
     const regularlicenseData = [
         {
@@ -21,7 +23,7 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
         {
             id: 2,
             detail: '6 months of general and technical support',
-            otherText: 'As per Envanto support policy',
+            otherText: 'As per Envato support policy',
             add: true
         },
         {
@@ -129,6 +131,8 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
         },
     ]
 
+    const productData = useSelector(productDataSelector)
+
     return (
         <>
             <section className="licensePlan container">
@@ -136,25 +140,24 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
                 <Table bordered >
                     <thead>
                         <tr>
-                            <th className={`plansContent plansHead ${productDetailPage  ? 'showDesc' : ''}`}>
+                            <th className='plansContent plansHead'>
                                 <div>
 
                                     <span className='title'>Product Plans</span>
-                                    {
-                                        productDetailPage ? <span className='desc'>Choose the ideal plan that caters to your business requirements and maximizes your potential</span> : null
-                                    }
                                 </div>
                             </th>
                             <th className='priceHead'>
                                 <div>
                                     {
-                                        productDetailPage ?
-                                            <span className='price'>$59</span> : null
+                                        productDetailPage &&
+                                        <span className='price'>$59</span>
                                     }
                                     <span>Regular License</span>
                                     {
-                                        productDetailPage ?
-                                            <Link href={''} target='_blank'><button>Purchase Now <FaArrowRight /></button></Link> : null
+                                        productDetailPage &&
+                                        <Link href={productData?.checkout_url ? productData?.checkout_url : '#licenceSection'} target='_blank'>
+                                            <button>Purchase Now <FaArrowRight /></button>
+                                        </Link>
                                     }
                                 </div>
                             </th>
@@ -162,13 +165,15 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
                                 <div className='extendedDiv'>
                                     <span className='recommended'>Recommended</span>
                                     {
-                                        productDetailPage ?
-                                            <span className='price'>$360</span> : null
+                                        productDetailPage &&
+                                        <span className='price'>$360</span>
                                     }
                                     <span>Extended License</span>
                                     {
-                                        productDetailPage ?
-                                            <Link href={''} target='_blank'> <button className='extendedPurchase'>Purchase Now <FaArrowRight /></button></Link> : null
+                                        productDetailPage &&
+                                        <Link href={productData?.extended_license_link ? productData?.extended_license_link : '#licenceSection'}>
+                                            <button className='extendedPurchase'>Purchase Now <FaArrowRight /></button>
+                                        </Link>
                                     }
                                 </div>
                             </th>
@@ -320,6 +325,54 @@ const LicensePlan = ({ productDetailPage,layouTwo }) => {
                         </tr>
                     </tbody>
                 </Table>
+                {/* <div className="row">
+                    <div className="col-4 plansDiv contentWrapper">
+                        <div className='plansContent plansHead'>
+                            <span className='title'>Product Plans</span>
+                            <span className='desc'>Choose the ideal plan that caters to your business requirements and maximizes your potential</span>
+                        </div>
+                        {
+                            regularlicenseData.map((data) => {
+                                return <div className='plansContent'>
+                                    <span>{data.detail}</span>
+                                    {
+                                        data.otherText ?
+                                            <span className='otherText'>({data.otherText})</span> : ''
+                                    }
+                                </div>
+                            })
+                        }
+
+                    </div>
+                    <div className="col-4 regularPlan priceDiv contentWrapper">
+                        <div className='plansContent plansHead'>
+                            <span className='price'>$59</span>
+                            <span>Regular License</span>
+                            <button>Purchase Now</button>
+                        </div>
+
+                        {
+                            regularlicenseData.map((data) => {
+                                return <div className="plansContent"><span>{data.add ? <FaCheckCircle className='checkIcon ' /> : <RiCloseCircleFill className='closeIcon' />}</span>
+                                </div>
+                            })
+                        }
+
+                    </div>
+                    <div className="col-4 extendedPlan  priceDiv contentWrapper">
+                        <div className='plansContent plansHead'>
+                            <span className='price'>$360</span>
+                            <span>Extended License</span>
+                            <button className='extendedPurchase'>Purchase Now</button>
+                        </div>
+                        {
+                            extendedlicenseData.map((data) => {
+                                return <div className="plansContent"><span>{data.add ? <FaCheckCircle className='checkIcon' /> : <RiCloseCircleFill className='closeIcon' />}</span>
+                                </div>
+                            })
+                        }
+                    </div>
+                </div> */}
             </section>
         </>
     )

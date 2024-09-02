@@ -5,12 +5,14 @@ export const GET_SEO_SETTINGS = "seo-settings"
 const HIRE_US = "hire-us"
 const CONTACT_US = "contact-us"
 export const GET_PRODUCTS = "products"
+export const GET_PRODUCTS_DETAILS = "product-description"
 const GET_TESTIMONIALS = "testimonials"
 const GET_TEAM_MEMBERS = "team-members"
 const CAREER_MAIL = "send-career-email"
 const GET_VACANCIES = "get-vacancies"
 const CUSTOMISATION = "customisation-requirement"
 const GET_BLOGS = "blogs"
+const GET_BLOGS_CATEGORIES = "blogs-categories"
 const GET_CATEGORIES = "categories"
 
 // GET SETTINGS
@@ -62,6 +64,18 @@ export const getProducts = (page, category_id, slug, product_filter, content_id)
             product_filter: product_filter,
             content_id: content_id
 
+        },
+        authorizationHeader: false,
+
+    }
+}
+// GET PRODUCTS-DETAILS
+export const getProductsDetails = (slug) => {
+    return {
+        url: `${GET_PRODUCTS_DETAILS}`,
+        method: "GET",
+        params: {
+            slug: slug,
         },
         authorizationHeader: false,
 
@@ -178,6 +192,17 @@ export const getBlogs = (id, category_id, subcategory_id, slug, category_slug, s
             category_slug: category_slug,
             subcategory_slug: subcategory_slug
         },
+        authorizationHeader: false,
+
+    }
+}
+
+// GET BLOGS CATEGORIES
+export const getBLogsCategories = () => {
+    return {
+        url: `${GET_BLOGS_CATEGORIES}`,
+        method: "GET",
+        params: {},
         authorizationHeader: false,
 
     }

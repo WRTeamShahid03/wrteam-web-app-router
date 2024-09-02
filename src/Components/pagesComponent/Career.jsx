@@ -1,5 +1,6 @@
 'use client'
 import React, { use, useEffect, useRef, useState } from 'react'
+import Breadcrum from '@/Components/Breadcrum'
 import trianglePattern from '../../Asset/Icons/Triangle Pattern.png'
 import dotsPattern from '../../Asset/Icons/Dots Pattern.png'
 // import ourValues from '../../Asset/Images/our_values.png'
@@ -7,12 +8,13 @@ import ourValues from '../../Asset/Images/our_values.webp'
 import Link from 'next/link'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { FiUploadCloud } from 'react-icons/fi'
+import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast'
 import Head from 'next/head'
 import Image from 'next/image'
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import {GetVacanciesApi, careerMailApi } from '@/redux/actions/campaign'
+import { GetSettingsApi, GetVacanciesApi, careerMailApi } from '@/redux/actions/campaign'
 import { IoIosCloseCircle } from "react-icons/io";
 // import { Viewer } from '@react-pdf-viewer/core'
 import { Worker, Viewer } from '@react-pdf-viewer/core';
@@ -117,29 +119,7 @@ const Career = () => {
             text: 'SatFun activities'
         },
     ]
-
-    const jobCardData = [
-        {
-            id: 0,
-            title: 'Flutter Developer',
-            text: 'Experience: Freshers , 1+ Years',
-            link: '#applyNow'
-        },
-        {
-            id: 1,
-            title: 'Laravel Developer',
-            text: 'Experience: 1+ Years',
-            link: '#applyNow'
-        },
-        {
-            id: 2,
-            title: 'SEO Expert',
-            text: 'Experience: 1+ Years',
-            link: '#applyNow'
-        },
-
-    ]
-
+    
     const handleNumber = (e) => {
         const inputNumber = e.target.value.replace(/\D/g, '');
         const limitedNumber = inputNumber.slice(0, 16);
@@ -210,7 +190,6 @@ const Career = () => {
                     setFormLoader(true)
                 }
             })
-
         }
 
     };
@@ -256,7 +235,7 @@ const Career = () => {
                         <div className="col-sm-12 col-md-12 col-lg-6">
                             <div className="wrTeamLeftDiv">
                                 <span className='common_span'>Career <span>Growth</span> </span>
-                                <h3 className='comman_Headlines'>Why Work With <span>WRTeam </span></h3>
+                                <h2 className='comman_Headlines'>Why Work With <span>WRTeam </span></h2>
 
                                 <p className='firstP comman_para'>We value creativity, collaboration, and continuous learning</p>
 
@@ -302,7 +281,7 @@ const Career = () => {
                     <div className="col-sm-12 col-md-12 col-lg-12">
                         <div className="jobHeadlines">
                             <span className='common_span'><span>Career</span> Opportunities</span>
-                            <h3 className='commonHeadlines' >Current <span> Job Openings</span> At WRTeam</h3>
+                            <h2 className='commonHeadlines' >Current <span> Job Openings</span> At WRTeam</h2>
                             <span className='commonPara'>Explore our current opportunities and fill in the necessary details to apply for the desired profile. We'll be in touch with you very soon. If you don't hear from us within 7 days, you can reach us at <span className='mailHR'>hr@wrteam.in</span></span>
                         </div>
                     </div>
@@ -343,7 +322,7 @@ const Career = () => {
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
                             <div className="applyHeadlines">
-                                <h3 className='comman_Headlines'>Apply<span> Now</span></h3>
+                                <h2 className='comman_Headlines'>Apply<span> Now</span></h2>
 
                                 <span className='commonPara'>Explore our current opportunities and fill in the necessary details to apply for the desired profile. We'll be in touch with you very soon. If you don't hear from us within 7 days, you can reach us at <span className='mailHR'>hr@wrteam.in</span></span>
                             </div>
@@ -390,7 +369,7 @@ const Career = () => {
                                                 <option defaultValue>Select Apply For</option>
                                                 {
                                                     vacancies?.map((option) => {
-                                                        return <option value={option.title} key={option.title}>{option.title}</option>
+                                                        return <option value={option.title}>{option.title}</option>
                                                     })
                                                 }
                                                 {/* <option value="Flutter Developer">Flutter Developer</option>

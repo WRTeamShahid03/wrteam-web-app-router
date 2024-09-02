@@ -7,17 +7,17 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import navLogo from '../../Asset/wrteam logo.svg';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import ProductDropdown from './ProductDropdown';
 import ServiceDropdown from './ServiceDropdown';
 import Image from 'next/image';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MorePagesDropdown from './MorePagesDropdown';
-import { usePathname } from 'next/navigation';
 
 const Header = () => {
 
-  const router = usePathname();
+  const router = useRouter();
   const [show, setShow] = useState(false);
 
 
@@ -65,25 +65,25 @@ const Header = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
 
-                  <Link className={`nav-link ${router === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
+                  <Link className={`nav-link ${router.pathname === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
 
                   <ProductDropdown setShow={setShow} />
 
                   <ServiceDropdown setShow={setShow} />
 
-                  <Link className={`nav-link ${router === '/portfolio/' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
+                  <Link className={`nav-link ${router.pathname === '/portfolio' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
 
-                  {/* <Link className={`nav-link ${router === '/career' ? 'navActive' : ''}`} href="/career">Career</Link> */}
+                  {/* <Link className={`nav-link ${router.pathname === '/career' ? 'navActive' : ''}`} href="/career">Career</Link> */}
 
-                  <Link className={`nav-link ${router === '/about-us/' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
+                  <Link className={`nav-link ${router.pathname === '/about-us' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
 
-                  {/* <Link className={`nav-link ${router === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link> */}
+                  {/* <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link> */}
 
                   <MorePagesDropdown setShow={setShow} />
 
                   <div id="rightSide">
 
-                    <Link href="/hire-us/"> <button className="homeCommon_btn"> Hire Us </button> </Link>
+                    <Link href="/hire-us"> <button className="homeCommon_btn"> Hire Us </button> </Link>
 
                   </div>
                 </Nav>
@@ -104,19 +104,19 @@ const Header = () => {
         <Offcanvas.Body>
           <Nav className="me-auto">
 
-            <Link className={`nav-link ${router === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
+            <Link className={`nav-link ${router.pathname === '/' ? 'navActive' : ''}`} href="/"> Home</Link>
 
             <ProductDropdown setShow={setShow} />
 
             <ServiceDropdown setShow={setShow} />
 
-            <Link className={`nav-link ${router === '/portfolio' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
+            <Link className={`nav-link ${router.pathname === '/portfolio' ? 'navActive' : ''}`} href="/portfolio">Portfolio</Link>
 
-            {/* <Link className={`nav-link ${router === '/career' ? 'navActive' : ''}`} href="/career">Career</Link> */}
+            {/* <Link className={`nav-link ${router.pathname === '/career' ? 'navActive' : ''}`} href="/career">Career</Link> */}
 
-            <Link className={`nav-link ${router === '/about-us' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
+            <Link className={`nav-link ${router.pathname === '/about-us' ? 'navActive' : ''}`} href='/about-us'> About Us </Link>
 
-            {/* <Link className={`nav-link ${router === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link> */}
+            {/* <Link className={`nav-link ${router.pathname === '/contact-us' ? 'navActive' : ''}`} href="/contact-us">Contact Us</Link> */}
 
             <MorePagesDropdown setShow={setShow} />
 

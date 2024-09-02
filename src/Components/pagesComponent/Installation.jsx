@@ -239,7 +239,7 @@ const Installation = () => {
         },
         {
             id: 2,
-            text: 'Firebase Access'
+            text: 'Firebase Owner Access'
         },
         {
             id: 3,
@@ -252,6 +252,10 @@ const Installation = () => {
         {
             id: 5,
             text: 'Admin Details to be set (User Name / Password)'
+        },
+        {
+            id: 6,
+            text: 'Appleconnect'
         },
     ]
 
@@ -274,7 +278,7 @@ const Installation = () => {
                             <div className="row">
                                 {
                                     data.map((ele) => {
-                                        return <div className="col-12 col-md-6 col-lg-3" key={ele.id}>
+                                        return <div className="col-12 col-md-6 col-lg-3">
                                             <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard' ? 'standardPack' : ''}`}>
                                                 {
                                                     ele.packageName === 'Premium' ? <span className='recommended'>Full Setup</span> : ''
@@ -287,7 +291,7 @@ const Installation = () => {
                                                 {
                                                     ele.packageName === 'Basic' ?
                                                         basicServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -296,7 +300,7 @@ const Installation = () => {
                                                             </div>
                                                         })
                                                         : ele.packageName === 'Standard' || ele.packageName === 'Advance' ? standardAndAdvanceServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -304,7 +308,7 @@ const Installation = () => {
                                                                 }
                                                             </div>
                                                         }) : premiumServices.map((elem) => {
-                                                            return <div className="bottomDiv" key={elem.id}>
+                                                            return <div className="bottomDiv">
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -324,13 +328,13 @@ const Installation = () => {
                         <div className="row shareDetails">
                             <div className="col-lg-7 leftDiv">
                                 <div className="textWrapper">
-                                    <span className='headline'>For reskinning you have shared with us:</span>
+                                    <span className='headline'>For reskinning, you have to share with us:</span>
                                 </div>
                                 <div className="infoBox">
                                     {
                                         infoData.map((info) => {
                                             return <div className="infoWrapper mt-4 d-flex" key={info.id}>
-                                                <span className='icon me-2'><FaCheck /></span>
+                                                <span className='icon me-2' id={info.id === 5 ? 'icon2' : ''}><FaCheck /></span>
                                                 <span>{info.text}</span>
                                             </div>
                                         })

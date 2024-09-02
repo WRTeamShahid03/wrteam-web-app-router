@@ -219,9 +219,9 @@ const DigitalMarketing = () => {
                                 <span className="common_span">
                                     Digital Marketing <span>Services</span>
                                 </span>
-                                <h1 className='comman_Headlines' >
+                                <h2 className='comman_Headlines' >
                                     Grow your business with the Best <span> Digital Marketing </span> Services
-                                </h1>
+                                </h2>
 
                                 <p className="comman_para">Allow your business to grow globally with our best digital marketing services, get every marketing service in one place from expert marketers. </p>
                             </div>
@@ -251,9 +251,9 @@ const DigitalMarketing = () => {
                                 <span className="common_span">
                                     {/* <span> What We</span> Offer</span> */}
                                     <span> What </span>We Offer</span>
-                                <h3 className='comman_Headlines'>
+                                <h2 className='comman_Headlines'>
                                     Services <span>We Can Help </span>You With
-                                </h3>
+                                </h2>
                             </div>
                         </div>
 
@@ -283,7 +283,7 @@ const DigitalMarketing = () => {
                             <span className="common_span">
                                 Extensive <span>Benefits</span>
                             </span>
-                            <h3 className='comman_Headlines'> Avail <span>Digital Marketing</span> by Experts for Precise and Targeted Results. </h3>
+                            <h2 className='comman_Headlines'> Avail <span>Digital Marketing</span> by Experts for Precise and Targeted Results. </h2>
                         </div>
                     </div>
 
@@ -330,9 +330,9 @@ const DigitalMarketing = () => {
                                 <span className="common_span">
                                     Our <span>Work Process</span>
                                 </span>
-                                <h3 className='comman_Headlines'>
+                                <h2 className='comman_Headlines'>
                                     Grow your business with the Best <span> Digital Marketing </span> Services
-                                </h3>
+                                </h2>
                             </div>
 
                             <div className="processCardWrapper">
@@ -408,9 +408,9 @@ const DigitalMarketing = () => {
                             <div className="buildHeadings">
                                 <span className="common_span">
                                     <span>Our</span>  Expertise</span>
-                                <h3 className='comman_Headlines'>
+                                <h2 className='comman_Headlines'>
                                     Avail Our <span>Expertise</span> In The Following Work Area.
-                                </h3>
+                                </h2>
                                 <p className="comman_para firstP">
                                     Experience excellence with our services, powered by top-notch platforms for unmatched performance and innovation.
                                 </p>

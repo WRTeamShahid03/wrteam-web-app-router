@@ -1,15 +1,12 @@
 import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { AiFillPlusCircle } from 'react-icons/ai';
 import { usePathname } from 'next/navigation';
 
-
 const ServiceDropdown = ({setShow}) => {
 
-   // const router = useRouter();
-   const router = usePathname();
+    const router = usePathname();
 
     const items = [
         {

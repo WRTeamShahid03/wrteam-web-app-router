@@ -142,7 +142,7 @@ const WebDevelopment = () => {
       id: 2,
       icon: codeignitor,
       hoverIcon: codeignitorHover,
-      title: 'CodIgnitor',
+      title: 'CodeIgniter',
       alt: `work with codiginatorr Technology's experts  with the best web-app development company WRTeam bhuj`
 
     },
@@ -216,9 +216,9 @@ const WebDevelopment = () => {
                 <span className="common_span">
                   Web <span>Development</span>
                 </span>
-                <h1 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                 Avail Web Development Services and Build <span>Stunning Websites</span> with the <span>Best IT Company</span> Personalized for Your Business.
-                </h1>
+                </h2>
 
                 <p className="comman_para"> With over 7 years of experience, we create personalized business websites for E-commerce, Restaurants, Real Estate, Trivia games, and more. We aim to deliver fully functional, stunning websites with modern, user-friendly UI/UX.</p>
               </div>
@@ -248,9 +248,9 @@ const WebDevelopment = () => {
                 <span className="common_span">
                   <span>What</span> We Can Do <span>For You</span>
                 </span>
-                <h3 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                   Services <span>We Can Help </span>You With
-                </h3>
+                </h2>
               </div>
             </div>
 
@@ -280,7 +280,7 @@ const WebDevelopment = () => {
               <span className="common_span">
                 Extensive <span>Benefits</span>
               </span>
-              <h3 className='comman_Headlines'>Unleashing the Potential of the Best <span>Web Development</span> Company</h3>
+              <h2 className='comman_Headlines'>Unleashing the Potential of the Best <span>Web Development</span> Company</h2>
             </div>
           </div>
 
@@ -327,9 +327,9 @@ const WebDevelopment = () => {
                 <span className="common_span">
                   Our <span>Work Process</span>
                 </span>
-                <h3 className='comman_Headlines' >
+                <h2 className='comman_Headlines' >
                 How Does Our <span>Web Development</span> Team Create a Website?
-                </h3>
+                </h2>
               </div>
 
               <div className="processCardWrapper">
@@ -406,10 +406,10 @@ const WebDevelopment = () => {
                 <span className="common_span">
                   <span>We</span> Build
                 </span>
-                <h3 className='comman_Headlines' >
+                <h2 className='comman_Headlines' >
                   We <span>Build</span> Dynamic Solutions with Leading <span> Web Development</span> Platforms
 
-                </h3>
+                </h2>
                 <p className="comman_para firstP">
                   Harness the power of advanced technology and next-level web development for an online presence that captivates attention!
                 </p>

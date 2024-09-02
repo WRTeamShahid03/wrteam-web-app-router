@@ -22,7 +22,7 @@
         top: 180px;
     }
 
-    .breadcrum h1 {
+    .breadcrum .mainTitle {
         margin-bottom: -18px;
         font: normal normal 800 18px/80px Montserrat;
     }
@@ -2192,7 +2192,7 @@
         padding-bottom: 0px;
     }
 
-    .devSlider .sidebar h1 {
+    .devSlider .sidebar .newSliderTitle {
         font-size: 30px;
         margin-top: 0px;
     }
@@ -3012,7 +3012,7 @@
         width: 100%;
     }
 
-    .devSlider .sidebar h1 {
+    .devSlider .sidebar .newSliderTitle {
         font-size: 34px;
         margin-top: -80px;
     }
@@ -4134,7 +4134,7 @@
         width: 100%;
     }
 
-    .devSlider .sidebar h1 {
+    .devSlider .sidebar .newSliderTitle {
         font-size: 28px;
         margin-top: -80px;
     }
@@ -5436,7 +5436,7 @@
         width: 100%;
     }
 
-    .devSlider .sidebar h1 {
+    .devSlider .sidebar .newSliderTitle {
         font-size: 18px;
         margin-top: -42px;
     }

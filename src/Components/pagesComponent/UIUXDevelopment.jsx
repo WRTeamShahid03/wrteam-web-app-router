@@ -197,9 +197,9 @@ const UIUXDevelopment = () => {
                 <span className="common_span">
                   UI-UX <span>Services</span>
                 </span>
-                <h1 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                   Make Innovative App & Web Designs with the Best <span>UI/UX</span> Designers
-                </h1>
+                </h2>
 
                 <p className="comman_para">Our Best UI/UX design service focuses on creating innovative & unique designs for your website & application tailored to your needs. Our UI/UX designers are experienced  & expert at making unique, user-friendly websites & applications.</p>
               </div>
@@ -229,9 +229,9 @@ const UIUXDevelopment = () => {
                 <span className="common_span">
                   <span>What</span> We Can Do <span>For You</span>
                 </span>
-                <h3 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                   Services <span>We Can Help </span>You With
-                </h3>
+                </h2>
               </div>
             </div>
 
@@ -261,7 +261,7 @@ const UIUXDevelopment = () => {
               <span className="common_span">
                 Extensive <span>Benefits</span>
               </span>
-              <h3 className='comman_Headlines'>The Transformative Benefits of Our <span>UI/UX</span> Solutions</h3>
+              <h2 className='comman_Headlines'>The Transformative Benefits of Our <span>UI/UX</span> Solutions</h2>
             </div>
           </div>
 
@@ -308,9 +308,9 @@ const UIUXDevelopment = () => {
                 <span className="common_span">
                   Our <span>Work Process</span>
                 </span>
-                <h3 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                   How We Make Your App More <span>User-Friendly</span> with the Best <span>UI/UX</span> Designers
-                </h3>
+                </h2>
               </div>
 
               <div className="processCardWrapper">
@@ -387,9 +387,9 @@ const UIUXDevelopment = () => {
                 <span className="common_span">
                   <span>We</span> Build
                 </span>
-                <h3 className='comman_Headlines'>
+                <h2 className='comman_Headlines'>
                   Make Dynamic <span>UI/UX</span> Designs with <span>Leading Tools</span> for Your Digital Presence.
-                </h3>
+                </h2>
                 <p className="comman_para firstP">
                   From Illustrator's finesse to Figma's innovation, we blend pixel-perfect precision from Photoshop with Adobe XD's seamless design.
                 </p>

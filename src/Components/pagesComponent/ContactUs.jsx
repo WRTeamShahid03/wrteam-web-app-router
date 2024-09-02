@@ -218,19 +218,19 @@ const ContactUs = () => {
                                     <div className="socialContent">
                                         <span className='text'>Stay connected with us on social media for the latest updates, content, and more. Follow us today!</span>
                                         <span className='icons'>
-                                            <Link target='_blank' href="https://www.facebook.com/wrteam.in">
+                                            <Link target='_blank' href={process.env.NEXT_PUBLIC_FACEBOOK}>
                                                 <span>  <BsFacebook color='white' size={30} /> </span>
                                             </Link>
 
-                                            <Link target='_blank' href="https://www.instagram.com/wrteam.in/">
+                                            <Link target='_blank' href={process.env.NEXT_PUBLIC_INSTAGRAM}>
                                                 <span>  <AiFillInstagram color='white' size={30} /></span>
                                             </Link>
 
-                                            <Link target='_blank' href="https://www.youtube.com/channel/UCLt9XRUuiWsqKng4681_6cQ">
+                                            <Link target='_blank' href={process.env.NEXT_PUBLIC_YOUTUBE}>
                                                 <span> <FaYoutube color='white' size={30} /> </span>
                                             </Link>
 
-                                            <Link target='_blank' href="https://www.linkedin.com/company/wrteam/">
+                                            <Link target='_blank' href={process.env.NEXT_PUBLIC_LINKEDIN}>
                                                 <span style={{ borderRadius: "100%" }}>  <BsLinkedin color='white' size={30} /> </span>
                                             </Link>
                                         </span>

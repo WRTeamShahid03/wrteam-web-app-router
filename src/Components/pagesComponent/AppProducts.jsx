@@ -10,11 +10,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetProductsApi, GetSettingsApi } from '@/redux/actions/campaign';
-import ProductsSkeleton from '../Skeletons/ProductsSkeleton.jsx';
+import ProductsSkeleton from '../Skeletons/ProductsSkeleton';
 import ReactPaginate from 'react-paginate';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import { useRouter } from 'next/navigation';
+import NoDataFound from '../NoDataFound';
 
 const AppProducts = () => {
 
@@ -104,101 +105,102 @@ const AppProducts = () => {
     };
 
     return (
-        <>
-            <Breadcrum title='App' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'App Products'} />
-            <section className='container webPro appPro'>
+        productsData ?
+            <>
+                <Breadcrum title='App' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'App Products'} />
+                <section className='container webPro appPro'>
 
-                <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="webProHeadingDiv">
-                            {
-                                loading ?
-                                    <span> <Skeleton width={300} height={25} /></span> :
-                                    <span className='commonHeadlines' >We found <span>{productsData?.length}</span> Products</span>
+                    <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <div className="webProHeadingDiv">
+                                {
+                                    loading ?
+                                        <span> <Skeleton width={300} height={25} /></span> :
+                                        <span className='commonHeadlines' >We found <span>{productsData?.length}</span> Products</span>
 
-                            }
-                            <div className="sortBy">
-                                <span>Sort By :</span>
-                                <select
-                                    className="form-select form-select-md"
-                                    aria-label=".form-select-lg example"
-                                    onChange={handleFilterChange}
-                                    value={sortOption}
-                                >
-                                    <option value={""}>Select</option>
-                                    <option value={1}>Price: Low to High</option>
-                                    <option value={2}>Price: High to Low</option>
-                                    <option value={3}>Most Popular</option>
-                                </select>
+                                }
+                                <div className="sortBy">
+                                    <span>Sort By :</span>
+                                    <select
+                                        className="form-select form-select-md"
+                                        aria-label=".form-select-lg example"
+                                        onChange={handleFilterChange}
+                                        value={sortOption}
+                                    >
+                                        <option value={""}>Select</option>
+                                        <option value={1}>Price: Low to High</option>
+                                        <option value={2}>Price: High to Low</option>
+                                        <option value={3}>Most Popular</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                        <div className="row cardsWrapper">
-                            {
-                                loading ? Array.from({ length: 8 }).map((_, index) => (
-                                    <div className="col-sm-12 col-md-6 col-lg-3 loading_data" key={index}>
-                                        <ProductsSkeleton />
-                                    </div>
-                                )) : <>
-                                    {
-                                        productsData.map((e, index) => {
-                                            return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}
-                                            // ref={index === productsData.length - 1 ? lastProductRef : null}
-                                            >
-                                                <Link href={`/product-details/${e.slug}`} target='_blank'>
-                                                    <Card>
-                                                        <Image height={0} width={0} loading="lazy" alt='product_img' className='webProImg card-img-top' src={e.banner_image} />
-                                                        <Card.Body>
-                                                            <div className="ratingDiv">
-                                                                <span className='sales'>{e.sales} Sales</span>
-                                                                {e.rating == '0' ? '' :
-                                                                    <span className='rating'> <span>
-                                                                        {renderStars(e.rating)}
-                                                                    </span>({e.rating})</span>
-                                                                }
-                                                            </div>
-                                                            {
-                                                                e.name?.length > 60 ? <Card.Title>{e.name.slice(0, 50)}...</Card.Title> : <Card.Title>{e.name}</Card.Title>
-                                                            }
-                                                            <Card.Text>
-                                                                {e.subcategory?.name}
-                                                            </Card.Text>
-                                                        </Card.Body>
-                                                        <hr />
-                                                        <div className="cardFooter">
-                                                            <div className='priceDiv'>
-                                                                <span>Price</span>
-                                                                <div className='productPriceWrapper'>
-                                                                    {
-                                                                        e.sale_price === '' || e.sale_price === null ?
-                                                                            <span className='originalPrice'>${e.price}</span> :
-                                                                            <>
-                                                                                <span className='originalPrice' style={{ textDecorationLine: 'line-through', fontSize: '24px', color: '#22A869' }}>${e.price}</span>
-                                                                                <span className='salePrice'>${e.sale_price}</span>
-                                                                            </>
-
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <div className="row cardsWrapper">
+                                {
+                                    loading ? Array.from({ length: 8 }).map((_, index) => (
+                                        <div className="col-sm-12 col-md-6 col-lg-3 loading_data" key={index}>
+                                            <ProductsSkeleton />
+                                        </div>
+                                    )) : <>
+                                        {
+                                            productsData.map((e, index) => {
+                                                return <div className="col-sm-12 col-md-6 col-lg-3" key={e.id}
+                                                // ref={index === productsData.length - 1 ? lastProductRef : null}
+                                                >
+                                                    <Link href={`/product-details/${e.slug}`} target='_blank'>
+                                                        <Card>
+                                                            <Image height={0} width={0} loading="lazy" alt='product_img' className='webProImg card-img-top' src={e.banner_image} />
+                                                            <Card.Body>
+                                                                <div className="ratingDiv">
+                                                                    <span className='sales'>{e.sales} Sales</span>
+                                                                    {e.rating == '0' ? '' :
+                                                                        <span className='rating'> <span>
+                                                                            {renderStars(e.rating)}
+                                                                        </span>({e.rating})</span>
                                                                     }
-
                                                                 </div>
-                                                            </div>
-                                                            <span className='buyBtn'> <span><RiShoppingCartFill /></span>Buy</span>
-                                                        </div>
-                                                    </Card>
-                                                </Link>
-                                            </div>
+                                                                {
+                                                                    e.name?.length > 60 ? <Card.Title>{e.name.slice(0, 50)}...</Card.Title> : <Card.Title>{e.name}</Card.Title>
+                                                                }
+                                                                <Card.Text>
+                                                                    {e.subcategory?.name}
+                                                                </Card.Text>
+                                                            </Card.Body>
+                                                            <hr />
+                                                            <div className="cardFooter">
+                                                                <div className='priceDiv'>
+                                                                    <span>Price</span>
+                                                                    <div className='productPriceWrapper'>
+                                                                        {
+                                                                            e.sale_price === '' || e.sale_price === null ?
+                                                                                <span className='originalPrice'>${e.price}</span> :
+                                                                                <>
+                                                                                    <span className='originalPrice' style={{ textDecorationLine: 'line-through', fontSize: '24px', color: '#22A869' }}>${e.price}</span>
+                                                                                    <span className='salePrice'>${e.sale_price}</span>
+                                                                                </>
 
-                                        })}
-                                </>
-                            }
+                                                                        }
+
+                                                                    </div>
+                                                                </div>
+                                                                <span className='buyBtn'> <span><RiShoppingCartFill /></span>Buy</span>
+                                                            </div>
+                                                        </Card>
+                                                    </Link>
+                                                </div>
+
+                                            })}
+                                    </>
+                                }
+
+                            </div>
 
                         </div>
 
-                    </div>
 
-                    {
-                        totalPage > 1 ?
+                        {totalPage > 1 &&
                             <div className="col-sm-12 col-md-12 col-lg-12">
                                 <div className="navigation-buttons">
                                     <ReactPaginate
@@ -219,13 +221,12 @@ const AppProducts = () => {
                                         pageLinkClassName="page-link"
                                     />
                                 </div>
-                            </div> : null
-                    }
+                            </div>}
 
-
-                </div>
-            </section>
-        </>
+                    </div>
+                </section>
+            </>
+            : <NoDataFound />
     )
 }
 

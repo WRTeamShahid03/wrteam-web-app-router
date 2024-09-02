@@ -1,13 +1,11 @@
 import React from 'react'
 import { Dropdown } from 'antd';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { usePathname } from 'next/navigation';
 import { AiFillPlusCircle } from 'react-icons/ai';
+import { usePathname } from 'next/navigation';
 
 const ProductDropdown = ({setShow}) => {
 
-    // const router = useRouter();
     const router = usePathname();
 
     const items = [

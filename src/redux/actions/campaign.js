@@ -1,6 +1,6 @@
 "use client";
 
-import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies, customisationMail, getBlogs, getCategories } from "@/utils/api";
+import { getSettings, getSeoSettings, hireUs, getProducts, contactUs, getTestimonials, getTeamMembers, careerMail, getVacancies, customisationMail, getBlogs, getCategories, getProductsDetails, getBLogsCategories } from "@/utils/api";
 import { store } from "../store";
 import { apiCallBegan } from "./apiActions";
 
@@ -67,6 +67,23 @@ export const GetProductsApi = ({
     store.dispatch(
         apiCallBegan({
             ...getProducts(page, category_id, slug, product_filter, content_id),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
+
+// // GET PRODUCTS-DETAILS
+export const GetProductsDetailsApi = ({
+    slug = '',
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { } }) => {
+    store.dispatch(
+        apiCallBegan({
+            ...getProductsDetails(slug),
             displayToast: false,
             onStart,
             onSuccess,
@@ -216,6 +233,22 @@ export const GetBlogsApi = ({
     store.dispatch(
         apiCallBegan({
             ...getBlogs(id, category_id, subcategory_id, slug, category_slug, subcategory_slug),
+            displayToast: false,
+            onStart,
+            onSuccess,
+            onError,
+        })
+    );
+};
+
+// GET BLOGS CATEGORIES
+export const GetBlogsCategoriesApi = ({
+    onSuccess = () => { },
+    onError = () => { },
+    onStart = () => { } }) => {
+    store.dispatch(
+        apiCallBegan({
+            ...getBLogsCategories(),
             displayToast: false,
             onStart,
             onSuccess,

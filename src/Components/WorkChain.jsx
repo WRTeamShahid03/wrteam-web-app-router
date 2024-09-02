@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import workImg1 from '../../src/Asset/Images/work_chain_1.webp'
 import workImg2 from '../../src/Asset/Images/work_chain_2.webp'

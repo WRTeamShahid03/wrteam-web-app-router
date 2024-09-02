@@ -1,15 +1,15 @@
 'use client'
 import Loader from '@/Components/Loader';
 import { GetProductsApi } from '@/redux/actions/campaign';
-import { useRouter } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
-import NoDataFound from '../../app/not-found.jsx'
+
 
 import ProductDetailsSideCard from '@/Components/ProductDetailsSideCard';
 import Breadcrum from '../Breadcrum';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import NoDataFound from '../NoDataFound';
 
 const ProductDetailsPage = () => {
 
@@ -58,11 +58,14 @@ const ProductDetailsPage = () => {
 
             const data = JSON.parse(productsDetails?.codecanyon_other_data);
 
+            // console.log('codecanyon_other_data => ', data)
+
             // Access the landscape_url from the codecanyon_other_data field
             const landscapeUrl = data?.previews?.landscape_preview?.landscape_url;
             setLandscape_preview(landscapeUrl)
         }
     }, [productsDetails])
+
 
     return (
 
@@ -80,12 +83,12 @@ const ProductDetailsPage = () => {
                                 productsDetails?.length < 0 || productsDetails?.description == '' || productsDetails?.description == null ?
                                     <div className="col-sm-12 col-md-12 col-lg-12">
                                         <div className="wrapper d-flex justify-content-center align-items-center">
-                                            <NoDataFound page={'product-detail'} />
+                                            <NoDataFound />
                                         </div>
                                     </div> : <>
                                         <div className="col-sm-12 col-md-12 col-lg-7">
                                             {
-                                                landscape_preview ?
+                                                productsDetails?.codecanyon_other_data ?
                                                     <div className="promoImgWrapper">
                                                         <Image src={landscape_preview} height={0} width={0} />
                                                     </div> : null

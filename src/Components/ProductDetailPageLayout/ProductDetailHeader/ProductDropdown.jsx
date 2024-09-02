@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 
 const ProductDropdown = ({setShow}) => {
 
-    const router = usePathname();
+    const router = usePathname()
 
     const items = [
         {

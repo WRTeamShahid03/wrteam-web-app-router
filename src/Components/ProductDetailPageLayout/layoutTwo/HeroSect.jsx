@@ -1,100 +1,63 @@
+'use client'
 import React from 'react'
-import CommonTextDiv from '../layoutOne/CommonTextDiv'
-import Link from 'next/link'
 import Image from 'next/image'
-import lapImg from '../../../Asset/Images/product-detail-page/layout-2/heroLapImg.png'
-import system1 from '../../../Asset/Images/product-detail-page/layout-2/Android.svg'
-import system2 from '../../../Asset/Images/product-detail-page/layout-2/iOS.svg'
-import system3 from '../../../Asset/Images/product-detail-page/layout-2/Flutter.svg'
-import system4 from '../../../Asset/Images/product-detail-page/layout-2/Laravel.svg'
-import system5 from '../../../Asset/Images/product-detail-page/layout-2/Node JS.svg'
-import system6 from '../../../Asset/Images/product-detail-page/layout-2/react-svg.svg'
-import leftImg1 from '../../../Asset/Images/product-detail-page/layout-2/leftImg1.png'
-import leftImg2 from '../../../Asset/Images/product-detail-page/layout-2/leftImg2.png'
-import rightImg1 from '../../../Asset/Images/product-detail-page/layout-2/rightImg1.png'
-import rightImg2 from '../../../Asset/Images/product-detail-page/layout-2/rightImg2.png'
+import { FaPlay } from 'react-icons/fa6'
+import Link from 'next/link'
 
-const HeroSect = () => {
+const HeroSect = ({ heroSectData }) => {
 
-    const systemsData = [
-        {
-            id: 0,
-            img: system1,
-            title: 'Android'
-        },
-        {
-            id: 1,
-            img: system2,
-            title: 'IOS'
-        },
-        {
-            id: 2,
-            img: system3,
-            title: 'Flutter'
-        },
-        {
-            id: 3,
-            img: system4,
-            title: 'Laravel'
-        },
-        {
-            id: 4,
-            img: system5,
-            title: 'Node JS'
-        },
-        {
-            id: 5,
-            img: system6,
-            title: 'React JS'
-        },
-    ]
+    const data = heroSectData && heroSectData[0];
+
     return (
-        <div>
-            <section className='heroSect'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 middleDiv">
-                            <CommonTextDiv title={'Simplify Your Ecommerce. Empower Your Business.'} desc={'From seamless operations to delighted customers, Ekart equips you with the tools to streamline every step. '} />
-                            <div className="middleBtns">
-                                <Link href={''}><button className='exploreBtn'>Explore Demo</button></Link>
-                                <Link href={''}><button className='buyBtn'>Buy Now</button></Link>
-                            </div>
-                        </div>
-
-                        <div className="col-12 limitsDiv">
-                            <div className="imgDiv">
-                                <Image src={lapImg} height={0} width={0} alt='laptopImg' />
-                                <span>Beyond Limits: Powered by Innovation</span>
-                            </div>
-                        </div>
-
-                        <div className="col-12">
-                            <div className=" systemsDivWrapper">
-                                {
-                                    systemsData.map((data) => {
-                                        return <div className="" key={data.id}>
-                                            <div className='systemDiv'>
-                                                <Image src={data.img} height={0} width={0} alt='androidImg' />
-                                                <span>{data.title}</span>
+        <>
+            <section className='productHeroSect'>
+                <div className="bgLines">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="commonTextWrapper">
+                                    <div className="flex_center">
+                                        <div>
+                                            <span className='comman_Headlines'>
+                                                {data?.title}
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span className='comman_para' dangerouslySetInnerHTML={{ __html: data?.description }} ></span>
+                                        </div>
+                                        <div>
+                                            <div className='commonTextBtns'>
+                                                <Link href={'#comesWithSection'}> <button className='productCommonBtn'>Explore Demo</button></Link>
+                                                <Link href={'#licenceSection'}> <button className='productCommonBtn buyBtn'>Buy Now</button></Link>
+                                                {/* <Link href={''}>
+                                                    <div className='exploreDiv'>
+                                                        <span className='playerBtn'><FaPlay />
+                                                        </span>
+                                                        <div className='textDiv'>
+                                                            <span>Explore</span>
+                                                            <span>Tutorial Video</span>
+                                                        </div>
+                                                    </div>
+                                                </Link> */}
                                             </div>
                                         </div>
-                                    })
-                                }
+                                    </div>
 
+                                </div>
                             </div>
-                        </div>
-
-                        <div className="col-12 sideImgsWrapper">
-                            <Image src={leftImg1} height={0} width={0} alt='sideImg' className='leftImg1'/>
-                            <Image src={leftImg2} height={0} width={0} alt='sideImg' className='leftImg2'/>
-                            <Image src={rightImg1} height={0} width={0} alt='sideImg' className='rightImg1'/>
-                            <Image src={rightImg2} height={0} width={0} alt='sideImg' className='rightImg2'/>
+                            <div className="col-12 bgLines">
+                            </div>
+                            <div className="col-12 productImgsDiv">
+                                <div>
+                                    <Image src={data?.image_url} className='adminImg' height={0} width={0} alt='productImg1' />
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </>
     )
 }
 

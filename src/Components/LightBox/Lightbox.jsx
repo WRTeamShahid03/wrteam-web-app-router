@@ -65,7 +65,7 @@ const LightBox = ({ photos, viewerIsOpen, onClose, currentIndex, setCurrentIndex
                 <span onClick={onClose} className="closeBtn"><IoIosCloseCircle/></span>
             }
             <Lightbox
-                images={photos.map(photo => ({ src: photo.img.src, alt: photo.title }))}
+                images={photos.map(photo => ({ src: photo.image_url, alt: photo?.title }))}
                 currentIndex={currentIndex}
                 isOpen={viewerIsOpen}
                 onClose={onClose}
