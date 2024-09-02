@@ -8,10 +8,12 @@ export const generateMetadata = async () => {
       `${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_END_POINT}${GET_SEO_SETTINGS}?type=aboutus`
     );
     const SEOData = response.data;
+    console.log('SEOData->', SEOData)
 
     return {
       title: SEOData?.data?.title,
       description: SEOData?.data?.description,
+      keywords:  SEOData?.data?.keywords,
       openGraph: {
         images: SEOData?.data?.ogImage ? [SEOData?.data?.ogImage] : [],
       },

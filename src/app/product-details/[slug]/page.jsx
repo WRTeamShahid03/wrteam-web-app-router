@@ -1,8 +1,8 @@
-import { GET_PRODUCTS, GET_SEO_SETTINGS } from '@/utils/api';
+import { GET_PRODUCTS } from '@/utils/api';
 import axios from 'axios';
-import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
-// import dynamic from 'next/dynamic'
-// const ProductDetailsPage = dynamic(() => import('@/Components/pagesComponent/ProductDetailsPage'), { ssr: false })
+// import ProductDetailsPage from '@/Components/pagesComponent/ProductDetailsPage';
+import dynamic from 'next/dynamic'
+const ProductDetailsPage = dynamic(() => import('@/Components/pagesComponent/ProductDetailsPage'), { ssr: false })
 
 export const generateMetadata = async (params) => {
     // console.log('slug === > ',slug.params)

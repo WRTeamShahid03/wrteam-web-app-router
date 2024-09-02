@@ -13,6 +13,7 @@ export const generateMetadata = async () => {
     return {
       title: SEOData?.data?.title,
       description: SEOData?.data?.description,
+      keywords:  SEOData?.data?.keywords,
       openGraph: {
         images: SEOData?.data?.ogImage ? [SEOData?.data?.ogImage] : [],
       },
