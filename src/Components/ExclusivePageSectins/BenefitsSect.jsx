@@ -85,15 +85,26 @@ const BenefitsSect = ({ advantageSect }) => {
                 <div className={`row upperDivWrapper benefitsContent ${advantageSect ? 'flex-row-reverse advantageContent' : ''}`}>
                     <div className={`col-sm-12 col-md-12 ${advantageSect ? 'col-lg-8' : 'col-lg-6'}`}>
                         <div className="leftContent">
-                            <div className="upperRightHeadings">
-                                <span className="common_span">
-                                    <span>Is This For</span> You?
-                                </span>
-                                <h2 className='comman_Headlines' >
-                                    Who Can <span>Benefit</span> from
-                                    Our <span>Exclusive</span> Licenses?
-                                </h2>
-                            </div>
+                            {
+                                advantageSect ?
+                                    <div className="upperRightHeadings">
+                                        <span className="common_span">
+                                            <span>Exclusive License</span> Advantages
+                                        </span>
+                                        <h2 className='comman_Headlines' >
+                                            Why Choose Our <span>Exclusive</span> Licenses?
+                                        </h2>
+                                    </div> :
+                                    <div className="upperRightHeadings">
+                                        <span className="common_span">
+                                            <span>Is This For</span> You?
+                                        </span>
+                                        <h2 className='comman_Headlines' >
+                                            Who Can <span>Benefit</span> from
+                                            Our <span>Exclusive</span> Licenses?
+                                        </h2>
+                                    </div>
+                            }
 
                             {
                                 !advantageSect ?

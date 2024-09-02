@@ -2,13 +2,15 @@ import ExclusiveLicensePage from '@/Components/pagesComponent/ExclusiveLicensePa
 import Head from 'next/head'
 import React from 'react'
 
+export const metadata = {
+  title: 'Exclusive License',
+  description: 'We prioritize customer satisfaction and transparency.',
+  keywords: process.env.NEXT_PUBLIC_META_KEYWORD
+}
+
 const Index = () => {
   return (
     <>
-      <Head>
-        <title>Exclusive License</title>
-        <meta name="description" content="We prioritize customer satisfaction and transparency." />
-      </Head>
       <ExclusiveLicensePage />
     </>
   )

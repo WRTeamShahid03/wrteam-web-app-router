@@ -16,13 +16,6 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import { useParams, useRouter } from 'next/navigation';
 
-
-export const metadata = {
-    title: ` Create Mobile App with WRTeam's Digital Products`,
-    description: 'Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps and web.',
-}
-
-
 const AppProducts = () => {
 
     const router = useRouter()
@@ -116,6 +109,10 @@ const AppProducts = () => {
 
     return (
         <>
+            <Head>
+                <title> Create Mobile App with WRTeam's Digital Products</title>
+                <meta name="description" content="Complete business solutions. Clean & safe code for your Ecom. business, grocery business, local business & make educational and game apps." />
+            </Head>
             <Breadcrum title='App' blueText='Products' contentOne={'Home'} contentTwo={'Products'} contentThree={'App Products'} />
             <section className='container webPro'>
 

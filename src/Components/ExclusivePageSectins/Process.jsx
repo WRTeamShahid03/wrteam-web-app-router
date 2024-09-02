@@ -13,7 +13,7 @@ const Process = () => {
             id: 0,
             img: icon1,
             title: "Contact Us",
-            desc: "Reach out via our form or email Support@wrteam.in",
+            desc: "Reach out via our form or email support@wrteam.in",
         },
         {
             id: 1,
