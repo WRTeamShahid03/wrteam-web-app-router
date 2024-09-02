@@ -21,7 +21,7 @@ const LicenseCard = ({ title, licenseData,badge ,darkBg}) => {
                         {
                             licenseData.map((data) => {
                                 return (
-                                    <div className="list">
+                                    <div className="list" key={data?.id}>
                                         {
                                             data.add ?
                                                 <span className='checkIcon'><FaCheckCircle /></span>

@@ -27,13 +27,13 @@ const BlogsSideBoxes = ({ loading, categories, showRecentBlogs, catSlug }) => {
 
           {
             loading ? Array.from({ length: 3 }).map((_, index) => (
-              <div className="col-sm-12 col-md-6 col-lg-6 loading_data mt-" key={index}>
+              <div className="col-sm-12 col-md-6 col-lg-6 loading_data" key={index}>
                 <CategoriesSkeleton />
               </div>
             )) :
               categories?.map((data) => {
-                return <div>
-                  <Link href={`/blogs/${data?.slug}`} key={data?.id}>
+                return <div key={data?.id}>
+                  <Link href={`/blogs/${data?.slug}`} >
                     <div className="boxDetails" >
                       <span className={`boxDetailsSpan ${catSlug === data?.slug ? 'selectedCat' : ''}`}>{data?.name}</span>
                       {

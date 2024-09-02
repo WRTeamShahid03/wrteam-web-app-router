@@ -16,6 +16,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { LiaStarSolid } from 'react-icons/lia'
+import { BsStarHalf } from 'react-icons/bs'
 
 const LayoutTwoTestimonials = ({ testimonialsData }) => {
 

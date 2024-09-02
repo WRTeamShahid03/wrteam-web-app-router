@@ -278,7 +278,7 @@ const Installation = () => {
                             <div className="row">
                                 {
                                     data.map((ele) => {
-                                        return <div className="col-12 col-md-6 col-lg-3">
+                                        return <div className="col-12 col-md-6 col-lg-3" key={ele.id}>
                                             <div className={`card ${ele.packageName === 'Premium' ? 'premiumPack' : ''} ${ele.packageName === 'Standard' ? 'standardPack' : ''}`}>
                                                 {
                                                     ele.packageName === 'Premium' ? <span className='recommended'>Full Setup</span> : ''
@@ -291,7 +291,7 @@ const Installation = () => {
                                                 {
                                                     ele.packageName === 'Basic' ?
                                                         basicServices.map((elem) => {
-                                                            return <div className="bottomDiv">
+                                                            return <div className="bottomDiv" key={elem.id}>
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -300,7 +300,7 @@ const Installation = () => {
                                                             </div>
                                                         })
                                                         : ele.packageName === 'Standard' || ele.packageName === 'Advance' ? standardAndAdvanceServices.map((elem) => {
-                                                            return <div className="bottomDiv">
+                                                            return <div className="bottomDiv" key={elem.id}>
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
@@ -308,7 +308,7 @@ const Installation = () => {
                                                                 }
                                                             </div>
                                                         }) : premiumServices.map((elem) => {
-                                                            return <div className="bottomDiv">
+                                                            return <div className="bottomDiv" key={elem.id}>
                                                                 <span className='service'>{elem.service}</span>
                                                                 {
                                                                     elem.add ? <span className='icon'><FaCheck /></span> :
