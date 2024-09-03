@@ -136,6 +136,8 @@ export const contactUs = (name, email, subject, phone, message) => {
             subject: subject,
             phone: phone,
             message: message,
+            product: product,
+            country: country
         },
         authorizationHeader: false,
 

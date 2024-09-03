@@ -60,7 +60,7 @@ const MorePagesDropdown = ({setShow}) => {
                 className="navDropdown"
             >
                 <a onClick={(e) => e.preventDefault()}>
-                    <span className={`nav-link ${router === '/career/' || router === '/blogs/' || router === '/contact-us/' ? 'navActive' : ''}`}>
+                    <span className={`nav-link ${router === '/career/' || router === '/blogs/' || router === '/contact-us/' || router === '/exclusive-license/' ? 'navActive' : ''}`}>
                         More
                         <AiFillPlusCircle size={19} />
                     </span>

@@ -10646,6 +10646,12 @@ footer .footerContainer .flinks {
     color: #334155;
 }
 
+@media screen and (min-width: 576px) {
+    .layoutOne .operationSect .card .desc {
+        height: 56px;
+    }
+}
+
 .layoutOne .operationSect .card .hoverBtns {
     display: flex;
     flex-direction: column;
@@ -11436,6 +11442,30 @@ footer .footerContainer .flinks {
 
 .layoutOneTestimonials .card .desc {
     color: #0F172A;
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
+    .layoutOneTestimonials .card .desc {
+        height: 130px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .layoutOneTestimonials .card .desc {
+        height: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .layoutOneTestimonials .card .desc {
+        height: 100px;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .layoutOneTestimonials .card .desc {
+        height: 172px;
+    }
 }
 
 .layoutOneTestimonials .card .nameDiv {
@@ -13401,7 +13431,7 @@ footer .footerContainer .flinks {
 }
 
 input:focus,
-input:focus-visible{
+input:focus-visible {
     box-shadow: none !important;
 }
 

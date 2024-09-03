@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 const HeroSect = dynamic(() => import('./HeroSect'), { ssr: false })
 const ComesWithSect = dynamic(() => import('./ComesWithSect'), { ssr: false })
@@ -18,6 +18,12 @@ const BuyNowSect = dynamic(() => import('./BuyNowSect'), { ssr: false })
 
 const LayoutTwo = ({ productData }) => {
 
+  const [noData, setNoData] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const heroSectData = productData?.product_description?.map((ele) => ele?.intro_section);
   const comesWithSectData = productData?.product_description?.map((ele) => ele?.product_element_section);
@@ -30,24 +36,59 @@ const LayoutTwo = ({ productData }) => {
   const faqData = productData?.product_faqs
   const assistanceSectData = productData?.product_description?.map((ele) => ele?.help_section);
 
+  useEffect(() => {
+    if (productData?.product_description <= 0 && productData?.product_faqs <= 0 && productData?.product_testimonials <= 0) {
+      setNoData(true)
+    }
+  }, [productData])
+
   return (
-    <div className='layoutTwo'>
-      <HeroSect heroSectData={heroSectData} />
-      {/* <CounterSect /> */}
-      <ComesWithSect comesWithSectData={comesWithSectData} />
-      <Technology technologyData={technologyData} />
-      <PaymentSect paymentGatewaySectData={paymentGatewaySectData} />
-      <InfoSect />
-      <FeaturesSect featuresSectData={featuresSectData}/>
-      <InnerPagesSect innerPagesSectData={innerPagesSectData} title={'Inner Pages Collections'} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
-      <GuideSect />
-      <Unlock />
-      <TestimonialsSect testimonialsData={testimonialsData}/>
-      <LicenseSect />
-      <AssistanceSect assistanceSectData={assistanceSectData} />
-      <Faqs faqs={faqData} title={`Questions & Answers`} desc={`Whether you're just starting with our product or a seasoned user, our FAQs hold the key to unlocking your full potential.`} />
-      <BuyNowSect />
-    </div>
+
+    noData ? <NoDataFound /> :
+      isClient &&
+      <div className='layoutTwo'>
+        {
+          heroSectData && heroSectData[0] != null &&
+          <HeroSect heroSectData={heroSectData} />
+        }
+        {
+          comesWithSectData && comesWithSectData[0] != null &&
+          <ComesWithSect comesWithSectData={comesWithSectData} />
+        }
+        {
+          technologyData && technologyData[0] != null &&
+          <Technology technologyData={technologyData} />
+        }
+        {
+          paymentGatewaySectData && paymentGatewaySectData[0] != null &&
+          <PaymentSect paymentGatewaySectData={paymentGatewaySectData} />
+        }
+        <InfoSect />
+        {
+          featuresSectData && featuresSectData[0] != null &&
+          <FeaturesSect featuresSectData={featuresSectData} />
+        }
+        {
+          innerPagesSectData && innerPagesSectData[0] != null &&
+          <InnerPagesSect innerPagesSectData={innerPagesSectData} title={'Inner Pages Collections'} desc={`Hipster ipsum tattooed brunch I'm baby. Prism poutine pbr&b cardigan kinfolk tousled beard tote. Kinfolk tumeric mug literally tousled.`} />
+        }
+        <GuideSect />
+        <Unlock />
+        {
+          testimonialsData && testimonialsData[0] != null &&
+          <TestimonialsSect testimonialsData={testimonialsData} />
+        }
+        <LicenseSect />
+        {
+          assistanceSectData && assistanceSectData[0] != null &&
+          <AssistanceSect assistanceSectData={assistanceSectData} />
+        }
+        {
+          faqData && faqData != null &&
+          <Faqs faqs={faqData} title={`Questions & Answers`} desc={`Whether you're just starting with our product or a seasoned user, our FAQs hold the key to unlocking your full potential.`} />
+        }
+        <BuyNowSect />
+      </div>
   )
 }
 

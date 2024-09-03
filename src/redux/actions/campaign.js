@@ -158,13 +158,15 @@ export const contactUsApi = ({
     subject = "",
     phone = "",
     message = "",
+    product = '',
+    country = '',
     onSuccess = () => { },
     onError = () => { },
     onStart = () => { },
 }) => {
     store.dispatch(
         apiCallBegan({
-            ...contactUs(name, email, subject, phone, message),
+            ...contactUs(name, email, subject, phone, message, product, country),
             displayToast: false,
             onStart,
             onSuccess,

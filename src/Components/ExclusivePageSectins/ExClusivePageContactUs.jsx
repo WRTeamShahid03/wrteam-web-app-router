@@ -49,9 +49,9 @@ const ExClusivePageContactUs = () => {
             contactUsApi({
                 name: name,
                 email: email,
-                subject: '',
+                subject: 'Exclusive License',
                 phone: finalNum,
-                message: '',
+                message: 'Exclusive License',
                 country: country,
                 product: product,
                 onSuccess: (res) => {

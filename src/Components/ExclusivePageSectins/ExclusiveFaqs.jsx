@@ -9,22 +9,22 @@ const ExclusiveFaqs = () => {
         {
             id: 0,
             question: 'If i buy exclusive license i can sell product on any other platforms?',
-            answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum laborum ad quibusdam debitis delectus!`,
+            answer: `No, with an exclusive license, you can sell the product individually, but you cannot distribute it on third-party platforms. The license grants you sole rights for direct sales only.`,
         },
         {
             id: 1,
             question: 'Can I transfer the exclusive license to another party?',
-            answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum laborum ad quibusdam debitis delectus!`,
+            answer: `No, the exclusive license cannot be transferred to another party. The license is non-transferable and remains valid only for the original licensee.`,
         },
         {
             id: 2,
             question: 'Are there any restrictions on how I can market the product?',
-            answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum laborum ad quibusdam debitis delectus!`,
+            answer: `Marketing restrictions, if any, will be specified in your agreement. Generally, you have the freedom to market the product as you see fit, within the boundaries of the license terms.`,
         },
         {
             id: 3,
             question: 'How do I handle customer support and inquiries?',
-            answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rerum laborum ad quibusdam debitis delectus!`,
+            answer: `You'll be responsible for customer support and handling inquiries.`,
         },
     ];
 

@@ -1,20 +1,18 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-const LayoutOne = dynamic(() => import('../ProductDetailPageLayout/layoutOne/LayoutOne'), { ssr: false })
-const LayoutTwo = dynamic(() => import('../ProductDetailPageLayout/layoutTwo/LayoutTwo'), { ssr: false })
 import { useParams, useRouter } from 'next/navigation'
 import { GetProductsDetailsApi } from '@/redux/actions/campaign'
-import Loader from '../Loader'
 import { setLayoutData, setProductDetails } from '@/redux/reuducer/productLayoutSlice'
-import NoDataFound from '../NoDataFound'
+
+const LayoutOne = dynamic(() => import('../ProductDetailPageLayout/layoutOne/LayoutOne'), { ssr: false })
+const LayoutTwo = dynamic(() => import('../ProductDetailPageLayout/layoutTwo/LayoutTwo'), { ssr: false })
+const Loader = dynamic(() => import('../Loader'), { ssr: false })
+const NoDataFound = dynamic(() => import('../NoDataFound'), { ssr: false })
 
 const ProductDeatailPage = ({ detailPageData }) => {
 
-    const metadata = {
-        title: detailPageData.detailPageData,
-        description: detailPageData.description
-    }
+    const detailPageDataLength = Object.keys(detailPageData?.data).length
 
     const router = useParams()
 
@@ -26,10 +24,10 @@ const ProductDeatailPage = ({ detailPageData }) => {
 
     const slug = router?.slug;
 
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [productData, setProductData] = useState([])
 
-    console.log('detailPageData =>', detailPageData?.data)
+    // console.log('detailPageData =>', detailPageData?.data)
 
     useEffect(() => {
         if (slug) {
@@ -43,7 +41,8 @@ const ProductDeatailPage = ({ detailPageData }) => {
                     // console.log(response?.data?.theme_color, 'theme_color')
                     setLayoutData({ data: response?.data?.style === 1 ? 1 : 2 })
                     setProductDetails({ data: detailPageData?.data })
-                    setLoading(false)
+
+                    detailPageDataLength > 0 ? setLoading(false) : setLoading(true)
                     // console.log('productDetails =>', response.data)
                 },
                 onError: (error) => {
@@ -55,14 +54,27 @@ const ProductDeatailPage = ({ detailPageData }) => {
         }
     }, [slug])
 
+    // useEffect(() => {
+    //     const objectLength = Object.keys(detailPageData?.data).length
+    //     if (detailPageData && objectLength > 0) {
+    //         setLoading(false)
+    //     }
+    //     else {
+    //         setLoading(true)
+    //     }
+    //     // console.log('detailPageData => ',typeof detailPageData?.data )
+    //     // console.log('detailPageData?.length => ',objectLength)
+    // }, [detailPageData])
+
+
 
     return (
         <div className='product_detail_page'>
             {
-                loading && !isClient ? <Loader /> :
+                loading ? <Loader /> :
                     <>
                         {
-                            productData ?
+                            productData && isClient ?
                                 productData?.style === 1 ?
                                     <LayoutOne productData={productData} /> :
                                     <LayoutTwo productData={productData} />

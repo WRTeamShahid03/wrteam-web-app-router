@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 const HeroSect = dynamic(() => import('./HeroSect'), { ssr: false })
@@ -20,6 +21,12 @@ const NoDataFound = dynamic(() => import('@/Components/NoDataFound'), { ssr: fal
 
 const LayoutOne = ({ productData }) => {
 
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
+
     const [noData, setNoData] = useState(false)
 
     const heroSectData = productData?.product_description?.map((ele) => ele?.intro_section);
@@ -33,7 +40,6 @@ const LayoutOne = ({ productData }) => {
     const faqData = productData?.product_faqs
     const assistanceSectData = productData?.product_description?.map((ele) => ele?.help_section);
 
-
     useEffect(() => {
         if (productData?.product_description <= 0 && productData?.product_faqs <= 0 && productData?.product_testimonials <= 0) {
             setNoData(true)
@@ -44,20 +50,48 @@ const LayoutOne = ({ productData }) => {
 
     return (
         noData ? <NoDataFound /> :
+            isClient &&
             <div className='layoutOne'>
-                <HeroSect heroSectData={heroSectData} techData={technologyData} />
-                <OperationsSect opterationSectData={opterationSectData} />
-                <WhyChoose whyChooseData={whyChooseData} />
-                <PaymentGateways paymentGatewaySectData={paymentGatewaySectData} />
+                {
+                    heroSectData && heroSectData[0] != null &&
+                    <HeroSect heroSectData={heroSectData} techData={technologyData} />
+                }
+                {
+                    opterationSectData && opterationSectData[0] != null &&
+                    <OperationsSect opterationSectData={opterationSectData} />
+                }
+                {
+                    whyChooseData && whyChooseData[0] != null &&
+                    <WhyChoose whyChooseData={whyChooseData} />
+                }
+                {
+                    paymentGatewaySectData && paymentGatewaySectData[0] != null &&
+                    <PaymentGateways paymentGatewaySectData={paymentGatewaySectData} />
+                }
                 <InfoSect />
-                <InnerPagesSect innerPagesSectData={innerPagesSectData} title={'The Proof is in the Performance: Testimonial-Driven Success with Ekart'} desc={`See the cold, hard facts come to life as real businesses share their quantifiable successes achieved with Ekart's innovative solutions. Get inspired by their journeys and envision your own growth.`} />
+                {
+                    innerPagesSectData && innerPagesSectData[0] != null &&
+                    <InnerPagesSect innerPagesSectData={innerPagesSectData} title={'The Proof is in the Performance: Testimonial-Driven Success with Ekart'} desc={`See the cold, hard facts come to life as real businesses share their quantifiable successes achieved with Ekart's innovative solutions. Get inspired by their journeys and envision your own growth.`} />
+                }
                 <SaveMoneySect />
-                <AppSect appSectData={appSectData} />
+                {
+                    appSectData && appSectData[0] != null &&
+                    <AppSect appSectData={appSectData} />
+                }
                 <IdeaSect />
-                <LayoutTwoTestimonials testimonialsData={testimonialsData} />
+                {
+                    testimonialsData && testimonialsData[0] != null &&
+                    <LayoutTwoTestimonials testimonialsData={testimonialsData} />
+                }
                 <LicenseSect />
-                <Faqs title={'Questions & Answers'} desc={`Whether you're just starting with our product or a seasoned user, our FAQs hold the key to unlocking your full potential.`} faqs={faqData} />
-                <AssistanceSect assistanceSectData={assistanceSectData} />
+                {
+                    faqData && faqData != null &&
+                    <Faqs title={'Questions & Answers'} desc={`Whether you're just starting with our product or a seasoned user, our FAQs hold the key to unlocking your full potential.`} faqs={faqData} />
+                }
+                {
+                    assistanceSectData && assistanceSectData[0] != null &&
+                    <AssistanceSect assistanceSectData={assistanceSectData} />
+                }
                 <BuyNowSect />
             </div>
 
