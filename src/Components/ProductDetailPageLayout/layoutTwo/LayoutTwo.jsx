@@ -15,6 +15,7 @@ const LicenseSect = dynamic(() => import('./LicenseSect'), { ssr: false })
 const AssistanceSect = dynamic(() => import('./AssistanceSect'), { ssr: false })
 const Faqs = dynamic(() => import('./Faqs'), { ssr: false })
 const BuyNowSect = dynamic(() => import('./BuyNowSect'), { ssr: false })
+const NoDataFound = dynamic(() => import('@/Components/NoDataFound'), { ssr: false })
 
 const LayoutTwo = ({ productData }) => {
 
